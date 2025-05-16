@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Award, Download, Cup } from "lucide-react";
+import { Award, Download, Trophy } from "lucide-react";
 
 const About = () => {
   return (
@@ -40,7 +40,7 @@ const About = () => {
               {/* Floating award badge */}
               <div className="absolute -right-6 bottom-12 bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float" style={{ animationDelay: "1s" }}>
                 <div className="flex items-center gap-2">
-                  <Cup className="h-5 w-5 text-primary" />
+                  <Trophy className="h-5 w-5 text-primary" />
                   <span className="font-medium text-sm">Award Winner</span>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Calendar, Briefcase, Users, Rocket, Palette, Star } from "lucide-react";
+import { Calendar, Briefcase, Users, Rocket, Palette, Star, Sparkles } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface Service {
@@ -8,6 +8,7 @@ interface Service {
   title: string;
   description: string;
   category: "creative" | "management";
+  color: "primary" | "secondary" | "accent";
 }
 
 const services: Service[] = [
@@ -15,50 +16,61 @@ const services: Service[] = [
     icon: Palette,
     title: "Creative Direction",
     description: "Developing comprehensive creative strategies and visual identities that align with brand objectives and resonate with target audiences.",
-    category: "creative"
+    category: "creative",
+    color: "primary"
   },
   {
     icon: Briefcase,
     title: "Project Management",
     description: "End-to-end project oversight ensuring on-time, on-budget delivery while maintaining quality standards and stakeholder satisfaction.",
-    category: "management"
+    category: "management",
+    color: "secondary"
   },
   {
     icon: Users,
     title: "Team Leadership",
     description: "Building and leading high-performing creative and technical teams, fostering collaboration and delivering exceptional results.",
-    category: "management"
+    category: "management",
+    color: "accent"
   },
   {
     icon: Star,
     title: "Brand Development",
     description: "Creating compelling brand stories, visual systems, and communication strategies that establish strong market presence.",
-    category: "creative"
+    category: "creative",
+    color: "primary"
   },
   {
     icon: Calendar,
     title: "Production Coordination",
     description: "Seamless coordination of production processes, resources, and timelines to bring creative concepts to life efficiently.",
-    category: "management"
+    category: "management",
+    color: "secondary"
   },
   {
     icon: Rocket,
     title: "Launch Strategy",
     description: "Comprehensive planning for product, campaign, and brand launches to maximize impact and achieve business objectives.",
-    category: "creative"
+    category: "creative",
+    color: "accent"
   }
 ];
 
 const ServiceCard = ({ service }: { service: Service }) => {
   const Icon = service.icon;
+  const colorClasses = {
+    primary: "bg-primary/10 text-primary border-primary/20",
+    secondary: "bg-secondary/10 text-secondary border-secondary/20",
+    accent: "bg-accent/10 text-accent border-accent/20",
+  };
   
   return (
-    <Card className="overflow-hidden border-border">
-      <div className={`h-1 ${service.category === "creative" ? "bg-accent" : "bg-primary"}`} />
+    <Card className="overflow-hidden border-border card-hover bg-gradient-to-br from-white to-secondary/5">
+      <div className={`h-1 bg-${service.color}`} />
       <CardHeader>
         <div className="flex items-center gap-3">
-          <div className={`p-2 rounded-md ${service.category === "creative" ? "bg-accent/10 text-accent" : "bg-primary/10 text-primary"}`}>
-            <Icon className="h-5 w-5" />
+          <div className={`p-3 rounded-xl ${colorClasses[service.color]}`}>
+            <Icon className="h-6 w-6" />
           </div>
           <CardTitle>{service.title}</CardTitle>
         </div>
@@ -74,9 +86,31 @@ const ServiceCard = ({ service }: { service: Service }) => {
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 md:py-24">
-      <div className="container">
-        <div className="text-center mb-12">
+    <section id="services" className="py-20 md:py-28 relative">
+      {/* Decorative blobs */}
+      <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -right-64 top-0"></div>
+      <div className="blob-shape bg-secondary/10 w-[400px] h-[400px] -left-32 bottom-0"></div>
+      
+      {/* Decorative pattern */}
+      <div className="absolute top-20 left-10 grid grid-cols-3 gap-2 opacity-10 -z-10">
+        {[...Array(9)].map((_, i) => (
+          <div key={i} className="w-4 h-4 rounded-full bg-accent"></div>
+        ))}
+      </div>
+      
+      <div className="absolute bottom-20 right-10 grid grid-cols-3 gap-2 opacity-10 -z-10">
+        {[...Array(9)].map((_, i) => (
+          <div key={i} className="w-4 h-4 rounded-full bg-primary"></div>
+        ))}
+      </div>
+      
+      <div className="container relative z-10">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent font-medium mb-4">
+            <Sparkles className="h-4 w-4 mr-2" />
+            <span>What I can do for you</span>
+          </div>
+          
           <h2 className="section-title">Services</h2>
           <p className="section-subtitle max-w-2xl mx-auto">
             Balancing creative excellence with strategic execution
@@ -91,14 +125,18 @@ const Services = () => {
           ))}
         </div>
         
-        <div className="mt-16 p-6 sm:p-8 bg-accent/5 rounded-lg border border-accent/20">
-          <div className="flex flex-col md:flex-row gap-6 items-center">
+        <div className="mt-20 p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-white/20 shadow-lg relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-full bg-white/40 backdrop-blur-sm -z-10"></div>
+          <div className="absolute -top-24 -right-24 w-48 h-48 rounded-full bg-accent/10 animate-pulse-custom -z-10"></div>
+          <div className="absolute -bottom-16 -left-16 w-32 h-32 rounded-full bg-primary/10 animate-pulse-custom -z-10"></div>
+          
+          <div className="flex flex-col md:flex-row gap-8 items-center relative z-10">
             <div className="text-center md:text-left md:flex-1">
-              <h3 className="text-2xl font-bold mb-2">Need a tailored service package?</h3>
-              <p className="text-muted-foreground">Contact me to discuss how I can help with your specific project needs.</p>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-3 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Need a tailored service package?</h3>
+              <p className="text-muted-foreground text-lg">Contact me to discuss how I can help with your specific project needs.</p>
             </div>
             <button 
-              className="px-6 py-3 bg-accent text-accent-foreground rounded-md font-medium hover:bg-accent/90 transition-colors"
+              className="px-8 py-4 bg-accent rounded-full text-accent-foreground font-semibold text-lg hover:bg-accent/90 transition-colors shadow-lg hover:shadow-accent/20 hover:shadow-xl"
               onClick={() => {
                 const element = document.getElementById("contact");
                 if (element) element.scrollIntoView({ behavior: "smooth" });

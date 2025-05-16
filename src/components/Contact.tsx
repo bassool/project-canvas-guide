@@ -1,30 +1,27 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, MessageSquare, ArrowRight, Heart } from "lucide-react";
-
 const Contact = () => {
-  const { toast } = useToast();
-  
+  const {
+    toast
+  } = useToast();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // This would normally send the form data to a server
     toast({
       title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      description: "Thank you for reaching out. I'll get back to you soon."
     });
-    
+
     // Reset form
     const form = e.target as HTMLFormElement;
     form.reset();
   };
-
-  return (
-    <section id="contact" className="py-20 md:py-28 relative overflow-hidden">
+  return <section id="contact" className="py-20 md:py-28 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10"></div>
       <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -bottom-80 -left-80"></div>
@@ -62,23 +59,7 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover">
-              <div className="flex gap-6 items-start">
-                <div className="p-4 rounded-xl bg-accent/10 text-accent">
-                  <MessageSquare className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-xl mb-2">Let's Talk</h3>
-                  <p className="text-muted-foreground mb-3">
-                    Schedule a discovery call to discuss your project needs
-                  </p>
-                  <Button variant="link" className="p-0 h-auto text-accent group">
-                    Book a consultation 
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Button>
-                </div>
-              </div>
-            </div>
+            
             
             <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-white/20 shadow-lg">
               <h3 className="font-semibold text-xl mb-6">Why work with me?</h3>
@@ -103,10 +84,12 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl border border-border p-8 shadow-lg relative">
+          <div className="bg-white/90 backdrop-blur-sm border border-border p-8 shadow-lg relative rounded-xl">
             {/* Decorative elements */}
             <div className="absolute -top-6 -right-6 w-12 h-12 rounded-full border-4 border-dotted border-accent/30 animate-spin-slow"></div>
-            <div className="absolute -bottom-6 -left-6 w-16 h-16 rounded-full border-4 border-dashed border-primary/30 animate-spin-slow" style={{ animationDirection: "reverse" }}></div>
+            <div className="absolute -bottom-6 -left-6 w-16 h-16 rounded-full border-4 border-dashed border-primary/30 animate-spin-slow" style={{
+            animationDirection: "reverse"
+          }}></div>
             
             <h3 className="text-2xl font-semibold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Send a Message</h3>
             
@@ -116,25 +99,14 @@ const Contact = () => {
                   <label htmlFor="name" className="text-sm font-medium">
                     Name
                   </label>
-                  <Input 
-                    id="name" 
-                    placeholder="Your name" 
-                    required 
-                    className="rounded-lg border-border/50 focus:border-primary focus:ring-2 focus:ring-primary/20" 
-                  />
+                  <Input id="name" placeholder="Your name" required className="rounded-lg border-border/50 focus:border-primary focus:ring-2 focus:ring-primary/20" />
                 </div>
                 
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">
                     Email
                   </label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    placeholder="your@email.com" 
-                    required 
-                    className="rounded-lg border-border/50 focus:border-primary focus:ring-2 focus:ring-primary/20" 
-                  />
+                  <Input id="email" type="email" placeholder="your@email.com" required className="rounded-lg border-border/50 focus:border-primary focus:ring-2 focus:ring-primary/20" />
                 </div>
               </div>
               
@@ -142,39 +114,23 @@ const Contact = () => {
                 <label htmlFor="subject" className="text-sm font-medium">
                   Subject
                 </label>
-                <Input 
-                  id="subject" 
-                  placeholder="What's this regarding?" 
-                  required 
-                  className="rounded-lg border-border/50 focus:border-primary focus:ring-2 focus:ring-primary/20"
-                />
+                <Input id="subject" placeholder="What's this regarding?" required className="rounded-lg border-border/50 focus:border-primary focus:ring-2 focus:ring-primary/20" />
               </div>
               
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium">
                   Message
                 </label>
-                <Textarea 
-                  id="message" 
-                  placeholder="Tell me about your project..." 
-                  rows={5} 
-                  required
-                  className="rounded-lg border-border/50 focus:border-primary focus:ring-2 focus:ring-primary/20"
-                />
+                <Textarea id="message" placeholder="Tell me about your project..." rows={5} required className="rounded-lg border-border/50 focus:border-primary focus:ring-2 focus:ring-primary/20" />
               </div>
               
-              <Button 
-                type="submit" 
-                className="w-full rounded-full py-6 bg-gradient-to-r from-primary via-secondary to-accent hover:opacity-90 transition-opacity"
-              >
+              <Button type="submit" className="w-full rounded-full py-6 bg-gradient-to-r from-primary via-secondary to-accent hover:opacity-90 transition-opacity">
                 Send Message
               </Button>
             </form>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;

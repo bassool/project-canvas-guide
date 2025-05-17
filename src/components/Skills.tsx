@@ -63,7 +63,7 @@ const SkillCard = ({
           <div className={`p-3 rounded-xl ${colorClasses[skill.color]}`}>
             <Icon className="h-6 w-6" />
           </div>
-          <CardTitle className="text-foreground">{skill.title}</CardTitle>
+          <CardTitle className="text-gray-900">{skill.title}</CardTitle>
         </div>
       </CardHeader>
       <CardContent className="bg-transparent">

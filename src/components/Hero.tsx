@@ -69,16 +69,16 @@ const Hero = () => {
             />
           </div>
           
-          {/* Floating element - moved outside the image container to hover above */}
-          <div className="absolute -right-6 top-3/4 bg-card/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20" style={{ animationDelay: "1s" }}>
+          {/* Floating element - improved contrast */}
+          <div className="absolute -right-6 top-3/4 bg-white/90 dark:bg-card/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20" style={{ animationDelay: "1s" }}>
             <div className="flex items-center gap-2">
               <Wand className="h-5 w-5 text-primary" />
-              <span className="font-medium text-sm">Creative Direction</span>
+              <span className="font-medium text-sm text-foreground">Creative Direction</span>
             </div>
           </div>
           
-          {/* Stats bubble - moved outside the image container to hover above */}
-          <div className="absolute -left-6 top-1/4 bg-card/90 backdrop-blur-sm py-2 px-4 rounded-full shadow-lg border border-border animate-float z-20" style={{ animationDelay: "1.5s" }}>
+          {/* Stats bubble - improved contrast */}
+          <div className="absolute -left-6 top-1/4 bg-white/90 dark:bg-card/90 backdrop-blur-sm py-2 px-4 rounded-full shadow-lg border border-border animate-float z-20" style={{ animationDelay: "1.5s" }}>
             <div className="flex items-center gap-2">
               <span className="font-bold text-primary">10+</span>
               <span className="text-xs text-foreground">Years Experience</span>

@@ -38,8 +38,8 @@ const About = () => {
               />
             </div>
             
-            {/* Floating award badge - positioned above image */}
-            <div className="absolute -right-6 -bottom-6 bg-card backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20" style={{ animationDelay: "1s" }}>
+            {/* Floating award badge - improved contrast */}
+            <div className="absolute -right-6 -bottom-6 bg-white/90 dark:bg-card/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20" style={{ animationDelay: "1s" }}>
               <div className="flex items-center gap-2">
                 <Trophy className="h-5 w-5 text-primary" />
                 <span className="font-medium text-sm text-foreground">Award Winner</span>
@@ -49,11 +49,11 @@ const About = () => {
           
           <div className="space-y-8 order-1 lg:order-2">
             <div className="prose prose-lg">
-              <p className="text-xl leading-relaxed">
+              <p className="text-xl leading-relaxed text-foreground">
                 I'm a creative director and project manager with over a decade of experience bridging the gap between innovative design and efficient execution.
               </p>
               
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-foreground/80 leading-relaxed">
                 My unique perspective comes from having worked on both the creative and management sides of projects, allowing me to speak both languages fluently. I believe that the best work happens at the intersection of bold creativity and thoughtful organization.
               </p>
             </div>
@@ -63,17 +63,17 @@ const About = () => {
             </div>
             
             <div className="grid gap-6 sm:grid-cols-3">
-              <div className="bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
+              <div className="bg-white dark:bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
                 <p className="text-4xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent">10+</p>
-                <p className="text-muted-foreground">Years Experience</p>
+                <p className="text-foreground/80">Years Experience</p>
               </div>
-              <div className="bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
+              <div className="bg-white dark:bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
                 <p className="text-4xl font-bold bg-gradient-to-br from-secondary to-accent bg-clip-text text-transparent">75+</p>
-                <p className="text-muted-foreground">Projects Completed</p>
+                <p className="text-foreground/80">Projects Completed</p>
               </div>
-              <div className="bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
+              <div className="bg-white dark:bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
                 <p className="text-4xl font-bold bg-gradient-to-br from-accent to-primary bg-clip-text text-transparent">15+</p>
-                <p className="text-muted-foreground">Industry Awards</p>
+                <p className="text-foreground/80">Industry Awards</p>
               </div>
             </div>
             
@@ -88,15 +88,15 @@ const About = () => {
         
         <div className="mt-20 pt-10 border-t border-secondary/20">
           <div className="grid gap-10 md:grid-cols-2">
-            <div className="bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
+            <div className="bg-white dark:bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
               <h3 className="text-2xl font-semibold mb-4 text-primary">My Approach</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-foreground/80 leading-relaxed">
                 I believe in starting with clear strategic objectives, developing creative concepts that truly resonate with audiences, and executing with precision and adaptability. This balanced approach ensures both creative excellence and project success.
               </p>
             </div>
-            <div className="bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
+            <div className="bg-white dark:bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
               <h3 className="text-2xl font-semibold mb-4 text-secondary">Background</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-foreground/80 leading-relaxed">
                 With a background in design and business administration, I've worked with agencies, in-house teams, and as an independent consultant across diverse industries including technology, fashion, and non-profit organizations.
               </p>
             </div>

@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
@@ -74,7 +73,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
     )} style={{ animationDelay: `${project.id * 100}ms` }}>
       {project.featured && (
         <div className="absolute top-4 right-4 z-10">
-          <Badge className="bg-accent text-white rounded-full flex items-center gap-1 px-3">
+          <Badge className="bg-accent text-black font-medium rounded-full flex items-center gap-1 px-3">
             <Star className="h-3 w-3" /> Featured
           </Badge>
         </div>
@@ -91,13 +90,13 @@ const ProjectCard = ({ project }: { project: Project }) => {
         />
       </div>
       
-      <div className="p-6 bg-gradient-to-br from-white to-secondary/5">
-        <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
-        <p className="text-muted-foreground mb-4">{project.description}</p>
+      <div className="p-6 bg-white dark:bg-card">
+        <h3 className="text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">{project.title}</h3>
+        <p className="text-foreground/80 mb-4">{project.description}</p>
         
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tags.map((tag, index) => (
-            <Badge key={index} variant="outline" className="bg-white/50 backdrop-blur-sm">{tag}</Badge>
+            <Badge key={index} variant="outline" className="bg-secondary/20 text-foreground">{tag}</Badge>
           ))}
         </div>
         

@@ -3,7 +3,7 @@ import React from "react";
 import { Calendar, Briefcase, Users, Rocket, Palette, Star, Sparkles } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
-interface Service {
+interface Skill {
   icon: React.ElementType;
   title: string;
   description: string;
@@ -11,7 +11,7 @@ interface Service {
   color: "primary" | "secondary" | "accent";
 }
 
-const services: Service[] = [
+const skills: Skill[] = [
   {
     icon: Palette,
     title: "Creative Direction",
@@ -56,8 +56,8 @@ const services: Service[] = [
   }
 ];
 
-const ServiceCard = ({ service }: { service: Service }) => {
-  const Icon = service.icon;
+const SkillCard = ({ skill }: { skill: Skill }) => {
+  const Icon = skill.icon;
   const colorClasses = {
     primary: "bg-primary/10 text-primary border-primary/20",
     secondary: "bg-secondary/10 text-secondary border-secondary/20",
@@ -66,27 +66,27 @@ const ServiceCard = ({ service }: { service: Service }) => {
   
   return (
     <Card className="overflow-hidden border-border card-hover bg-gradient-to-br from-white to-secondary/5">
-      <div className={`h-1 bg-${service.color}`} />
+      <div className={`h-1 bg-${skill.color}`} />
       <CardHeader>
         <div className="flex items-center gap-3">
-          <div className={`p-3 rounded-xl ${colorClasses[service.color]}`}>
+          <div className={`p-3 rounded-xl ${colorClasses[skill.color]}`}>
             <Icon className="h-6 w-6" />
           </div>
-          <CardTitle>{service.title}</CardTitle>
+          <CardTitle>{skill.title}</CardTitle>
         </div>
       </CardHeader>
       <CardContent>
         <CardDescription className="text-foreground/80">
-          {service.description}
+          {skill.description}
         </CardDescription>
       </CardContent>
     </Card>
   );
 };
 
-const Services = () => {
+const Skills = () => {
   return (
-    <section id="services" className="py-20 md:py-28 relative">
+    <section id="skills" className="py-20 md:py-28 relative">
       {/* Decorative blobs */}
       <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -right-64 top-0"></div>
       <div className="blob-shape bg-secondary/10 w-[400px] h-[400px] -left-32 bottom-0"></div>
@@ -111,16 +111,16 @@ const Services = () => {
             <span>What I can do for you</span>
           </div>
           
-          <h2 className="section-title">Services</h2>
+          <h2 className="section-title">Skills</h2>
           <p className="section-subtitle max-w-2xl mx-auto">
             Balancing creative excellence with strategic execution
           </p>
         </div>
         
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
+          {skills.map((skill, index) => (
             <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
-              <ServiceCard service={service} />
+              <SkillCard skill={skill} />
             </div>
           ))}
         </div>
@@ -132,7 +132,7 @@ const Services = () => {
           
           <div className="flex flex-col md:flex-row gap-8 items-center relative z-10">
             <div className="text-center md:text-left md:flex-1">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-3 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Need a tailored service package?</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-3 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Need a tailored skill package?</h3>
               <p className="text-muted-foreground text-lg">Contact me to discuss how I can help with your specific project needs.</p>
             </div>
             <button 
@@ -151,4 +151,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Skills;

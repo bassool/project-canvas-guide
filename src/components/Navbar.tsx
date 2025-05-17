@@ -59,10 +59,10 @@ const Navbar = () => {
             Work
           </button>
           <button 
-            onClick={() => scrollToSection("services")} 
+            onClick={() => scrollToSection("skills")} 
             className="nav-link font-medium"
           >
-            Services
+            Skills
           </button>
           <button 
             onClick={() => scrollToSection("about")} 

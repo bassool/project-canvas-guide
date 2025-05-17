@@ -5,6 +5,17 @@ import { Separator } from "@/components/ui/separator";
 import { Award, Download, Trophy } from "lucide-react";
 
 const About = () => {
+  // Function to handle resume download
+  const handleDownloadResume = () => {
+    // Create a link to download the resume
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // Path to your resume file
+    link.download = 'my-resume.pdf'; // Name for the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="about" className="py-20 md:py-28 relative overflow-hidden">
       {/* Background decoration */}
@@ -78,7 +89,11 @@ const About = () => {
             </div>
             
             <div className="pt-4">
-              <Button size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group">
+              <Button 
+                size="lg" 
+                className="rounded-full pl-6 pr-5 py-6 gap-2 group"
+                onClick={handleDownloadResume}
+              >
                 Download Resume 
                 <Download className="h-4 w-4 transition-transform group-hover:translate-y-1" />
               </Button>

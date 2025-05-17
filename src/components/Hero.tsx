@@ -38,7 +38,7 @@ const Hero = () => {
             <span className="block">Bringing</span>
             <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-[#d8ec54]">creative vision</span>
             <span className="block">to life with</span>
-            <span className="block bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">precise execution</span>
+            <span className="block bg-gradient-to-r from-secondary to-accent bg-clip-text text-[#d8ec54]">precise execution</span>
           </h1>
           
           <p className="text-lg sm:text-xl text-foreground/80 max-w-md">

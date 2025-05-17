@@ -1,9 +1,7 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Award, Download, Trophy } from "lucide-react";
-
 const About = () => {
   // Function to handle resume download
   const handleDownloadResume = () => {
@@ -15,9 +13,7 @@ const About = () => {
     link.click();
     document.body.removeChild(link);
   };
-
-  return (
-    <section id="about" className="py-20 md:py-28 relative overflow-hidden">
+  return <section id="about" className="py-20 md:py-28 relative overflow-hidden">
       {/* Background decoration */}
       <div className="blob-shape bg-primary/10 w-[600px] h-[600px] -top-80 right-0"></div>
       <div className="blob-shape bg-secondary/10 w-[500px] h-[500px] top-1/2 -left-64"></div>
@@ -42,14 +38,12 @@ const About = () => {
             <div className="absolute -bottom-8 -right-8 w-16 h-16 border-b-4 border-r-4 border-accent/20"></div>
             
             <div className="relative z-10 overflow-hidden rounded-2xl gradient-border shadow-xl animate-float">
-              <img 
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
-                alt="Portrait of me working" 
-                className="w-full aspect-[4/3] object-cover"
-              />
+              <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" alt="Portrait of me working" className="w-full aspect-[4/3] object-cover" />
               
               {/* Floating award badge */}
-              <div className="absolute -right-6 bottom-12 bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float" style={{ animationDelay: "1s" }}>
+              <div className="absolute -right-6 bottom-12 bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float" style={{
+              animationDelay: "1s"
+            }}>
                 <div className="flex items-center gap-2">
                   <Trophy className="h-5 w-5 text-primary" />
                   <span className="font-medium text-sm">Award Winner</span>
@@ -60,9 +54,7 @@ const About = () => {
           
           <div className="space-y-8 order-1 lg:order-2">
             <div className="prose prose-lg">
-              <p className="text-xl leading-relaxed">
-                I'm a creative director and project manager with over a decade of experience bridging the gap between innovative design and efficient execution.
-              </p>
+              <p className="text-xl leading-relaxed">I'm Bassel!! A creative director and project manager with a true passion for creating and managing projects, with  experience bridging the gap between innovative design and efficient execution.</p>
               
               <p className="text-muted-foreground leading-relaxed">
                 My unique perspective comes from having worked on both the creative and management sides of projects, allowing me to speak both languages fluently. I believe that the best work happens at the intersection of bold creativity and thoughtful organization.
@@ -89,11 +81,7 @@ const About = () => {
             </div>
             
             <div className="pt-4">
-              <Button 
-                size="lg" 
-                className="rounded-full pl-6 pr-5 py-6 gap-2 group"
-                onClick={handleDownloadResume}
-              >
+              <Button size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group" onClick={handleDownloadResume}>
                 Download Resume 
                 <Download className="h-4 w-4 transition-transform group-hover:translate-y-1" />
               </Button>
@@ -118,8 +106,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

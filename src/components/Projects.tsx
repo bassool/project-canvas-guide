@@ -83,7 +83,7 @@ const ProjectCard = ({
         <p className="mb-4 flex-grow text-slate-900">{project.description}</p>
         
         <div className="flex flex-wrap gap-2 mb-4">
-          {project.tags.map((tag, index) => <Badge key={index} variant="outline" className="bg-secondary/20 text-foreground">{tag}</Badge>)}
+          {project.tags.map((tag, index) => <Badge key={index} variant="outline" className="text-foreground bg-slate-800">{tag}</Badge>)}
         </div>
         
         <Button variant="outline" size="sm" className="mt-2 w-full rounded-full group-hover:bg-primary group-hover:text-white transition-colors duration-300">

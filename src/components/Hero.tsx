@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="space-y-8 animate-fade-in">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-4">
             <Sparkles className="h-4 w-4 mr-2" />
-            <span>Creating magic through design & management</span>
+            <span className="text-[#d8ec54]">Creating magic through design & management</span>
           </div>
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight">
@@ -46,7 +46,7 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" onClick={scrollToWork} className="rounded-full px-6 group">
+            <Button size="lg" onClick={scrollToWork} className="rounded-full px-6 group bg-[#d8ec54]">
               View my work 
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>

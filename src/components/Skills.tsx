@@ -57,7 +57,7 @@ const SkillCard = ({
     accent: "bg-accent/10 text-accent border-accent/20"
   };
   return <Card className="overflow-hidden border-border card-hover bg-gradient-to-br from-white dark:from-card to-secondary/5">
-      <div className={`h-1 bg-${skill.color}`} />
+      <div className="bg-sky-300" />
       <CardHeader className="bg-transparent">
         <div className="flex items-center gap-3">
           <div className={`p-3 rounded-xl ${colorClasses[skill.color]}`}>

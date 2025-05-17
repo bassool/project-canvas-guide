@@ -1,12 +1,9 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Award, Download, Trophy } from "lucide-react";
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 md:py-28 relative overflow-hidden">
+  return <section id="about" className="py-20 md:py-28 relative overflow-hidden">
       {/* Background decoration */}
       <div className="blob-shape bg-primary/10 w-[600px] h-[600px] -top-80 right-0"></div>
       <div className="blob-shape bg-secondary/10 w-[500px] h-[500px] top-1/2 -left-64"></div>
@@ -31,15 +28,13 @@ const About = () => {
             <div className="absolute -bottom-8 -right-8 w-16 h-16 border-b-4 border-r-4 border-accent/20"></div>
             
             <div className="relative z-10 overflow-hidden rounded-2xl gradient-border shadow-xl animate-float">
-              <img 
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
-                alt="Portrait of me working" 
-                className="w-full aspect-[4/3] object-cover"
-              />
+              <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" alt="Portrait of me working" className="w-full aspect-[4/3] object-cover" />
             </div>
             
             {/* Floating award badge - improved contrast */}
-            <div className="absolute -right-6 -bottom-6 bg-white/90 dark:bg-card/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20" style={{ animationDelay: "1s" }}>
+            <div className="absolute -right-6 -bottom-6 bg-white/90 dark:bg-card/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20" style={{
+            animationDelay: "1s"
+          }}>
               <div className="flex items-center gap-2">
                 <Trophy className="h-5 w-5 text-primary" />
                 <span className="font-medium text-sm text-foreground">Award Winner</span>
@@ -64,15 +59,15 @@ const About = () => {
             
             <div className="grid gap-6 sm:grid-cols-3">
               <div className="bg-white dark:bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
-                <p className="text-4xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent">10+</p>
-                <p className="text-foreground/80">Years Experience</p>
+                <p className="text-4xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-slate-800">10+</p>
+                <p className="text-slate-800">Years Experience</p>
               </div>
               <div className="bg-white dark:bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
-                <p className="text-4xl font-bold bg-gradient-to-br from-secondary to-accent bg-clip-text text-transparent">75+</p>
-                <p className="text-foreground/80">Projects Completed</p>
+                <p className="text-4xl font-bold bg-gradient-to-br from-secondary to-accent bg-clip-text text-slate-900">75+</p>
+                <p className="text-slate-800">Projects Completed</p>
               </div>
               <div className="bg-white dark:bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
-                <p className="text-4xl font-bold bg-gradient-to-br from-accent to-primary bg-clip-text text-transparent">15+</p>
+                <p className="text-4xl font-bold bg-gradient-to-br from-accent to-primary bg-clip-text text-slate-900">15+</p>
                 <p className="text-foreground/80">Industry Awards</p>
               </div>
             </div>
@@ -89,22 +84,20 @@ const About = () => {
         <div className="mt-20 pt-10 border-t border-secondary/20">
           <div className="grid gap-10 md:grid-cols-2">
             <div className="bg-white dark:bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
-              <h3 className="text-2xl font-semibold mb-4 text-primary">My Approach</h3>
-              <p className="text-foreground/80 leading-relaxed">
+              <h3 className="text-2xl font-semibold mb-4 text-slate-500">My Approach</h3>
+              <p className="leading-relaxed text-slate-900">
                 I believe in starting with clear strategic objectives, developing creative concepts that truly resonate with audiences, and executing with precision and adaptability. This balanced approach ensures both creative excellence and project success.
               </p>
             </div>
             <div className="bg-white dark:bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
-              <h3 className="text-2xl font-semibold mb-4 text-secondary">Background</h3>
-              <p className="text-foreground/80 leading-relaxed">
+              <h3 className="text-2xl font-semibold mb-4 text-slate-500">Background</h3>
+              <p className="leading-relaxed text-slate-900">
                 With a background in design and business administration, I've worked with agencies, in-house teams, and as an independent consultant across diverse industries including technology, fashion, and non-profit organizations.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +16,7 @@
     --primary: 195 70% 70%;  /* Baby blue */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 30 30% 60%;  /* Soft brown */
+    --secondary: 25 47% 26%;  /* Darker brown: #4f3727 */
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --accent: 15 40% 70%;  /* Muted terracotta */
@@ -59,7 +58,7 @@
     --primary: 195 70% 40%;  /* Darker baby blue for dark mode */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 30 30% 40%;  /* Darker soft brown for dark mode */
+    --secondary: 25 47% 18%;  /* Darker brown for dark mode */
     --secondary-foreground: 210 40% 98%;
 
     --accent: 15 40% 50%;  /* Darker terracotta for dark mode */

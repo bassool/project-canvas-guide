@@ -6,11 +6,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-gradient-to-t from-secondary/10 via-background to-background pt-20 pb-10">
+    <footer className="bg-gradient-to-t from-muted via-background to-background pt-20 pb-10">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0 text-center md:text-left">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Portfolio</h2>
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Portfolio</h2>
             <p className="text-muted-foreground">Creative Director & Project Manager</p>
           </div>
           

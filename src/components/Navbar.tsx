@@ -33,7 +33,7 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4",
         scrolled 
-          ? "bg-white/80 backdrop-blur-lg shadow-md" 
+          ? "bg-background/80 backdrop-blur-lg shadow-md" 
           : "bg-transparent"
       )}
     >
@@ -80,7 +80,7 @@ const Navbar = () => {
         
         <Button 
           onClick={() => scrollToSection("contact")} 
-          className="hidden sm:flex items-center gap-2 rounded-full px-6 bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity"
+          className="hidden sm:flex items-center gap-2 rounded-full px-6 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity"
         >
           <Sparkles className="h-4 w-4" />
           Get in touch

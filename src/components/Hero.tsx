@@ -59,7 +59,7 @@ const Hero = () => {
         <div className="relative aspect-square animate-float">
           {/* Decorative elements */}
           <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full border-4 border-dashed border-primary/30 animate-spin-slow"></div>
-          <div className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full border-4 border-dotted border-accent/30 animate-spin-slow" style={{ animationDirection: "reverse" }}></div>
+          <div className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full border-4 border-dotted border-secondary/30 animate-spin-slow" style={{ animationDirection: "reverse" }}></div>
           
           <div className="relative z-10 overflow-hidden rounded-3xl gradient-border shadow-xl aspect-square">
             <img 
@@ -69,15 +69,15 @@ const Hero = () => {
             />
             
             {/* Floating element */}
-            <div className="absolute -right-6 -bottom-6 bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float" style={{ animationDelay: "1s" }}>
+            <div className="absolute -right-6 -bottom-6 bg-card/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float" style={{ animationDelay: "1s" }}>
               <div className="flex items-center gap-2">
-                <Wand className="h-5 w-5 text-accent" />
+                <Wand className="h-5 w-5 text-primary" />
                 <span className="font-medium text-sm">Creative Direction</span>
               </div>
             </div>
             
             {/* Stats bubble */}
-            <div className="absolute -left-6 top-1/3 bg-white/90 backdrop-blur-sm py-2 px-4 rounded-full shadow-lg border border-border animate-float" style={{ animationDelay: "1.5s" }}>
+            <div className="absolute -left-6 top-1/3 bg-card/90 backdrop-blur-sm py-2 px-4 rounded-full shadow-lg border border-border animate-float" style={{ animationDelay: "1.5s" }}>
               <div className="flex items-center gap-2">
                 <span className="font-bold text-primary">10+</span>
                 <span className="text-xs">Years Experience</span>

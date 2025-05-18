@@ -21,7 +21,7 @@ interface Project {
 const projects: Project[] = [{
   id: 1,
   title: "Brand Identity Redesign",
-  description: "Complete visual overhaul for tech startup focusing on modern, minimal aesthetics.",
+  description: "Directed and produced full album along with and marketing strategy, social media and video direction, and live performance planning and performing",
   category: "creative",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
   tags: ["Branding", "Design Direction", "Creative Strategy"],

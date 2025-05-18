@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Rocket, Award, Star, ArrowLeft, ArrowRight } from "lucide-react";
+import { Rocket, Award, Star, ArrowLeft, ArrowRight, X } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 
@@ -116,9 +116,12 @@ const ProjectCard = ({
 }: {
   project: Project;
 }) => {
-  return <div className={cn("project-card group animate-fade-in card-hover border-glow flex flex-col h-full", project.featured ? "relative" : "")} style={{
-    animationDelay: `${project.id * 100}ms`
-  }}>
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className={cn("project-card group animate-fade-in card-hover border-glow flex flex-col h-full", project.featured ? "relative" : "")} style={{
+      animationDelay: `${project.id * 100}ms`
+    }}>
       {project.featured && <div className="absolute top-4 right-4 z-10">
           <Badge className="bg-accent text-black font-medium rounded-full flex items-center gap-1 px-3">
             <Star className="h-3 w-3" /> Featured
@@ -140,80 +143,98 @@ const ProjectCard = ({
           {project.tags.map((tag, index) => <Badge key={index} variant="outline" className="text-foreground bg-slate-800">{tag}</Badge>)}
         </div>
         
-        <Popover>
+        <Popover open={isOpen} onOpenChange={setIsOpen}>
           <PopoverTrigger asChild>
             <Button variant="outline" size="sm" className="mt-2 w-full rounded-full group-hover:bg-primary group-hover:text-white transition-colors duration-300">
               View Project Details
             </Button>
           </PopoverTrigger>
-          <PopoverContent className="w-[90vw] max-w-4xl p-0 bg-background border border-primary/20 shadow-2xl" side="bottom" align="center" sideOffset={20}>
-            <div className="p-6 border-b">
-              <h3 className="text-2xl font-bold">{project.title}</h3>
-            </div>
-            
-            {project.galleryImages && project.galleryImages.length > 0 && (
-              <div className="relative">
-                <Carousel className="w-full">
-                  <CarouselContent>
-                    {project.galleryImages.map((img, index) => (
-                      <CarouselItem key={index}>
-                        <div className="p-1">
-                          <div className="aspect-video overflow-hidden rounded-md">
-                            <img 
-                              src={img} 
-                              alt={`${project.title} gallery image ${index + 1}`}
-                              className="w-full h-full object-cover"
-                            />
-                          </div>
-                        </div>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                  <CarouselPrevious className="left-4" />
-                  <CarouselNext className="right-4" />
-                </Carousel>
+          <div className={cn("fixed inset-0 z-50 flex items-center justify-center", 
+                             isOpen ? "bg-black/60 backdrop-blur-sm" : "pointer-events-none opacity-0")}>
+            <PopoverContent className="w-[90vw] max-w-4xl p-0 bg-background border border-primary/20 shadow-2xl" 
+                           side="bottom" align="center" sideOffset={20}>
+              <div className="p-6 border-b relative">
+                <h3 className="text-2xl font-bold">{project.title}</h3>
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className="absolute right-4 top-4 rounded-full"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <X className="h-5 w-5" />
+                </Button>
               </div>
-            )}
-            
-            <div className="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="space-y-6">
-                <div>
-                  <h4 className="text-lg font-semibold text-primary mb-2">Tools Used</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tools?.map((tool, index) => (
-                      <Badge key={index} variant="secondary" className="text-sm">{tool}</Badge>
-                    ))}
+              
+              {project.galleryImages && project.galleryImages.length > 0 && (
+                <div className="relative">
+                  <Carousel className="w-full">
+                    <CarouselContent>
+                      {project.galleryImages.map((img, index) => (
+                        <CarouselItem key={index}>
+                          <div className="p-1">
+                            <div className="aspect-video overflow-hidden rounded-md">
+                              <img 
+                                src={img} 
+                                alt={`${project.title} gallery image ${index + 1}`}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="left-4" />
+                    <CarouselNext className="right-4" />
+                  </Carousel>
+                </div>
+              )}
+              
+              <div className="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="text-lg font-semibold text-primary mb-2">Tools Used</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tools?.map((tool, index) => (
+                        <Badge key={index} variant="secondary" className="text-sm">{tool}</Badge>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-lg font-semibold text-primary mb-2">Impact</h4>
+                    <p className="text-foreground/90">{project.impact}</p>
                   </div>
                 </div>
                 
-                <div>
-                  <h4 className="text-lg font-semibold text-primary mb-2">Impact</h4>
-                  <p className="text-foreground/90">{project.impact}</p>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="text-lg font-semibold text-primary mb-2">Challenge</h4>
+                    <p className="text-foreground/90">{project.challenge}</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-lg font-semibold text-primary mb-2">Solution</h4>
+                    <p className="text-foreground/90">{project.solution}</p>
+                  </div>
                 </div>
               </div>
               
-              <div className="space-y-6">
-                <div>
-                  <h4 className="text-lg font-semibold text-primary mb-2">Challenge</h4>
-                  <p className="text-foreground/90">{project.challenge}</p>
-                </div>
-                
-                <div>
-                  <h4 className="text-lg font-semibold text-primary mb-2">Solution</h4>
-                  <p className="text-foreground/90">{project.solution}</p>
-                </div>
+              <div className="p-6 pt-0 flex justify-end">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="rounded-full" 
+                  onClick={() => setIsOpen(false)}
+                >
+                  Close
+                </Button>
               </div>
-            </div>
-            
-            <div className="p-6 pt-0 flex justify-end">
-              <Button variant="outline" size="sm" className="rounded-full">
-                Close
-              </Button>
-            </div>
-          </PopoverContent>
+            </PopoverContent>
+          </div>
         </Popover>
       </div>
-    </div>;
+    </div>
+  );
 };
 
 const Projects = () => {

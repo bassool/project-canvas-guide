@@ -153,14 +153,6 @@ const ProjectCard = ({
           <DialogContent className="max-w-lg p-0 border border-primary/20 rounded-lg overflow-hidden">
             <DialogHeader className="p-5 border-b">
               <DialogTitle className="text-2xl font-bold">{project.title}</DialogTitle>
-              <Button 
-                variant="ghost" 
-                size="icon" 
-                className="absolute right-4 top-4 rounded-full"
-                onClick={() => setIsOpen(false)}
-              >
-                <X className="h-5 w-5" />
-              </Button>
             </DialogHeader>
             
             {project.galleryImages && project.galleryImages.length > 0 && (

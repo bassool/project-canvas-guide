@@ -33,8 +33,8 @@ const Contact = () => {
             <span>Let's collaborate</span>
           </div>
           
-          <h2 className="section-title text-slate-500">Get In Touch</h2>
-          <p className="section-subtitle max-w-2xl mx-auto text-slate-500">
+          <h2 className="section-title text-slate-700">Get In Touch</h2>
+          <p className="section-subtitle max-w-2xl mx-auto text-slate-700">
             Let's discuss how we can collaborate on your next project
           </p>
         </div>

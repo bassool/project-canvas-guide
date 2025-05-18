@@ -67,7 +67,7 @@ const SkillCard = ({
         </div>
       </CardHeader>
       <CardContent className="bg-transparent">
-        <CardDescription className="text-foreground/80 text-sm">
+        <CardDescription className="text-sm text-slate-900">
           {skill.description}
         </CardDescription>
       </CardContent>

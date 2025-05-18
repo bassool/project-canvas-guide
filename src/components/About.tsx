@@ -37,7 +37,7 @@ const About = () => {
           }}>
               <div className="flex items-center gap-2">
                 <Trophy className="h-5 w-5 text-primary" />
-                <span className="font-medium text-sm text-foreground">Award Winner</span>
+                <span className="font-medium text-sm text-slate-900">Award Winner</span>
               </div>
             </div>
           </div>

@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
@@ -150,89 +151,97 @@ const ProjectCard = ({
               View Project Details
             </Button>
           </PopoverTrigger>
-          <div className={cn("fixed inset-0 z-50 flex items-center justify-center transition-all", 
-                            isOpen ? "bg-black/60 backdrop-blur-sm" : "pointer-events-none opacity-0")}
-               style={{transition: "all 0.1s ease-out"}}>
-            <PopoverContent className="w-[90vw] max-w-3xl p-0 bg-background border border-primary/20 shadow-2xl" 
-                           side="bottom" align="center" sideOffset={20}>
-              <div className="p-6 border-b relative">
-                <h3 className="text-2xl font-bold">{project.title}</h3>
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
-                  className="absolute right-4 top-4 rounded-full"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <X className="h-5 w-5" />
-                </Button>
-              </div>
-              
-              {project.galleryImages && project.galleryImages.length > 0 && (
-                <div className="relative">
-                  <Carousel className="w-full">
-                    <CarouselContent>
-                      {project.galleryImages.map((img, index) => (
-                        <CarouselItem key={index}>
-                          <div className="p-1">
-                            <div className="aspect-video overflow-hidden rounded-md">
-                              <img 
-                                src={img} 
-                                alt={`${project.title} gallery image ${index + 1}`}
-                                className="w-full h-full object-cover"
-                              />
-                            </div>
-                          </div>
-                        </CarouselItem>
-                      ))}
-                    </CarouselContent>
-                    <CarouselPrevious className="left-4" />
-                    <CarouselNext className="right-4" />
-                  </Carousel>
+          
+          {/* Fixed position overlay with instant backdrop blur */}
+          {isOpen && (
+            <div 
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
+              style={{ transition: "all 0s" }}
+              onClick={() => setIsOpen(false)}
+            >
+              <div 
+                className="relative w-[90vw] max-w-2xl bg-background border border-primary/20 shadow-2xl rounded-lg"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="p-5 border-b relative">
+                  <h3 className="text-2xl font-bold">{project.title}</h3>
+                  <Button 
+                    variant="ghost" 
+                    size="icon" 
+                    className="absolute right-4 top-4 rounded-full"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <X className="h-5 w-5" />
+                  </Button>
                 </div>
-              )}
-              
-              <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-2">Tools Used</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {project.tools?.map((tool, index) => (
-                        <Badge key={index} variant="secondary" className="text-sm">{tool}</Badge>
-                      ))}
+                
+                {project.galleryImages && project.galleryImages.length > 0 && (
+                  <div className="relative p-3">
+                    <Carousel className="w-full">
+                      <CarouselContent>
+                        {project.galleryImages.map((img, index) => (
+                          <CarouselItem key={index}>
+                            <div className="p-1">
+                              <div className="aspect-video overflow-hidden rounded-md">
+                                <img 
+                                  src={img} 
+                                  alt={`${project.title} gallery image ${index + 1}`}
+                                  className="w-full h-full object-cover"
+                                />
+                              </div>
+                            </div>
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      <CarouselPrevious className="left-4" />
+                      <CarouselNext className="right-4" />
+                    </Carousel>
+                  </div>
+                )}
+                
+                <div className="p-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="text-lg font-semibold text-primary mb-2">Tools Used</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {project.tools?.map((tool, index) => (
+                          <Badge key={index} variant="secondary" className="text-sm">{tool}</Badge>
+                        ))}
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-lg font-semibold text-primary mb-2">Impact</h4>
+                      <p className="text-foreground/90">{project.impact}</p>
                     </div>
                   </div>
                   
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-2">Impact</h4>
-                    <p className="text-foreground/90">{project.impact}</p>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="text-lg font-semibold text-primary mb-2">Challenge</h4>
+                      <p className="text-foreground/90">{project.challenge}</p>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-lg font-semibold text-primary mb-2">Solution</h4>
+                      <p className="text-foreground/90">{project.solution}</p>
+                    </div>
                   </div>
                 </div>
                 
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-2">Challenge</h4>
-                    <p className="text-foreground/90">{project.challenge}</p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-2">Solution</h4>
-                    <p className="text-foreground/90">{project.solution}</p>
-                  </div>
+                <div className="p-4 pt-0 flex justify-end">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="rounded-full" 
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Close
+                  </Button>
                 </div>
               </div>
-              
-              <div className="p-4 pt-0 flex justify-end">
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  className="rounded-full" 
-                  onClick={() => setIsOpen(false)}
-                >
-                  Close
-                </Button>
-              </div>
-            </PopoverContent>
-          </div>
+            </div>
+          )}
         </Popover>
       </div>
     </div>
@@ -309,3 +318,4 @@ const Projects = () => {
     </section>;
 };
 export default Projects;
+

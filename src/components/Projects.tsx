@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Rocket, Award, Star, ArrowLeft, ArrowRight } from "lucide-react";
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 
 // Define project types
@@ -140,15 +140,15 @@ const ProjectCard = ({
           {project.tags.map((tag, index) => <Badge key={index} variant="outline" className="text-foreground bg-slate-800">{tag}</Badge>)}
         </div>
         
-        <HoverCard>
-          <HoverCardTrigger asChild>
+        <Popover>
+          <PopoverTrigger asChild>
             <Button variant="outline" size="sm" className="mt-2 w-full rounded-full group-hover:bg-primary group-hover:text-white transition-colors duration-300">
               View Project Details
             </Button>
-          </HoverCardTrigger>
-          <HoverCardContent className="w-96 p-0 bg-background border border-primary/20">
-            <div className="p-4 border-b">
-              <h4 className="text-lg font-bold">{project.title}</h4>
+          </PopoverTrigger>
+          <PopoverContent className="w-[90vw] max-w-4xl p-0 bg-background border border-primary/20 shadow-2xl" side="bottom" align="center" sideOffset={20}>
+            <div className="p-6 border-b">
+              <h3 className="text-2xl font-bold">{project.title}</h3>
             </div>
             
             {project.galleryImages && project.galleryImages.length > 0 && (
@@ -169,47 +169,49 @@ const ProjectCard = ({
                       </CarouselItem>
                     ))}
                   </CarouselContent>
-                  <CarouselPrevious className="left-2" />
-                  <CarouselNext className="right-2" />
+                  <CarouselPrevious className="left-4" />
+                  <CarouselNext className="right-4" />
                 </Carousel>
               </div>
             )}
             
-            <div className="p-4 space-y-3">
-              {project.tools && (
+            <div className="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="space-y-6">
                 <div>
-                  <h5 className="text-sm font-semibold text-primary">Tools Used</h5>
-                  <div className="flex flex-wrap gap-1 mt-1">
-                    {project.tools.map((tool, index) => (
-                      <Badge key={index} variant="secondary" className="text-xs">{tool}</Badge>
+                  <h4 className="text-lg font-semibold text-primary mb-2">Tools Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tools?.map((tool, index) => (
+                      <Badge key={index} variant="secondary" className="text-sm">{tool}</Badge>
                     ))}
                   </div>
                 </div>
-              )}
-              
-              {project.impact && (
+                
                 <div>
-                  <h5 className="text-sm font-semibold text-primary">Impact</h5>
-                  <p className="text-sm text-foreground/80">{project.impact}</p>
+                  <h4 className="text-lg font-semibold text-primary mb-2">Impact</h4>
+                  <p className="text-foreground/90">{project.impact}</p>
                 </div>
-              )}
+              </div>
               
-              {project.challenge && (
+              <div className="space-y-6">
                 <div>
-                  <h5 className="text-sm font-semibold text-primary">Challenge</h5>
-                  <p className="text-sm text-foreground/80">{project.challenge}</p>
+                  <h4 className="text-lg font-semibold text-primary mb-2">Challenge</h4>
+                  <p className="text-foreground/90">{project.challenge}</p>
                 </div>
-              )}
-              
-              {project.solution && (
+                
                 <div>
-                  <h5 className="text-sm font-semibold text-primary">Solution</h5>
-                  <p className="text-sm text-foreground/80">{project.solution}</p>
+                  <h4 className="text-lg font-semibold text-primary mb-2">Solution</h4>
+                  <p className="text-foreground/90">{project.solution}</p>
                 </div>
-              )}
+              </div>
             </div>
-          </HoverCardContent>
-        </HoverCard>
+            
+            <div className="p-6 pt-0 flex justify-end">
+              <Button variant="outline" size="sm" className="rounded-full">
+                Close
+              </Button>
+            </div>
+          </PopoverContent>
+        </Popover>
       </div>
     </div>;
 };

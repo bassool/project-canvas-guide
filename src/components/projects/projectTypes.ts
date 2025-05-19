@@ -58,7 +58,7 @@ export const projects: Project[] = [
     description: "Composed game soundtrack, improved team workflows, and aligned audio design with the game's visual themes.",
     category: "strategy",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    tags: ["Strategy", "Analytics", "Market Research"],
+    tags: ["Music Production", "Cross Functional Teamwork", "Project Management"],
     featured: true,
     galleryImages: [
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",

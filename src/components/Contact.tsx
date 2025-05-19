@@ -98,51 +98,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl border border-border p-8 shadow-lg relative">
-            {/* Decorative elements */}
-            <div className="absolute -top-6 -right-6 w-12 h-12 rounded-full border-4 border-dotted border-accent/30 animate-spin-slow"></div>
-            <div className="absolute -bottom-6 -left-6 w-16 h-16 rounded-full border-4 border-dashed border-primary/30 animate-spin-slow" style={{
-            animationDirection: "reverse"
-          }}></div>
-            
-            <h3 className="text-2xl font-semibold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-slate-800">Send a Message</h3>
-            
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid gap-6 sm:grid-cols-2">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium bg-transparent">
-                    Name
-                  </label>
-                  <Input id="name" placeholder="Your name" required className="rounded-lg border-border/50 focus:border-primary focus:ring-2 focus:ring-primary/20" />
-                </div>
-                
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium">
-                    Email
-                  </label>
-                  <Input id="email" type="email" placeholder="your@email.com" required className="rounded-lg border-border/50 focus:border-primary focus:ring-2 focus:ring-primary/20" />
-                </div>
-              </div>
-              
-              <div className="space-y-2">
-                <label htmlFor="subject" className="text-sm font-medium">
-                  Subject
-                </label>
-                <Input id="subject" placeholder="What's this regarding?" required className="rounded-lg border-border/50 focus:border-primary focus:ring-2 focus:ring-primary/20" />
-              </div>
-              
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium">
-                  Message
-                </label>
-                <Textarea id="message" placeholder="Tell me about your project..." rows={5} required className="rounded-lg border-border/50 focus:border-primary focus:ring-2 focus:ring-primary/20" />
-              </div>
-              
-              <Button type="submit" className="w-full rounded-full py-6 bg-gradient-to-r from-primary via-secondary to-accent hover:opacity-90 transition-opacity">
-                Send Message
-              </Button>
-            </form>
-          </div>
+          
         </div>
       </div>
     </section>;

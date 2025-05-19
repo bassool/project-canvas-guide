@@ -1,3 +1,4 @@
+
 // Define project types
 export type ProjectCategory = "all" | "creative" | "management" | "strategy";
 
@@ -47,7 +48,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1531403009284-4eb9a8efeb07",
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
     ],
-    tools: ["Asana", "Slack", "HubSpot", "Google Analytics"],
+    tools: ["Logic Pro X", "Trello", "Discord", "Wwise"],
     impact: "Successfully launched product with 95% on-time delivery of project milestones",
     challenge: "Coordinating cross-functional teams across different time zones",
     solution: "Implemented agile methodology with clear communication protocols and documentation"

@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "creative" | "management" | "strategy";
 
@@ -71,8 +70,8 @@ export const projects: Project[] = [
     solution: "Created data-driven approach to channel selection based on audience research and ROI potential"
   }, {
     id: 4,
-    title: "Fanhaven",
-    description: "Developed brand identity for a startup, producing visual assets and collaborating with founders to align branding with vision.",
+    title: "Zapshot",
+    description: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, and provided consultation marketing and brand ambassadorship program strategy",
     category: "creative",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
     tags: ["Creative Brand Direction", "Graphic Design", "Experiential Marketing"],

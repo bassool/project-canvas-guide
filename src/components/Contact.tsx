@@ -1,13 +1,16 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, MessageSquare, ArrowRight, Heart } from "lucide-react";
+import { Mail, MessageSquare, ArrowRight, Heart, Download } from "lucide-react";
+
 const Contact = () => {
   const {
     toast
   } = useToast();
+  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -21,6 +24,7 @@ const Contact = () => {
     const form = e.target as HTMLFormElement;
     form.reset();
   };
+  
   return <section id="contact" className="py-20 md:py-28 relative overflow-hidden bg-[#81c3df]/55">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10 bg-[#81c3df]/[0.22]"></div>
@@ -47,8 +51,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-xl mb-2 text-slate-900">Email Me</h3>
                   <p className="mb-3 text-slate-800">I am always open to connect with anyone, learn more about creative and technical projects, and discuss navigating this rewarding career path!</p>
-                  <a href="mailto:contact@example.com" className="text-primary hover:underline inline-flex items-center group justify-center">
-                    contact@example.com
+                  <a href="mailto:basselatout@icloud.com" className="text-slate-800 hover:underline inline-flex items-center group justify-center">
+                    basselatout@icloud.com
                     <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity bg-transparent" />
                   </a>
                 </div>
@@ -65,10 +69,12 @@ const Contact = () => {
                   <p className="mb-3 text-slate-800">
                     Schedule a discovery call to discuss your project needs
                   </p>
-                  <Button variant="link" className="p-0 h-auto group bg-transparent text-slate-900">
-                    Book a consultation 
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Button>
+                  <a href="/resume.pdf" download>
+                    <Button variant="link" className="p-0 h-auto group bg-transparent text-slate-900">
+                      Download Resume 
+                      <Download className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -99,4 +105,5 @@ const Contact = () => {
       </div>
     </section>;
 };
+
 export default Contact;

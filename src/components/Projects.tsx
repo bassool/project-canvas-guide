@@ -32,7 +32,7 @@ const projects: Project[] = [
     description: "Directed and produced full album along with and marketing strategy, social media and video direction, and live performance planning and performing",
     category: "creative",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    tags: ["Multimedia Production", "Design Direction", "Creative Strategy"],
+    tags: ["Music Production", "Design Direction", "Creative Strategy"],
     featured: true,
     galleryImages: [
       "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",

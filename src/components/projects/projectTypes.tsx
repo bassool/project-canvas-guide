@@ -85,7 +85,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07",
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
     ],
-    tools: ["Google Analytics", "SEMrush", "Tableau", "Mailchimp"],
+    tools: ["Logic Pro X", "Trello", "Discord", "Github"],
     impact: "Increased conversion rates by 32% and reduced customer acquisition cost by 24%",
     challenge: "Identifying optimal marketing channels with limited budget",
     solution: "Created data-driven approach to channel selection based on audience research and ROI potential"

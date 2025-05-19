@@ -48,9 +48,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-xl mb-2 text-slate-900">Email Me</h3>
-                  <p className="mb-3 text-slate-500">
-                    For inquiries and collaboration opportunities
-                  </p>
+                  <p className="mb-3 text-slate-800">I am always open to connect with anyone, learn more about creative and technical projects, and discuss navigating this rewarding career path!</p>
                   <a href="mailto:contact@example.com" className="text-primary hover:underline inline-flex items-center group">
                     contact@example.com
                     <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -65,11 +63,11 @@ const Contact = () => {
                   <MessageSquare className="h-6 w-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-xl mb-2">Let's Talk</h3>
-                  <p className="text-muted-foreground mb-3">
+                  <h3 className="font-semibold text-xl mb-2 text-slate-800">Let's Talk</h3>
+                  <p className="mb-3 text-slate-800">
                     Schedule a discovery call to discuss your project needs
                   </p>
-                  <Button variant="link" className="p-0 h-auto text-accent group">
+                  <Button variant="link" className="p-0 h-auto group bg-transparent text-slate-800">
                     Book a consultation 
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>

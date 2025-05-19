@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "creative" | "management" | "strategy";
 
@@ -87,11 +86,11 @@ export const projects: Project[] = [
     solution: "Created component-based system with clear guidelines and examples of appropriate usage"
   }, {
     id: 5,
-    title: "Team Leadership & Workflow Optimization",
-    description: "Restructured creative team processes to increase productivity by 40%.",
+    title: "Zapshot",
+    description: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, and provided consultation marketing and brand ambassadorship program strategy",
     category: "management",
     image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-    tags: ["Team Leadership", "Process Optimization", "Agile"],
+    tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
     featured: true,
     galleryImages: [
       "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",

@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
@@ -46,7 +45,7 @@ const projects: Project[] = [
     solution: "Developed integrated marketing strategy that leveraged artist's unique style across all touchpoints"
   }, {
     id: 2,
-    title: "Product Launch Campaign",
+    title: "Death to Love",
     description: "End-to-end project management for successful market entry of innovative SaaS product.",
     category: "management",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",

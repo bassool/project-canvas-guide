@@ -46,7 +46,7 @@ const projects: Project[] = [
   }, {
     id: 2,
     title: "Death to Love",
-    description: "Wrote, recorded, produced, arranged, and mixed three original punk tracks with direction from Game Lead for Co-Op Beat 'em-Up indie game, with game implementation done in Wwise.",
+    description: "Fully produced three original punk tracks with direction from Game Lead for Co-Op Beat 'em-Up indie game, with game implementation done in Wwise.",
     category: "management",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     tags: ["Project Management", "Timeline Planning", "Resource Allocation"],

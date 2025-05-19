@@ -71,8 +71,8 @@ export const projects: Project[] = [
     solution: "Created data-driven approach to channel selection based on audience research and ROI potential"
   }, {
     id: 4,
-    title: "Design System Creation",
-    description: "Unified design language to ensure consistency across all digital and print touchpoints.",
+    title: "Fanhaven",
+    description: "Developed brand identity for a startup, producing visual assets and collaborating with founders to align branding with vision.",
     category: "creative",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
     tags: ["Design Systems", "UI/UX", "Documentation"],

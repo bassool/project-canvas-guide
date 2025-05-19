@@ -75,7 +75,7 @@ export const projects: Project[] = [
     description: "Developed brand identity for a startup, producing visual assets and collaborating with founders to align branding with vision.",
     category: "creative",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    tags: ["Design Systems", "UI/UX", "Documentation"],
+    tags: ["Creative Brand Direction", "Graphic Design", "Experiential Marketing"],
     galleryImages: [
       "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
       "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",

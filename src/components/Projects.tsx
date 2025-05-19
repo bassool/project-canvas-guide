@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
@@ -230,7 +231,7 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState<ProjectCategory>("all");
   const filteredProjects = activeTab === "all" ? projects : projects.filter(project => project.category === activeTab);
   
-  return <section id="work" className="py-20 md:py-28 relative overflow-hidden">
+  return <section id="work" className="py-20 md:py-28 relative overflow-hidden mt-12">
       {/* Background decorations */}
       <div className="hidden md:block absolute left-0 top-1/4 w-32 h-32 border-l-4 border-t-4 border-primary/20 -z-10"></div>
       <div className="hidden md:block absolute right-0 bottom-1/4 w-32 h-32 border-r-4 border-b-4 border-accent/20 -z-10"></div>

@@ -25,7 +25,7 @@ export const projects: Project[] = [
     description: "Directed and produced full album along with and marketing strategy, social media and video direction, and live performance planning and performing",
     category: "creative",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    tags: ["Multimedia Production", "Design Direction", "Creative Strategy"],
+    tags: ["Multimedia Production", "Design Direction", "Creative Strategy", "Project Management"],
     featured: true,
     galleryImages: [
       "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     description: "Fully produced three original punk tracks with direction from Game Lead for Co-Op Beat 'em-Up indie game, with game implementation done in Wwise.",
     category: "management",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    tags: ["Music Production", "Cross Functional Teamwork", "Creative Interpretation"],
+    tags: ["Music Production", "Cross Functional Teamwork", "Creative Interpretation", "Project Management"],
     galleryImages: [
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
       "https://images.unsplash.com/photo-1531403009284-4eb9a8efeb07",

@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "creative" | "management" | "strategy";
 
@@ -32,7 +31,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1508700108023-c5249f4df085",
       "https://images.unsplash.com/photo-1511379938547-c1f69419868d"
     ],
-    tools: ["Ableton Live", "Adobe Premiere", "Figma", "Social Media Platforms"],
+    tools: ["Logic Pro X", "Adobe Creative Suite", "Final Cut Pro X", "Social Media Platforms"],
     impact: "Increased artist visibility by 40% and generated 1M+ streams across platforms",
     challenge: "Creating cohesive visual and audio experience with limited resources",
     solution: "Developed integrated marketing strategy that leveraged artist's unique style across all touchpoints"

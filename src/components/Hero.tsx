@@ -17,7 +17,7 @@ const Hero = () => {
       {/* Abstract background shapes */}
       <div className="blob-shape bg-primary/30 w-[400px] h-[400px] -top-40 -left-20 animate-pulse-custom"></div>
       <div className="blob-shape bg-secondary/30 w-[800px] h-[900px] -bottom-[30rem] -right-20 animate-pulse-custom"></div>
-      <div className="blob-shape bg-accent/20 w-[300px] h-[300px] top-1/3 right-1/4 animate-pulse-custom"></div>
+      <div className="blob-shape bg-accent/20 w-[300px] h-[300px] top-1/4 right-1/4 animate-pulse-custom"></div>
       
       {/* Animated circles */}
       <div className="absolute top-1/4 left-1/4 w-8 h-8 rounded-full bg-primary/40 animate-float" style={{
@@ -32,7 +32,7 @@ const Hero = () => {
       
       <div className="container grid gap-8 lg:grid-cols-2 lg:gap-12 items-center relative z-10">
         <div className="space-y-8 animate-fade-in">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-4">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-4 mt-6">
             <Sparkles className="h-4 w-4 mr-2" />
             <span>Creating magic through design & management</span>
           </div>

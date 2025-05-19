@@ -54,8 +54,8 @@ export const projects: Project[] = [
     solution: "Implemented agile methodology with clear communication protocols and documentation"
   }, {
     id: 3,
-    title: "Marketing Strategy Development",
-    description: "Comprehensive marketing strategy with focus on digital channels and measurable KPIs.",
+    title: "Waxheart",
+    description: "Composed game soundtrack, improved team workflows, and aligned audio design with the game's visual themes.",
     category: "strategy",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
     tags: ["Strategy", "Analytics", "Market Research"],

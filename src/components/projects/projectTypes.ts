@@ -32,7 +32,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
       "https://images.unsplash.com/photo-1552581234-26160f608093"
     ],
-    tools: ["Trello", "Notion", "Slack", "Monday.com"],
+    tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],
     impact: "Increased team productivity by 40% while improving work-life balance",
     challenge: "Addressing inefficient workflows that caused burnout and missed deadlines",
     solution: "Implemented agile methodologies with regular retrospectives to continuously improve processes"

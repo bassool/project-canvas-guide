@@ -21,9 +21,9 @@ const Contact = () => {
     const form = e.target as HTMLFormElement;
     form.reset();
   };
-  return <section id="contact" className="py-20 md:py-28 relative overflow-hidden">
+  return <section id="contact" className="py-20 md:py-28 relative overflow-hidden bg-[#81c3df]/55">
       {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10 bg-[#81c3df]/[0.22]"></div>
       <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -bottom-80 -left-80"></div>
       
       <div className="container relative z-10">

@@ -58,15 +58,15 @@ const About = () => {
             </div>
             
             <div className="grid gap-6 sm:grid-cols-3">
-              <div className="bg-white dark:bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
-                <p className="text-4xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-slate-800">10+</p>
-                <p className="text-slate-800">Years Experience</p>
+              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-slate-100">
+                <p className="text-4xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-slate-800">8+</p>
+                <p className="text-slate-800">Years Creative Experience</p>
               </div>
-              <div className="bg-white dark:bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
-                <p className="text-4xl font-bold bg-gradient-to-br from-secondary to-accent bg-clip-text text-slate-900">75+</p>
-                <p className="text-slate-800">Projects Completed</p>
+              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-slate-100">
+                <p className="text-4xl font-bold bg-gradient-to-br from-secondary to-accent bg-clip-text text-slate-900">5+</p>
+                <p className="text-slate-800">Years in project based work</p>
               </div>
-              <div className="bg-white dark:bg-card p-6 rounded-2xl shadow-sm border border-border card-hover">
+              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-slate-100">
                 <p className="text-4xl font-bold bg-gradient-to-br from-accent to-primary bg-clip-text text-slate-900">15+</p>
                 <p className="text-foreground/80">Industry Awards</p>
               </div>

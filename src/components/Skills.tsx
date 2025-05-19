@@ -58,7 +58,7 @@ const SkillCard = ({
   };
   return <Card className="overflow-hidden border-border card-hover bg-gradient-to-br from-white dark:from-card to-secondary/5">
       <div className="bg-sky-300" />
-      <CardHeader className="bg-transparent">
+      <CardHeader className="bg-slate-100">
         <div className="flex items-center gap-3">
           <div className={`p-3 rounded-xl ${colorClasses[skill.color]}`}>
             <Icon className="h-6 w-6" />
@@ -66,7 +66,7 @@ const SkillCard = ({
           <CardTitle className="text-gray-900">{skill.title}</CardTitle>
         </div>
       </CardHeader>
-      <CardContent className="bg-transparent">
+      <CardContent className="bg-slate-100">
         <CardDescription className="text-sm text-slate-900">
           {skill.description}
         </CardDescription>

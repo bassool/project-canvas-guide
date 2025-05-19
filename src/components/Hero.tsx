@@ -32,7 +32,7 @@ const Hero = () => {
       
       <div className="container grid gap-8 lg:grid-cols-2 lg:gap-12 items-center relative z-10">
         <div className="space-y-8 animate-fade-in">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-4 mt-20">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-0 mt-28">
             <Sparkles className="h-4 w-4 mr-2" />
             <span>Creating magic through design & management</span>
           </div>

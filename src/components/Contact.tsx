@@ -1,13 +1,16 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, MessageSquare, ArrowRight, Heart } from "lucide-react";
+
 const Contact = () => {
   const {
     toast
   } = useToast();
+  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -21,6 +24,7 @@ const Contact = () => {
     const form = e.target as HTMLFormElement;
     form.reset();
   };
+  
   return <section id="contact" className="py-20 md:py-28 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10"></div>
@@ -39,17 +43,17 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="space-y-8">
-            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-lg card-hover">
-              <div className="flex gap-6 items-start">
-                <div className="p-4 rounded-xl bg-primary/10 text-primary">
+        <div className="flex justify-center">
+          <div className="space-y-8 max-w-3xl w-full">
+            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-lg card-hover text-center">
+              <div className="flex flex-col items-center">
+                <div className="p-4 rounded-xl bg-primary/10 text-primary mb-4">
                   <Mail className="h-6 w-6" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-xl mb-2 text-slate-900">Email Me</h3>
                   <p className="mb-3 text-slate-800">I am always open to connect with anyone, learn more about creative and technical projects, and discuss navigating this rewarding career path!</p>
-                  <a href="mailto:contact@example.com" className="text-primary hover:underline inline-flex items-center group">
+                  <a href="mailto:contact@example.com" className="text-primary hover:underline inline-flex items-center group justify-center">
                     contact@example.com
                     <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </a>
@@ -57,9 +61,9 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover">
-              <div className="flex gap-6 items-start">
-                <div className="p-4 rounded-xl bg-accent/10 text-accent">
+            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover text-center">
+              <div className="flex flex-col items-center">
+                <div className="p-4 rounded-xl bg-accent/10 text-accent mb-4">
                   <MessageSquare className="h-6 w-6" />
                 </div>
                 <div>
@@ -75,32 +79,31 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-white/20 shadow-lg">
+            <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-white/20 shadow-lg text-center">
               <h3 className="font-semibold text-xl mb-6 text-slate-900">Why work with me?</h3>
               <ul className="space-y-4">
-                <li className="flex items-baseline gap-3">
+                <li className="flex items-center gap-3 justify-center">
                   <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
                   <span className="text-lg text-gray-900">Balanced creative and technical expertise</span>
                 </li>
-                <li className="flex items-baseline gap-3">
+                <li className="flex items-center gap-3 justify-center">
                   <span className="inline-block w-4 h-4 rounded-full bg-secondary/80"></span>
                   <span className="text-lg text-slate-800">Proven track record of successful project delivery</span>
                 </li>
-                <li className="flex items-baseline gap-3">
+                <li className="flex items-center gap-3 justify-center">
                   <span className="inline-block w-4 h-4 rounded-full bg-accent/80"></span>
                   <span className="text-lg text-slate-800">Clear communication throughout the process</span>
                 </li>
-                <li className="flex items-baseline gap-3">
+                <li className="flex items-center gap-3 justify-center">
                   <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
                   <span className="text-lg text-slate-800">Focus on achieving your business objectives</span>
                 </li>
               </ul>
             </div>
           </div>
-          
-          
         </div>
       </div>
     </section>;
 };
+
 export default Contact;

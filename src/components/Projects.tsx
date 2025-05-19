@@ -49,7 +49,7 @@ const projects: Project[] = [
     description: "Fully produced three original punk tracks with direction from Game Lead for Co-Op Beat 'em-Up indie game, with game implementation done in Wwise.",
     category: "management",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    tags: ["Project Management", "Timeline Planning", "Resource Allocation"],
+    tags: ["Music Production", "Cross Functional Teamwork", "Creative Interpretation"],
     galleryImages: [
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
       "https://images.unsplash.com/photo-1531403009284-4eb9a8efeb07",

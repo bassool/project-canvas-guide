@@ -30,13 +30,11 @@ const Contact = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full text-accent font-medium mb-4 bg-slate-600">
             <Heart className="h-4 w-4 mr-2 bg-transparent" />
-            <span className="text-slate-100">Let's collaborate</span>
+            <span className="text-slate-100">Let's chat!</span>
           </div>
           
           <h2 className="section-title text-slate-700">Get In Touch</h2>
-          <p className="section-subtitle max-w-2xl mx-auto text-slate-700">
-            Let's discuss how we can collaborate on your next project
-          </p>
+          <p className="section-subtitle max-w-2xl mx-auto text-slate-700">Let's discuss how we can collaborate on your firm's project!</p>
         </div>
         
         <div className="flex justify-center">

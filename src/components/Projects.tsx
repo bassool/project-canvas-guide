@@ -151,13 +151,13 @@ const ProjectCard = ({
         </Button>
 
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
-          <DialogContent className="max-w-lg p-0 border border-primary/20 rounded-lg overflow-hidden">
-            <DialogHeader className="p-5 border-b">
+          <DialogContent className="max-w-4xl w-[90vw] p-0 border border-primary/20 rounded-lg overflow-hidden">
+            <DialogHeader className="p-6 border-b">
               <DialogTitle className="text-2xl font-bold">{project.title}</DialogTitle>
             </DialogHeader>
             
             {project.galleryImages && project.galleryImages.length > 0 && (
-              <div className="p-3">
+              <div className="p-4">
                 <Carousel className="w-full">
                   <CarouselContent>
                     {project.galleryImages.map((img, index) => (
@@ -180,37 +180,37 @@ const ProjectCard = ({
               </div>
             )}
             
-            <div className="p-5 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="space-y-3">
+            <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
                 <div>
-                  <h4 className="text-lg font-semibold text-primary mb-1">Tools Used</h4>
-                  <div className="flex flex-wrap gap-1">
+                  <h4 className="text-xl font-semibold text-primary mb-2">Tools Used</h4>
+                  <div className="flex flex-wrap gap-2">
                     {project.tools?.map((tool, index) => (
-                      <Badge key={index} variant="secondary" className="text-xs">{tool}</Badge>
+                      <Badge key={index} variant="secondary" className="text-sm">{tool}</Badge>
                     ))}
                   </div>
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-semibold text-primary mb-1">Impact</h4>
-                  <p className="text-foreground/90 text-sm">{project.impact}</p>
+                  <h4 className="text-xl font-semibold text-primary mb-2">Impact</h4>
+                  <p className="text-foreground/90 text-base">{project.impact}</p>
                 </div>
               </div>
               
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <div>
-                  <h4 className="text-lg font-semibold text-primary mb-1">Challenge</h4>
-                  <p className="text-foreground/90 text-sm">{project.challenge}</p>
+                  <h4 className="text-xl font-semibold text-primary mb-2">Challenge</h4>
+                  <p className="text-foreground/90 text-base">{project.challenge}</p>
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-semibold text-primary mb-1">Solution</h4>
-                  <p className="text-foreground/90 text-sm">{project.solution}</p>
+                  <h4 className="text-xl font-semibold text-primary mb-2">Solution</h4>
+                  <p className="text-foreground/90 text-base">{project.solution}</p>
                 </div>
               </div>
             </div>
             
-            <div className="p-4 pt-0 flex justify-end">
+            <div className="p-5 pt-0 flex justify-end">
               <Button 
                 variant="outline" 
                 size="sm" 

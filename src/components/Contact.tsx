@@ -41,8 +41,8 @@ const Contact = () => {
           <p className="section-subtitle max-w-2xl mx-auto text-slate-700">Let's discuss how we can collaborate on your firm's project!</p>
         </div>
         
-        <div className="flex flex-col lg:flex-row gap-8 justify-center">
-          <div className="space-y-8 max-w-md w-full">
+        <div className="flex justify-center">
+          <div className="space-y-8 max-w-3xl w-full">
             <div className="backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-lg card-hover text-center bg-slate-100">
               <div className="flex flex-col items-center">
                 <div className="p-4 rounded-xl text-primary mb-4 bg-slate-600">
@@ -78,61 +78,29 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
-          
-          {/* Contact Form */}
-          <div className="max-w-md w-full">
-            <div className="backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-lg bg-white/80">
-              <h3 className="font-semibold text-xl mb-4 text-center text-slate-900">Send Me a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">Name</label>
-                  <Input id="name" placeholder="Your name" className="bg-white/70" required />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">Email</label>
-                  <Input id="email" type="email" placeholder="Your email" className="bg-white/70" required />
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-1">Subject</label>
-                  <Input id="subject" placeholder="Subject" className="bg-white/70" required />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">Message</label>
-                  <Textarea id="message" placeholder="Your message" className="bg-white/70 min-h-[120px]" required />
-                </div>
-                
-                <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
-                  Send Message
-                </Button>
-              </form>
+            
+            <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-white/20 shadow-lg text-center bg-slate-100">
+              <h3 className="font-semibold text-xl mb-6 text-slate-900">Why work with me?</h3>
+              <ul className="space-y-4">
+                <li className="flex items-center gap-3 justify-center">
+                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
+                  <span className="text-lg text-gray-900">Balanced creative and technical expertise</span>
+                </li>
+                <li className="flex items-center gap-3 justify-center">
+                  <span className="inline-block w-4 h-4 rounded-full bg-secondary/80"></span>
+                  <span className="text-lg text-slate-800">Proven track record of successful project delivery</span>
+                </li>
+                <li className="flex items-center gap-3 justify-center">
+                  <span className="inline-block w-4 h-4 rounded-full bg-accent/80"></span>
+                  <span className="text-lg text-slate-800">Clear communication throughout the process</span>
+                </li>
+                <li className="flex items-center gap-3 justify-center">
+                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
+                  <span className="text-lg text-slate-800">Focus on achieving your business objectives</span>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-        
-        <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-white/20 shadow-lg text-center bg-slate-100 max-w-3xl mx-auto mt-16">
-          <h3 className="font-semibold text-xl mb-6 text-slate-900">Why work with me?</h3>
-          <ul className="space-y-4">
-            <li className="flex items-center gap-3 justify-center">
-              <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
-              <span className="text-lg text-gray-900">Balanced creative and technical expertise</span>
-            </li>
-            <li className="flex items-center gap-3 justify-center">
-              <span className="inline-block w-4 h-4 rounded-full bg-secondary/80"></span>
-              <span className="text-lg text-slate-800">Proven track record of successful project delivery</span>
-            </li>
-            <li className="flex items-center gap-3 justify-center">
-              <span className="inline-block w-4 h-4 rounded-full bg-accent/80"></span>
-              <span className="text-lg text-slate-800">Clear communication throughout the process</span>
-            </li>
-            <li className="flex items-center gap-3 justify-center">
-              <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
-              <span className="text-lg text-slate-800">Focus on achieving your business objectives</span>
-            </li>
-          </ul>
         </div>
       </div>
     </section>;

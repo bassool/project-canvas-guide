@@ -1,3 +1,4 @@
+
 // Define project types
 export type ProjectCategory = "all" | "creative" | "management" | "strategy";
 
@@ -71,7 +72,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",
       "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e"
     ],
-    tools: ["Figma", "Storybook", "Zeplin", "InVision"],
+    tools: ["Figma", "Notion", "Adobe Photoshop"],
     impact: "Reduced design time by 60% and improved consistency across product suite",
     challenge: "Balancing flexibility for designers with consistency for brand integrity",
     solution: "Created component-based system with clear guidelines and examples of appropriate usage"
@@ -139,3 +140,4 @@ export const projects: Project[] = [
     solution: "Established partnership model with established organizations to share resources and expertise"
   }
 ];
+

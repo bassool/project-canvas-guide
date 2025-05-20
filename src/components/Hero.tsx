@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
@@ -56,7 +57,7 @@ const Hero = () => {
             if (element) element.scrollIntoView({
               behavior: "smooth"
             });
-          }} className="rounded-full px-6 border-primary/20 bg-transparent text-slate-700">
+          }} className="rounded-full px-6 border-primary/20 bg-transparent text-slate-700 hover:bg-transparent">
               Get in touch
             </Button>
           </div>

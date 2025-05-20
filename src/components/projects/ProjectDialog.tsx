@@ -4,7 +4,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Play, Pause, Music } from "lucide-react";
+import { Play, Pause, Music, Youtube } from "lucide-react";
 import { Project } from "./projectTypes";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "@/components/ui/use-toast";
@@ -91,6 +91,28 @@ const SpotifyEmbed = ({ embedUrl }: { embedUrl: string }) => {
   );
 };
 
+const YouTubeEmbed = ({ embedUrl }: { embedUrl: string }) => {
+  // Extract channel ID from URL format
+  const channelId = embedUrl.includes('@') 
+    ? embedUrl.split('@')[1].split('/')[0]
+    : embedUrl.split('/').pop();
+  
+  return (
+    <div className="mt-4 border border-primary/20 rounded-lg overflow-hidden">
+      <iframe 
+        src={`https://www.youtube.com/embed/?listType=user_uploads&list=${channelId}`}
+        width="100%" 
+        height="352" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowFullScreen
+        title="YouTube Channel"
+        className="rounded-lg"
+      />
+    </div>
+  );
+};
+
 const ProjectDialog = ({ project, isOpen, setIsOpen }: ProjectDialogProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
@@ -171,6 +193,16 @@ const ProjectDialog = ({ project, isOpen, setIsOpen }: ProjectDialogProps) => {
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-2">Music Stream</h4>
                     <SpotifyEmbed embedUrl={project.spotifyEmbed} />
+                  </div>
+                )}
+
+                {project.youtubeEmbed && (
+                  <div>
+                    <h4 className="text-xl font-semibold text-primary mb-2 flex items-center">
+                      <Youtube className="h-4 w-4 mr-2" />
+                      Video Content
+                    </h4>
+                    <YouTubeEmbed embedUrl={project.youtubeEmbed} />
                   </div>
                 )}
               </div>

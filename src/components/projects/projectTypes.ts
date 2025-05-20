@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "creative" | "management" | "strategy";
 
@@ -17,6 +16,7 @@ export interface Project {
   solution?: string;
   audioTracks?: { title: string; url: string }[];
   spotifyEmbed?: string;
+  youtubeEmbed?: string;
 }
 
 // Sample project data
@@ -56,7 +56,8 @@ export const projects: Project[] = [
     impact: "Increased artist visibility by 40% and generated 1M+ streams across platforms",
     challenge: "Creating cohesive visual and audio experience with limited resources",
     solution: "Developed integrated marketing strategy that leveraged artist's unique style across all touchpoints",
-    spotifyEmbed: "https://open.spotify.com/album/0MUxE0X6wDiVNIrqJcMqKx"
+    spotifyEmbed: "https://open.spotify.com/album/0MUxE0X6wDiVNIrqJcMqKx",
+    youtubeEmbed: "https://www.youtube.com/@bassool3957/videos"
   },
   {
     id: 4,

@@ -109,7 +109,7 @@ const Navbar = () => {
           </button>
         </nav>
         
-        <Button onClick={() => scrollToSection("contact")} className="hidden sm:flex items-center gap-2 rounded-full px-6 bg-transparent hover:bg-transparent border border-primary text-primary hover:text-primary/90 transition-colors">
+        <Button onClick={() => scrollToSection("contact")} className="hidden sm:flex items-center gap-2 rounded-full px-6 bg-transparent hover:bg-transparent border border-slate-700 text-slate-700 hover:text-slate-700/90 transition-colors">
           <Sparkles className="h-4 w-4" />
           Get in touch
         </Button>

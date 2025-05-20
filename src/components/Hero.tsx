@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
@@ -29,7 +30,7 @@ const Hero = () => {
       
       <div className="container grid gap-8 lg:grid-cols-2 lg:gap-12 items-center relative z-10">
         <div className="space-y-8 animate-fade-in">
-          <div className="inline-flex items-center px-4 py-2 rounded-full text-primary font-medium mb-0 mt-28 bg-[#b4def5]">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-primary font-medium mb-0 mt-28 bg-transparent border border-slate-700 text-slate-700">
             <Sparkles className="h-4 w-4 mr-2 text-slate-700" />
             <span className="text-slate-700">Creating magic through design & management</span>
           </div>
@@ -46,12 +47,10 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" onClick={scrollToWork} className="rounded-full px-6 group bg-transparent">
+            <Button size="lg" onClick={scrollToWork} className="rounded-full px-6 group bg-transparent border border-slate-700 text-slate-700 hover:text-slate-700/90 hover:bg-transparent">
               View my work 
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-            
-            
           </div>
         </div>
         

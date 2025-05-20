@@ -74,13 +74,13 @@ const SpotifyEmbed = ({ embedUrl }: { embedUrl: string }) => {
 const ProjectDialog = ({ project, isOpen, setIsOpen }: ProjectDialogProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-4xl w-[90vw] p-0 border border-primary/20 rounded-lg overflow-hidden max-h-[90vh]">
-        <DialogHeader className="p-6 border-b">
+      <DialogContent className="max-w-4xl max-h-[95vh] p-0 border border-primary/20 rounded-lg overflow-hidden flex flex-col">
+        <DialogHeader className="p-4 border-b sticky top-0 bg-background z-10">
           <DialogTitle className="text-2xl font-bold">{project.title}</DialogTitle>
         </DialogHeader>
         
-        <ScrollArea className="h-[calc(90vh-12rem)]">
-          <div className="px-6 pb-6">
+        <ScrollArea className="flex-1 overflow-y-auto">
+          <div className="px-6 py-4">
             {project.galleryImages && project.galleryImages.length > 0 && (
               <div className="py-4">
                 <Carousel className="w-full">
@@ -158,7 +158,7 @@ const ProjectDialog = ({ project, isOpen, setIsOpen }: ProjectDialogProps) => {
           </div>
         </ScrollArea>
         
-        <div className="p-5 border-t flex justify-end bg-background">
+        <div className="p-4 border-t sticky bottom-0 bg-background z-10 flex justify-end">
           <Button 
             variant="outline" 
             size="sm" 

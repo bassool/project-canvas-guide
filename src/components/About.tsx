@@ -33,8 +33,8 @@ const About = () => {
             
             {/* New floating certification badge - above the photo */}
             <div className="absolute -left-6 -top-6 bg-white/90 dark:bg-card/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20" style={{
-              animationDelay: "1.5s"
-            }}>
+            animationDelay: "1.5s"
+          }}>
               <div className="flex items-center gap-2">
                 <Laptop className="h-5 w-5 text-primary" />
                 <span className="font-medium text-sm text-slate-900">Certified Associate in Project Management</span>
@@ -83,7 +83,7 @@ const About = () => {
             </div>
             
             <div className="pt-4">
-              <Button size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group">
+              <Button size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group text-slate-50 bg-transparent">
                 Download Resume 
                 <Download className="h-4 w-4 transition-transform group-hover:translate-y-1" />
               </Button>

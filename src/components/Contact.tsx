@@ -79,19 +79,19 @@ const Contact = () => {
               <h3 className="font-semibold text-xl mb-6 text-slate-900">Why work with me?</h3>
               <ul className="space-y-4">
                 <li className="flex items-center gap-3 justify-center">
-                  <span className="text-slate-700"></span>
+                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
                   <span className="text-lg text-gray-900">Balanced creative and technical expertise</span>
                 </li>
                 <li className="flex items-center gap-3 justify-center">
-                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80 text-slate-700"></span>
+                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
                   <span className="text-lg text-slate-800">Proven track record of successful project delivery</span>
                 </li>
                 <li className="flex items-center gap-3 justify-center">
-                  <span className="text-slate-700"></span>
+                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
                   <span className="text-lg text-slate-800">Clear communication throughout the process</span>
                 </li>
                 <li className="flex items-center gap-3 justify-center">
-                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80 text-slate-700"></span>
+                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
                   <span className="text-lg text-slate-800">Focus on achieving your business objectives</span>
                 </li>
               </ul>

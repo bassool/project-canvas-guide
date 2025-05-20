@@ -1,6 +1,8 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
+
 const Hero = () => {
   const scrollToWork = () => {
     const element = document.getElementById("work");
@@ -10,6 +12,7 @@ const Hero = () => {
       });
     }
   };
+
   return <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-slate-200">
       {/* Abstract background shapes */}
       <div className="blob-shape w-[400px] h-[400px] -top-40 -left-20 animate-pulse-custom bg-[#59b8e9]"></div>
@@ -30,7 +33,7 @@ const Hero = () => {
       <div className="container grid gap-8 lg:grid-cols-2 lg:gap-12 items-center relative z-10">
         <div className="space-y-8 animate-fade-in">
           <div className="inline-flex items-center px-4 py-2 rounded-full text-primary font-medium mb-0 mt-28 bg-[#b4def5]">
-            <Sparkles className="h-4 w-4 mr-2" />
+            <Sparkles className="h-4 w-4 mr-2 text-slate-700" />
             <span className="text-slate-700">Creating magic through design & management</span>
           </div>
           
@@ -64,8 +67,8 @@ const Hero = () => {
         
         <div className="relative aspect-square animate-float">
           {/* Decorative elements */}
-          <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full border-4 border-dashed border-primary/30 animate-spin-slow bg-transparent"></div>
-          <div className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full border-4 border-dotted border-secondary/30 animate-spin-slow" style={{
+          <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full border-4 border-dashed border-slate-700 animate-spin-slow bg-transparent"></div>
+          <div className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full border-4 border-dotted border-slate-700 animate-spin-slow" style={{
           animationDirection: "reverse"
         }}></div>
           
@@ -96,4 +99,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;

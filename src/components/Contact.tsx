@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, MessageSquare, ArrowRight, Heart, Download } from "lucide-react";
+import { Mail, ArrowRight, Heart, Download, FileText } from "lucide-react";
 
 const Contact = () => {
   const {
@@ -62,12 +62,12 @@ const Contact = () => {
             <div className="backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover text-center bg-slate-100">
               <div className="flex flex-col items-center">
                 <div className="p-4 rounded-xl text-accent mb-4 bg-slate-600">
-                  <MessageSquare className="h-6 w-6" />
+                  <FileText className="h-6 w-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-xl mb-2 text-slate-800">Let's Talk</h3>
+                  <h3 className="font-semibold text-xl mb-2 text-slate-800">Download my Resume!</h3>
                   <p className="mb-3 text-slate-800">
-                    Schedule a discovery call to discuss your project needs
+                    My next role could very well be within your firm; let my resume show you why!
                   </p>
                   <a href="/resume.pdf" download>
                     <Button variant="link" className="p-0 h-auto group bg-transparent text-slate-900">

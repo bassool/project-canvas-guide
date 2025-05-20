@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -29,7 +30,7 @@ const Navbar = () => {
         <div className="text-2xl font-bold">
           <a href="#" className="flex items-center gap-2">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-slate-700">Portfolio</span>
-            <span className="hidden sm:inline text-muted-foreground text-sm font-medium">| Creative Director & PM</span>
+            <span className="hidden sm:inline text-slate-700 text-sm font-medium">| Creative Director & PM</span>
           </a>
         </div>
         

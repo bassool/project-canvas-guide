@@ -30,8 +30,8 @@ export const projects: Project[] = [
     tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
     featured: true,
     galleryImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+      "/lovable-uploads/370631e3-7720-4768-912d-01c4c390495e.png", 
+      "/lovable-uploads/4d9114b8-8eb1-4964-898b-17ba3359c010.png",
       "https://images.unsplash.com/photo-1552581234-26160f608093"
     ],
     tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],

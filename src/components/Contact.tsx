@@ -1,16 +1,13 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, ArrowRight, Heart, Download, FileText } from "lucide-react";
-
 const Contact = () => {
   const {
     toast
   } = useToast();
-  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -24,7 +21,6 @@ const Contact = () => {
     const form = e.target as HTMLFormElement;
     form.reset();
   };
-  
   return <section id="contact" className="py-20 md:py-28 relative overflow-hidden bg-[#81c3df]/55">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10 bg-[#81c3df]/[0.22]"></div>
@@ -87,11 +83,11 @@ const Contact = () => {
                   <span className="text-lg text-gray-900">Balanced creative and technical expertise</span>
                 </li>
                 <li className="flex items-center gap-3 justify-center">
-                  <span className="inline-block w-4 h-4 rounded-full bg-secondary/80"></span>
+                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
                   <span className="text-lg text-slate-800">Proven track record of successful project delivery</span>
                 </li>
                 <li className="flex items-center gap-3 justify-center">
-                  <span className="inline-block w-4 h-4 rounded-full bg-accent/80"></span>
+                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
                   <span className="text-lg text-slate-800">Clear communication throughout the process</span>
                 </li>
                 <li className="flex items-center gap-3 justify-center">
@@ -105,5 +101,4 @@ const Contact = () => {
       </div>
     </section>;
 };
-
 export default Contact;

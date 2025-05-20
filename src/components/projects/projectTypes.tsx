@@ -1,4 +1,5 @@
 
+
 // Define project types
 export type ProjectCategory = "all" | "creative" | "management" | "strategy";
 
@@ -44,11 +45,11 @@ export const projects: Project[] = [
     title: "Depth Perception",
     description: "Directed and produced full album along with and marketing strategy, social media and video direction, and live performance planning and performing",
     category: "creative",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    image: "/lovable-uploads/df767496-ebfe-4362-9734-a35a2525a7b5.png",
     tags: ["Multimedia Production", "Design Direction", "Creative Strategy", "Project Management"],
     featured: true,
     galleryImages: [
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      "/lovable-uploads/df767496-ebfe-4362-9734-a35a2525a7b5.png",
       "https://images.unsplash.com/photo-1508700108023-c5249f4df085",
       "https://images.unsplash.com/photo-1511379938547-c1f69419868d"
     ],

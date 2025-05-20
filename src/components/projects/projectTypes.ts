@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "creative" | "management" | "strategy";
 
@@ -65,10 +64,10 @@ export const projects: Project[] = [
     title: "Fanhaven",
     description: "Developed brand identity for a startup, producing visual assets and collaborating with founders to align branding with vision.",
     category: "creative",
-    image: "/lovable-uploads/1a12441c-79b9-4215-b09d-a9d877a7c147.png",
+    image: "/lovable-uploads/c6d6553e-db89-4771-99ba-1a24f9184208.png",
     tags: ["Creative Brand Direction", "Graphic Design", "Experiential Marketing"],
     galleryImages: [
-      "/lovable-uploads/1a12441c-79b9-4215-b09d-a9d877a7c147.png",
+      "/lovable-uploads/c6d6553e-db89-4771-99ba-1a24f9184208.png",
       "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",
       "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e"
     ],

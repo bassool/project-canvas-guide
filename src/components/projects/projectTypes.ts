@@ -15,6 +15,8 @@ export interface Project {
   impact?: string;
   challenge?: string;
   solution?: string;
+  audioTracks?: { title: string; url: string }[];
+  spotifyEmbed?: string;
 }
 
 // Sample project data
@@ -53,7 +55,8 @@ export const projects: Project[] = [
     tools: ["Logic Pro X", "Adobe Creative Suite", "Final Cut Pro X", "Social Media Platforms"],
     impact: "Increased artist visibility by 40% and generated 1M+ streams across platforms",
     challenge: "Creating cohesive visual and audio experience with limited resources",
-    solution: "Developed integrated marketing strategy that leveraged artist's unique style across all touchpoints"
+    solution: "Developed integrated marketing strategy that leveraged artist's unique style across all touchpoints",
+    spotifyEmbed: "https://open.spotify.com/album/0MUxE0X6wDiVNIrqJcMqKx"
   },
   {
     id: 4,
@@ -88,7 +91,12 @@ export const projects: Project[] = [
     tools: ["Logic Pro X", "Trello", "Discord", "Github"],
     impact: "Increased conversion rates by 32% and reduced customer acquisition cost by 24%",
     challenge: "Identifying optimal marketing channels with limited budget",
-    solution: "Created data-driven approach to channel selection based on audience research and ROI potential"
+    solution: "Created data-driven approach to channel selection based on audience research and ROI potential",
+    audioTracks: [
+      { title: "Main Theme", url: "https://assets.mixkit.co/music/preview/mixkit-games-worldbeat-466.mp3" },
+      { title: "Battle Theme", url: "https://assets.mixkit.co/music/preview/mixkit-driving-ambition-32.mp3" },
+      { title: "Outro Credits", url: "https://assets.mixkit.co/music/preview/mixkit-sleepy-cat-135.mp3" }
+    ]
   },
   {
     id: 2,
@@ -105,7 +113,12 @@ export const projects: Project[] = [
     tools: ["Logic Pro X", "Trello", "Discord", "Wwise"],
     impact: "Successfully launched product with 95% on-time delivery of project milestones",
     challenge: "Coordinating cross-functional teams across different time zones",
-    solution: "Implemented agile methodology with clear communication protocols and documentation"
+    solution: "Implemented agile methodology with clear communication protocols and documentation",
+    audioTracks: [
+      { title: "Track 1: No More Romance", url: "https://assets.mixkit.co/music/preview/mixkit-fast-rock-beat-686.mp3" },
+      { title: "Track 2: Heartbreaker", url: "https://assets.mixkit.co/music/preview/mixkit-hip-hop-02-685.mp3" },
+      { title: "Track 3: Final Goodbye", url: "https://assets.mixkit.co/music/preview/mixkit-hazy-after-hours-132.mp3" }
+    ]
   },
   {
     id: 6,

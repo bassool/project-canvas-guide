@@ -1,9 +1,10 @@
 
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Play, Pause, Music } from "lucide-react";
 import { Project } from "./projectTypes";
 
 interface ProjectDialogProps {
@@ -11,6 +12,63 @@ interface ProjectDialogProps {
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
 }
+
+const AudioPlayer = ({ track }: { track: { title: string; url: string } }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const togglePlay = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  return (
+    <div className="flex items-center justify-between p-3 bg-secondary/10 rounded-lg mb-2">
+      <div className="flex items-center">
+        <Button 
+          variant="ghost" 
+          size="sm" 
+          className="h-8 w-8 rounded-full p-0 mr-2"
+          onClick={togglePlay}
+        >
+          {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
+        </Button>
+        <span className="text-sm font-medium">{track.title}</span>
+      </div>
+      <audio 
+        ref={audioRef} 
+        src={track.url} 
+        onEnded={() => setIsPlaying(false)}
+        className="hidden"
+      />
+    </div>
+  );
+};
+
+const SpotifyEmbed = ({ embedUrl }: { embedUrl: string }) => {
+  const albumId = embedUrl.split('/').pop();
+  
+  return (
+    <div className="mt-4 border border-primary/20 rounded-lg overflow-hidden">
+      <iframe 
+        src={`https://open.spotify.com/embed/album/${albumId}`}
+        width="100%" 
+        height="352" 
+        frameBorder="0" 
+        allowTransparency={true} 
+        allow="encrypted-media"
+        title="Spotify Player"
+        className="rounded-lg"
+      />
+    </div>
+  );
+};
 
 const ProjectDialog = ({ project, isOpen, setIsOpen }: ProjectDialogProps) => {
   return (
@@ -59,6 +117,20 @@ const ProjectDialog = ({ project, isOpen, setIsOpen }: ProjectDialogProps) => {
               <h4 className="text-xl font-semibold text-primary mb-2">Impact</h4>
               <p className="text-foreground/90 text-base">{project.impact}</p>
             </div>
+
+            {project.audioTracks && (
+              <div>
+                <h4 className="text-xl font-semibold text-primary mb-2 flex items-center">
+                  <Music className="h-4 w-4 mr-2" />
+                  Audio Samples
+                </h4>
+                <div className="space-y-2">
+                  {project.audioTracks.map((track, index) => (
+                    <AudioPlayer key={index} track={track} />
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
           
           <div className="space-y-4">
@@ -71,6 +143,13 @@ const ProjectDialog = ({ project, isOpen, setIsOpen }: ProjectDialogProps) => {
               <h4 className="text-xl font-semibold text-primary mb-2">Solution</h4>
               <p className="text-foreground/90 text-base">{project.solution}</p>
             </div>
+
+            {project.spotifyEmbed && (
+              <div>
+                <h4 className="text-xl font-semibold text-primary mb-2">Music Stream</h4>
+                <SpotifyEmbed embedUrl={project.spotifyEmbed} />
+              </div>
+            )}
           </div>
         </div>
         

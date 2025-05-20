@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
@@ -163,6 +162,16 @@ const ProjectDialog = ({ project, isOpen, setIsOpen }: ProjectDialogProps) => {
                   <p className="text-foreground/90 text-base">{project.impact}</p>
                 </div>
 
+                {project.youtubeEmbed && (
+                  <div>
+                    <h4 className="text-xl font-semibold text-primary mb-2 flex items-center">
+                      <Youtube className="h-4 w-4 mr-2" />
+                      Video Content
+                    </h4>
+                    <YouTubeEmbed embedUrl={project.youtubeEmbed} />
+                  </div>
+                )}
+
                 {project.audioTracks && (
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-2 flex items-center">
@@ -193,16 +202,6 @@ const ProjectDialog = ({ project, isOpen, setIsOpen }: ProjectDialogProps) => {
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-2">Music Stream</h4>
                     <SpotifyEmbed embedUrl={project.spotifyEmbed} />
-                  </div>
-                )}
-
-                {project.youtubeEmbed && (
-                  <div>
-                    <h4 className="text-xl font-semibold text-primary mb-2 flex items-center">
-                      <Youtube className="h-4 w-4 mr-2" />
-                      Video Content
-                    </h4>
-                    <YouTubeEmbed embedUrl={project.youtubeEmbed} />
                   </div>
                 )}
               </div>

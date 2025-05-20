@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
@@ -34,11 +33,6 @@ const Hero = () => {
             <Sparkles className="h-4 w-4 mr-2 text-slate-700" />
             <span className="text-slate-700">Creating magic through design & management</span>
           </div>
-          
-          {/* Added name with floating animation */}
-          <h1 className="text-6xl sm:text-7xl font-bold animate-float" style={{ animationDelay: "0.8s" }}>
-            <span className="block text-slate-700">Bassel Atout</span>
-          </h1>
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight">
             <span className="block text-slate-700">Bringing</span>

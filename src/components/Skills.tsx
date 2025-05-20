@@ -74,7 +74,7 @@ const SkillCard = ({
     </Card>;
 };
 const Skills = () => {
-  return <section id="skills" className="py-20 md:py-28 relative">
+  return <section id="skills" className="py-20 md:py-28 relative bg-slate-100">
       {/* Decorative blobs */}
       <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -right-64 top-0"></div>
       <div className="blob-shape bg-secondary/10 w-[400px] h-[400px] -left-32 bottom-0"></div>
@@ -90,13 +90,13 @@ const Skills = () => {
       
       <div className="container relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent font-medium mb-4">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-accent font-medium mb-4 bg-slate-700">
             <Sparkles className="h-4 w-4 mr-2" />
-            <span>What I can do for you</span>
+            <span className="text-slate-100">What I can do for you</span>
           </div>
           
-          <h2 className="section-title">Skills</h2>
-          <p className="section-subtitle max-w-2xl mx-auto">
+          <h2 className="section-title text-slate-700 text-5xl">Skills</h2>
+          <p className="section-subtitle max-w-2xl mx-auto text-slate-700">
             Balancing creative excellence with strategic execution
           </p>
         </div>

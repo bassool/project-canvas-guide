@@ -3,20 +3,45 @@ import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [overDarkSection, setOverDarkSection] = useState(false);
+  
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
       if (isScrolled !== scrolled) {
         setScrolled(isScrolled);
       }
+      
+      // Check if we're over a section with a dark background
+      const sections = [
+        document.getElementById("work"),
+        document.getElementById("skills")
+      ];
+      
+      let isOverDarkSection = false;
+      
+      sections.forEach(section => {
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          // Check if the navbar overlaps with this section
+          if (rect.top <= 80 && rect.bottom >= 0) {
+            isOverDarkSection = true;
+          }
+        }
+      });
+      
+      setOverDarkSection(isOverDarkSection);
     };
+    
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrolled]);
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -25,7 +50,15 @@ const Navbar = () => {
       });
     }
   };
-  return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4", scrolled ? "bg-background/80 backdrop-blur-lg shadow-md" : "bg-transparent")}>
+  
+  return <header className={cn(
+    "fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4",
+    scrolled 
+      ? overDarkSection 
+        ? "bg-white/90 backdrop-blur-lg shadow-md" 
+        : "bg-background/80 backdrop-blur-lg shadow-md" 
+      : "bg-transparent"
+  )}>
       <div className="container flex items-center justify-between">
         <div className="text-2xl font-bold">
           <a href="#" className="flex items-center gap-2">
@@ -59,4 +92,5 @@ const Navbar = () => {
       </div>
     </header>;
 };
+
 export default Navbar;

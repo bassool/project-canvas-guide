@@ -106,5 +106,22 @@ export const projects: Project[] = [
     impact: "Successfully launched product with 95% on-time delivery of project milestones",
     challenge: "Coordinating cross-functional teams across different time zones",
     solution: "Implemented agile methodology with clear communication protocols and documentation"
+  },
+  {
+    id: 6,
+    title: "Sanad Collective",
+    description: "Led community-focused initiative providing resources and support for underrepresented artists, facilitating workshops and creating networking opportunities.",
+    category: "strategy",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    tags: ["Community Building", "Resource Management", "Event Planning", "Mentorship"],
+    galleryImages: [
+      "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7", 
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+    ],
+    tools: ["Slack", "Notion", "Asana", "Google Workspace"],
+    impact: "Created support network reaching over 500 artists and facilitating 20+ successful collaborations",
+    challenge: "Building sustainable infrastructure with limited funding and volunteer resources",
+    solution: "Established partnership model with established organizations to share resources and expertise"
   }
 ];

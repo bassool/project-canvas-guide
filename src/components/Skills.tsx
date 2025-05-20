@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Calendar, Briefcase, Users, Rocket, Palette, Star, Sparkles } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -55,8 +56,8 @@ const SkillCard = ({
 }) => {
   const Icon = skill.icon;
   
-  // Changed color classes to always use slate-700 instead of dynamic colors
-  return <Card className="overflow-hidden border-border card-hover bg-gradient-to-br from-white dark:from-card to-secondary/5 hover:to-slate-700/10">
+  // Changed hover effect to use a darker slate shade for better contrast
+  return <Card className="overflow-hidden border-border card-hover bg-gradient-to-br from-white dark:from-card to-secondary/5 hover:to-slate-700/30">
       <div className="bg-sky-300" />
       <CardHeader className="bg-slate-100">
         <div className="flex items-center gap-3">

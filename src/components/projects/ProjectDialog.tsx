@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Play, Pause, Music } from "lucide-react";
 import { Project } from "./projectTypes";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface ProjectDialogProps {
   project: Project;
@@ -73,87 +74,91 @@ const SpotifyEmbed = ({ embedUrl }: { embedUrl: string }) => {
 const ProjectDialog = ({ project, isOpen, setIsOpen }: ProjectDialogProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-4xl w-[90vw] p-0 border border-primary/20 rounded-lg overflow-hidden">
+      <DialogContent className="max-w-4xl w-[90vw] p-0 border border-primary/20 rounded-lg overflow-hidden max-h-[90vh]">
         <DialogHeader className="p-6 border-b">
           <DialogTitle className="text-2xl font-bold">{project.title}</DialogTitle>
         </DialogHeader>
         
-        {project.galleryImages && project.galleryImages.length > 0 && (
-          <div className="p-4">
-            <Carousel className="w-full">
-              <CarouselContent>
-                {project.galleryImages.map((img, index) => (
-                  <CarouselItem key={index}>
-                    <div className="p-1">
-                      <div className="aspect-video overflow-hidden rounded-md">
-                        <img 
-                          src={img} 
-                          alt={`${project.title} gallery image ${index + 1}`}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="left-4" />
-              <CarouselNext className="right-4" />
-            </Carousel>
-          </div>
-        )}
-        
-        <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="space-y-4">
-            <div>
-              <h4 className="text-xl font-semibold text-primary mb-2">Tools Used</h4>
-              <div className="flex flex-wrap gap-2">
-                {project.tools?.map((tool, index) => (
-                  <Badge key={index} variant="secondary" className="text-sm">{tool}</Badge>
-                ))}
+        <ScrollArea className="h-[calc(90vh-12rem)]">
+          <div className="px-6 pb-6">
+            {project.galleryImages && project.galleryImages.length > 0 && (
+              <div className="py-4">
+                <Carousel className="w-full">
+                  <CarouselContent>
+                    {project.galleryImages.map((img, index) => (
+                      <CarouselItem key={index}>
+                        <div className="p-1">
+                          <div className="aspect-video overflow-hidden rounded-md">
+                            <img 
+                              src={img} 
+                              alt={`${project.title} gallery image ${index + 1}`}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="left-4" />
+                  <CarouselNext className="right-4" />
+                </Carousel>
               </div>
-            </div>
+            )}
             
-            <div>
-              <h4 className="text-xl font-semibold text-primary mb-2">Impact</h4>
-              <p className="text-foreground/90 text-base">{project.impact}</p>
-            </div>
-
-            {project.audioTracks && (
-              <div>
-                <h4 className="text-xl font-semibold text-primary mb-2 flex items-center">
-                  <Music className="h-4 w-4 mr-2" />
-                  Audio Samples
-                </h4>
-                <div className="space-y-2">
-                  {project.audioTracks.map((track, index) => (
-                    <AudioPlayer key={index} track={track} />
-                  ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-xl font-semibold text-primary mb-2">Tools Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tools?.map((tool, index) => (
+                      <Badge key={index} variant="secondary" className="text-sm">{tool}</Badge>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
-          
-          <div className="space-y-4">
-            <div>
-              <h4 className="text-xl font-semibold text-primary mb-2">Challenge</h4>
-              <p className="text-foreground/90 text-base">{project.challenge}</p>
-            </div>
-            
-            <div>
-              <h4 className="text-xl font-semibold text-primary mb-2">Solution</h4>
-              <p className="text-foreground/90 text-base">{project.solution}</p>
-            </div>
+                
+                <div>
+                  <h4 className="text-xl font-semibold text-primary mb-2">Impact</h4>
+                  <p className="text-foreground/90 text-base">{project.impact}</p>
+                </div>
 
-            {project.spotifyEmbed && (
-              <div>
-                <h4 className="text-xl font-semibold text-primary mb-2">Music Stream</h4>
-                <SpotifyEmbed embedUrl={project.spotifyEmbed} />
+                {project.audioTracks && (
+                  <div>
+                    <h4 className="text-xl font-semibold text-primary mb-2 flex items-center">
+                      <Music className="h-4 w-4 mr-2" />
+                      Audio Samples
+                    </h4>
+                    <div className="space-y-2">
+                      {project.audioTracks.map((track, index) => (
+                        <AudioPlayer key={index} track={track} />
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
-            )}
+              
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-xl font-semibold text-primary mb-2">Challenge</h4>
+                  <p className="text-foreground/90 text-base">{project.challenge}</p>
+                </div>
+                
+                <div>
+                  <h4 className="text-xl font-semibold text-primary mb-2">Solution</h4>
+                  <p className="text-foreground/90 text-base">{project.solution}</p>
+                </div>
+
+                {project.spotifyEmbed && (
+                  <div>
+                    <h4 className="text-xl font-semibold text-primary mb-2">Music Stream</h4>
+                    <SpotifyEmbed embedUrl={project.spotifyEmbed} />
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
-        </div>
+        </ScrollArea>
         
-        <div className="p-5 pt-0 flex justify-end">
+        <div className="p-5 border-t flex justify-end bg-background">
           <Button 
             variant="outline" 
             size="sm" 

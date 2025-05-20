@@ -31,8 +31,8 @@ export const projects: Project[] = [
     tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
     featured: true,
     galleryImages: [
-      "/lovable-uploads/09dcce3a-805a-4d5e-bd8e-16730a9fc7b8.png",
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+      "/lovable-uploads/370631e3-7720-4768-912d-01c4c390495e.png", 
+      "/lovable-uploads/4d9114b8-8eb1-4964-898b-17ba3359c010.png",
       "https://images.unsplash.com/photo-1552581234-26160f608093"
     ],
     tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],
@@ -64,14 +64,14 @@ export const projects: Project[] = [
     title: "Fanhaven",
     description: "Developed brand identity for a startup, producing visual assets and collaborating with founders to align branding with vision.",
     category: "creative",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    image: "/lovable-uploads/1a12441c-79b9-4215-b09d-a9d877a7c147.png",
     tags: ["Creative Brand Direction", "Graphic Design", "Experiential Marketing"],
     galleryImages: [
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      "/lovable-uploads/1a12441c-79b9-4215-b09d-a9d877a7c147.png",
       "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",
       "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e"
     ],
-    tools: ["Figma", "Storybook", "Zeplin", "InVision"],
+    tools: ["Figma", "Notion", "Adobe Photoshop"],
     impact: "Reduced design time by 60% and improved consistency across product suite",
     challenge: "Balancing flexibility for designers with consistency for brand integrity",
     solution: "Created component-based system with clear guidelines and examples of appropriate usage"

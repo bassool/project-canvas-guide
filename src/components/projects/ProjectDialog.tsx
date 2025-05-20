@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Play, Pause, Music } from "lucide-react";
 import { Project } from "./projectTypes";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { toast } from "@/components/ui/use-toast";
 
 interface ProjectDialogProps {
   project: Project;
@@ -20,12 +21,30 @@ const AudioPlayer = ({ track }: { track: { title: string; url: string } }) => {
 
   const togglePlay = () => {
     if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play();
+      try {
+        if (isPlaying) {
+          audioRef.current.pause();
+        } else {
+          const playPromise = audioRef.current.play();
+          
+          if (playPromise !== undefined) {
+            playPromise.catch(error => {
+              console.error("Audio playback error:", error);
+              toast({
+                title: "Playback error",
+                description: "There was a problem playing this audio file."
+              });
+            });
+          }
+        }
+        setIsPlaying(!isPlaying);
+      } catch (error) {
+        console.error("Audio interaction error:", error);
+        toast({
+          title: "Audio error",
+          description: "There was a problem with the audio player."
+        });
       }
-      setIsPlaying(!isPlaying);
     }
   };
 
@@ -47,6 +66,7 @@ const AudioPlayer = ({ track }: { track: { title: string; url: string } }) => {
         src={track.url} 
         onEnded={() => setIsPlaying(false)}
         className="hidden"
+        preload="metadata"
       />
     </div>
   );

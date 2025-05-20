@@ -84,7 +84,7 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Stats bubble - improved contrast */}
+          {/* Stats bubble - updated to match first bubble style */}
           <div className="absolute -left-6 top-1/4 bg-white/90 dark:bg-card/90 backdrop-blur-sm py-2 px-4 rounded-full shadow-lg border border-border animate-float z-20" style={{
           animationDelay: "1.5s"
         }}>

@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "creative" | "management" | "strategy";
 
@@ -27,7 +26,7 @@ export const projects: Project[] = [
     title: "Zapshot",
     description: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, and provided consultation marketing and brand ambassadorship program strategy",
     category: "management",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+    image: "/lovable-uploads/09dcce3a-805a-4d5e-bd8e-16730a9fc7b8.png",
     tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
     featured: true,
     galleryImages: [
@@ -140,4 +139,3 @@ export const projects: Project[] = [
     solution: "Established partnership model with established organizations to share resources and expertise"
   }
 ];
-

@@ -26,11 +26,11 @@ export const projects: Project[] = [
     title: "Zapshot",
     description: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, and provided consultation marketing and brand ambassadorship program strategy",
     category: "management",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+    image: "/lovable-uploads/09dcce3a-805a-4d5e-bd8e-16730a9fc7b8.png",
     tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
     featured: true,
     galleryImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+      "/lovable-uploads/09dcce3a-805a-4d5e-bd8e-16730a9fc7b8.png",
       "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
       "https://images.unsplash.com/photo-1552581234-26160f608093"
     ],

@@ -1,9 +1,10 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, ArrowRight, Heart, Download, FileText } from "lucide-react";
+import { Mail, ArrowRight, Heart, Download, FileText, X } from "lucide-react";
 const Contact = () => {
   const {
     toast
@@ -39,62 +40,77 @@ const Contact = () => {
         
         <div className="flex justify-center">
           <div className="space-y-8 max-w-3xl w-full">
-            <div className="backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-lg card-hover text-center bg-slate-100">
-              <div className="flex flex-col items-center">
-                <div className="p-4 rounded-xl text-primary mb-4 bg-slate-600">
-                  <Mail className="h-6 w-6 bg-transparent" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-xl mb-2 text-slate-900">Email Me</h3>
-                  <p className="mb-3 text-slate-800">I am always open to connect with anyone, learn more about creative and technical projects, and discuss navigating this rewarding career path!</p>
-                  <a href="mailto:basselatout@icloud.com" className="text-slate-800 hover:underline inline-flex items-center group justify-center">
-                    basselatout@icloud.com
-                    <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity bg-transparent" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-            <div className="backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover text-center bg-slate-100">
-              <div className="flex flex-col items-center">
-                <div className="p-4 rounded-xl text-accent mb-4 bg-slate-600">
-                  <FileText className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-xl mb-2 text-slate-800">Download my Resume!</h3>
-                  <p className="mb-3 text-slate-800">
-                    My next role could very well be within your firm; let my resume show you why!
-                  </p>
-                  <a href="/resume.pdf" download>
-                    <Button variant="link" className="p-0 h-auto group bg-transparent text-slate-900">
-                      Download Resume 
-                      <Download className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Button>
-                  </a>
+            <div className="group relative">
+              {/* Backlit blur effect container that appears on hover */}
+              <div className="absolute inset-0 bg-slate-700 opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
+              
+              <div className="backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-lg card-hover text-center bg-slate-100">
+                <div className="flex flex-col items-center">
+                  <div className="p-4 rounded-xl text-primary mb-4 bg-slate-600">
+                    <Mail className="h-6 w-6 bg-transparent" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-xl mb-2 text-slate-900">Email Me</h3>
+                    <p className="mb-3 text-slate-800">I am always open to connect with anyone, learn more about creative and technical projects, and discuss navigating this rewarding career path!</p>
+                    <a href="mailto:basselatout@icloud.com" className="text-slate-800 hover:underline inline-flex items-center group justify-center">
+                      basselatout@icloud.com
+                      <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity bg-transparent" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-white/20 shadow-lg text-center bg-slate-100">
-              <h3 className="font-semibold text-xl mb-6 text-slate-900">Why work with me?</h3>
-              <ul className="space-y-4">
-                <li className="flex items-center gap-3 justify-center">
-                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
-                  <span className="text-lg text-gray-900">Balanced creative and technical expertise</span>
-                </li>
-                <li className="flex items-center gap-3 justify-center">
-                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
-                  <span className="text-lg text-slate-800">Proven track record of successful project delivery</span>
-                </li>
-                <li className="flex items-center gap-3 justify-center">
-                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
-                  <span className="text-lg text-slate-800">Clear communication throughout the process</span>
-                </li>
-                <li className="flex items-center gap-3 justify-center">
-                  <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
-                  <span className="text-lg text-slate-800">Focus on achieving your business objectives</span>
-                </li>
-              </ul>
+            <div className="group relative">
+              {/* Backlit blur effect container that appears on hover */}
+              <div className="absolute inset-0 bg-slate-700 opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
+              
+              <div className="backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover text-center bg-slate-100">
+                <div className="flex flex-col items-center">
+                  <div className="p-4 rounded-xl text-accent mb-4 bg-slate-600">
+                    <FileText className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-xl mb-2 text-slate-800">Download my Resume!</h3>
+                    <p className="mb-3 text-slate-800">
+                      My next role could very well be within your firm; let my resume show you why!
+                    </p>
+                    <a href="/resume.pdf" download>
+                      <Button variant="link" className="p-0 h-auto group bg-transparent text-slate-900">
+                        Download Resume 
+                        <Download className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="group relative">
+              {/* Backlit blur effect container that appears on hover */}
+              <div className="absolute inset-0 bg-slate-700 opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
+              
+              <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-white/20 shadow-lg text-center bg-slate-100">
+                <h3 className="font-semibold text-xl mb-6 text-slate-900">Why work with me?</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-center gap-3 justify-center">
+                    <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
+                    <span className="text-lg text-gray-900">Balanced creative and technical expertise</span>
+                  </li>
+                  <li className="flex items-center gap-3 justify-center">
+                    <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
+                    <span className="text-lg text-slate-800">Proven track record of successful project delivery</span>
+                  </li>
+                  <li className="flex items-center gap-3 justify-center">
+                    <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
+                    <span className="text-lg text-slate-800">Clear communication throughout the process</span>
+                  </li>
+                  <li className="flex items-center gap-3 justify-center">
+                    <span className="inline-block w-4 h-4 rounded-full bg-primary/80"></span>
+                    <span className="text-lg text-slate-800">Focus on achieving your business objectives</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

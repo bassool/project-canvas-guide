@@ -7,11 +7,13 @@ import { Play, Pause, Music, Youtube } from "lucide-react";
 import { Project } from "./projectTypes";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "@/components/ui/use-toast";
+
 interface ProjectDialogProps {
   project: Project;
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
 }
+
 const AudioPlayer = ({
   track
 }: {
@@ -59,6 +61,7 @@ const AudioPlayer = ({
       <audio ref={audioRef} src={track.url} onEnded={() => setIsPlaying(false)} className="hidden" preload="metadata" />
     </div>;
 };
+
 const SpotifyEmbed = ({
   embedUrl
 }: {
@@ -69,17 +72,37 @@ const SpotifyEmbed = ({
       <iframe src={`https://open.spotify.com/embed/album/${albumId}`} width="100%" height="352" frameBorder="0" allowTransparency={true} allow="encrypted-media" title="Spotify Player" className="rounded-lg" />
     </div>;
 };
+
 const YouTubeEmbed = ({
   embedUrl
 }: {
   embedUrl: string;
 }) => {
-  // Extract channel ID from URL format
-  const channelId = embedUrl.includes('@') ? embedUrl.split('@')[1].split('/')[0] : embedUrl.split('/').pop();
+  // Extract the channel handle
+  let channelHandle = "";
+  
+  if (embedUrl.includes('@')) {
+    // Extract the handle from @username format
+    channelHandle = embedUrl.split('@')[1].split('/')[0];
+  } else {
+    // Fallback for other URL formats
+    channelHandle = embedUrl.split('/').pop() || "";
+  }
+  
   return <div className="mt-4 border border-primary/20 rounded-lg overflow-hidden">
-      <iframe src={`https://www.youtube.com/embed/?listType=user_uploads&list=${channelId}`} width="100%" height="352" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen title="YouTube Channel" className="rounded-lg" />
+      <iframe 
+        src={`https://www.youtube.com/embed?listType=user_uploads&list=${channelHandle}`} 
+        width="100%" 
+        height="352" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowFullScreen 
+        title="YouTube Channel" 
+        className="rounded-lg" 
+      />
     </div>;
 };
+
 const ProjectDialog = ({
   project,
   isOpen,
@@ -170,4 +193,5 @@ const ProjectDialog = ({
       </DialogContent>
     </Dialog>;
 };
+
 export default ProjectDialog;

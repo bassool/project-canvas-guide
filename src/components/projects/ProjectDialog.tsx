@@ -1,3 +1,4 @@
+
 import React, { useState, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
@@ -152,30 +153,34 @@ const ProjectDialog = ({
   };
 
   return <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      {/* Navigation buttons outside the dialog content */}
-      <div className="fixed left-[calc(50%-24rem)] top-1/2 transform -translate-y-1/2 z-[60]">
-        <Button 
-          variant="outline" 
-          size="icon"
-          className="rounded-full bg-background/80 backdrop-blur-sm hover:bg-background/95 border-primary/30 shadow-md"
-          onClick={() => navigateProject('prev')}
-        >
-          <ArrowLeft className="h-4 w-4" />
-          <span className="sr-only">Previous project</span>
-        </Button>
-      </div>
-      
-      <div className="fixed right-[calc(50%-24rem)] top-1/2 transform -translate-y-1/2 z-[60]">
-        <Button 
-          variant="outline" 
-          size="icon"
-          className="rounded-full bg-background/80 backdrop-blur-sm hover:bg-background/95 border-primary/30 shadow-md"
-          onClick={() => navigateProject('next')}
-        >
-          <ArrowRight className="h-4 w-4" />
-          <span className="sr-only">Next project</span>
-        </Button>
-      </div>
+      {/* Navigation buttons - only visible when dialog is open */}
+      {isOpen && (
+        <>
+          <div className="fixed left-[calc(50%-24rem)] top-1/2 transform -translate-y-1/2 z-[60]">
+            <Button 
+              variant="outline" 
+              size="icon"
+              className="rounded-full bg-background/80 backdrop-blur-sm hover:bg-background/95 border-primary/30 shadow-md"
+              onClick={() => navigateProject('prev')}
+            >
+              <ArrowLeft className="h-4 w-4" />
+              <span className="sr-only">Previous project</span>
+            </Button>
+          </div>
+          
+          <div className="fixed right-[calc(50%-24rem)] top-1/2 transform -translate-y-1/2 z-[60]">
+            <Button 
+              variant="outline" 
+              size="icon"
+              className="rounded-full bg-background/80 backdrop-blur-sm hover:bg-background/95 border-primary/30 shadow-md"
+              onClick={() => navigateProject('next')}
+            >
+              <ArrowRight className="h-4 w-4" />
+              <span className="sr-only">Next project</span>
+            </Button>
+          </div>
+        </>
+      )}
       
       <DialogContent className="max-w-4xl max-h-[95vh] p-0 border border-primary/20 rounded-lg overflow-hidden flex flex-col">
         <DialogHeader className="p-4 border-b sticky top-0 bg-background z-10">

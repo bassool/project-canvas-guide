@@ -53,7 +53,7 @@ const ProjectCard = ({
               </span>
             }
           </div>
-          <CardContent className="p-5 bg-slate-100">
+          <CardContent className="p-5 bg-slate-100 rounded-b-xl">
             <h3 className="text-xl font-bold mb-2 transition-colors text-slate-700">
               {project.title}
             </h3>

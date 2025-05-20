@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
+
 const Hero = () => {
   const scrollToWork = () => {
     const element = document.getElementById("work");
@@ -11,6 +12,7 @@ const Hero = () => {
       });
     }
   };
+
   return <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-slate-200">
       {/* Abstract background shapes */}
       <div className="blob-shape w-[400px] h-[400px] -top-40 -left-20 animate-pulse-custom bg-[#59b8e9]"></div>
@@ -24,7 +26,7 @@ const Hero = () => {
       <div className="absolute bottom-1/4 right-1/3 w-12 h-12 rounded-full bg-[#b4def5] animate-float" style={{
       animationDelay: "1.2s"
     }}></div>
-      <div className="absolute top-2/3 left-1/3 w-10 h-10 rounded-full bg-[#b4def5] animate-float" style={{
+      <div className="absolute top-[73%] left-1/3 w-10 h-10 rounded-full bg-[#b4def5] animate-float" style={{
       animationDelay: "1.8s"
     }}></div>
       
@@ -97,4 +99,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;

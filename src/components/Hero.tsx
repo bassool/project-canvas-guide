@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
@@ -14,7 +15,7 @@ const Hero = () => {
       {/* Abstract background shapes */}
       <div className="blob-shape w-[400px] h-[400px] -top-40 -left-20 animate-pulse-custom bg-[#59b8e9]"></div>
       <div className="blob-shape w-[800px] h-[900px] -bottom-[10rem] -right-20 animate-pulse-custom bg-[#81bfdf] z-10"></div>
-      <div className="blob-shape w-[300px] h-[300px] top-[10%] right-1/4 animate-pulse-custom bg-[#87cee4]"></div>
+      <div className="blob-shape w-[300px] h-[300px] top-[10%] right-[40%] animate-pulse-custom bg-[#87cee4]"></div>
       
       {/* Animated circles */}
       <div className="absolute top-1/4 left-1/4 w-8 h-8 rounded-full bg-primary/40 animate-float" style={{

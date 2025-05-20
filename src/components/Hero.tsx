@@ -1,8 +1,6 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
-
 const Hero = () => {
   const scrollToWork = () => {
     const element = document.getElementById("work");
@@ -12,7 +10,6 @@ const Hero = () => {
       });
     }
   };
-
   return <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-slate-200">
       {/* Abstract background shapes */}
       <div className="blob-shape w-[400px] h-[400px] -top-40 -left-20 animate-pulse-custom bg-[#59b8e9]"></div>
@@ -49,7 +46,7 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" onClick={scrollToWork} className="rounded-full px-6 group">
+            <Button size="lg" onClick={scrollToWork} className="rounded-full px-6 group bg-transparent">
               View my work 
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
@@ -59,7 +56,7 @@ const Hero = () => {
             if (element) element.scrollIntoView({
               behavior: "smooth"
             });
-          }} className="rounded-full px-6 border-primary/20 hover:bg-primary/5">
+          }} className="rounded-full px-6 border-primary/20 bg-transparent text-slate-700">
               Get in touch
             </Button>
           </div>
@@ -99,5 +96,4 @@ const Hero = () => {
       </div>
     </section>;
 };
-
 export default Hero;

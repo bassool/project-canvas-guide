@@ -7,6 +7,7 @@ import { Sparkles } from "lucide-react";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [overDarkSection, setOverDarkSection] = useState(false);
+  const [overAboutSection, setOverAboutSection] = useState(false);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -16,14 +17,18 @@ const Navbar = () => {
       }
       
       // Check if we're over a section with a dark background
-      const sections = [
+      const darkSections = [
         document.getElementById("work"),
         document.getElementById("skills")
       ];
       
-      let isOverDarkSection = false;
+      // Check if we're over the about section
+      const aboutSection = document.getElementById("about");
       
-      sections.forEach(section => {
+      let isOverDarkSection = false;
+      let isOverAboutSection = false;
+      
+      darkSections.forEach(section => {
         if (section) {
           const rect = section.getBoundingClientRect();
           // Check if the navbar overlaps with this section
@@ -33,7 +38,16 @@ const Navbar = () => {
         }
       });
       
+      if (aboutSection) {
+        const rect = aboutSection.getBoundingClientRect();
+        // Check if the navbar overlaps with about section
+        if (rect.top <= 80 && rect.bottom >= 0) {
+          isOverAboutSection = true;
+        }
+      }
+      
       setOverDarkSection(isOverDarkSection);
+      setOverAboutSection(isOverAboutSection);
     };
     
     window.addEventListener("scroll", handleScroll);
@@ -57,9 +71,11 @@ const Navbar = () => {
   return <header className={cn(
     "fixed top-0 left-0 right-0 z-50 transition-all duration-700 py-4",
     scrolled 
-      ? overDarkSection 
-        ? "bg-white/70 backdrop-blur-xl shadow-md" 
-        : "bg-background/60 backdrop-blur-xl shadow-md" 
+      ? overAboutSection
+        ? "bg-white/90 backdrop-blur-xl shadow-md" 
+        : overDarkSection 
+          ? "bg-white/70 backdrop-blur-xl shadow-md" 
+          : "bg-background/60 backdrop-blur-xl shadow-md" 
       : "bg-transparent"
   )}>
       <div className="container flex items-center justify-between">
@@ -67,11 +83,11 @@ const Navbar = () => {
           <a href="#" className="flex items-center gap-2">
             <span className={cn(
               "bg-gradient-to-r from-primary to-secondary bg-clip-text",
-              overDarkSection ? "text-slate-700" : "text-slate-700"
+              overDarkSection || overAboutSection ? "text-slate-700" : "text-slate-700"
             )}>Portfolio</span>
             <span className={cn(
               "hidden sm:inline text-sm font-medium",
-              overDarkSection ? "text-slate-700" : "text-slate-700"
+              overDarkSection || overAboutSection ? "text-slate-700" : "text-slate-700"
             )}>| Creative Director & PM</span>
           </a>
         </div>
@@ -79,31 +95,31 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center gap-1">
           <button onClick={() => scrollToSection("home")} className={cn(
             "nav-link font-medium",
-            overDarkSection ? "text-slate-700" : "text-slate-700"
+            overDarkSection || overAboutSection ? "text-slate-700" : "text-slate-700"
           )}>
             Home
           </button>
           <button onClick={() => scrollToSection("work")} className={cn(
             "nav-link font-medium",
-            overDarkSection ? "text-slate-700" : "text-slate-700"
+            overDarkSection || overAboutSection ? "text-slate-700" : "text-slate-700"
           )}>
             Work
           </button>
           <button onClick={() => scrollToSection("skills")} className={cn(
             "nav-link font-medium",
-            overDarkSection ? "text-slate-700" : "text-slate-700"
+            overDarkSection || overAboutSection ? "text-slate-700" : "text-slate-700"
           )}>
             Skills
           </button>
           <button onClick={() => scrollToSection("about")} className={cn(
             "nav-link font-medium",
-            overDarkSection ? "text-slate-700" : "text-slate-700"
+            overDarkSection || overAboutSection ? "text-slate-700" : "text-slate-700"
           )}>
             About
           </button>
           <button onClick={() => scrollToSection("contact")} className={cn(
             "nav-link font-medium",
-            overDarkSection ? "text-slate-700" : "text-slate-700"
+            overDarkSection || overAboutSection ? "text-slate-700" : "text-slate-700"
           )}>
             Contact
           </button>

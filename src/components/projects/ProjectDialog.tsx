@@ -1,3 +1,4 @@
+
 import React, { useState, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
@@ -78,26 +79,46 @@ const YouTubeEmbed = ({
 }: {
   embedUrl: string;
 }) => {
-  // Extract the channel handle
-  let channelHandle = "";
+  // For channel URLs, we need to use a different approach
+  // YouTube embedded player doesn't support user_uploads as previously attempted
   
-  if (embedUrl.includes('@')) {
-    // Extract the handle from @username format
-    channelHandle = embedUrl.split('@')[1].split('/')[0];
+  // First, determine if this is a channel URL (modern YouTube uses @username format)
+  const isChannelUrl = embedUrl.includes('youtube.com/') && 
+                      (embedUrl.includes('/channel/') || embedUrl.includes('@'));
+  
+  let embedSrc = '';
+  
+  if (isChannelUrl) {
+    // For channel URLs, we'll embed the channel page which shows the latest videos
+    if (embedUrl.includes('@')) {
+      // Modern format with @ symbol (e.g., youtube.com/@channelname)
+      const channelHandle = embedUrl.includes('/') ? 
+        embedUrl.split('@')[1].split('/')[0] : 
+        embedUrl.split('@')[1];
+        
+      embedSrc = `https://www.youtube.com/embed/videoseries?list=UU${channelHandle}`;
+    } else if (embedUrl.includes('/channel/')) {
+      // Channel ID format (e.g., youtube.com/channel/UC...)
+      const channelId = embedUrl.split('/channel/')[1].split('/')[0];
+      embedSrc = `https://www.youtube.com/embed/videoseries?list=UU${channelId}`;
+    } else {
+      // Fallback to a general embed that will at least show something
+      embedSrc = `https://www.youtube.com/embed?enablejsapi=1`;
+    }
   } else {
-    // Fallback for other URL formats
-    channelHandle = embedUrl.split('/').pop() || "";
+    // For regular video URLs, we'll just embed the video
+    embedSrc = `https://www.youtube.com/embed?enablejsapi=1`;
   }
   
   return <div className="mt-4 border border-primary/20 rounded-lg overflow-hidden">
       <iframe 
-        src={`https://www.youtube.com/embed?listType=user_uploads&list=${channelHandle}`} 
+        src={embedSrc}
         width="100%" 
         height="352" 
         frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowFullScreen 
-        title="YouTube Channel" 
+        title="YouTube Content" 
         className="rounded-lg" 
       />
     </div>;

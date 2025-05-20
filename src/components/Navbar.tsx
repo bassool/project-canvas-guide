@@ -52,7 +52,7 @@ const Navbar = () => {
           </button>
         </nav>
         
-        <Button onClick={() => scrollToSection("contact")} className="hidden sm:flex items-center gap-2 rounded-full px-6 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity">
+        <Button onClick={() => scrollToSection("contact")} className="hidden sm:flex items-center gap-2 rounded-full px-6 bg-primary hover:bg-primary/90 transition-colors">
           <Sparkles className="h-4 w-4" />
           Get in touch
         </Button>

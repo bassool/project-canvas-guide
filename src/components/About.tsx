@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Award, Download, Trophy } from "lucide-react";
+import { Award, Download, Trophy, Laptop } from "lucide-react";
 const About = () => {
   return <section id="about" className="py-20 md:py-28 relative overflow-hidden">
       {/* Background decoration */}
@@ -29,6 +29,16 @@ const About = () => {
             
             <div className="relative z-10 overflow-hidden rounded-2xl gradient-border shadow-xl animate-float">
               <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" alt="Portrait of me working" className="w-full aspect-[4/3] object-cover" />
+            </div>
+            
+            {/* New floating certification badge - above the photo */}
+            <div className="absolute -left-6 -top-6 bg-white/90 dark:bg-card/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20" style={{
+              animationDelay: "1.5s"
+            }}>
+              <div className="flex items-center gap-2">
+                <Laptop className="h-5 w-5 text-primary" />
+                <span className="font-medium text-sm text-slate-900">Certified Associate in Project Management</span>
+              </div>
             </div>
             
             {/* Floating award badge - improved contrast */}

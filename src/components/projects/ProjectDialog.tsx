@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Play, Pause, Music, Youtube, ArrowLeft, ArrowRight } from "lucide-react";
+import { Play, Pause, Music, Youtube, X } from "lucide-react";
 import { Project, projects } from "./projectTypes";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "@/components/ui/use-toast";
@@ -152,38 +152,18 @@ const ProjectDialog = ({
   };
 
   return <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      {/* Navigation buttons - only visible when dialog is open */}
-      {isOpen && (
-        <>
-          <div className="fixed left-[calc(50%-24rem)] top-1/2 transform -translate-y-1/2 z-[60]">
-            <Button 
-              variant="outline" 
-              size="icon"
-              className="rounded-full bg-background/80 backdrop-blur-sm hover:bg-background/95 border-primary/30 shadow-md"
-              onClick={() => navigateProject('prev')}
-            >
-              <ArrowLeft className="h-4 w-4" />
-              <span className="sr-only">Previous project</span>
-            </Button>
-          </div>
-          
-          <div className="fixed right-[calc(50%-24rem)] top-1/2 transform -translate-y-1/2 z-[60]">
-            <Button 
-              variant="outline" 
-              size="icon"
-              className="rounded-full bg-background/80 backdrop-blur-sm hover:bg-background/95 border-primary/30 shadow-md"
-              onClick={() => navigateProject('next')}
-            >
-              <ArrowRight className="h-4 w-4" />
-              <span className="sr-only">Next project</span>
-            </Button>
-          </div>
-        </>
-      )}
-      
       <DialogContent className="max-w-4xl max-h-[95vh] p-0 border border-primary/20 rounded-lg overflow-hidden flex flex-col">
         <DialogHeader className="p-4 border-b sticky top-0 bg-background z-10">
           <DialogTitle className="text-2xl font-bold">{project.title}</DialogTitle>
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="absolute right-4 top-4 rounded-full" 
+            onClick={() => setIsOpen(false)}
+          >
+            <X className="h-4 w-4" />
+            <span className="sr-only">Close</span>
+          </Button>
         </DialogHeader>
         
         <ScrollArea className="flex-1 overflow-y-auto">
@@ -259,9 +239,22 @@ const ProjectDialog = ({
           </div>
         </ScrollArea>
         
-        <div className="p-4 border-t sticky bottom-0 bg-background z-10 flex justify-end">
-          <Button variant="outline" size="sm" className="rounded-full" onClick={() => setIsOpen(false)}>
-            Close
+        <div className="p-4 border-t sticky bottom-0 bg-background z-10 flex justify-between">
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="rounded-full" 
+            onClick={() => navigateProject('prev')}
+          >
+            Previous
+          </Button>
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="rounded-full" 
+            onClick={() => navigateProject('next')}
+          >
+            Next
           </Button>
         </div>
       </DialogContent>

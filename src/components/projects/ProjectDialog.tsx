@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
@@ -74,54 +73,50 @@ const SpotifyEmbed = ({
     </div>;
 };
 
+const VideoEmbed = ({ videoId }: { videoId: string }) => {
+  return (
+    <iframe 
+      src={`https://www.youtube.com/embed/${videoId}`}
+      width="100%" 
+      height="352" 
+      frameBorder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowFullScreen 
+      title={`YouTube Video ${videoId}`}
+      className="rounded-lg" 
+    />
+  );
+};
+
 const YouTubeEmbed = ({
   embedUrl
 }: {
   embedUrl: string;
 }) => {
-  // For channel URLs, we need to use a different approach
-  // YouTube embedded player doesn't support user_uploads as previously attempted
+  // These are the three specified videos to embed
+  const videoIds = [
+    "CFtzsAY0wlM", // First video
+    "zOSpiophNBs", // Second video
+    "NNF46Np1q2c", // Third video
+  ];
   
-  // First, determine if this is a channel URL (modern YouTube uses @username format)
-  const isChannelUrl = embedUrl.includes('youtube.com/') && 
-                      (embedUrl.includes('/channel/') || embedUrl.includes('@'));
-  
-  let embedSrc = '';
-  
-  if (isChannelUrl) {
-    // For channel URLs, we'll embed the channel page which shows the latest videos
-    if (embedUrl.includes('@')) {
-      // Modern format with @ symbol (e.g., youtube.com/@channelname)
-      const channelHandle = embedUrl.includes('/') ? 
-        embedUrl.split('@')[1].split('/')[0] : 
-        embedUrl.split('@')[1];
-        
-      embedSrc = `https://www.youtube.com/embed/videoseries?list=UU${channelHandle}`;
-    } else if (embedUrl.includes('/channel/')) {
-      // Channel ID format (e.g., youtube.com/channel/UC...)
-      const channelId = embedUrl.split('/channel/')[1].split('/')[0];
-      embedSrc = `https://www.youtube.com/embed/videoseries?list=UU${channelId}`;
-    } else {
-      // Fallback to a general embed that will at least show something
-      embedSrc = `https://www.youtube.com/embed?enablejsapi=1`;
-    }
-  } else {
-    // For regular video URLs, we'll just embed the video
-    embedSrc = `https://www.youtube.com/embed?enablejsapi=1`;
-  }
-  
-  return <div className="mt-4 border border-primary/20 rounded-lg overflow-hidden">
-      <iframe 
-        src={embedSrc}
-        width="100%" 
-        height="352" 
-        frameBorder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowFullScreen 
-        title="YouTube Content" 
-        className="rounded-lg" 
-      />
-    </div>;
+  return (
+    <div className="mt-4 border border-primary/20 rounded-lg overflow-hidden">
+      <Carousel className="w-full">
+        <CarouselContent>
+          {videoIds.map((videoId, index) => (
+            <CarouselItem key={index}>
+              <div className="p-1">
+                <VideoEmbed videoId={videoId} />
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="left-4" />
+        <CarouselNext className="right-4" />
+      </Carousel>
+    </div>
+  );
 };
 
 const ProjectDialog = ({

@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
@@ -153,6 +152,31 @@ const ProjectDialog = ({
   };
 
   return <Dialog open={isOpen} onOpenChange={setIsOpen}>
+      {/* Navigation buttons outside the dialog content */}
+      <div className="fixed left-[calc(50%-24rem)] top-1/2 transform -translate-y-1/2 z-[60]">
+        <Button 
+          variant="outline" 
+          size="icon"
+          className="rounded-full bg-background/80 backdrop-blur-sm hover:bg-background/95 border-primary/30 shadow-md"
+          onClick={() => navigateProject('prev')}
+        >
+          <ArrowLeft className="h-4 w-4" />
+          <span className="sr-only">Previous project</span>
+        </Button>
+      </div>
+      
+      <div className="fixed right-[calc(50%-24rem)] top-1/2 transform -translate-y-1/2 z-[60]">
+        <Button 
+          variant="outline" 
+          size="icon"
+          className="rounded-full bg-background/80 backdrop-blur-sm hover:bg-background/95 border-primary/30 shadow-md"
+          onClick={() => navigateProject('next')}
+        >
+          <ArrowRight className="h-4 w-4" />
+          <span className="sr-only">Next project</span>
+        </Button>
+      </div>
+      
       <DialogContent className="max-w-4xl max-h-[95vh] p-0 border border-primary/20 rounded-lg overflow-hidden flex flex-col">
         <DialogHeader className="p-4 border-b sticky top-0 bg-background z-10">
           <DialogTitle className="text-2xl font-bold">{project.title}</DialogTitle>
@@ -160,32 +184,8 @@ const ProjectDialog = ({
         
         <ScrollArea className="flex-1 overflow-y-auto">
           <div className="px-6 py-4">
-            {/* Project navigation buttons */}
-            <div className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20">
-              <Button 
-                variant="outline" 
-                size="icon"
-                className="rounded-full bg-background/80 backdrop-blur-sm hover:bg-background/95 border-primary/30"
-                onClick={() => navigateProject('prev')}
-              >
-                <ArrowLeft className="h-4 w-4" />
-                <span className="sr-only">Previous project</span>
-              </Button>
-            </div>
-            
-            <div className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20">
-              <Button 
-                variant="outline" 
-                size="icon"
-                className="rounded-full bg-background/80 backdrop-blur-sm hover:bg-background/95 border-primary/30"
-                onClick={() => navigateProject('next')}
-              >
-                <ArrowRight className="h-4 w-4" />
-                <span className="sr-only">Next project</span>
-              </Button>
-            </div>
-            
-            {project.galleryImages && project.galleryImages.length > 0 && <div className="py-4">
+            {project.galleryImages && project.galleryImages.length > 0 && 
+              <div className="py-4">
                 <Carousel className="w-full">
                   <CarouselContent>
                     {project.galleryImages.map((img, index) => <CarouselItem key={index}>
@@ -199,7 +199,8 @@ const ProjectDialog = ({
                   <CarouselPrevious className="left-4" />
                   <CarouselNext className="right-4" />
                 </Carousel>
-              </div>}
+              </div>
+            }
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-4">

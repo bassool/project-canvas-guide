@@ -1,10 +1,11 @@
+
 import React, { useState, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Play, Pause, Music, Youtube } from "lucide-react";
-import { Project } from "./projectTypes";
+import { Play, Pause, Music, Youtube, ArrowLeft, ArrowRight } from "lucide-react";
+import { Project, projects } from "./projectTypes";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "@/components/ui/use-toast";
 
@@ -124,6 +125,33 @@ const ProjectDialog = ({
   isOpen,
   setIsOpen
 }: ProjectDialogProps) => {
+  // Find the current project's index in the projects array
+  const currentIndex = projects.findIndex(p => p.id === project.id);
+  
+  // Function to navigate to the next or previous project
+  const navigateProject = (direction: 'next' | 'prev') => {
+    // Calculate new index with wraparound
+    let newIndex = direction === 'next' 
+      ? (currentIndex + 1) % projects.length 
+      : (currentIndex - 1 + projects.length) % projects.length;
+    
+    // Get the next project
+    const nextProject = projects[newIndex];
+    
+    // Dispatch a custom event to notify the ProjectCard to update its currentProject
+    const event = new CustomEvent('project-change', {
+      detail: { project: nextProject }
+    });
+    window.dispatchEvent(event);
+    
+    // Show a toast notification to indicate navigation
+    toast({
+      title: `Viewing ${direction === 'next' ? 'next' : 'previous'} project`,
+      description: nextProject.title,
+      duration: 1500
+    });
+  };
+
   return <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent className="max-w-4xl max-h-[95vh] p-0 border border-primary/20 rounded-lg overflow-hidden flex flex-col">
         <DialogHeader className="p-4 border-b sticky top-0 bg-background z-10">
@@ -132,6 +160,31 @@ const ProjectDialog = ({
         
         <ScrollArea className="flex-1 overflow-y-auto">
           <div className="px-6 py-4">
+            {/* Project navigation buttons */}
+            <div className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20">
+              <Button 
+                variant="outline" 
+                size="icon"
+                className="rounded-full bg-background/80 backdrop-blur-sm hover:bg-background/95 border-primary/30"
+                onClick={() => navigateProject('prev')}
+              >
+                <ArrowLeft className="h-4 w-4" />
+                <span className="sr-only">Previous project</span>
+              </Button>
+            </div>
+            
+            <div className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20">
+              <Button 
+                variant="outline" 
+                size="icon"
+                className="rounded-full bg-background/80 backdrop-blur-sm hover:bg-background/95 border-primary/30"
+                onClick={() => navigateProject('next')}
+              >
+                <ArrowRight className="h-4 w-4" />
+                <span className="sr-only">Next project</span>
+              </Button>
+            </div>
+            
             {project.galleryImages && project.galleryImages.length > 0 && <div className="py-4">
                 <Carousel className="w-full">
                   <CarouselContent>

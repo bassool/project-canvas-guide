@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="absolute bottom-1/4 right-1/3 w-12 h-12 rounded-full bg-[#b4def5] animate-float" style={{
       animationDelay: "1.2s"
     }}></div>
-      <div className="absolute top-2/3 left-1/3 w-10 h-10 rounded-full bg-accent/40 animate-float" style={{
+      <div className="absolute top-2/3 left-1/3 w-10 h-10 rounded-full bg-[#b4def5] animate-float" style={{
       animationDelay: "1.8s"
     }}></div>
       

@@ -37,6 +37,9 @@ const Navbar = () => {
     };
     
     window.addEventListener("scroll", handleScroll);
+    // Initial check on mount
+    handleScroll();
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -52,35 +55,56 @@ const Navbar = () => {
   };
   
   return <header className={cn(
-    "fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4",
+    "fixed top-0 left-0 right-0 z-50 transition-all duration-700 py-4",
     scrolled 
       ? overDarkSection 
-        ? "bg-white/90 backdrop-blur-lg shadow-md" 
-        : "bg-background/80 backdrop-blur-lg shadow-md" 
+        ? "bg-white/70 backdrop-blur-xl shadow-md" 
+        : "bg-background/60 backdrop-blur-xl shadow-md" 
       : "bg-transparent"
   )}>
       <div className="container flex items-center justify-between">
         <div className="text-2xl font-bold">
           <a href="#" className="flex items-center gap-2">
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-slate-700">Portfolio</span>
-            <span className="hidden sm:inline text-slate-700 text-sm font-medium">| Creative Director & PM</span>
+            <span className={cn(
+              "bg-gradient-to-r from-primary to-secondary bg-clip-text",
+              overDarkSection ? "text-slate-700" : "text-slate-700"
+            )}>Portfolio</span>
+            <span className={cn(
+              "hidden sm:inline text-sm font-medium",
+              overDarkSection ? "text-slate-700" : "text-slate-700"
+            )}>| Creative Director & PM</span>
           </a>
         </div>
         
         <nav className="hidden md:flex items-center gap-1">
-          <button onClick={() => scrollToSection("home")} className="nav-link font-medium text-slate-700">
+          <button onClick={() => scrollToSection("home")} className={cn(
+            "nav-link font-medium",
+            overDarkSection ? "text-slate-700" : "text-slate-700"
+          )}>
             Home
           </button>
-          <button onClick={() => scrollToSection("work")} className="nav-link font-medium text-slate-700">
+          <button onClick={() => scrollToSection("work")} className={cn(
+            "nav-link font-medium",
+            overDarkSection ? "text-slate-700" : "text-slate-700"
+          )}>
             Work
           </button>
-          <button onClick={() => scrollToSection("skills")} className="nav-link font-medium text-slate-700">
+          <button onClick={() => scrollToSection("skills")} className={cn(
+            "nav-link font-medium",
+            overDarkSection ? "text-slate-700" : "text-slate-700"
+          )}>
             Skills
           </button>
-          <button onClick={() => scrollToSection("about")} className="nav-link font-medium text-slate-700">
+          <button onClick={() => scrollToSection("about")} className={cn(
+            "nav-link font-medium",
+            overDarkSection ? "text-slate-700" : "text-slate-700"
+          )}>
             About
           </button>
-          <button onClick={() => scrollToSection("contact")} className="nav-link font-medium text-slate-700">
+          <button onClick={() => scrollToSection("contact")} className={cn(
+            "nav-link font-medium",
+            overDarkSection ? "text-slate-700" : "text-slate-700"
+          )}>
             Contact
           </button>
         </nav>

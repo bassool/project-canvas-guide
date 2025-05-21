@@ -1,5 +1,6 @@
+
 // Define project types
-export type ProjectCategory = "all" | "creative" | "management" | "strategy";
+export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
 export interface Project {
   id: number;
@@ -26,7 +27,7 @@ export const projects: Project[] = [
     id: 5,
     title: "Zapshot",
     description: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, and provided consultation marketing and brand ambassadorship program strategy",
-    category: "management",
+    category: "workExperience",
     image: "/lovable-uploads/09dcce3a-805a-4d5e-bd8e-16730a9fc7b8.png",
     tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
     featured: true,
@@ -44,7 +45,7 @@ export const projects: Project[] = [
     id: 1,
     title: "Depth Perception",
     description: "Directed and produced full album along with and marketing strategy, social media and video direction, and live performance planning and performing",
-    category: "creative",
+    category: "personal",
     image: "/lovable-uploads/df767496-ebfe-4362-9734-a35a2525a7b5.png",
     tags: ["Multimedia Production", "Design Direction", "Creative Strategy", "Project Management"],
     featured: true,
@@ -64,7 +65,7 @@ export const projects: Project[] = [
     id: 4,
     title: "Fanhaven",
     description: "Developed brand identity for a startup, producing visual assets and collaborating with founders to align branding with vision.",
-    category: "creative",
+    category: "workExperience",
     image: "/lovable-uploads/c6d6553e-db89-4771-99ba-1a24f9184208.png",
     tags: ["Creative Brand Direction", "Graphic Design", "Experiential Marketing"],
     galleryImages: [
@@ -81,7 +82,7 @@ export const projects: Project[] = [
     id: 3,
     title: "Waxheart",
     description: "Composed game soundtrack, improved team workflows, and aligned audio design with the game's visual themes.",
-    category: "strategy",
+    category: "freelance",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
     tags: ["Music Production", "Cross Functional Teamwork", "Project Management"],
     featured: true,
@@ -104,7 +105,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Death to Love",
     description: "Fully produced three original punk tracks with direction from Game Lead for Co-Op Beat 'em-Up indie game, with game implementation done in Wwise.",
-    category: "management",
+    category: "freelance",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     tags: ["Music Production", "Cross Functional Teamwork", "Creative Interpretation", "Project Management"],
     galleryImages: [
@@ -126,7 +127,7 @@ export const projects: Project[] = [
     id: 6,
     title: "Sanad Collective",
     description: "Led community-focused initiative providing resources and support for underrepresented artists, facilitating workshops and creating networking opportunities.",
-    category: "strategy",
+    category: "personal",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
     tags: ["Community Building", "Resource Management", "Event Planning", "Mentorship"],
     galleryImages: [

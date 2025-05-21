@@ -34,11 +34,11 @@ const Projects = () => {
         
         <Tabs defaultValue="all" className="w-full" onValueChange={value => setActiveTab(value as ProjectCategory)}>
           <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-4 w-full max-w-md rounded-full p-1 bg-secondary/10">
-              <TabsTrigger value="all" className="rounded-full text-sm">All</TabsTrigger>
-              <TabsTrigger value="freelance" className="rounded-full text-sm">Freelance</TabsTrigger>
-              <TabsTrigger value="personal" className="rounded-full text-sm">Personal</TabsTrigger>
-              <TabsTrigger value="workExperience" className="rounded-full text-sm">Work Experience</TabsTrigger>
+            <TabsList className="grid sm:grid-cols-4 grid-cols-2 gap-1 w-full max-w-md p-1 bg-secondary/10 rounded-xl">
+              <TabsTrigger value="all" className="rounded-lg text-sm">All</TabsTrigger>
+              <TabsTrigger value="freelance" className="rounded-lg text-sm">Freelance</TabsTrigger>
+              <TabsTrigger value="personal" className="rounded-lg text-sm">Personal</TabsTrigger>
+              <TabsTrigger value="workExperience" className="rounded-lg text-sm whitespace-nowrap text-xs md:text-sm">Work Exp</TabsTrigger>
             </TabsList>
           </div>
           

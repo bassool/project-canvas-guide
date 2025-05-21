@@ -14,6 +14,7 @@ export interface Project {
   impact?: string;
   challenge?: string;
   solution?: string;
+  summary?: string; // Adding this field to support the new 'Summary' section
   audioTracks?: { title: string; url: string }[];
   spotifyEmbed?: string;
   youtubeEmbed?: string;
@@ -72,9 +73,9 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e"
     ],
     tools: ["Figma", "Notion", "Adobe Photoshop"],
-    impact: "Reduced design time by 60% and improved consistency across product suite",
-    challenge: "Balancing flexibility for designers with consistency for brand integrity",
-    solution: "Created component-based system with clear guidelines and examples of appropriate usage"
+    challenge: "To create compelling visual branding and marketing applicable to websites and promotional material such as business cards in preparation for a StartUp Competition",
+    solution: "Created component-based system with clear guidelines and examples of appropriate usage",
+    summary: "• Increased brand awareness and consistency by designing a full branding suite (logo, business cards, event materials) using Adobe Creative Suite and Figma, resulting in a strong visual presence at a major startup event.\n• Translated founders' vision into compelling brand visuals by collaborating in Notion, enhancing alignment across marketing efforts."
   },
   {
     id: 3,

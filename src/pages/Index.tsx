@@ -18,6 +18,8 @@ const Index = () => {
         <SectionTransition variant="primary" />
         <Projects />
         <SectionTransition variant="secondary" flipX={true} fromColor="from-slate-100" toColor="to-background" />
+        <Skills />
+        <SectionTransition variant="accent" fromColor="from-background" toColor="to-slate-100" />
         <About />
         <SectionTransition variant="accent" fromColor="from-background" toColor="to-slate-100" />
         <Contact />

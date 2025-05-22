@@ -154,19 +154,19 @@
 /* Custom animations */
 @keyframes float {
   0%, 100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(-15px);
+    transform: translateY(-15px) scale(1.05);
   }
 }
 
 @keyframes pulse {
   0%, 100% {
-    opacity: 0.6;
+    opacity: 0.7;
   }
   50% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -218,5 +218,10 @@
     background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
     background-size: 1000px 100%;
     animation: shimmer 3s infinite;
+  }
+  
+  /* Dynamic gradient color stops for better blending */
+  .stop-color-dynamic {
+    transition: stop-color 0.5s ease;
   }
 }

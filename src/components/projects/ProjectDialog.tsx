@@ -196,12 +196,8 @@ const ProjectDialog = ({
                 </div>
                 
                 <div>
-                  <h4 className="text-xl font-semibold text-primary mb-2">{project.summary ? 'Summary' : 'Impact'}</h4>
-                  {project.summary ? (
-                    <div className="text-foreground/90 text-base whitespace-pre-line">{project.summary}</div>
-                  ) : (
-                    <p className="text-foreground/90 text-base">{project.impact}</p>
-                  )}
+                  <h4 className="text-xl font-semibold text-primary mb-2">Summary</h4>
+                  <p className="text-foreground/90 text-base">{project.impact || project.summary}</p>
                 </div>
 
                 {project.youtubeEmbed && <div>

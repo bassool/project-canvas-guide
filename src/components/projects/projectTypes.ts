@@ -12,10 +12,10 @@ export interface Project {
   featured?: boolean;
   galleryImages?: string[];
   tools?: string[];
-  impact?: string;
+  impact?: string; // Keeping for backward compatibility
+  summary?: string; // Field to use moving forward
   challenge?: string;
   solution?: string;
-  summary?: string; // Adding this field to support the new 'Summary' section
   audioTracks?: { title: string; url: string }[];
   spotifyEmbed?: string;
   youtubeEmbed?: string;
@@ -37,7 +37,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1552581234-26160f608093"
     ],
     tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],
-    impact: "Increased team productivity by 40% while improving work-life balance",
+    summary: "Increased team productivity by 40% while improving work-life balance",
     challenge: "Addressing inefficient workflows that caused burnout and missed deadlines",
     solution: "Implemented agile methodologies with regular retrospectives to continuously improve processes"
   },
@@ -55,7 +55,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1511379938547-c1f69419868d"
     ],
     tools: ["Logic Pro X", "Adobe Creative Suite", "Final Cut Pro X", "Social Media Platforms"],
-    impact: "Increased artist visibility by 40% and generated 1M+ streams across platforms",
+    summary: "Increased artist visibility by 40% and generated 1M+ streams across platforms",
     challenge: "Creating cohesive visual and audio experience with limited resources",
     solution: "Developed integrated marketing strategy that leveraged artist's unique style across all touchpoints",
     spotifyEmbed: "https://open.spotify.com/album/0MUxE0X6wDiVNIrqJcMqKx",
@@ -93,7 +93,7 @@ export const projects: Project[] = [
       "/lovable-uploads/72f25768-03a2-4fec-8227-0d1b9c3e3e91.png"   
     ],
     tools: ["Logic Pro X", "Trello", "Discord", "Github"],
-    impact: "Increased conversion rates by 32% and reduced customer acquisition cost by 24%",
+    summary: "Increased conversion rates by 32% and reduced customer acquisition cost by 24%",
     challenge: "Identifying optimal marketing channels with limited budget",
     solution: "Created data-driven approach to channel selection based on audience research and ROI potential",
     audioTracks: [
@@ -119,7 +119,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
     ],
     tools: ["Logic Pro X", "Trello", "Discord", "Wwise"],
-    impact: "Successfully launched product with 95% on-time delivery of project milestones",
+    summary: "Successfully launched product with 95% on-time delivery of project milestones",
     challenge: "Coordinating cross-functional teams across different time zones",
     solution: "Implemented agile methodology with clear communication protocols and documentation",
     audioTracks: [
@@ -141,7 +141,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
     ],
     tools: ["Slack", "Notion", "Asana", "Google Workspace"],
-    impact: "Created support network reaching over 500 artists and facilitating 20+ successful collaborations",
+    summary: "Created support network reaching over 500 artists and facilitating 20+ successful collaborations",
     challenge: "Building sustainable infrastructure with limited funding and volunteer resources",
     solution: "Established partnership model with established organizations to share resources and expertise"
   }

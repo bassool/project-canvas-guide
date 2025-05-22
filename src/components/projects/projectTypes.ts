@@ -110,10 +110,10 @@ export const projects: Project[] = [
     title: "Death to Love",
     description: "Fully produced three original punk tracks with direction from Game Lead for Co-Op Beat 'em-Up indie game, with game implementation done in Wwise.",
     category: "freelance",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    image: "/lovable-uploads/785f2061-da37-4b1a-9e6f-8d3b04d614d9.png",
     tags: ["Music Production", "Cross Functional Teamwork", "Creative Interpretation", "Project Management"],
     galleryImages: [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      "/lovable-uploads/785f2061-da37-4b1a-9e6f-8d3b04d614d9.png",
       "https://images.unsplash.com/photo-1531403009284-4eb9a8efeb07",
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
     ],

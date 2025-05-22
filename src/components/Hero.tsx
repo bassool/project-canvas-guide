@@ -41,9 +41,7 @@ const Hero = () => {
             <span className="block bg-gradient-to-r from-secondary to-accent bg-clip-text text-slate-700">precise execution</span>
           </h1>
           
-          <p className="text-lg sm:text-xl max-w-md text-slate-700">
-            Creative director and project manager turning imaginative ideas into extraordinary realities that captivate and inspire.
-          </p>
+          <p className="text-lg sm:text-xl max-w-md text-slate-700">Creative director and Project Manager turning imaginative ideas into extraordinary realities that captivate and inspire.</p>
           
           <div className="flex flex-wrap gap-4">
             <Button size="lg" onClick={scrollToWork} className="rounded-full px-6 group bg-transparent border border-slate-700 text-slate-700 hover:text-slate-700/90 hover:bg-transparent">
@@ -70,7 +68,7 @@ const Hero = () => {
         }}>
             <div className="flex items-center gap-2">
               <Wand className="h-5 w-5 text-primary" />
-              <span className="font-medium text-sm text-slate-900">Creative Direction</span>
+              <span className="font-medium text-sm text-slate-900">PMI-CAPM® Certified</span>
             </div>
           </div>
           
@@ -79,7 +77,7 @@ const Hero = () => {
           animationDelay: "1.5s"
         }}>
             <div className="flex items-center gap-2">
-              <span className="font-bold text-primary">10+</span>
+              <span className="font-bold text-primary">5+</span>
               <span className="text-xs text-slate-900">Years Experience</span>
             </div>
           </div>

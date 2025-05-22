@@ -101,9 +101,7 @@ const About = () => {
             </div>
             <div className="bg-white dark:bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
               <h3 className="text-2xl font-semibold mb-4 text-slate-700">Background</h3>
-              <p className="leading-relaxed text-slate-600">
-                With a background in design and business administration, I've worked with agencies, in-house teams, and as an independent consultant across diverse industries including technology, fashion, and non-profit organizations.
-              </p>
+              <p className="leading-relaxed text-slate-600">With a dynamic background in creativity and business administration, I've worked with StartUps and as an independent freelancer across diverse industries including technology, fashion, and non-profit organizations.</p>
             </div>
           </div>
         </div>

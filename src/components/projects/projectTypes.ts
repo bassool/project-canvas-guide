@@ -87,7 +87,7 @@ export const projects: Project[] = [
     tags: ["Music Production", "Cross Functional Teamwork", "Project Management"],
     featured: true,
     galleryImages: [
-      "/lovable-uploads/3c4c6ca8-6600-4cb7-8c20-dbf785abe7b8.png",
+      // Removed the duplicate first image that was the same as the cover
       "/lovable-uploads/4910dfba-681d-4ff3-94af-397750b7eab3.png", 
       "/lovable-uploads/2d3a44f3-711d-4b1a-9530-0ed3ae1de31d.png", 
       "/lovable-uploads/2179b774-fd02-437a-9a15-2c8a63e22638.png",  

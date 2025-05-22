@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Calendar, Briefcase, Users, Rocket, Palette, Star, Sparkles } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -25,13 +26,13 @@ const skills: Skill[] = [
     color: "secondary"
   }, {
     icon: Users,
-    title: "Team Leadership",
+    title: "Cross Functional Collaboration",
     description: "Building and leading high-performing creative and technical teams, fostering collaboration and delivering exceptional results.",
     category: "management",
     color: "accent"
   }, {
     icon: Star,
-    title: "Brand Development",
+    title: "Visual Design and Branding",
     description: "Creating compelling brand stories, visual systems, and communication strategies that establish strong market presence.",
     category: "creative",
     color: "primary"
@@ -43,7 +44,7 @@ const skills: Skill[] = [
     color: "secondary"
   }, {
     icon: Rocket,
-    title: "Launch Strategy",
+    title: "KPI & Performance Analysis",
     description: "Comprehensive planning for product, campaign, and brand launches to maximize impact and achieve business objectives.",
     category: "creative",
     color: "accent"
@@ -77,7 +78,7 @@ const SkillCard = ({
 };
 
 const Skills = () => {
-  return <section id="skills" className="py-20 md:py-28 relative bg-slate-100">
+  return <section id="skills" className="py-16 md:py-24 relative bg-slate-100">
       {/* Decorative blobs */}
       <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -right-64 top-0"></div>
       <div className="blob-shape bg-secondary/10 w-[400px] h-[400px] -left-32 bottom-0"></div>
@@ -110,26 +111,6 @@ const Skills = () => {
         }} className="animate-fade-in bg-transparent">
               <SkillCard skill={skill} />
             </div>)}
-        </div>
-        
-        <div className="mt-20 p-8 sm:p-10 rounded-3xl bg-white dark:bg-card/60 shadow-lg relative overflow-hidden">
-          <div className="absolute -top-24 -right-24 w-48 h-48 rounded-full bg-accent/10 animate-pulse-custom -z-10"></div>
-          <div className="absolute -bottom-16 -left-16 w-32 h-32 rounded-full bg-primary/10 animate-pulse-custom -z-10"></div>
-          
-          <div className="flex flex-col md:flex-row gap-8 items-center relative z-10">
-            <div className="text-center md:text-left md:flex-1">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-3 bg-gradient-to-r from-primary to-accent bg-clip-text text-gray-900">Need a tailored skill package?</h3>
-              <p className="text-lg text-gray-900">Contact me to discuss how I can help with your specific project needs.</p>
-            </div>
-            <button className="px-8 py-4 bg-accent text-black font-semibold text-lg hover:bg-accent/90 transition-colors shadow-lg hover:shadow-accent/20 hover:shadow-xl" onClick={() => {
-            const element = document.getElementById("contact");
-            if (element) element.scrollIntoView({
-              behavior: "smooth"
-            });
-          }}>
-              Get in touch
-            </button>
-          </div>
         </div>
       </div>
     </section>;

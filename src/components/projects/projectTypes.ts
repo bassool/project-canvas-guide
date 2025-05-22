@@ -87,7 +87,6 @@ export const projects: Project[] = [
     tags: ["Music Production", "Cross Functional Teamwork", "Project Management"],
     featured: true,
     galleryImages: [
-      // Removed the duplicate first image that was the same as the cover
       "/lovable-uploads/4910dfba-681d-4ff3-94af-397750b7eab3.png", 
       "/lovable-uploads/2d3a44f3-711d-4b1a-9530-0ed3ae1de31d.png", 
       "/lovable-uploads/2179b774-fd02-437a-9a15-2c8a63e22638.png",  
@@ -114,6 +113,8 @@ export const projects: Project[] = [
     tags: ["Music Production", "Cross Functional Teamwork", "Creative Interpretation", "Project Management"],
     galleryImages: [
       "/lovable-uploads/785f2061-da37-4b1a-9e6f-8d3b04d614d9.png",
+      "/lovable-uploads/80a5e455-53c7-40c3-9461-1bcac3d6fa4e.png",  // Added Logic Pro screenshot
+      "/lovable-uploads/ffa1a0e6-6c72-45a9-bcf9-80111fb31e73.png",  // Added game screenshot
       "https://images.unsplash.com/photo-1531403009284-4eb9a8efeb07",
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
     ],

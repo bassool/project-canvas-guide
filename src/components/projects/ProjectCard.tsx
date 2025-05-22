@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -35,7 +36,11 @@ const ProjectCard = ({
         setIsOpen(true);
       }} className="group overflow-hidden rounded-xl border border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg cursor-pointer h-full bg-slate-100">
           <div className="aspect-video overflow-hidden relative">
-            <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+            <img 
+              src={project.image} 
+              alt={project.title} 
+              className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110" 
+            />
             {project.featured && <span className="absolute top-3 right-3 bg-primary text-white text-xs px-2 py-1 rounded-full font-medium">
                 Featured
               </span>}

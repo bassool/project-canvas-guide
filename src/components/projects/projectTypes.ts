@@ -83,14 +83,15 @@ export const projects: Project[] = [
     title: "Waxheart",
     description: "Composed game soundtrack, improved team workflows, and aligned audio design with the game's visual themes.",
     category: "freelance",
-    image: "/lovable-uploads/4910dfba-681d-4ff3-94af-397750b7eab3.png", // Updated to use the Waxheart logo image
+    image: "/lovable-uploads/3c4c6ca8-6600-4cb7-8c20-dbf785abe7b8.png",
     tags: ["Music Production", "Cross Functional Teamwork", "Project Management"],
     featured: true,
     galleryImages: [
-      "/lovable-uploads/4910dfba-681d-4ff3-94af-397750b7eab3.png", // Waxheart logo
-      "/lovable-uploads/2d3a44f3-711d-4b1a-9530-0ed3ae1de31d.png", // Dark forest scene
-      "/lovable-uploads/2179b774-fd02-437a-9a15-2c8a63e22638.png",  // Character with logo
-      "/lovable-uploads/72f25768-03a2-4fec-8227-0d1b9c3e3e91.png"   // DAW screenshot
+      "/lovable-uploads/3c4c6ca8-6600-4cb7-8c20-dbf785abe7b8.png",
+      "/lovable-uploads/4910dfba-681d-4ff3-94af-397750b7eab3.png", 
+      "/lovable-uploads/2d3a44f3-711d-4b1a-9530-0ed3ae1de31d.png", 
+      "/lovable-uploads/2179b774-fd02-437a-9a15-2c8a63e22638.png",  
+      "/lovable-uploads/72f25768-03a2-4fec-8227-0d1b9c3e3e91.png"   
     ],
     tools: ["Logic Pro X", "Trello", "Discord", "Github"],
     impact: "Increased conversion rates by 32% and reduced customer acquisition cost by 24%",

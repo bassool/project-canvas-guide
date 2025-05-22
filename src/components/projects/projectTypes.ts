@@ -83,13 +83,14 @@ export const projects: Project[] = [
     title: "Waxheart",
     description: "Composed game soundtrack, improved team workflows, and aligned audio design with the game's visual themes.",
     category: "freelance",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+    image: "/lovable-uploads/4910dfba-681d-4ff3-94af-397750b7eab3.png", // Updated to use the Waxheart logo image
     tags: ["Music Production", "Cross Functional Teamwork", "Project Management"],
     featured: true,
     galleryImages: [
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-      "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07",
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
+      "/lovable-uploads/4910dfba-681d-4ff3-94af-397750b7eab3.png", // Waxheart logo
+      "/lovable-uploads/2d3a44f3-711d-4b1a-9530-0ed3ae1de31d.png", // Dark forest scene
+      "/lovable-uploads/2179b774-fd02-437a-9a15-2c8a63e22638.png",  // Character with logo
+      "/lovable-uploads/72f25768-03a2-4fec-8227-0d1b9c3e3e91.png"   // DAW screenshot
     ],
     tools: ["Logic Pro X", "Trello", "Discord", "Github"],
     impact: "Increased conversion rates by 32% and reduced customer acquisition cost by 24%",
@@ -98,7 +99,9 @@ export const projects: Project[] = [
     audioTracks: [
       { title: "Main Theme", url: "https://assets.mixkit.co/music/preview/mixkit-games-worldbeat-466.mp3" },
       { title: "Battle Theme", url: "https://assets.mixkit.co/music/preview/mixkit-driving-ambition-32.mp3" },
-      { title: "Outro Credits", url: "https://assets.mixkit.co/music/preview/mixkit-sleepy-cat-135.mp3" }
+      { title: "Outro Credits", url: "https://assets.mixkit.co/music/preview/mixkit-sleepy-cat-135.mp3" },
+      { title: "Forest Ambient", url: "https://assets.mixkit.co/music/preview/mixkit-forest-treasure-138.mp3" },
+      { title: "Mystery Sequence", url: "https://assets.mixkit.co/music/preview/mixkit-horror-game-background-2007.mp3" }
     ]
   },
   {

@@ -97,6 +97,22 @@
   h1, h2, h3, h4, h5, h6 {
     @apply tracking-tight;
   }
+
+  /* Section transition gradients */
+  #slate-200-background {
+    --start-color: #e2e8f0;
+    --end-color: hsl(215, 28%, 17%);
+  }
+
+  #background-slate-100 {
+    --start-color: hsl(215, 28%, 17%);
+    --end-color: #f1f5f9;
+  }
+
+  #slate-100-background {
+    --start-color: #f1f5f9;
+    --end-color: hsl(215, 28%, 17%);
+  }
 }
 
 @layer components {
@@ -147,6 +163,21 @@
   
   .section-transition {
     @apply relative overflow-hidden;
+  }
+  
+  .text-slate-200 {
+    --tw-text-opacity: 1;
+    color: #e2e8f0;
+  }
+  
+  .text-background {
+    --tw-text-opacity: 1;
+    color: hsl(215, 28%, 17%);
+  }
+  
+  .text-slate-100 {
+    --tw-text-opacity: 1;
+    color: #f1f5f9;
   }
 }
 

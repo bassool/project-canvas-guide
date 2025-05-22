@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,22 +98,6 @@
   h1, h2, h3, h4, h5, h6 {
     @apply tracking-tight;
   }
-
-  /* Section transition gradients */
-  #slate-200-background {
-    --start-color: #e2e8f0;
-    --end-color: hsl(215, 28%, 17%);
-  }
-
-  #background-slate-100 {
-    --start-color: hsl(215, 28%, 17%);
-    --end-color: #f1f5f9;
-  }
-
-  #slate-100-background {
-    --start-color: #f1f5f9;
-    --end-color: hsl(215, 28%, 17%);
-  }
 }
 
 @layer components {
@@ -160,43 +145,24 @@
   .gradient-border {
     @apply relative before:absolute before:inset-0 before:-z-10 before:p-[2px] before:rounded-2xl before:bg-gradient-to-r before:from-primary before:via-secondary before:to-accent;
   }
-  
-  .section-transition {
-    @apply relative overflow-hidden;
-  }
-  
-  .text-slate-200 {
-    --tw-text-opacity: 1;
-    color: #e2e8f0;
-  }
-  
-  .text-background {
-    --tw-text-opacity: 1;
-    color: hsl(215, 28%, 17%);
-  }
-  
-  .text-slate-100 {
-    --tw-text-opacity: 1;
-    color: #f1f5f9;
-  }
 }
 
 /* Custom animations */
 @keyframes float {
   0%, 100% {
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(-15px) scale(1.05);
+    transform: translateY(-15px);
   }
 }
 
 @keyframes pulse {
   0%, 100% {
-    opacity: 0.7;
+    opacity: 0.6;
   }
   50% {
-    opacity: 0.9;
+    opacity: 0.8;
   }
 }
 
@@ -206,24 +172,6 @@
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes wave {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: -1000px 0;
-  }
-  100% {
-    background-position: 1000px 0;
   }
 }
 
@@ -238,20 +186,5 @@
   
   .animate-spin-slow {
     animation: spin-slow 20s linear infinite;
-  }
-  
-  .animate-wave {
-    animation: wave 8s ease-in-out infinite;
-  }
-  
-  .animate-shimmer {
-    background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
-    background-size: 1000px 100%;
-    animation: shimmer 3s infinite;
-  }
-  
-  /* Dynamic gradient color stops for better blending */
-  .stop-color-dynamic {
-    transition: stop-color 0.5s ease;
   }
 }

@@ -15,15 +15,15 @@ const Index = () => {
       <Navbar />
       <main className="overflow-x-hidden">
         <Hero />
-        <SectionTransition variant="primary" />
+        <SectionTransition fromColor="from-slate-200" toColor="to-background" />
         <Projects />
-        <SectionTransition variant="secondary" flipX={true} fromColor="from-slate-100" toColor="to-background" />
+        <SectionTransition fromColor="from-background" toColor="to-slate-100" flipX={true} />
         <Skills />
-        <SectionTransition variant="accent" fromColor="from-background" toColor="to-slate-100" />
+        <SectionTransition fromColor="from-slate-100" toColor="to-background" />
         <About />
-        <SectionTransition variant="accent" fromColor="from-background" toColor="to-slate-100" />
+        <SectionTransition fromColor="from-background" toColor="to-slate-100" flipX={true} />
         <Contact />
-        <SectionTransition variant="default" flipX={true} fromColor="from-slate-100" toColor="to-background" />
+        <SectionTransition fromColor="from-slate-100" toColor="to-background" />
       </main>
       <Footer />
     </div>

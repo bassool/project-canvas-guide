@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -103,11 +102,11 @@ const Contact = () => {
                   </li>
                   <li className="flex items-center gap-3 justify-center">
                     <span className="inline-block w-4 h-4 rounded-full bg-slate-700"></span>
-                    <span className="text-lg text-slate-800">Clear communication throughout the process</span>
+                    <span className="text-lg text-slate-800">Fluent in creative &amp; managerial tools</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
                     <span className="inline-block w-4 h-4 rounded-full bg-slate-700"></span>
-                    <span className="text-lg text-slate-800">Focus on achieving your business objectives</span>
+                    <span className="text-lg text-slate-800">Portfolio-Proven Results</span>
                   </li>
                 </ul>
               </div>

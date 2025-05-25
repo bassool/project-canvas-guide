@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -97,11 +96,11 @@ export const projects: Project[] = [
     challenge: "Identifying optimal marketing channels with limited budget",
     solution: "Created data-driven approach to channel selection based on audience research and ROI potential",
     audioTracks: [
-      { title: "Main Theme", url: "https://assets.mixkit.co/music/preview/mixkit-games-worldbeat-466.mp3" },
-      { title: "Battle Theme", url: "https://assets.mixkit.co/music/preview/mixkit-driving-ambition-32.mp3" },
-      { title: "Outro Credits", url: "https://assets.mixkit.co/music/preview/mixkit-sleepy-cat-135.mp3" },
-      { title: "Forest Ambient", url: "https://assets.mixkit.co/music/preview/mixkit-forest-treasure-138.mp3" },
-      { title: "Mystery Sequence", url: "https://assets.mixkit.co/music/preview/mixkit-horror-game-background-2007.mp3" }
+      { title: "Vista Theme", url: "/VISTA 5 PORT copy.mp3" },
+      { title: "Marketplace Theme", url: "/MARKETPLACE THEME.mp3" },
+      { title: "Dread Theme", url: "/VISTA WIP WAXHEART.mp3" },
+      { title: "Dark Barn Theme", url: "/WAXHEART BARN_1 copy.mp3" },
+      { title: "Chase Theme", url: "/MUS_trashdrumz copy.mp3" }
     ]
   },
   {

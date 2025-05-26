@@ -1,3 +1,4 @@
+
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -122,9 +123,9 @@ export const projects: Project[] = [
     challenge: "Coordinating cross-functional teams across different time zones",
     solution: "Implemented agile methodology with clear communication protocols and documentation",
     audioTracks: [
-      { title: "Track 1: No More Romance", url: "https://assets.mixkit.co/music/preview/mixkit-fast-rock-beat-686.mp3" },
-      { title: "Track 2: Heartbreaker", url: "https://assets.mixkit.co/music/preview/mixkit-hip-hop-02-685.mp3" },
-      { title: "Track 3: Final Goodbye", url: "https://assets.mixkit.co/music/preview/mixkit-hazy-after-hours-132.mp3" }
+      { title: "Main Menu and Dialogue Theme", url: "/Main Menu and Dialogue Theme .mp3" },
+      { title: "Battle Theme 1", url: "/Battle Theme 1.mp3" },
+      { title: "Battle Theme 2", url: "/Battle Theme 2.mp3" }
     ]
   },
   {

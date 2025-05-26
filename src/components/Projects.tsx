@@ -36,16 +36,16 @@ const Projects = () => {
           <div className="flex justify-center mb-8">
             <TabsList className="grid sm:grid-cols-4 grid-cols-2 gap-1 w-full max-w-md p-1 bg-secondary/10 rounded-xl">
               <TabsTrigger value="all" className="rounded-lg text-sm">All</TabsTrigger>
+              <TabsTrigger value="workExperience" className="rounded-lg text-sm whitespace-nowrap text-xs md:text-sm">Work Exp</TabsTrigger>
               <TabsTrigger value="freelance" className="rounded-lg text-sm">Freelance</TabsTrigger>
               <TabsTrigger value="personal" className="rounded-lg text-sm">Personal</TabsTrigger>
-              <TabsTrigger value="workExperience" className="rounded-lg text-sm whitespace-nowrap text-xs md:text-sm">Work Exp</TabsTrigger>
             </TabsList>
           </div>
           
           <ProjectList category="all" projects={projects} />
+          <ProjectList category="workExperience" projects={projects} />
           <ProjectList category="freelance" projects={projects} />
           <ProjectList category="personal" projects={projects} />
-          <ProjectList category="workExperience" projects={projects} />
         </Tabs>
         
         <div className="flex justify-center mt-12">

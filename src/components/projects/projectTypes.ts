@@ -50,11 +50,11 @@ export const projects: Project[] = [
     tags: ["Multimedia Production", "Design Direction", "Creative Strategy", "Project Management"],
     featured: true,
     galleryImages: [
-      "/depth 1.png",
-      "/depth 2.png",
-      "/depth 3.png",
-      "/depth 4.png",
-      "/depth 5.png"
+      "/lovable-uploads/4910dfba-681d-4ff3-94af-397750b7eab3.png",
+      "/lovable-uploads/2d3a44f3-711d-4b1a-9530-0ed3ae1de31d.png",
+      "/lovable-uploads/2179b774-fd02-437a-9a15-2c8a63e22638.png",
+      "/lovable-uploads/72f25768-03a2-4fec-8227-0d1b9c3e3e91.png",
+      "/lovable-uploads/1a12441c-79b9-4215-b09d-a9d877a7c147.png"
     ],
     tools: ["Logic Pro X", "Adobe Creative Suite", "Final Cut Pro X", "Social Media Platforms"],
     summary: "Increased artist visibility by 40% and generated 1M+ streams across platforms",

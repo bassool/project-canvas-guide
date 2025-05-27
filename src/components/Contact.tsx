@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, ArrowRight, Heart, Download, FileText, X } from "lucide-react";
-
 const Contact = () => {
   const {
     toast
@@ -47,7 +46,7 @@ const Contact = () => {
               <div className="backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-lg card-hover text-center bg-slate-100">
                 <div className="flex flex-col items-center">
                   <div className="p-4 rounded-xl text-primary mb-4 bg-slate-600">
-                    <Mail className="h-6 w-6 bg-transparent" />
+                    <Mail className="h-6 w-6 bg-[#000a00]/0" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-xl mb-2 text-slate-900">Email Me</h3>
@@ -117,5 +116,4 @@ const Contact = () => {
       </div>
     </section>;
 };
-
 export default Contact;

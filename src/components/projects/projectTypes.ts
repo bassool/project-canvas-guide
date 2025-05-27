@@ -115,10 +115,9 @@ export const projects: Project[] = [
     tags: ["Music Production", "Cross Functional Teamwork", "Creative Interpretation", "Project Management"],
     galleryImages: [
       "/lovable-uploads/785f2061-da37-4b1a-9e6f-8d3b04d614d9.png",
-      "/lovable-uploads/80a5e455-53c7-40c3-9461-1bcac3d6fa4e.png",  // Added Logic Pro screenshot
-      "/lovable-uploads/ffa1a0e6-6c72-45a9-bcf9-80111fb31e73.png",  // Added game screenshot
-      "https://images.unsplash.com/photo-1531403009284-4eb9a8efeb07",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+      "/lovable-uploads/80a5e455-53c7-40c3-9461-1bcac3d6fa4e.png",
+      "/lovable-uploads/ffa1a0e6-6c72-45a9-bcf9-80111fb31e73.png",
+      "/lovable-uploads/9b18ae23-bc91-4807-8a33-5ff7771a0c33.png"
     ],
     tools: ["Logic Pro X", "Trello", "Discord", "Wwise"],
     summary: "Successfully launched product with 95% on-time delivery of project milestones",

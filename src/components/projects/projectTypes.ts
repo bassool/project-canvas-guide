@@ -89,7 +89,7 @@ export const projects: Project[] = [
     tags: ["Music Production", "Cross Functional Teamwork", "Project Management"],
     featured: true,
     galleryImages: [
-      "/lovable-uploads/4910dfba-681d-4ff3-94af-397750b7eab3.png", 
+      "/lovable-uploads/143ea6cc-d7c1-41a0-afc4-0061761ee4e4.png",
       "/lovable-uploads/2d3a44f3-711d-4b1a-9530-0ed3ae1de31d.png", 
       "/lovable-uploads/2179b774-fd02-437a-9a15-2c8a63e22638.png",  
       "/lovable-uploads/72f25768-03a2-4fec-8227-0d1b9c3e3e91.png"   

@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, ArrowRight, Heart, Download, FileText, X } from "lucide-react";
+
 const Contact = () => {
   const {
     toast
@@ -116,4 +117,5 @@ const Contact = () => {
       </div>
     </section>;
 };
+
 export default Contact;

@@ -32,9 +32,10 @@ export const projects: Project[] = [
     tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
     featured: true,
     galleryImages: [
-      "/lovable-uploads/370631e3-7720-4768-912d-01c4c390495e.png", 
-      "/lovable-uploads/4d9114b8-8eb1-4964-898b-17ba3359c010.png",
-      "https://images.unsplash.com/photo-1552581234-26160f608093"
+      "/zapshot 1.png", 
+      "/zapshot 2.png",
+      "/zapshot 3.png",
+      "/ZAPSHOT 4.mp4"
     ],
     tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],
     summary: "Increased team productivity by 40% while improving work-life balance",

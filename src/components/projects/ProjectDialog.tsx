@@ -1,13 +1,17 @@
 
-import React, { useState, useRef } from "react";
+import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Play, Pause, Music, Youtube, X } from "lucide-react";
+import { Music, Youtube, X } from "lucide-react";
 import { Project, projects } from "./projectTypes";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "@/components/ui/use-toast";
+import AudioPlayer from "./AudioPlayer";
+import SpotifyEmbed from "./SpotifyEmbed";
+import YouTubeEmbed from "./YouTubeEmbed";
+import MediaItem from "./MediaItem";
 
 interface ProjectDialogProps {
   project: Project;
@@ -15,147 +19,7 @@ interface ProjectDialogProps {
   setIsOpen: (open: boolean) => void;
 }
 
-const AudioPlayer = ({
-  track
-}: {
-  track: {
-    title: string;
-    url: string;
-  };
-}) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef<HTMLAudioElement>(null);
-  const togglePlay = () => {
-    if (audioRef.current) {
-      try {
-        if (isPlaying) {
-          audioRef.current.pause();
-        } else {
-          const playPromise = audioRef.current.play();
-          if (playPromise !== undefined) {
-            playPromise.catch(error => {
-              console.error("Audio playback error:", error);
-              toast({
-                title: "Playback error",
-                description: "There was a problem playing this audio file."
-              });
-            });
-          }
-        }
-        setIsPlaying(!isPlaying);
-      } catch (error) {
-        console.error("Audio interaction error:", error);
-        toast({
-          title: "Audio error",
-          description: "There was a problem with the audio player."
-        });
-      }
-    }
-  };
-  return <div className="flex items-center justify-between p-3 bg-secondary/10 rounded-lg mb-2">
-      <div className="flex items-center">
-        <Button variant="ghost" size="sm" className="h-8 w-8 rounded-full p-0 mr-2" onClick={togglePlay}>
-          {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
-        </Button>
-        <span className="text-sm font-medium">{track.title}</span>
-      </div>
-      <audio ref={audioRef} src={track.url} onEnded={() => setIsPlaying(false)} className="hidden" preload="metadata" />
-    </div>;
-};
-
-const SpotifyEmbed = ({
-  embedUrl
-}: {
-  embedUrl: string;
-}) => {
-  const albumId = embedUrl.split('/').pop();
-  return <div className="mt-4 border border-primary/20 rounded-lg overflow-hidden">
-      <iframe src={`https://open.spotify.com/embed/album/${albumId}`} width="100%" height="352" frameBorder="0" allowTransparency={true} allow="encrypted-media" title="Spotify Player" className="rounded-lg" />
-    </div>;
-};
-
-const VideoEmbed = ({ videoId }: { videoId: string }) => {
-  return (
-    <iframe 
-      src={`https://www.youtube.com/embed/${videoId}`}
-      width="100%" 
-      height="352" 
-      frameBorder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      allowFullScreen 
-      title={`YouTube Video ${videoId}`}
-      className="rounded-lg" 
-    />
-  );
-};
-
-const YouTubeEmbed = ({
-  embedUrl
-}: {
-  embedUrl: string;
-}) => {
-  // These are the three specified videos to embed
-  const videoIds = [
-    "CFtzsAY0wlM", // First video
-    "zOSpiophNBs", // Second video
-    "NNF46Np1q2c", // Third video
-  ];
-  
-  return (
-    <div className="mt-4 border border-primary/20 rounded-lg overflow-hidden">
-      <Carousel className="w-full">
-        <CarouselContent>
-          {videoIds.map((videoId, index) => (
-            <CarouselItem key={index}>
-              <div className="p-1">
-                <VideoEmbed videoId={videoId} />
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="left-4" />
-        <CarouselNext className="right-4" />
-      </Carousel>
-    </div>
-  );
-};
-
-const MediaItem = ({ src, alt, index }: { src: string; alt: string; index: number }) => {
-  const isVideo = src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.mov');
-  
-  if (isVideo) {
-    return (
-      <div className="aspect-video overflow-hidden rounded-md">
-        <video 
-          src={src} 
-          className="w-full h-full object-cover" 
-          controls
-          preload="metadata"
-          onError={() => console.error(`Failed to load video: ${src}`)}
-        >
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    );
-  }
-  
-  return (
-    <div className="aspect-video overflow-hidden rounded-md">
-      <img 
-        src={src} 
-        alt={`${alt} gallery image ${index + 1}`} 
-        className="w-full h-full object-cover" 
-        onError={() => console.error(`Failed to load image: ${src}`)}
-      />
-    </div>
-  );
-};
-
-const ProjectDialog = ({
-  project,
-  isOpen,
-  setIsOpen
-}: ProjectDialogProps) => {
+const ProjectDialog = ({ project, isOpen, setIsOpen }: ProjectDialogProps) => {
   // Find the current project's index in the projects array
   const currentIndex = projects.findIndex(p => p.id === project.id);
   
@@ -183,7 +47,8 @@ const ProjectDialog = ({
     });
   };
 
-  return <Dialog open={isOpen} onOpenChange={setIsOpen}>
+  return (
+    <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent className="max-w-4xl max-h-[95vh] p-0 border border-primary/20 rounded-lg overflow-hidden flex flex-col">
         <DialogHeader className="p-4 border-b sticky top-0 bg-background z-10">
           <DialogTitle className="text-2xl font-bold">{project.title}</DialogTitle>
@@ -223,7 +88,9 @@ const ProjectDialog = ({
                 <div>
                   <h4 className="text-xl font-semibold text-primary mb-2">Tools Used</h4>
                   <div className="flex flex-wrap gap-2">
-                    {project.tools?.map((tool, index) => <Badge key={index} variant="secondary" className="text-sm">{tool}</Badge>)}
+                    {project.tools?.map((tool, index) => (
+                      <Badge key={index} variant="secondary" className="text-sm">{tool}</Badge>
+                    ))}
                   </div>
                 </div>
                 
@@ -232,23 +99,29 @@ const ProjectDialog = ({
                   <p className="text-foreground/90 text-base">{project.impact || project.summary}</p>
                 </div>
 
-                {project.youtubeEmbed && <div>
+                {project.youtubeEmbed && (
+                  <div>
                     <h4 className="text-xl font-semibold text-primary mb-2 flex items-center">
                       <Youtube className="h-4 w-4 mr-2" />
                       Video Content
                     </h4>
                     <YouTubeEmbed embedUrl={project.youtubeEmbed} />
-                  </div>}
+                  </div>
+                )}
 
-                {project.audioTracks && <div>
+                {project.audioTracks && (
+                  <div>
                     <h4 className="text-xl font-semibold text-primary mb-2 flex items-center">
                       <Music className="h-4 w-4 mr-2" />
                       Audio Samples
                     </h4>
                     <div className="space-y-2">
-                      {project.audioTracks.map((track, index) => <AudioPlayer key={index} track={track} />)}
+                      {project.audioTracks.map((track, index) => (
+                        <AudioPlayer key={index} track={track} />
+                      ))}
                     </div>
-                  </div>}
+                  </div>
+                )}
               </div>
               
               <div className="space-y-4">
@@ -262,10 +135,12 @@ const ProjectDialog = ({
                   <p className="text-foreground/90 text-base">{project.solution}</p>
                 </div>
 
-                {project.spotifyEmbed && <div>
+                {project.spotifyEmbed && (
+                  <div>
                     <h4 className="text-xl font-semibold text-primary mb-2">Album Stream</h4>
                     <SpotifyEmbed embedUrl={project.spotifyEmbed} />
-                  </div>}
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -290,7 +165,8 @@ const ProjectDialog = ({
           </Button>
         </div>
       </DialogContent>
-    </Dialog>;
+    </Dialog>
+  );
 };
 
 export default ProjectDialog;

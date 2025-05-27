@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -46,7 +47,7 @@ const Contact = () => {
               <div className="backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-lg card-hover text-center bg-slate-100">
                 <div className="flex flex-col items-center">
                   <div className="p-4 rounded-xl text-primary mb-4 bg-slate-600">
-                    <Mail className="h-6 w-6 bg-[#000a00]/0" />
+                    <Mail className="h-6 w-6" color="#f1f5f9" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-xl mb-2 text-slate-900">Email Me</h3>

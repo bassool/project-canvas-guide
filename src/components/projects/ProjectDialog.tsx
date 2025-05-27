@@ -1,3 +1,4 @@
+
 import React, { useState, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
@@ -119,6 +120,37 @@ const YouTubeEmbed = ({
   );
 };
 
+const MediaItem = ({ src, alt, index }: { src: string; alt: string; index: number }) => {
+  const isVideo = src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.mov');
+  
+  if (isVideo) {
+    return (
+      <div className="aspect-video overflow-hidden rounded-md">
+        <video 
+          src={src} 
+          className="w-full h-full object-cover" 
+          controls
+          preload="metadata"
+          onError={() => console.error(`Failed to load video: ${src}`)}
+        >
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    );
+  }
+  
+  return (
+    <div className="aspect-video overflow-hidden rounded-md">
+      <img 
+        src={src} 
+        alt={`${alt} gallery image ${index + 1}`} 
+        className="w-full h-full object-cover" 
+        onError={() => console.error(`Failed to load image: ${src}`)}
+      />
+    </div>
+  );
+};
+
 const ProjectDialog = ({
   project,
   isOpen,
@@ -172,13 +204,13 @@ const ProjectDialog = ({
               <div className="py-4">
                 <Carousel className="w-full">
                   <CarouselContent>
-                    {project.galleryImages.map((img, index) => <CarouselItem key={index}>
+                    {project.galleryImages.map((src, index) => (
+                      <CarouselItem key={index}>
                         <div className="p-1">
-                          <div className="aspect-video overflow-hidden rounded-md">
-                            <img src={img} alt={`${project.title} gallery image ${index + 1}`} className="w-full h-full object-cover" />
-                          </div>
+                          <MediaItem src={src} alt={project.title} index={index} />
                         </div>
-                      </CarouselItem>)}
+                      </CarouselItem>
+                    ))}
                   </CarouselContent>
                   <CarouselPrevious className="left-4" />
                   <CarouselNext className="right-4" />

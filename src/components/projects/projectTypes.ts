@@ -71,9 +71,9 @@ export const projects: Project[] = [
     image: "/lovable-uploads/138bbbc6-fbd8-4f91-9629-7c41912d0eb1.png",
     tags: ["Creative Brand Direction", "Graphic Design", "Experiential Marketing"],
     galleryImages: [
-      "/lovable-uploads/138bbbc6-fbd8-4f91-9629-7c41912d0eb1.png",
-      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",
-      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e"
+      "/lovable-uploads/d1a44aec-e320-4fa3-84e1-295a78558466.png",
+      "/lovable-uploads/a18e440d-0031-4e69-9534-236c64320357.png",
+      "/lovable-uploads/138bbbc6-fbd8-4f91-9629-7c41912d0eb1.png"
     ],
     tools: ["Figma", "Notion", "Adobe Photoshop"],
     challenge: "To create compelling visual branding and marketing applicable to websites and promotional material such as business cards in preparation for a StartUp Competition",

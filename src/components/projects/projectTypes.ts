@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -51,9 +50,11 @@ export const projects: Project[] = [
     tags: ["Multimedia Production", "Design Direction", "Creative Strategy", "Project Management"],
     featured: true,
     galleryImages: [
-      "/lovable-uploads/df767496-ebfe-4362-9734-a35a2525a7b5.png",
-      "https://images.unsplash.com/photo-1508700108023-c5249f4df085",
-      "https://images.unsplash.com/photo-1511379938547-c1f69419868d"
+      "/depth 1.png",
+      "/depth 2.png",
+      "/depth 3.png",
+      "/depth 4.png",
+      "/depth 5.png"
     ],
     tools: ["Logic Pro X", "Adobe Creative Suite", "Final Cut Pro X", "Social Media Platforms"],
     summary: "Increased artist visibility by 40% and generated 1M+ streams across platforms",

@@ -7,6 +7,7 @@ const Navbar = () => {
   const [overDarkSection, setOverDarkSection] = useState(false);
   const [overAboutSection, setOverAboutSection] = useState(false);
   const [overContactSection, setOverContactSection] = useState(false);
+  
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -57,6 +58,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrolled]);
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -65,6 +67,11 @@ const Navbar = () => {
       });
     }
   };
+
+  const handleEmailClick = () => {
+    window.location.href = "mailto:basselatout@icloud.com";
+  };
+  
   return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-700 py-4", scrolled ? overAboutSection || overContactSection ? "bg-white/90 backdrop-blur-xl shadow-md" : overDarkSection ? "bg-white/70 backdrop-blur-xl shadow-md" : "bg-background/60 backdrop-blur-xl shadow-md" : "bg-transparent")}>
       <div className="container flex items-center justify-between">
         <div className="text-2xl font-bold">
@@ -92,7 +99,7 @@ const Navbar = () => {
           </button>
         </nav>
         
-        <Button onClick={() => scrollToSection("contact")} className="hidden sm:flex items-center gap-2 rounded-full px-6 bg-transparent hover:bg-transparent border border-slate-700 text-slate-700 hover:text-slate-700/90 transition-colors">
+        <Button onClick={handleEmailClick} className="hidden sm:flex items-center gap-2 rounded-full px-6 bg-transparent hover:bg-transparent border border-slate-700 text-slate-700 hover:text-slate-700/90 transition-colors">
           <Sparkles className="h-4 w-4" />
           Get in touch
         </Button>

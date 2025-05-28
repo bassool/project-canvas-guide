@@ -11,13 +11,11 @@ import AudioPlayer from "./AudioPlayer";
 import SpotifyEmbed from "./SpotifyEmbed";
 import YouTubeEmbed from "./YouTubeEmbed";
 import MediaItem from "./MediaItem";
-
 interface ProjectDialogProps {
   project: Project;
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
 }
-
 const ProjectDialog = ({
   project,
   isOpen,
@@ -111,7 +109,7 @@ const ProjectDialog = ({
               <div className="space-y-4">
                 <div>
                   <h4 className="text-xl font-semibold text-primary mb-2">Challenge</h4>
-                  <p className="text-foreground/90 text-base">Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.</p>
+                  <p className="text-foreground/90 text-base">Fragmented campaign coordination and brand-user alignment, reduced marketing efficiency, event impact, and target demographic usage on platform.</p>
                 </div>
                 
                 <div>
@@ -139,5 +137,4 @@ const ProjectDialog = ({
       </DialogContent>
     </Dialog>;
 };
-
 export default ProjectDialog;

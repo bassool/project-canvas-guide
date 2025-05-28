@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
@@ -127,7 +126,7 @@ const ProjectDialog = ({ project, isOpen, setIsOpen }: ProjectDialogProps) => {
               <div className="space-y-4">
                 <div>
                   <h4 className="text-xl font-semibold text-primary mb-2">Challenge</h4>
-                  <p className="text-foreground/90 text-base">{project.challenge}</p>
+                  <p className="text-foreground/90 text-base">• Remote team lacked structured collaboration for audio-visual integration.</p>
                 </div>
                 
                 <div>

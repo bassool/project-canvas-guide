@@ -25,7 +25,7 @@ export const projects: Project[] = [
   {
     id: 5,
     title: "Zapshot",
-    description: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, and provided consultation marketing and brand ambassadorship program strategy",
+    description: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",
     category: "workExperience",
     image: "/lovable-uploads/09dcce3a-805a-4d5e-bd8e-16730a9fc7b8.png",
     tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],

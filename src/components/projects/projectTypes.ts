@@ -66,7 +66,7 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "Fanhaven",
-    description: "Developed brand identity for a startup, producing visual assets and collaborating with founders to align branding with vision.",
+    description: "Developed visual suite and brand identity for ticketing-based tech StartUp, producing visual assets and collaborating with founders to align visuals with their vision.",
     category: "workExperience",
     image: "/lovable-uploads/138bbbc6-fbd8-4f91-9629-7c41912d0eb1.png",
     tags: ["Creative Brand Direction", "Graphic Design", "Experiential Marketing"],

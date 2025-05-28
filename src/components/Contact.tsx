@@ -1,10 +1,10 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, ArrowRight, Heart, Download, FileText, X } from "lucide-react";
+
 const Contact = () => {
   const {
     toast
@@ -33,8 +33,8 @@ const Contact = () => {
       <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -bottom-80 -left-80"></div>
       
       <div className="container relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full text-accent font-medium mb-4 bg-slate-600">
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-accent font-medium mb-6 bg-slate-600">
             <Heart className="h-4 w-4 mr-2 bg-transparent" />
             <span className="text-slate-100">Let's chat!</span>
           </div>

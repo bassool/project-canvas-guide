@@ -11,6 +11,7 @@ import AudioPlayer from "./AudioPlayer";
 import SpotifyEmbed from "./SpotifyEmbed";
 import YouTubeEmbed from "./YouTubeEmbed";
 import MediaItem from "./MediaItem";
+
 interface ProjectDialogProps {
   project: Project;
   isOpen: boolean;
@@ -109,12 +110,12 @@ const ProjectDialog = ({
               <div className="space-y-4">
                 <div>
                   <h4 className="text-xl font-semibold text-primary mb-2">Challenge</h4>
-                  <p className="text-foreground/90 text-base">Fragmented campaign coordination and brand-user alignment that reduced marketing efficiency and event impact; led to a lack of target market using our platform. </p>
+                  <p className="text-foreground/90 text-base">• Remote team lacked structured collaboration for audio-visual integration.</p>
                 </div>
                 
                 <div>
                   <h4 className="text-xl font-semibold text-primary mb-2">Solution</h4>
-                  <p className="text-foreground/90 text-base">{project.solution}</p>
+                  <p className="text-foreground/90 text-base">Developed high-performing Brand Ambassadorship program accompanied by various visual content, and improved campaign ROI through post-event KPI analysis.</p>
                 </div>
 
                 {project.spotifyEmbed && <div>

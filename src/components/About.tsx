@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -55,9 +54,7 @@ const About = () => {
           
           <div className="space-y-8 order-1 lg:order-2">
             <div className="prose prose-lg">
-              <p className="text-xl leading-relaxed text-foreground">
-                I'm a creative director and project manager with over a decade of experience bridging the gap between innovative design and efficient execution.
-              </p>
+              <p className="text-xl leading-relaxed text-foreground">I'm a creative director and project manager with over 5 years of experience bridging the gap between innovative design and efficient execution.</p>
               
               <p className="text-foreground/80 leading-relaxed">
                 My unique perspective comes from having worked on both the creative and management sides of projects, allowing me to speak both languages fluently. I believe that the best work happens at the intersection of bold creativity and thoughtful organization.
@@ -78,8 +75,8 @@ const About = () => {
                 <p className="text-slate-800">Years in project based work</p>
               </div>
               <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-slate-100">
-                <p className="text-4xl font-bold bg-gradient-to-br from-accent to-primary bg-clip-text text-slate-900">15+</p>
-                <p className="text-foreground/80">Industry Awards</p>
+                <p className="text-4xl font-bold bg-gradient-to-br from-accent to-primary bg-clip-text text-slate-900">6+</p>
+                <p className="text-slate-800">Creative and Managerial Tools Mastered</p>
               </div>
             </div>
             

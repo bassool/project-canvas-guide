@@ -1,6 +1,7 @@
 import React from "react";
 import { Calendar, Briefcase, Users, Rocket, Palette, Star, Sparkles } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+
 interface Skill {
   icon: React.ElementType;
   title: string;
@@ -8,6 +9,7 @@ interface Skill {
   category: "creative" | "management";
   color: "primary" | "secondary" | "accent";
 }
+
 const skills: Skill[] = [{
   icon: Palette,
   title: "Creative Direction",
@@ -22,7 +24,7 @@ const skills: Skill[] = [{
   color: "secondary"
 }, {
   icon: Users,
-  title: "Cross Functional Collaboration",
+  title: "Cross Functional Coordination",
   description: "Building and leading high-performing creative and technical teams, fostering collaboration and delivering exceptional results.",
   category: "management",
   color: "accent"
@@ -45,6 +47,7 @@ const skills: Skill[] = [{
   category: "creative",
   color: "accent"
 }];
+
 const SkillCard = ({
   skill
 }: {
@@ -68,6 +71,7 @@ const SkillCard = ({
       </CardContent>
     </Card>;
 };
+
 const Skills = () => {
   return <section id="skills" className="py-16 md:py-24 relative bg-slate-50">
       {/* Decorative blobs */}
@@ -106,4 +110,5 @@ const Skills = () => {
       </div>
     </section>;
 };
+
 export default Skills;

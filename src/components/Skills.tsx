@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Calendar, Briefcase, Users, Rocket, Palette, Star, Sparkles } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -51,17 +52,17 @@ const SkillCard = ({
   skill: Skill;
 }) => {
   const Icon = skill.icon;
-  return <Card className="overflow-hidden border-border card-hover bg-gradient-to-br from-white dark:from-card to-secondary/5 hover:to-slate-900/80">
+  return <Card className="overflow-hidden border-border card-hover bg-gradient-to-br from-white dark:from-card to-secondary/5 hover:to-slate-900/90 hover:shadow-2xl hover:shadow-slate-900/40 hover:border-slate-700/50 transition-all duration-500">
       <div className="bg-sky-300" />
-      <CardHeader className="bg-slate-100">
+      <CardHeader className="bg-slate-100 hover:bg-slate-200/80 transition-colors duration-300">
         <div className="flex items-center gap-3">
-          <div className="p-3 rounded-xl bg-transparent text-slate-700 border-slate-700/20">
+          <div className="p-3 rounded-xl bg-transparent text-slate-700 border-slate-700/20 hover:bg-slate-300/50 transition-colors duration-300">
             <Icon className="h-6 w-6" />
           </div>
           <CardTitle className="text-gray-900">{skill.title}</CardTitle>
         </div>
       </CardHeader>
-      <CardContent className="bg-slate-100">
+      <CardContent className="bg-slate-100 hover:bg-slate-200/80 transition-colors duration-300">
         <CardDescription className="text-sm text-slate-900">
           {skill.description}
         </CardDescription>

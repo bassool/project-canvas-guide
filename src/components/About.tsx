@@ -36,7 +36,7 @@ const About = () => {
             animationDelay: "1.5s"
           }}>
               <div className="flex items-center gap-2">
-                <Laptop className="h-5 w-5 text-primary" />
+                <Laptop className="h-5 w-5 text-slate-700" />
                 <span className="font-medium text-sm text-slate-900">Certified Associate in Project Management</span>
               </div>
             </div>
@@ -46,7 +46,7 @@ const About = () => {
             animationDelay: "1s"
           }}>
               <div className="flex items-center gap-2">
-                <Trophy className="h-5 w-5 text-primary" />
+                <Trophy className="h-5 w-5 text-slate-700" />
                 <span className="font-medium text-sm text-slate-900">Loyola Marymount Fred Kiesner Entrepreneurial Star Award Winner</span>
               </div>
             </div>

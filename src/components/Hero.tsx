@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
@@ -67,7 +68,7 @@ const Hero = () => {
           animationDelay: "1s"
         }}>
             <div className="flex items-center gap-2">
-              <Wand className="h-5 w-5 text-primary" />
+              <Wand className="h-5 w-5 text-slate-700" />
               <span className="font-medium text-sm text-slate-900">PMI-CAPM® Certified</span>
             </div>
           </div>

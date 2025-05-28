@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -14,7 +15,7 @@ const About = () => {
       <div className="container relative z-10">
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-4">
-            <Award className="h-4 w-4 mr-2" />
+            <Award className="h-4 w-4 mr-2 text-slate-100" />
             <span className="text-slate-100">Get to know me</span>
           </div>
           

@@ -15,7 +15,7 @@ const About = () => {
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-4">
             <Award className="h-4 w-4 mr-2" />
-            <span>Get to know me</span>
+            <span className="text-slate-100">Get to know me</span>
           </div>
           
           <h2 className="section-title">About Me</h2>
@@ -95,13 +95,13 @@ const About = () => {
           <div className="grid gap-10 md:grid-cols-2">
             <div className="bg-white dark:bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
               <h3 className="text-2xl font-semibold mb-4 text-slate-700">My Approach</h3>
-              <p className="leading-relaxed text-slate-600">
-                I believe in starting with clear strategic objectives, developing creative concepts that truly resonate with audiences, and executing with precision and adaptability. This balanced approach ensures both creative excellence and project success.
-              </p>
+              <p className="leading-relaxed text-slate-600">I believe in starting with clear strategic objectives, developing creative concepts that truly resonate with audiences, and executing with precision and adaptability. This balanced approach ensures both creative ingenuity and measurable project success.
+            </p>
             </div>
             <div className="bg-white dark:bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
               <h3 className="text-2xl font-semibold mb-4 text-slate-700">Background</h3>
-              <p className="leading-relaxed text-slate-600">With a dynamic background in creativity and business administration, I've worked with StartUps and as an independent freelancer across diverse industries including gaming, fashion, and software .</p>
+              <p className="leading-relaxed text-slate-600">With a dynamic and creative background also based in business administration, I've worked at StartUps and as an independent freelancer across diverse industries including gaming, fashion, and software development.
+            </p>
             </div>
           </div>
         </div>

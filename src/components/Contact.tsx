@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -99,7 +98,7 @@ const Contact = () => {
                   </li>
                   <li className="flex items-center gap-3 justify-center">
                     <span className="inline-block w-4 h-4 rounded-full bg-slate-700"></span>
-                    <span className="text-lg text-slate-800">Proven track record of successful project delivery</span>
+                    <span className="text-lg text-slate-800"> Demonstrable track record of successful project delivery</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
                     <span className="inline-block w-4 h-4 rounded-full bg-slate-700"></span>

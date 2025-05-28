@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Calendar, Briefcase, Users, Rocket, Palette, Star, Sparkles } from "lucide-react";
+import { Film, Briefcase, Users, Rocket, Palette, Star, Sparkles } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface Skill {
@@ -36,10 +36,10 @@ const skills: Skill[] = [{
   category: "creative",
   color: "primary"
 }, {
-  icon: Calendar,
-  title: "Production Coordination",
-  description: "Seamless coordination of production processes, resources, and timelines to bring creative concepts to life efficiently.",
-  category: "management",
+  icon: Film,
+  title: "Multimedia Production",
+  description: "Creating engaging multimedia content including video, audio, and interactive experiences that captivate audiences and tell compelling stories.",
+  category: "creative",
   color: "secondary"
 }, {
   icon: Rocket,

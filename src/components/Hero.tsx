@@ -77,7 +77,7 @@ const Hero = () => {
           animationDelay: "1.5s"
         }}>
             <div className="flex items-center gap-2">
-              <span className="font-bold text-primary">5+</span>
+              <span className="font-bold text-slate-700">5+</span>
               <span className="text-xs text-slate-900">Years Experience</span>
             </div>
           </div>

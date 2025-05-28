@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,6 +23,11 @@ const Contact = () => {
     form.reset();
   };
   return <section id="contact" className="py-20 md:py-28 relative overflow-hidden bg-slate-100">
+      {/* Floating blob shapes */}
+      <div className="blob-shape w-[300px] h-[300px] -top-24 -right-16 animate-pulse-custom bg-[#81bfdf]"></div>
+      <div className="blob-shape w-[450px] h-[450px] -bottom-32 -left-28 animate-pulse-custom bg-[#87ddf0]"></div>
+      <div className="blob-shape w-[200px] h-[200px] top-[60%] right-[25%] animate-pulse-custom bg-[#b4def5]"></div>
+      
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10 bg-[#81c3df]/[0.22]"></div>
       <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -bottom-80 -left-80"></div>

@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Calendar, Briefcase, Users, Rocket, Palette, Star, Sparkles } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -74,6 +75,11 @@ const SkillCard = ({
 
 const Skills = () => {
   return <section id="skills" className="py-16 md:py-24 relative bg-slate-50">
+      {/* Floating blob shapes */}
+      <div className="blob-shape w-[400px] h-[400px] -top-32 -left-20 animate-pulse-custom bg-[#59b8e9]"></div>
+      <div className="blob-shape w-[350px] h-[350px] -bottom-20 -right-24 animate-pulse-custom bg-[#87ddf0]"></div>
+      <div className="blob-shape w-[250px] h-[250px] top-1/3 right-[15%] animate-pulse-custom bg-[#b4def5]"></div>
+      
       {/* Decorative blobs */}
       <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -right-64 top-0"></div>
       <div className="blob-shape bg-secondary/10 w-[400px] h-[400px] -left-32 bottom-0"></div>

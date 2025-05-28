@@ -1,16 +1,12 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Rocket } from "lucide-react";
 import { ProjectCategory, projects } from "./projects/projectTypes";
 import ProjectList from "./projects/ProjectList";
-
 const Projects = () => {
   const [activeTab, setActiveTab] = useState<ProjectCategory>("all");
-  
-  return (
-    <section id="work" className="py-20 md:py-28 relative overflow-hidden mt-12">
+  return <section id="work" className="py-20 md:py-28 relative overflow-hidden mt-12">
       {/* Floating blob shapes */}
       <div className="blob-shape w-[300px] h-[300px] -top-20 -right-10 animate-pulse-custom bg-[#87ddf0]"></div>
       <div className="blob-shape w-[500px] h-[500px] -bottom-40 -left-32 animate-pulse-custom bg-[#81bfdf]"></div>
@@ -54,13 +50,9 @@ const Projects = () => {
         </Tabs>
         
         <div className="flex justify-center mt-12">
-          <Button variant="outline" size="lg" className="rounded-full px-8 border-2 hover:bg-secondary/10">
-            View All Projects
-          </Button>
+          <Button variant="outline" size="lg" className="rounded-full px-8 border-2 hover:bg-secondary/10">Click each project to view</Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Projects;

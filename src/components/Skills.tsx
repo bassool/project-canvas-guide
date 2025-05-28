@@ -1,7 +1,6 @@
 import React from "react";
 import { Calendar, Briefcase, Users, Rocket, Palette, Star, Sparkles } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-
 interface Skill {
   icon: React.ElementType;
   title: string;
@@ -9,54 +8,49 @@ interface Skill {
   category: "creative" | "management";
   color: "primary" | "secondary" | "accent";
 }
-
-const skills: Skill[] = [
-  {
-    icon: Palette,
-    title: "Creative Direction",
-    description: "Developing comprehensive creative strategies and visual identities that align with brand objectives and resonate with target audiences.",
-    category: "creative",
-    color: "primary"
-  }, {
-    icon: Briefcase,
-    title: "Project Management",
-    description: "End-to-end project oversight ensuring on-time, on-budget delivery while maintaining quality standards and stakeholder satisfaction.",
-    category: "management",
-    color: "secondary"
-  }, {
-    icon: Users,
-    title: "Cross Functional Collaboration",
-    description: "Building and leading high-performing creative and technical teams, fostering collaboration and delivering exceptional results.",
-    category: "management",
-    color: "accent"
-  }, {
-    icon: Star,
-    title: "Visual Design and Branding",
-    description: "Creating compelling brand stories, visual systems, and communication strategies that establish strong market presence.",
-    category: "creative",
-    color: "primary"
-  }, {
-    icon: Calendar,
-    title: "Production Coordination",
-    description: "Seamless coordination of production processes, resources, and timelines to bring creative concepts to life efficiently.",
-    category: "management",
-    color: "secondary"
-  }, {
-    icon: Rocket,
-    title: "KPI & Performance Analysis",
-    description: "Comprehensive planning for product, campaign, and brand launches to maximize impact and achieve business objectives.",
-    category: "creative",
-    color: "accent"
-  }
-];
-
+const skills: Skill[] = [{
+  icon: Palette,
+  title: "Creative Direction",
+  description: "Developing comprehensive creative strategies and visual identities that align with brand objectives and resonate with target audiences.",
+  category: "creative",
+  color: "primary"
+}, {
+  icon: Briefcase,
+  title: "Project Management",
+  description: "End-to-end project oversight ensuring on-time, on-budget delivery while maintaining quality standards and stakeholder satisfaction.",
+  category: "management",
+  color: "secondary"
+}, {
+  icon: Users,
+  title: "Cross Functional Collaboration",
+  description: "Building and leading high-performing creative and technical teams, fostering collaboration and delivering exceptional results.",
+  category: "management",
+  color: "accent"
+}, {
+  icon: Star,
+  title: "Visual Design and Branding",
+  description: "Creating compelling brand stories, visual systems, and communication strategies that establish strong market presence.",
+  category: "creative",
+  color: "primary"
+}, {
+  icon: Calendar,
+  title: "Production Coordination",
+  description: "Seamless coordination of production processes, resources, and timelines to bring creative concepts to life efficiently.",
+  category: "management",
+  color: "secondary"
+}, {
+  icon: Rocket,
+  title: "KPI & Performance Analysis",
+  description: "Comprehensive planning for product, campaign, and brand launches to maximize impact and achieve business objectives.",
+  category: "creative",
+  color: "accent"
+}];
 const SkillCard = ({
   skill
 }: {
   skill: Skill;
 }) => {
   const Icon = skill.icon;
-  
   return <Card className="overflow-hidden border-border card-hover bg-gradient-to-br from-white dark:from-card to-secondary/5 hover:to-slate-900/80">
       <div className="bg-sky-300" />
       <CardHeader className="bg-slate-100">
@@ -74,9 +68,8 @@ const SkillCard = ({
       </CardContent>
     </Card>;
 };
-
 const Skills = () => {
-  return <section id="skills" className="py-16 md:py-24 relative bg-slate-100">
+  return <section id="skills" className="py-16 md:py-24 relative bg-slate-50">
       {/* Decorative blobs */}
       <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -right-64 top-0"></div>
       <div className="blob-shape bg-secondary/10 w-[400px] h-[400px] -left-32 bottom-0"></div>
@@ -113,5 +106,4 @@ const Skills = () => {
       </div>
     </section>;
 };
-
 export default Skills;

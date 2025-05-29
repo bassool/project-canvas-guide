@@ -1,11 +1,10 @@
 
-
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Music, Youtube, X } from "lucide-react";
+import { Music, Youtube, X, ExternalLink } from "lucide-react";
 import { Project, projects } from "./projectTypes";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "@/components/ui/use-toast";
@@ -130,6 +129,21 @@ const ProjectDialog = ({
                   </div>}
               </div>
             </div>
+
+            {/* Website Button */}
+            <div className="flex justify-center mt-8 mb-4">
+              <Button 
+                variant="outline" 
+                className="flex items-center gap-2 px-6 py-2 rounded-md border-2 hover:bg-secondary/10"
+                onClick={() => {
+                  // Add your website URL here
+                  console.log(`Navigate to ${project.title} website`);
+                }}
+              >
+                <span>{project.title} Website</span>
+                <ExternalLink className="h-4 w-4" />
+              </Button>
+            </div>
           </div>
         </ScrollArea>
         
@@ -146,4 +160,3 @@ const ProjectDialog = ({
 };
 
 export default ProjectDialog;
-

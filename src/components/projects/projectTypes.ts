@@ -1,5 +1,3 @@
-
-
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -41,7 +39,7 @@ export const projects: Project[] = [
     tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],
     summary: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",
     challenge: "Fragmented campaign coordination and brand-user alignment, reduced marketing efficiency, event impact, and target demographic usage on the platform.",
-    solution: "Implemented agile methodologies with regular retrospectives to continuously improve processes"
+    solution: "Developed revitalized and high-performing Brand Ambassadorship Program accompanied by various visual content, improved campaign ROI through post-event KPI analysis."
   },
   {
     id: 1,
@@ -149,4 +147,3 @@ export const projects: Project[] = [
     solution: "Established partnership model with established organizations to share resources and expertise"
   }
 ];
-

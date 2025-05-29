@@ -57,7 +57,7 @@ export const projects: Project[] = [
       "/depth 5.png"
     ],
     tools: ["Logic Pro X", "Adobe Creative Suite", "Final Cut Pro X", "Social Media Platforms"],
-    summary: "Increased artist visibility by 40% and generated 1M+ streams across platforms",
+    summary: "Produced and directed full album and all visuals, accompanied by digital social media marketing strategy and experiential live event planning and performing.",
     challenge: "To independently produce, manage, and direct a full-scale music project across multiple creative disciplines with a limited budget and resources.",
     solution: "Led art direction and end-to-end production, shot visuals for and orchestrated multiple marketing campaigns, and grew an audience through coordinated digital content and live events.",
     spotifyEmbed: "https://open.spotify.com/album/0MUxE0X6wDiVNIrqJcMqKx",

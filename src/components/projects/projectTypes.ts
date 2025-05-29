@@ -78,7 +78,7 @@ export const projects: Project[] = [
     tools: ["Figma", "Notion", "Adobe Photoshop"],
     challenge: "To create compelling visual branding and marketing applicable to websites and promotional material such as business cards in preparation for a StartUp Competition",
     solution: "Created component-based system with clear guidelines and examples of appropriate usage",
-    summary: "• Increased brand awareness and consistency by designing a full branding suite (logo, business cards, event materials) using Adobe Creative Suite and Figma, resulting in a strong visual presence at a major startup event.\n• Translated founders' vision into compelling brand visuals by collaborating in Notion, enhancing alignment across marketing efforts."
+    summary: "Developed visual suite and brand identity for ticketing-based tech StartUp, producing visual assets and collaborating with founders to align visuals with their vision."
   },
   {
     id: 3,

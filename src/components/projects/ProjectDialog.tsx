@@ -138,6 +138,8 @@ const ProjectDialog = ({
                 onClick={() => {
                   if (project.title === "Zapshot") {
                     window.open("https://www.zapshot.me/", "_blank");
+                  } else if (project.title === "Fanhaven") {
+                    window.open("https://fanhaventicketing.com/", "_blank");
                   } else {
                     console.log(`Navigate to ${project.title} website`);
                   }

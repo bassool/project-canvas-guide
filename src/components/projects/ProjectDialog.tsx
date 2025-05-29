@@ -116,7 +116,7 @@ const ProjectDialog = ({
                 
                 <div>
                   <h4 className="text-xl font-semibold text-primary mb-2">Solution</h4>
-                  <p className="text-foreground/90 text-base">Developed high-performing Brand Ambassadorship program accompanied by various visual content, and improved campaign ROI through post-event KPI analysis.</p>
+                  <p className="text-foreground/90 text-base">Led end-to-end production and art directed, shot visuals for and orchestrated multiple marketing campaigns, and grew a digital audience through coordinated content and live events.</p>
                 </div>
 
                 {project.spotifyEmbed && <div>

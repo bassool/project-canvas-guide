@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
@@ -89,7 +90,7 @@ const ProjectDialog = ({
                 <div>
                   <h4 className="text-xl font-semibold text-primary mb-2">Summary</h4>
                   <p className="text-foreground/90 text-base">
-                    {project.id === 5 ? "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy." : project.summary || project.impact}
+                    {project.summary || project.impact || "Summary information not available for this project."}
                   </p>
                 </div>
 
@@ -145,3 +146,4 @@ const ProjectDialog = ({
 };
 
 export default ProjectDialog;
+

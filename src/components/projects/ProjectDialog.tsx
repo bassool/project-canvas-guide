@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
@@ -11,11 +12,13 @@ import AudioPlayer from "./AudioPlayer";
 import SpotifyEmbed from "./SpotifyEmbed";
 import YouTubeEmbed from "./YouTubeEmbed";
 import MediaItem from "./MediaItem";
+
 interface ProjectDialogProps {
   project: Project;
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
 }
+
 const ProjectDialog = ({
   project,
   isOpen,
@@ -47,6 +50,7 @@ const ProjectDialog = ({
       duration: 1500
     });
   };
+
   return <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent className="max-w-4xl max-h-[95vh] p-0 border border-primary/20 rounded-lg overflow-hidden flex flex-col">
         <DialogHeader className="p-4 border-b sticky top-0 bg-background z-10">
@@ -85,7 +89,7 @@ const ProjectDialog = ({
                 <div>
                   <h4 className="text-xl font-semibold text-primary mb-2">Summary</h4>
                   <p className="text-foreground/90 text-base">
-                    {project.id === 5 ? "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy." : project.impact || project.summary}
+                    {project.id === 5 ? "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy." : project.summary || project.impact}
                   </p>
                 </div>
 
@@ -111,12 +115,12 @@ const ProjectDialog = ({
               <div className="space-y-4">
                 <div>
                   <h4 className="text-xl font-semibold text-primary mb-2">Challenge</h4>
-                  <p className="text-foreground/90 text-base">To independently produce, manage, and direct a full-scale music project across multiple creative disciplines with a limited budget and resources.</p>
+                  <p className="text-foreground/90 text-base">{project.challenge || "Challenge information not available for this project."}</p>
                 </div>
                 
                 <div>
                   <h4 className="text-xl font-semibold text-primary mb-2">Solution</h4>
-                  <p className="text-foreground/90 text-base">Led end-to-end production and art directed, shot visuals for and orchestrated multiple marketing campaigns, and grew a digital audience through coordinated content and live events.</p>
+                  <p className="text-foreground/90 text-base">{project.solution || "Solution information not available for this project."}</p>
                 </div>
 
                 {project.spotifyEmbed && <div>
@@ -139,4 +143,5 @@ const ProjectDialog = ({
       </DialogContent>
     </Dialog>;
 };
+
 export default ProjectDialog;

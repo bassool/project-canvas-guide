@@ -77,7 +77,7 @@ export const projects: Project[] = [
     ],
     tools: ["Figma", "Notion", "Adobe Photoshop"],
     challenge: "To create a cohesive branding and visual identity for an early-stage StartUp with a scare budget and resources in time for StartUp showcases.",
-    solution: "Created component-based system with clear guidelines and examples of appropriate usage",
+    solution: "Led the development of a unified temporary brand system—including logo, tangible materials, and digital assets—that effectively communicated the company's identity and increased brand recognition during experiential events.",
     summary: "Developed visual suite and brand identity for ticketing-based tech StartUp, producing visual assets and collaborating with founders to align visuals with their vision."
   },
   {

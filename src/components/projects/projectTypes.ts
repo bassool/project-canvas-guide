@@ -44,7 +44,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "Depth Perception",
-    description: "Directed and produced full album along with and marketing strategy, social media and video direction, and live performance planning and performing",
+    description: "Directed and produced full album and all visuals, accompanied by digital social media marketing strategy and experiential live event planning and performing.",
     category: "personal",
     image: "/lovable-uploads/df767496-ebfe-4362-9734-a35a2525a7b5.png",
     tags: ["Multimedia Production", "Design Direction", "Creative Strategy", "Project Management"],

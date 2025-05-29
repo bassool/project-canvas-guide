@@ -136,8 +136,11 @@ const ProjectDialog = ({
                 variant="outline" 
                 className="flex items-center gap-2 px-6 py-2 rounded-md border-2 hover:bg-secondary/10"
                 onClick={() => {
-                  // Add your website URL here
-                  console.log(`Navigate to ${project.title} website`);
+                  if (project.title === "Zapshot") {
+                    window.open("https://www.zapshot.me/", "_blank");
+                  } else {
+                    console.log(`Navigate to ${project.title} website`);
+                  }
                 }}
               >
                 <span>{project.title} Website</span>

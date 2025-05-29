@@ -96,7 +96,7 @@ export const projects: Project[] = [
     ],
     tools: ["Logic Pro X", "Trello", "Discord", "Github"],
     summary: "Increased conversion rates by 32% and reduced customer acquisition cost by 24%",
-    challenge: "Identifying optimal marketing channels with limited budget",
+    challenge: "To interpret the game owner's vision and create a compelling original game soundtrack with a remote team that initially lacked a structured cross-functional collaboration approach for audio-visual integration.",
     solution: "Created data-driven approach to channel selection based on audience research and ROI potential",
     audioTracks: [
       { title: "Vista Theme", url: "/VISTA 5 PORT copy.mp3" },

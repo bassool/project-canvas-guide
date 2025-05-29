@@ -74,6 +74,7 @@ export const projects: Project[] = [
     galleryImages: [
       "/lovable-uploads/5e4ad684-6e4d-4d6e-a521-98a4c38905a2.png",
       "/lovable-uploads/d1a44aec-e320-4fa3-84e1-295a78558466.png",
+      "/lovable-uploads/b9fa0ee3-71c9-46d0-9d6f-4678927075f6.png",
       "/lovable-uploads/a18e440d-0031-4e69-9534-236c64320357.png",
       "/lovable-uploads/138bbbc6-fbd8-4f91-9629-7c41912d0eb1.png"
     ],

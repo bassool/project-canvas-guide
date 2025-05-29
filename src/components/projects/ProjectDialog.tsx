@@ -140,6 +140,8 @@ const ProjectDialog = ({
                     window.open("https://www.zapshot.me/", "_blank");
                   } else if (project.title === "Fanhaven") {
                     window.open("https://fanhaventicketing.com/", "_blank");
+                  } else if (project.title === "Death to Love") {
+                    window.open("https://spicy-churro.itch.io/death-to-love", "_blank");
                   } else {
                     console.log(`Navigate to ${project.title} website`);
                   }

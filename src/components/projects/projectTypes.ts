@@ -1,4 +1,5 @@
 
+
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -39,7 +40,7 @@ export const projects: Project[] = [
     ],
     tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],
     summary: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",
-    challenge: "Addressing inefficient workflows that caused burnout and missed deadlines",
+    challenge: "Fragmented campaign coordination and brand-user alignment, reduced marketing efficiency, event impact, and target demographic usage on the platform.",
     solution: "Implemented agile methodologies with regular retrospectives to continuously improve processes"
   },
   {
@@ -148,3 +149,4 @@ export const projects: Project[] = [
     solution: "Established partnership model with established organizations to share resources and expertise"
   }
 ];
+

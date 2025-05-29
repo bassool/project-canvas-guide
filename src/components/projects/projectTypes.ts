@@ -58,7 +58,7 @@ export const projects: Project[] = [
     ],
     tools: ["Logic Pro X", "Adobe Creative Suite", "Final Cut Pro X", "Social Media Platforms"],
     summary: "Increased artist visibility by 40% and generated 1M+ streams across platforms",
-    challenge: "Creating cohesive visual and audio experience with limited resources",
+    challenge: "To independently produce, manage, and direct a full-scale music project across multiple creative disciplines with a limited budget and resources.",
     solution: "Developed integrated marketing strategy that leveraged artist's unique style across all touchpoints",
     spotifyEmbed: "https://open.spotify.com/album/0MUxE0X6wDiVNIrqJcMqKx",
     youtubeEmbed: "https://www.youtube.com/@bassool3957/videos"

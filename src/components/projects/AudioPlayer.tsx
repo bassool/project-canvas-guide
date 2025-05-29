@@ -63,6 +63,8 @@ class AudioManager {
 
 const AudioPlayer = ({ track }: AudioPlayerProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
   const audioRef = useRef<HTMLAudioElement>(null);
   const audioManager = AudioManager.getInstance();
   const trackId = `${track.title}-${track.url}`;
@@ -76,6 +78,24 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
       audioManager.unregisterListener(trackId);
     };
   }, [trackId, audioManager]);
+
+  const formatTime = (time: number) => {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+  };
+
+  const handleTimeUpdate = () => {
+    if (audioRef.current) {
+      setCurrentTime(audioRef.current.currentTime);
+    }
+  };
+
+  const handleLoadedMetadata = () => {
+    if (audioRef.current) {
+      setDuration(audioRef.current.duration);
+    }
+  };
   
   const togglePlay = () => {
     if (audioRef.current) {
@@ -113,20 +133,30 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
 
   const handleAudioEnded = () => {
     audioManager.stop(trackId);
+    setCurrentTime(0);
   };
 
   return (
-    <div className="flex items-center justify-between p-3 bg-secondary/10 rounded-lg mb-2">
+    <div className="flex items-center justify-between p-3 bg-secondary/10 rounded-lg mb-2 relative">
       <div className="flex items-center">
         <Button variant="ghost" size="sm" className="h-8 w-8 rounded-full p-0 mr-2" onClick={togglePlay}>
           {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
         </Button>
         <span className="text-sm font-medium">{track.title}</span>
       </div>
+      
+      {isPlaying && (
+        <div className="absolute bottom-2 right-3 text-xs text-slate-100">
+          {formatTime(currentTime)} / {formatTime(duration)}
+        </div>
+      )}
+      
       <audio 
         ref={audioRef} 
         src={track.url} 
-        onEnded={handleAudioEnded} 
+        onEnded={handleAudioEnded}
+        onTimeUpdate={handleTimeUpdate}
+        onLoadedMetadata={handleLoadedMetadata}
         className="hidden" 
         preload="metadata" 
       />

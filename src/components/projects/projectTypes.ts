@@ -76,7 +76,7 @@ export const projects: Project[] = [
       "/lovable-uploads/138bbbc6-fbd8-4f91-9629-7c41912d0eb1.png"
     ],
     tools: ["Figma", "Notion", "Adobe Photoshop"],
-    challenge: "To create compelling visual branding and marketing applicable to websites and promotional material such as business cards in preparation for a StartUp Competition",
+    challenge: "To create a cohesive branding and visual identity for an early-stage StartUp with a scare budget and resources in time for StartUp showcases.",
     solution: "Created component-based system with clear guidelines and examples of appropriate usage",
     summary: "Developed visual suite and brand identity for ticketing-based tech StartUp, producing visual assets and collaborating with founders to align visuals with their vision."
   },

@@ -27,11 +27,11 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
   }
   
   return (
-    <div className="aspect-video overflow-hidden rounded-md bg-gray-100 flex items-center justify-center">
+    <div className="aspect-video overflow-hidden rounded-md">
       <img 
         src={src} 
         alt={`${alt} gallery image ${index + 1}`} 
-        className="max-w-full max-h-full object-contain" 
+        className="w-full h-full object-cover" 
         onError={() => console.error(`Failed to load image: ${src}`)}
       />
     </div>

@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
@@ -142,6 +141,8 @@ const ProjectDialog = ({
                     window.open("https://fanhaventicketing.com/", "_blank");
                   } else if (project.title === "Death to Love") {
                     window.open("https://spicy-churro.itch.io/death-to-love", "_blank");
+                  } else if (project.title === "Waxheart") {
+                    window.open("https://waxheart.info/", "_blank");
                   } else {
                     console.log(`Navigate to ${project.title} website`);
                   }

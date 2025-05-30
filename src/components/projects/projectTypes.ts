@@ -100,7 +100,7 @@ export const projects: Project[] = [
     tools: ["Logic Pro X", "Trello", "Discord", "Github"],
     summary: "Increased conversion rates by 32% and reduced customer acquisition cost by 24%",
     challenge: "To interpret the game owner's vision and create a compelling original game soundtrack with a remote team that initially lacked a structured cross-functional collaboration approach for audio-visual integration.",
-    solution: "Created data-driven approach to channel selection based on audience research and ROI potential",
+    solution: "Coordinated more cohesive schedule to flesh out founder's vision with all creative teams, leading to and more focused vision that audio team could much more effectively produce music to. Created over 15+ fully original tracks for game using Logic Pro X, meeting weekly with creative teams.",
     audioTracks: [
       { title: "Vista Theme", url: "/VISTA 5 PORT copy.mp3" },
       { title: "Marketplace Theme", url: "/MARKETPLACE THEME.mp3" },

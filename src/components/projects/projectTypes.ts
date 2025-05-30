@@ -86,7 +86,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Waxheart",
-    description: "Composed game soundtrack, improved team workflows, and aligned audio design with the game's visual themes.",
+    description: "Fully produced over 15+ original songs for game soundtrack, aligning audio design with game's visual themes and coordinating team workflows.",
     category: "freelance",
     image: "/lovable-uploads/3c4c6ca8-6600-4cb7-8c20-dbf785abe7b8.png",
     tags: ["Music Production", "Cross Functional Teamwork", "Project Management"],

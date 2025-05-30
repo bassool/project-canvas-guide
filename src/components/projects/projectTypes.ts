@@ -112,7 +112,7 @@ export const projects: Project[] = [
   {
     id: 2,
     title: "Death to Love",
-    description: "Fully produced three original punk tracks with direction from Game Lead for Co-Op Beat 'em-Up indie game, with game implementation done in Wwise.",
+    description: "Fully produced and managed three original punk songs for Co-Op Beat 'em-Up indie game OST in Logic Pro X, interpreting creative vision from game owner and lead; game implementation done in Wwise.",
     category: "freelance",
     image: "/lovable-uploads/785f2061-da37-4b1a-9e6f-8d3b04d614d9.png",
     tags: ["Music Production", "Cross Functional Teamwork", "Creative Interpretation", "Project Management"],
@@ -123,7 +123,7 @@ export const projects: Project[] = [
       "/lovable-uploads/9b18ae23-bc91-4807-8a33-5ff7771a0c33.png"
     ],
     tools: ["Logic Pro X", "Trello", "Discord", "Wwise"],
-    summary: "Successfully launched product with 95% on-time delivery of project milestones",
+    summary: "Fully produced and managed three original punk songs for Co-Op Beat 'em-Up indie game OST in Logic Pro X, interpreting creative vision from game owner and lead; game implementation done in Wwise.",
     challenge: "Coordinating cross-functional teams across different time zones",
     solution: "Implemented agile methodology with clear communication protocols and documentation",
     audioTracks: [

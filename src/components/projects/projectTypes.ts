@@ -124,8 +124,8 @@ export const projects: Project[] = [
     ],
     tools: ["Logic Pro X", "Trello", "Discord", "Wwise"],
     summary: "Fully produced and managed three original punk songs for Co-Op Beat 'em-Up indie game OST in Logic Pro X, interpreting creative vision from game owner and lead; game implementation done in Wwise.",
-    challenge: "Coordinating cross-functional teams across different time zones",
-    solution: "Implemented agile methodology with clear communication protocols and documentation",
+    challenge: "To fully produce an original game soundtrack and direct audio implementation with a fully remote team and little to no budget within a short time frame, working only with game owner's minimal creative input and concept art.",
+    solution: "Took charge and created a variety of demos to gauge creative team's taste and vision, allowing me to narrow down game owner's sonic goals for project. Then produced three original songs along with stems and one shot stings in a timely manner in Logic Pro X.",
     audioTracks: [
       { title: "Main Menu and Dialogue Theme", url: "/Main Menu and Dialogue Theme .mp3" },
       { title: "Battle Theme 1", url: "/Battle Theme 1.mp3" },

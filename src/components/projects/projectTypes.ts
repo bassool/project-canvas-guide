@@ -1,3 +1,4 @@
+
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -23,25 +24,6 @@ export interface Project {
 // Sample project data
 export const projects: Project[] = [
   {
-    id: 5,
-    title: "Zapshot",
-    description: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",
-    category: "workExperience",
-    image: "/lovable-uploads/09dcce3a-805a-4d5e-bd8e-16730a9fc7b8.png",
-    tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
-    featured: true,
-    galleryImages: [
-      "/zapshot 1.png", 
-      "/zapshot 2.png",
-      "/zapshot 3.png",
-      "/ZAPSHOT 4.mp4"
-    ],
-    tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],
-    summary: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",
-    challenge: "Fragmented campaign coordination and brand-user alignment, reduced marketing efficiency, event impact, and target demographic usage on the platform.",
-    solution: "Developed revitalized and high-performing Brand Ambassadorship Program accompanied by various visual content, improved campaign ROI through post-event KPI analysis."
-  },
-  {
     id: 1,
     title: "Depth Perception",
     description: "Directed and produced full album and all visuals, accompanied by digital social media marketing strategy and experiential live event planning and performing.",
@@ -63,6 +45,42 @@ export const projects: Project[] = [
     solution: "Led art direction and end-to-end production, shot visuals for and orchestrated multiple marketing campaigns, and grew an audience through coordinated digital content and live events.",
     spotifyEmbed: "https://open.spotify.com/album/0MUxE0X6wDiVNIrqJcMqKx",
     youtubeEmbed: "https://www.youtube.com/@bassool3957/videos"
+  },
+  {
+    id: 6,
+    title: "Sanad Collective",
+    description: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
+    category: "personal",
+    image: "/lovable-uploads/78fa5ee6-e402-4b66-9fb1-6194000c94c0.png",
+    tags: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
+    galleryImages: [
+      "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7", 
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+    ],
+    tools: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
+    summary: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
+    challenge: "Building sustainable infrastructure with limited funding and volunteer resources",
+    solution: "Established partnership model with established organizations to share resources and expertise"
+  },
+  {
+    id: 5,
+    title: "Zapshot",
+    description: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",
+    category: "workExperience",
+    image: "/lovable-uploads/09dcce3a-805a-4d5e-bd8e-16730a9fc7b8.png",
+    tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
+    featured: true,
+    galleryImages: [
+      "/zapshot 1.png", 
+      "/zapshot 2.png",
+      "/zapshot 3.png",
+      "/ZAPSHOT 4.mp4"
+    ],
+    tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],
+    summary: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",
+    challenge: "Fragmented campaign coordination and brand-user alignment, reduced marketing efficiency, event impact, and target demographic usage on the platform.",
+    solution: "Developed revitalized and high-performing Brand Ambassadorship Program accompanied by various visual content, improved campaign ROI through post-event KPI analysis."
   },
   {
     id: 4,
@@ -131,22 +149,5 @@ export const projects: Project[] = [
       { title: "Battle Theme 1", url: "/Battle Theme 1.mp3" },
       { title: "Battle Theme 2", url: "/Battle Theme 2.mp3" }
     ]
-  },
-  {
-    id: 6,
-    title: "Sanad Collective",
-    description: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
-    category: "personal",
-    image: "/lovable-uploads/78fa5ee6-e402-4b66-9fb1-6194000c94c0.png",
-    tags: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
-    galleryImages: [
-      "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7", 
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
-    ],
-    tools: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
-    summary: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
-    challenge: "Building sustainable infrastructure with limited funding and volunteer resources",
-    solution: "Established partnership model with established organizations to share resources and expertise"
   }
 ];

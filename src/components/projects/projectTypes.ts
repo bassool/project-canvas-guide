@@ -53,6 +53,7 @@ export const projects: Project[] = [
     category: "personal",
     image: "/lovable-uploads/78fa5ee6-e402-4b66-9fb1-6194000c94c0.png",
     tags: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
+    featured: true,
     galleryImages: [
       "https://images.unsplash.com/photo-1518770660439-4636190af475",
       "https://images.unsplash.com/photo-1649972904349-6e44c42644a7", 
@@ -89,7 +90,6 @@ export const projects: Project[] = [
     category: "workExperience",
     image: "/lovable-uploads/138bbbc6-fbd8-4f91-9629-7c41912d0eb1.png",
     tags: ["Creative Brand Direction", "Graphic Design", "Experiential Marketing"],
-    featured: true,
     galleryImages: [
       "/lovable-uploads/5e4ad684-6e4d-4d6e-a521-98a4c38905a2.png",
       "/lovable-uploads/d1a44aec-e320-4fa3-84e1-295a78558466.png",

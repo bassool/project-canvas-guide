@@ -135,7 +135,7 @@ export const projects: Project[] = [
   {
     id: 6,
     title: "Sanad Collective",
-    description: "Coordinated and designed community-focused initiative with LA based fashion StartUp by designing experiential cultural event setups, coordinating merchandise, and driving field sales through consistent brand perception and reliable event presence.",
+    description: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
     category: "personal",
     image: "/lovable-uploads/78fa5ee6-e402-4b66-9fb1-6194000c94c0.png",
     tags: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
@@ -145,7 +145,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
     ],
     tools: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
-    summary: "Coordinated and designed community-focused initiative with LA based fashion StartUp by designing experiential cultural event setups, coordinating merchandise, and driving field sales through consistent brand perception and reliable event presence.",
+    summary: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
     challenge: "Building sustainable infrastructure with limited funding and volunteer resources",
     solution: "Established partnership model with established organizations to share resources and expertise"
   }

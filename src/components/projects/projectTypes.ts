@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -145,8 +144,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1649972904349-6e44c42644a7", 
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
     ],
-    tools: ["Slack", "Notion", "Asana", "Google Workspace"],
-    summary: "Created support network reaching over 500 artists and facilitating 20+ successful collaborations",
+    tools: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
+    summary: "Coordinated and designed community-focused initiative with LA based fashion StartUp by designing experiential cultural events, coordinating merchandise, and driving field sales through consistent brand perception and reliable event presence.",
     challenge: "Building sustainable infrastructure with limited funding and volunteer resources",
     solution: "Established partnership model with established organizations to share resources and expertise"
   }

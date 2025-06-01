@@ -89,6 +89,7 @@ export const projects: Project[] = [
     category: "workExperience",
     image: "/lovable-uploads/138bbbc6-fbd8-4f91-9629-7c41912d0eb1.png",
     tags: ["Creative Brand Direction", "Graphic Design", "Experiential Marketing"],
+    featured: true,
     galleryImages: [
       "/lovable-uploads/5e4ad684-6e4d-4d6e-a521-98a4c38905a2.png",
       "/lovable-uploads/d1a44aec-e320-4fa3-84e1-295a78558466.png",
@@ -108,7 +109,6 @@ export const projects: Project[] = [
     category: "freelance",
     image: "/lovable-uploads/3c4c6ca8-6600-4cb7-8c20-dbf785abe7b8.png",
     tags: ["Music Production", "Cross Functional Teamwork", "Project Management"],
-    featured: true,
     galleryImages: [
       "/lovable-uploads/143ea6cc-d7c1-41a0-afc4-0061761ee4e4.png",
       "/lovable-uploads/2d3a44f3-711d-4b1a-9530-0ed3ae1de31d.png", 

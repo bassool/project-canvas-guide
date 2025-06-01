@@ -137,7 +137,7 @@ export const projects: Project[] = [
     title: "Sanad Collective",
     description: "Coordinated and designed community-focused initiative with LA based fashion StartUp by designing experiential cultural events, coordinating merchandise, and driving field sales through consistent brand perception and reliable event presence.",
     category: "personal",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image: "/lovable-uploads/78fa5ee6-e402-4b66-9fb1-6194000c94c0.png",
     tags: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
     galleryImages: [
       "https://images.unsplash.com/photo-1518770660439-4636190af475",

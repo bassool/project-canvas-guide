@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -51,7 +50,7 @@ export const projects: Project[] = [
     title: "Sanad Collective",
     description: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
     category: "personal",
-    image: "/lovable-uploads/78fa5ee6-e402-4b66-9fb1-6194000c94c0.png",
+    image: "/lovable-uploads/63f15ab1-ea93-430b-a090-7ab0c7be2071.png",
     tags: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
     featured: true,
     galleryImages: [

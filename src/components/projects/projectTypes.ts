@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -47,6 +46,26 @@ export const projects: Project[] = [
     youtubeEmbed: "https://www.youtube.com/@bassool3957/videos"
   },
   {
+    id: 6,
+    title: "Sanad Collective",
+    description: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
+    category: "freelance",
+    image: "/lovable-uploads/63f15ab1-ea93-430b-a090-7ab0c7be2071.png",
+    tags: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
+    featured: true,
+    galleryImages: [
+      "/lovable-uploads/c4f56dc6-6762-48b2-8779-0455125a5a55.png",
+      "/IMG_8987.MP4",
+      "/lovable-uploads/a71b2e51-73ee-4780-a896-5e2ca711f0eb.png",
+      "/lovable-uploads/0d391479-77e0-4dbe-a7e6-a3c56e375b34.png",
+      "/lovable-uploads/b9d0ce3b-183e-4e13-ba30-8d7d3c20673c.png"
+    ],
+    tools: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
+    summary: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
+    challenge: "Building sustainable infrastructure with limited funding and volunteer resources",
+    solution: "Established partnership model with established organizations to share resources and expertise"
+  },
+  {
     id: 5,
     title: "Zapshot",
     description: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",
@@ -83,26 +102,6 @@ export const projects: Project[] = [
     challenge: "To create a cohesive branding and visual identity for an early-stage StartUp with a scare budget and resources in time for StartUp showcases.",
     solution: "Led the development of a unified temporary brand system—including logo, tangible materials, and digital assets—that effectively communicated the company's identity and increased brand recognition during experiential events.",
     summary: "Developed visual suite and brand identity for ticketing-based tech StartUp, producing visual assets and collaborating with founders to align visuals with their vision."
-  },
-  {
-    id: 6,
-    title: "Sanad Collective",
-    description: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
-    category: "freelance",
-    image: "/lovable-uploads/63f15ab1-ea93-430b-a090-7ab0c7be2071.png",
-    tags: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
-    featured: true,
-    galleryImages: [
-      "/lovable-uploads/c4f56dc6-6762-48b2-8779-0455125a5a55.png",
-      "/IMG_8987.MP4",
-      "/lovable-uploads/a71b2e51-73ee-4780-a896-5e2ca711f0eb.png",
-      "/lovable-uploads/0d391479-77e0-4dbe-a7e6-a3c56e375b34.png",
-      "/lovable-uploads/b9d0ce3b-183e-4e13-ba30-8d7d3c20673c.png"
-    ],
-    tools: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
-    summary: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
-    challenge: "Building sustainable infrastructure with limited funding and volunteer resources",
-    solution: "Established partnership model with established organizations to share resources and expertise"
   },
   {
     id: 3,

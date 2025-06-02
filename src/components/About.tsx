@@ -28,7 +28,7 @@ const About = () => {
             <div className="absolute -bottom-8 -right-8 w-16 h-16 border-b-4 border-r-4 border-accent/20"></div>
             
             <div className="relative z-10 overflow-hidden rounded-2xl gradient-border shadow-xl animate-float">
-              <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" alt="Portrait of me working" className="w-full aspect-[4/3] object-cover" />
+              <img alt="Portrait of me working" className="w-full aspect-[4/3] object-cover" src="/lovable-uploads/2c201e9b-e70f-46af-b0b6-ee5116534a9b.png" />
             </div>
             
             {/* New floating certification badge - above the photo */}

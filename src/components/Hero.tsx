@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
@@ -60,7 +59,7 @@ const Hero = () => {
         }}></div>
           
           <div className="relative z-10 overflow-hidden rounded-3xl gradient-border shadow-xl aspect-square">
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Creative director at work" className="w-full h-full object-cover" />
+            <img alt="Creative director at work" className="w-full h-full object-cover" src="/lovable-uploads/8121923a-e35f-4ba0-a927-0cf39b6fa985.png" />
           </div>
           
           {/* Floating element - improved contrast */}

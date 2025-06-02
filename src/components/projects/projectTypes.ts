@@ -54,9 +54,10 @@ export const projects: Project[] = [
     tags: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
     featured: true,
     galleryImages: [
-      "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7", 
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+      "/lovable-uploads/c4f56dc6-6762-48b2-8779-0455125a5a55.png",
+      "/lovable-uploads/a71b2e51-73ee-4780-a896-5e2ca711f0eb.png",
+      "/lovable-uploads/0d391479-77e0-4dbe-a7e6-a3c56e375b34.png",
+      "/lovable-uploads/b9d0ce3b-183e-4e13-ba30-8d7d3c20673c.png"
     ],
     tools: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
     summary: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
@@ -70,7 +71,7 @@ export const projects: Project[] = [
     category: "workExperience",
     image: "/lovable-uploads/09dcce3a-805a-4d5e-bd8e-16730a9fc7b8.png",
     tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
-    featured: true,
+    featured: false,
     galleryImages: [
       "/zapshot 1.png", 
       "/zapshot 2.png",

@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Film, Briefcase, Users, Rocket, Palette, Star, Sparkles } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -55,7 +54,8 @@ const SkillCard = ({
   skill: Skill;
 }) => {
   const Icon = skill.icon;
-  return <Card className="overflow-hidden border-border card-hover bg-gradient-to-br from-white dark:from-card to-secondary/5 hover:to-slate-900/80">
+  return (
+    <Card className="overflow-hidden border-border card-hover bg-gradient-to-br from-white dark:from-card to-secondary/5 hover:to-slate-900/80">
       <div className="bg-sky-300" />
       <CardHeader className="bg-slate-100">
         <div className="flex items-center gap-3">
@@ -70,11 +70,13 @@ const SkillCard = ({
           {skill.description}
         </CardDescription>
       </CardContent>
-    </Card>;
+    </Card>
+  );
 };
 
 const Skills = () => {
-  return <section id="skills" className="py-16 md:py-24 relative bg-slate-50">
+  return (
+    <section id="skills" className="relative bg-slate-50">
       {/* Floating blob shapes */}
       <div className="blob-shape w-[400px] h-[400px] -top-32 -left-20 animate-pulse-custom bg-[#59b8e9]"></div>
       <div className="blob-shape w-[350px] h-[350px] -bottom-20 -right-24 animate-pulse-custom bg-[#87ddf0]"></div>
@@ -86,14 +88,18 @@ const Skills = () => {
       
       {/* Decorative pattern */}
       <div className="absolute top-20 left-10 grid grid-cols-3 gap-2 opacity-10 -z-10">
-        {[...Array(9)].map((_, i) => <div key={i} className="w-4 h-4 rounded-full bg-accent"></div>)}
+        {[...Array(9)].map((_, i) => (
+          <div key={i} className="w-4 h-4 rounded-full bg-accent"></div>
+        ))}
       </div>
       
       <div className="absolute bottom-20 right-10 grid grid-cols-3 gap-2 opacity-10 -z-10">
-        {[...Array(9)].map((_, i) => <div key={i} className="w-4 h-4 rounded-full bg-primary"></div>)}
+        {[...Array(9)].map((_, i) => (
+          <div key={i} className="w-4 h-4 rounded-full bg-primary"></div>
+        ))}
       </div>
       
-      <div className="container relative z-10">
+      <div className="container relative z-10 py-16 md:py-24">
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full text-accent font-medium mb-4 bg-slate-700">
             <Sparkles className="h-4 w-4 mr-2" />
@@ -114,7 +120,8 @@ const Skills = () => {
             </div>)}
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 
 export default Skills;

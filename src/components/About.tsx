@@ -5,7 +5,7 @@ import { Award, Download, Trophy, Laptop } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 md:py-28 relative overflow-hidden">
+    <section id="about" className="relative overflow-hidden">
       {/* Background decoration */}
       <div className="blob-shape bg-primary/10 w-[600px] h-[600px] -top-80 right-0"></div>
       <div className="blob-shape bg-secondary/10 w-[500px] h-[500px] top-1/2 -left-64"></div>
@@ -13,7 +13,7 @@ const About = () => {
       
       <div className="absolute top-0 right-0 w-full h-64 bg-gradient-to-b from-secondary/5 to-transparent -z-10"></div>
       
-      <div className="container relative z-10">
+      <div className="container relative z-10 py-20 md:py-28">
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-4">
             <Award className="h-4 w-4 mr-2 text-slate-100" />

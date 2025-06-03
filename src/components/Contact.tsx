@@ -6,23 +6,20 @@ import { useToast } from "@/components/ui/use-toast";
 import { Mail, ArrowRight, Heart, Download, FileText, X } from "lucide-react";
 
 const Contact = () => {
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    // This would normally send the form data to a server
     toast({
       title: "Message sent!",
       description: "Thank you for reaching out. I'll get back to you soon."
     });
-
-    // Reset form
     const form = e.target as HTMLFormElement;
     form.reset();
   };
-  return <section id="contact" className="py-20 md:py-28 relative overflow-hidden bg-slate-100">
+
+  return (
+    <section id="contact" className="relative overflow-hidden bg-slate-100">
       {/* Floating blob shapes */}
       <div className="blob-shape w-[300px] h-[300px] -top-24 -right-16 animate-pulse-custom bg-[#81bfdf]"></div>
       <div className="blob-shape w-[450px] h-[450px] -bottom-32 -left-28 animate-pulse-custom bg-[#87ddf0]"></div>
@@ -32,7 +29,7 @@ const Contact = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10 bg-[#81c3df]/[0.22]"></div>
       <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -bottom-80 -left-80"></div>
       
-      <div className="container relative z-10">
+      <div className="container relative z-10 py-20 md:py-28">
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-2 rounded-full text-accent font-medium mb-6 bg-slate-600">
             <Heart className="h-4 w-4 mr-2 bg-transparent" />
@@ -120,6 +117,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;

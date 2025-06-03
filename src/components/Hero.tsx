@@ -1,6 +1,8 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
+
 const Hero = () => {
   const scrollToWork = () => {
     const element = document.getElementById("work");
@@ -10,7 +12,9 @@ const Hero = () => {
       });
     }
   };
-  return <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-slate-200">
+
+  return (
+    <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-slate-200">
       {/* Abstract background shapes */}
       <div className="blob-shape w-[400px] h-[400px] -top-40 -left-20 animate-pulse-custom bg-[#59b8e9]"></div>
       <div className="blob-shape w-[800px] h-[900px] -bottom-[10rem] -right-20 animate-pulse-custom bg-[#81bfdf] z-10"></div>
@@ -18,14 +22,14 @@ const Hero = () => {
       
       {/* Animated circles */}
       <div className="absolute top-1/4 left-1/4 w-8 h-8 rounded-full bg-primary/40 animate-float" style={{
-      animationDelay: "0.5s"
-    }}></div>
+        animationDelay: "0.5s"
+      }}></div>
       <div className="absolute bottom-1/4 right-1/3 w-12 h-12 rounded-full bg-[#b4def5] animate-float" style={{
-      animationDelay: "1.2s"
-    }}></div>
+        animationDelay: "1.2s"
+      }}></div>
       <div className="absolute top-[70%] left-[40%] w-10 h-10 rounded-full bg-[#b4def5] animate-float" style={{
-      animationDelay: "1.8s"
-    }}></div>
+        animationDelay: "1.8s"
+      }}></div>
       
       <div className="container grid gap-8 lg:grid-cols-2 lg:gap-12 items-center relative z-10">
         <div className="space-y-8 animate-fade-in">
@@ -83,6 +87,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

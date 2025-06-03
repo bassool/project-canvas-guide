@@ -9,7 +9,7 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState<ProjectCategory>("all");
   
   return (
-    <section id="work" className="py-20 md:py-28 relative overflow-hidden mt-12">
+    <section id="work" className="relative overflow-hidden">
       {/* Floating blob shapes */}
       <div className="blob-shape w-[300px] h-[300px] top-10 -right-10 animate-pulse-custom bg-[#87ddf0]"></div>
       <div className="blob-shape w-[500px] h-[500px] -bottom-40 -left-32 animate-pulse-custom bg-[#81bfdf]"></div>
@@ -20,7 +20,7 @@ const Projects = () => {
       <div className="hidden md:block absolute right-0 bottom-1/4 w-32 h-32 border-r-4 border-b-4 border-accent/20 -z-10"></div>
       <div className="hidden md:block absolute left-1/4 bottom-0 w-16 h-16 rounded-full border-2 border-secondary/30 -z-10"></div>
       
-      <div className="container">
+      <div className="container py-20 md:py-28">
         <div className="text-center mb-12 relative">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary/10 text-secondary font-medium mb-4">
             <Rocket className="h-4 w-4 mr-2" />

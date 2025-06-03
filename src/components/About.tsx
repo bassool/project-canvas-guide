@@ -2,8 +2,10 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Award, Download, Trophy, Laptop } from "lucide-react";
+
 const About = () => {
-  return <section id="about" className="py-20 md:py-28 relative overflow-hidden">
+  return (
+    <section id="about" className="py-20 md:py-28 relative overflow-hidden">
       {/* Background decoration */}
       <div className="blob-shape bg-primary/10 w-[600px] h-[600px] -top-80 right-0"></div>
       <div className="blob-shape bg-secondary/10 w-[500px] h-[500px] top-1/2 -left-64"></div>
@@ -81,10 +83,12 @@ const About = () => {
             </div>
             
             <div className="pt-4">
-              <Button size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group text-slate-50 bg-transparent">
-                Download Resume 
-                <Download className="h-4 w-4 transition-transform group-hover:translate-y-1" />
-              </Button>
+              <a href="/Bassel Atout Resume 2025.pdf" download="Bassel_Atout_Resume_2025.pdf">
+                <Button size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group text-slate-50 bg-transparent">
+                  Download Resume 
+                  <Download className="h-4 w-4 transition-transform group-hover:translate-y-1" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -104,6 +108,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;

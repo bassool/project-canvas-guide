@@ -1,6 +1,7 @@
 import React from "react";
-import { Film, Briefcase, Users, Rocket, Palette, Star, Sparkles } from "lucide-react";
+import { Film, Briefcase, Users, Rocket, Palette, Star, Sparkles, Linkedin } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 interface Skill {
   icon: React.ElementType;
@@ -118,6 +119,15 @@ const Skills = () => {
         }} className="animate-fade-in bg-transparent">
               <SkillCard skill={skill} />
             </div>)}
+        </div>
+        
+        <div className="text-center mt-12">
+          <a href="https://www.linkedin.com/in/basselatout" target="_blank" rel="noopener noreferrer">
+            <Button className="rounded-full px-6 py-3 bg-slate-700 text-white hover:bg-slate-800 transition-colors">
+              <Linkedin className="h-4 w-4 mr-2" />
+              Connect on LinkedIn
+            </Button>
+          </a>
         </div>
       </div>
     </section>

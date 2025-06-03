@@ -17,7 +17,7 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-slate-200">
       {/* Abstract background shapes */}
       <div className="blob-shape w-[400px] h-[400px] -top-40 -left-20 animate-pulse-custom bg-[#59b8e9]"></div>
-      <div className="blob-shape w-[800px] h-[900px] -top-[5rem] -right-20 animate-pulse-custom bg-[#81bfdf] z-10"></div>
+      <div className="blob-shape w-[800px] h-[900px] -bottom-[10rem] -right-20 animate-pulse-custom bg-[#81bfdf] z-10"></div>
       <div className="blob-shape w-[300px] h-[300px] top-[10%] right-[40%] animate-pulse-custom bg-[#87ddf0]"></div>
       
       {/* Animated circles */}

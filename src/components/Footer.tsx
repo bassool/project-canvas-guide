@@ -1,9 +1,13 @@
+
 import React from "react";
 import { Separator } from "@/components/ui/separator";
 import { Linkedin } from "lucide-react";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  return <footer className="bg-gradient-to-t from-muted via-background to-background pt-20 pb-10">
+  
+  return (
+    <footer className="bg-gradient-to-t from-muted via-background to-background pt-20 pb-10">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0 text-center md:text-left">
@@ -48,17 +52,11 @@ const Footer = () => {
               LinkedIn
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#" className="hover:text-secondary transition-colors relative group">
-              Instagram
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="#" className="hover:text-accent transition-colors relative group">
-              Behance
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
-            </a>
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;

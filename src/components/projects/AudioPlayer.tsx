@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Play, Pause } from "lucide-react";
+import { Play, Pause, RotateCcw } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
 
 interface AudioPlayerProps {
@@ -65,6 +65,8 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
+  const [hasError, setHasError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
   const audioManager = AudioManager.getInstance();
   const trackId = `${track.title}-${track.url}`;
@@ -94,39 +96,70 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
   const handleLoadedMetadata = () => {
     if (audioRef.current) {
       setDuration(audioRef.current.duration);
+      setHasError(false);
+    }
+  };
+
+  const handleCanPlay = () => {
+    setIsLoading(false);
+    setHasError(false);
+  };
+
+  const handleError = (error: any) => {
+    console.error("Audio error:", error, "for track:", track.url);
+    setHasError(true);
+    setIsLoading(false);
+    audioManager.stop(trackId);
+    toast({
+      title: "Audio Error",
+      description: `Unable to load ${track.title}. The audio file may not be available.`,
+      variant: "destructive"
+    });
+  };
+
+  const retryAudio = () => {
+    if (audioRef.current) {
+      setHasError(false);
+      setIsLoading(true);
+      // Force reload the audio
+      audioRef.current.load();
     }
   };
   
   const togglePlay = () => {
     if (audioRef.current) {
+      if (hasError) {
+        retryAudio();
+        return;
+      }
+
       try {
         if (isPlaying) {
           audioRef.current.pause();
           audioManager.stop(trackId);
         } else {
+          setIsLoading(true);
           const playPromise = audioRef.current.play();
           if (playPromise !== undefined) {
             playPromise
               .then(() => {
                 audioManager.play(audioRef.current!, trackId);
+                setIsLoading(false);
               })
               .catch(error => {
                 console.error("Audio playback error:", error);
-                toast({
-                  title: "Playback error",
-                  description: "There was a problem playing this audio file."
-                });
+                setIsLoading(false);
+                handleError(error);
               });
           } else {
             audioManager.play(audioRef.current, trackId);
+            setIsLoading(false);
           }
         }
       } catch (error) {
         console.error("Audio interaction error:", error);
-        toast({
-          title: "Audio error",
-          description: "There was a problem with the audio player."
-        });
+        setIsLoading(false);
+        handleError(error);
       }
     }
   };
@@ -139,13 +172,30 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
   return (
     <div className="flex items-center justify-between p-3 bg-secondary/10 rounded-lg mb-2 relative">
       <div className="flex items-center">
-        <Button variant="ghost" size="sm" className="h-8 w-8 rounded-full p-0 mr-2" onClick={togglePlay}>
-          {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
+        <Button 
+          variant="ghost" 
+          size="sm" 
+          className="h-8 w-8 rounded-full p-0 mr-2" 
+          onClick={togglePlay}
+          disabled={isLoading}
+        >
+          {isLoading ? (
+            <div className="h-4 w-4 animate-spin border-2 border-current border-t-transparent rounded-full" />
+          ) : hasError ? (
+            <RotateCcw className="h-4 w-4" />
+          ) : isPlaying ? (
+            <Pause className="h-4 w-4" />
+          ) : (
+            <Play className="h-4 w-4" />
+          )}
         </Button>
-        <span className="text-sm font-medium">{track.title}</span>
+        <span className="text-sm font-medium">
+          {track.title}
+          {hasError && <span className="text-red-500 ml-2">(Error - Click to retry)</span>}
+        </span>
       </div>
       
-      {isPlaying && (
+      {isPlaying && !hasError && (
         <div className="absolute bottom-2 right-3 text-xs text-slate-100">
           {formatTime(currentTime)} / {formatTime(duration)}
         </div>
@@ -157,6 +207,8 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
         onEnded={handleAudioEnded}
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
+        onCanPlay={handleCanPlay}
+        onError={handleError}
         className="hidden" 
         preload="metadata" 
       />

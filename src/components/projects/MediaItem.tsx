@@ -11,17 +11,21 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   
+  // Log the src being used
+  console.log(`MediaItem ${index}: Attempting to load ${src}`);
+  
   // More comprehensive video detection
   const isVideo = /\.(mp4|webm|mov|avi|mkv)$/i.test(src) || src.includes('.MP4') || src.includes('.MOV');
   
   const handleError = () => {
-    console.log(`Media failed to load: ${src}`);
+    console.error(`Media FAILED to load: ${src}`);
+    console.error(`Full URL attempted: ${window.location.origin}${src}`);
     setHasError(true);
     setIsLoading(false);
   };
 
   const handleLoad = () => {
-    console.log(`Media loaded successfully: ${src}`);
+    console.log(`Media loaded SUCCESSFULLY: ${src}`);
     setIsLoading(false);
     setHasError(false);
   };
@@ -37,6 +41,7 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
       <div className="aspect-video overflow-hidden rounded-md bg-gray-200 flex items-center justify-center">
         <div className="text-center text-gray-500">
           <p className="text-sm mb-2">Media unavailable</p>
+          <p className="text-xs mb-2">{src}</p>
           <button 
             onClick={handleRetry}
             className="text-xs bg-gray-300 hover:bg-gray-400 px-2 py-1 rounded transition-colors"

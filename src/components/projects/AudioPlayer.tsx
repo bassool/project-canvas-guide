@@ -71,6 +71,9 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
   const audioManager = AudioManager.getInstance();
   const trackId = `${track.title}-${track.url}`;
 
+  // Log the audio track being used
+  console.log(`AudioPlayer: Loading track "${track.title}" from ${track.url}`);
+
   useEffect(() => {
     // Register this player with the audio manager
     audioManager.registerListener(trackId, setIsPlaying);
@@ -108,6 +111,7 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
 
   const handleError = (error: any) => {
     console.error("Audio error:", error, "for track:", track.url);
+    console.error(`Full audio URL attempted: ${window.location.origin}${track.url}`);
     setHasError(true);
     setIsLoading(false);
     audioManager.stop(trackId);

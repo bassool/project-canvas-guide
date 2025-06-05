@@ -10,52 +10,26 @@ interface MediaItemProps {
 const MediaItem = ({ src, alt, index }: MediaItemProps) => {
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [retryCount, setRetryCount] = useState(0);
   
   // More comprehensive video detection
-  const isVideo = src.includes('.mp4') || src.includes('.webm') || src.includes('.mov') || src.includes('.MP4') || src.includes('.MOV');
+  const isVideo = /\.(mp4|webm|mov|avi|mkv)$/i.test(src) || src.includes('.MP4') || src.includes('.MOV');
   
   const handleError = () => {
-    console.error(`Failed to load media: ${src}, retry count: ${retryCount}`);
-    
-    // Try to retry loading up to 2 times
-    if (retryCount < 2) {
-      setRetryCount(prev => prev + 1);
-      setIsLoading(true);
-      // Force reload by adding timestamp to URL
-      const timestamp = new Date().getTime();
-      const separator = src.includes('?') ? '&' : '?';
-      const newSrc = `${src}${separator}t=${timestamp}`;
-      
-      setTimeout(() => {
-        if (isVideo) {
-          const video = document.querySelector(`video[data-retry="${retryCount + 1}"]`) as HTMLVideoElement;
-          if (video) {
-            video.src = newSrc;
-            video.load();
-          }
-        } else {
-          const img = document.querySelector(`img[data-retry="${retryCount + 1}"]`) as HTMLImageElement;
-          if (img) {
-            img.src = newSrc;
-          }
-        }
-      }, 1000);
-    } else {
-      setHasError(true);
-      setIsLoading(false);
-    }
+    console.log(`Media failed to load: ${src}`);
+    setHasError(true);
+    setIsLoading(false);
   };
 
   const handleLoad = () => {
+    console.log(`Media loaded successfully: ${src}`);
     setIsLoading(false);
     setHasError(false);
   };
 
   const handleRetry = () => {
+    console.log(`Retrying media load: ${src}`);
     setHasError(false);
     setIsLoading(true);
-    setRetryCount(0);
   };
 
   if (hasError) {
@@ -84,7 +58,6 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
         )}
         <video 
           src={src} 
-          data-retry={retryCount}
           className="w-full h-full object-cover"
           controls
           preload="metadata"
@@ -107,12 +80,12 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
       )}
       <img 
         src={src} 
-        data-retry={retryCount}
         alt={`${alt} gallery image ${index + 1}`} 
         className="w-full h-full object-cover"
         onError={handleError}
         onLoad={handleLoad}
         loading="lazy"
+        crossOrigin="anonymous"
       />
     </div>
   );

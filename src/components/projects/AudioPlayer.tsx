@@ -103,6 +103,7 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
   const handleCanPlay = () => {
     setIsLoading(false);
     setHasError(false);
+    console.log(`Audio ready to play: ${track.url}`);
   };
 
   const handleError = (error: any) => {
@@ -119,6 +120,7 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
 
   const retryAudio = () => {
     if (audioRef.current) {
+      console.log(`Retrying audio: ${track.url}`);
       setHasError(false);
       setIsLoading(true);
       // Force reload the audio
@@ -145,6 +147,7 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
               .then(() => {
                 audioManager.play(audioRef.current!, trackId);
                 setIsLoading(false);
+                console.log(`Audio playing: ${track.url}`);
               })
               .catch(error => {
                 console.error("Audio playback error:", error);
@@ -210,7 +213,8 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
         onCanPlay={handleCanPlay}
         onError={handleError}
         className="hidden" 
-        preload="metadata" 
+        preload="metadata"
+        crossOrigin="anonymous"
       />
     </div>
   );

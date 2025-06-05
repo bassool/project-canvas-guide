@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -32,8 +31,8 @@ export const projects: Project[] = [
     tags: ["Multimedia Production", "Design Direction", "Creative Strategy", "Project Management"],
     featured: true,
     galleryImages: [
-      "/lovable-uploads/3a58e38c-0ef0-4c55-b563-259ba92b7f5a.png",
       "/depth 1.png",
+      "/lovable-uploads/3a58e38c-0ef0-4c55-b563-259ba92b7f5a.png",
       "/depth 2.png",
       "/depth 3.png",
       "/depth 4.mp4",
@@ -56,10 +55,10 @@ export const projects: Project[] = [
     featured: true,
     galleryImages: [
       "/lovable-uploads/c4f56dc6-6762-48b2-8779-0455125a5a55.png",
+      "/IMG_8987.MP4",
       "/lovable-uploads/a71b2e51-73ee-4780-a896-5e2ca711f0eb.png",
       "/lovable-uploads/0d391479-77e0-4dbe-a7e6-a3c56e375b34.png",
-      "/lovable-uploads/b9d0ce3b-183e-4e13-ba30-8d7d3c20673c.png",
-      "/IMG_8987.MP4"
+      "/lovable-uploads/b9d0ce3b-183e-4e13-ba30-8d7d3c20673c.png"
     ],
     tools: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
     summary: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
@@ -75,7 +74,6 @@ export const projects: Project[] = [
     tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
     featured: false,
     galleryImages: [
-      "/lovable-uploads/09dcce3a-805a-4d5e-bd8e-16730a9fc7b8.png", 
       "/zapshot 1.png",
       "/zapshot 2.png",
       "/zapshot 3.png",
@@ -138,7 +136,6 @@ export const projects: Project[] = [
     image: "/lovable-uploads/785f2061-da37-4b1a-9e6f-8d3b04d614d9.png",
     tags: ["Music Production", "Cross Functional Teamwork", "Creative Interpretation", "Project Management"],
     galleryImages: [
-      "/lovable-uploads/785f2061-da37-4b1a-9e6f-8d3b04d614d9.png",
       "/lovable-uploads/80a5e455-53c7-40c3-9461-1bcac3d6fa4e.png",
       "/lovable-uploads/ffa1a0e6-6c72-45a9-bcf9-80111fb31e73.png",
       "/lovable-uploads/9b18ae23-bc91-4807-8a33-5ff7771a0c33.png"

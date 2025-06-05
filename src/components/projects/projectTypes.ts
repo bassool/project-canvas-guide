@@ -34,10 +34,11 @@ export const projects: Project[] = [
     galleryImages: [
       "/lovable-uploads/df767496-ebfe-4362-9734-a35a2525a7b5.png",
       "/lovable-uploads/3a58e38c-0ef0-4c55-b563-259ba92b7f5a.png",
-      "/lovable-uploads/df767496-ebfe-4362-9734-a35a2525a7b5.png",
-      "/lovable-uploads/3a58e38c-0ef0-4c55-b563-259ba92b7f5a.png",
-      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop",
-      "/lovable-uploads/df767496-ebfe-4362-9734-a35a2525a7b5.png"
+      "/depth 1.png",
+      "/depth 2.png",
+      "/depth 3.png",
+      "/depth 4.mp4",
+      "/depth 5.png"
     ],
     tools: ["Logic Pro X", "Adobe Creative Suite", "Final Cut Pro X", "Social Media Platforms"],
     summary: "Produced and directed full album and all visuals, accompanied by digital social media marketing strategy and experiential live event planning and performing. Generated 3k+ streams and 200+ attendees for final live show on limited budget.",
@@ -56,7 +57,6 @@ export const projects: Project[] = [
     featured: true,
     galleryImages: [
       "/lovable-uploads/c4f56dc6-6762-48b2-8779-0455125a5a55.png",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
       "/lovable-uploads/a71b2e51-73ee-4780-a896-5e2ca711f0eb.png",
       "/lovable-uploads/0d391479-77e0-4dbe-a7e6-a3c56e375b34.png",
       "/lovable-uploads/b9d0ce3b-183e-4e13-ba30-8d7d3c20673c.png"
@@ -76,9 +76,10 @@ export const projects: Project[] = [
     featured: false,
     galleryImages: [
       "/lovable-uploads/09dcce3a-805a-4d5e-bd8e-16730a9fc7b8.png", 
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1552581234-26160f608093?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop"
+      "/zapshot 1.png",
+      "/zapshot 2.png",
+      "/zapshot 3.png",
+      "/ZAPSHOT 4.mp4"
     ],
     tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],
     summary: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",
@@ -122,11 +123,11 @@ export const projects: Project[] = [
     challenge: "To interpret the game owner's vision and create a compelling original game soundtrack with a remote team that initially lacked a structured cross-functional collaboration approach for audio-visual integration.",
     solution: "Coordinated more cohesive schedule to flesh out founder's vision with all creative teams, leading to and more focused vision that audio team could much more effectively produce music to. Created over 15+ fully original tracks for game using Logic Pro X, meeting weekly with creative teams.",
     audioTracks: [
-      { title: "Vista Theme", url: "https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" },
-      { title: "Marketplace Theme", url: "https://www.soundjay.com/misc/sounds/bell-ringing-04.mp3" },
-      { title: "Dread Theme", url: "https://www.soundjay.com/misc/sounds/bell-ringing-03.mp3" },
-      { title: "Dark Barn Theme", url: "https://www.soundjay.com/misc/sounds/bell-ringing-02.mp3" },
-      { title: "Chase Theme", url: "https://www.soundjay.com/misc/sounds/bell-ringing-01.mp3" }
+      { title: "Vista Theme", url: "/VISTA 5 PORT copy.mp3" },
+      { title: "Marketplace Theme", url: "/MARKETPLACE THEME.mp3" },
+      { title: "Dread Theme", url: "/MUS_trashdrumz copy.mp3" },
+      { title: "Dark Barn Theme", url: "/WAXHEART BARN_1 copy.mp3" },
+      { title: "Chase Theme", url: "/VISTA WIP WAXHEART.mp3" }
     ]
   },
   {
@@ -147,9 +148,9 @@ export const projects: Project[] = [
     challenge: "To fully produce an original game soundtrack and direct audio implementation with a fully remote team and little to no budget within a short time frame, working only with game owner's minimal creative input and concept art.",
     solution: "Took charge and created a variety of demos to gauge creative team's taste and vision, allowing me to narrow down game owner's sonic goals for project. Then produced three original songs along with stems and one shot stings in a timely manner in Logic Pro X.",
     audioTracks: [
-      { title: "Main Menu and Dialogue Theme", url: "https://www.soundjay.com/misc/sounds/bell-ringing-06.mp3" },
-      { title: "Battle Theme 1", url: "https://www.soundjay.com/misc/sounds/bell-ringing-07.mp3" },
-      { title: "Battle Theme 2", url: "https://www.soundjay.com/misc/sounds/bell-ringing-08.mp3" }
+      { title: "Main Menu and Dialogue Theme", url: "/Main Menu and Dialogue Theme .mp3" },
+      { title: "Battle Theme 1", url: "/Battle Theme 1.mp3" },
+      { title: "Battle Theme 2", url: "/Battle Theme 2.mp3" }
     ]
   }
 ];

@@ -1,3 +1,4 @@
+
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -27,16 +28,16 @@ export const projects: Project[] = [
     title: "Depth Perception",
     description: "Directed and produced full album and all visuals, accompanied by digital social media marketing strategy and experiential live event planning and performing.",
     category: "personal",
-    image: "/lovable-uploads/df767496-ebfe-4362-9734-a35a2525a7b5.png",
+    image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop",
     tags: ["Multimedia Production", "Design Direction", "Creative Strategy", "Project Management"],
     featured: true,
     galleryImages: [
-      "/depth 1.png",
-      "/lovable-uploads/3a58e38c-0ef0-4c55-b563-259ba92b7f5a.png",
-      "/depth 2.png",
-      "/depth 3.png",
-      "/depth 4.mp4",
-      "/depth 5.png"
+      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1508700108023-c5249f4df085?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&h=600&fit=crop",
+      "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
+      "https://images.unsplash.com/photo-1614149162883-504ce4d13909?w=800&h=600&fit=crop"
     ],
     tools: ["Logic Pro X", "Adobe Creative Suite", "Final Cut Pro X", "Social Media Platforms"],
     summary: "Produced and directed full album and all visuals, accompanied by digital social media marketing strategy and experiential live event planning and performing. Generated 3k+ streams and 200+ attendees for final live show on limited budget.",
@@ -50,15 +51,15 @@ export const projects: Project[] = [
     title: "Sanad Collective",
     description: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
     category: "freelance",
-    image: "/lovable-uploads/63f15ab1-ea93-430b-a090-7ab0c7be2071.png",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
     tags: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
     featured: true,
     galleryImages: [
-      "/lovable-uploads/c4f56dc6-6762-48b2-8779-0455125a5a55.png",
-      "/IMG_8987.MP4",
-      "/lovable-uploads/a71b2e51-73ee-4780-a896-5e2ca711f0eb.png",
-      "/lovable-uploads/0d391479-77e0-4dbe-a7e6-a3c56e375b34.png",
-      "/lovable-uploads/b9d0ce3b-183e-4e13-ba30-8d7d3c20673c.png"
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&h=600&fit=crop"
     ],
     tools: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
     summary: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
@@ -70,14 +71,14 @@ export const projects: Project[] = [
     title: "Zapshot",
     description: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",
     category: "workExperience",
-    image: "/lovable-uploads/09dcce3a-805a-4d5e-bd8e-16730a9fc7b8.png",
+    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
     tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
     featured: false,
     galleryImages: [
-      "/zapshot 1.png", 
-      "/zapshot 2.png",
-      "/zapshot 3.png",
-      "/ZAPSHOT 4.mp4"
+      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop", 
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1552581234-26160f608093?w=800&h=600&fit=crop",
+      "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4"
     ],
     tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],
     summary: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",
@@ -89,14 +90,14 @@ export const projects: Project[] = [
     title: "Fanhaven",
     description: "Developed visual suite and brand identity for ticketing-based tech StartUp, producing visual assets and collaborating with founders to align visuals with their vision.",
     category: "workExperience",
-    image: "/lovable-uploads/138bbbc6-fbd8-4f91-9629-7c41912d0eb1.png",
+    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
     tags: ["Creative Brand Direction", "Graphic Design", "Experiential Marketing"],
     galleryImages: [
-      "/lovable-uploads/5e4ad684-6e4d-4d6e-a521-98a4c38905a2.png",
-      "/lovable-uploads/d1a44aec-e320-4fa3-84e1-295a78558466.png",
-      "/lovable-uploads/b9fa0ee3-71c9-46d0-9d6f-4678927075f6.png",
-      "/lovable-uploads/a18e440d-0031-4e69-9534-236c64320357.png",
-      "/lovable-uploads/138bbbc6-fbd8-4f91-9629-7c41912d0eb1.png"
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop"
     ],
     tools: ["Figma", "Notion", "Adobe Photoshop"],
     challenge: "To create a cohesive branding and visual identity for an early-stage StartUp with a scare budget and resources in time for StartUp showcases.",
@@ -108,24 +109,24 @@ export const projects: Project[] = [
     title: "Waxheart",
     description: "Fully produced over 15+ original songs for game soundtrack, aligning audio design with game's visual themes and coordinating team workflows.",
     category: "freelance",
-    image: "/lovable-uploads/3c4c6ca8-6600-4cb7-8c20-dbf785abe7b8.png",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
     tags: ["Music Production", "Cross Functional Teamwork", "Project Management"],
     galleryImages: [
-      "/lovable-uploads/143ea6cc-d7c1-41a0-afc4-0061761ee4e4.png",
-      "/lovable-uploads/2d3a44f3-711d-4b1a-9530-0ed3ae1de31d.png", 
-      "/lovable-uploads/2179b774-fd02-437a-9a15-2c8a63e22638.png",  
-      "/lovable-uploads/72f25768-03a2-4fec-8227-0d1b9c3e3e91.png"   
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&h=600&fit=crop", 
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",  
+      "https://images.unsplash.com/photo-1598387993441-a364f854c3e1?w=800&h=600&fit=crop"   
     ],
     tools: ["Logic Pro X", "Trello", "Discord", "Github"],
     summary: "Fully produced over 15+ original songs for game soundtrack, aligning audio design with game's visual themes and coordinating team workflows.",
     challenge: "To interpret the game owner's vision and create a compelling original game soundtrack with a remote team that initially lacked a structured cross-functional collaboration approach for audio-visual integration.",
     solution: "Coordinated more cohesive schedule to flesh out founder's vision with all creative teams, leading to and more focused vision that audio team could much more effectively produce music to. Created over 15+ fully original tracks for game using Logic Pro X, meeting weekly with creative teams.",
     audioTracks: [
-      { title: "Vista Theme", url: "/VISTA 5 PORT copy.mp3" },
-      { title: "Marketplace Theme", url: "/MARKETPLACE THEME.mp3" },
-      { title: "Dread Theme", url: "/VISTA WIP WAXHEART.mp3" },
-      { title: "Dark Barn Theme", url: "/WAXHEART BARN_1 copy.mp3" },
-      { title: "Chase Theme", url: "/MUS_trashdrumz copy.mp3" }
+      { title: "Vista Theme", url: "https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" },
+      { title: "Marketplace Theme", url: "https://www.soundjay.com/misc/sounds/bell-ringing-04.mp3" },
+      { title: "Dread Theme", url: "https://www.soundjay.com/misc/sounds/bell-ringing-01.mp3" },
+      { title: "Dark Barn Theme", url: "https://www.soundjay.com/misc/sounds/bell-ringing-02.mp3" },
+      { title: "Chase Theme", url: "https://www.soundjay.com/misc/sounds/bell-ringing-03.mp3" }
     ]
   },
   {
@@ -133,22 +134,22 @@ export const projects: Project[] = [
     title: "Death to Love",
     description: "Fully produced and managed three original punk songs for Co-Op Beat 'em-Up indie game OST in Logic Pro X, interpreting creative vision from game owner and lead; game implementation done in Wwise.",
     category: "freelance",
-    image: "/lovable-uploads/785f2061-da37-4b1a-9e6f-8d3b04d614d9.png",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
     tags: ["Music Production", "Cross Functional Teamwork", "Creative Interpretation", "Project Management"],
     galleryImages: [
-      "/lovable-uploads/785f2061-da37-4b1a-9e6f-8d3b04d614d9.png",
-      "/lovable-uploads/80a5e455-53c7-40c3-9461-1bcac3d6fa4e.png",
-      "/lovable-uploads/ffa1a0e6-6c72-45a9-bcf9-80111fb31e73.png",
-      "/lovable-uploads/9b18ae23-bc91-4807-8a33-5ff7771a0c33.png"
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1531403009284-4eb9a8efeb07?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop"
     ],
     tools: ["Logic Pro X", "Trello", "Discord", "Wwise"],
     summary: "Fully produced and managed three original punk songs for Co-Op Beat 'em-Up indie game OST in Logic Pro X, interpreting creative vision from game owner and lead; game implementation done in Wwise.",
     challenge: "To fully produce an original game soundtrack and direct audio implementation with a fully remote team and little to no budget within a short time frame, working only with game owner's minimal creative input and concept art.",
     solution: "Took charge and created a variety of demos to gauge creative team's taste and vision, allowing me to narrow down game owner's sonic goals for project. Then produced three original songs along with stems and one shot stings in a timely manner in Logic Pro X.",
     audioTracks: [
-      { title: "Main Menu and Dialogue Theme", url: "/Main Menu and Dialogue Theme .mp3" },
-      { title: "Battle Theme 1", url: "/Battle Theme 1.mp3" },
-      { title: "Battle Theme 2", url: "/Battle Theme 2.mp3" }
+      { title: "Main Menu and Dialogue Theme", url: "https://www.soundjay.com/misc/sounds/bell-ringing-06.mp3" },
+      { title: "Battle Theme 1", url: "https://www.soundjay.com/misc/sounds/bell-ringing-07.mp3" },
+      { title: "Battle Theme 2", url: "https://www.soundjay.com/misc/sounds/bell-ringing-08.mp3" }
     ]
   }
 ];

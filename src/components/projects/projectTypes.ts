@@ -32,7 +32,6 @@ export const projects: Project[] = [
     tags: ["Multimedia Production", "Design Direction", "Creative Strategy", "Project Management"],
     featured: true,
     galleryImages: [
-      "/lovable-uploads/df767496-ebfe-4362-9734-a35a2525a7b5.png",
       "/lovable-uploads/3a58e38c-0ef0-4c55-b563-259ba92b7f5a.png",
       "/depth 1.png",
       "/depth 2.png",
@@ -59,7 +58,8 @@ export const projects: Project[] = [
       "/lovable-uploads/c4f56dc6-6762-48b2-8779-0455125a5a55.png",
       "/lovable-uploads/a71b2e51-73ee-4780-a896-5e2ca711f0eb.png",
       "/lovable-uploads/0d391479-77e0-4dbe-a7e6-a3c56e375b34.png",
-      "/lovable-uploads/b9d0ce3b-183e-4e13-ba30-8d7d3c20673c.png"
+      "/lovable-uploads/b9d0ce3b-183e-4e13-ba30-8d7d3c20673c.png",
+      "/IMG_8987.MP4"
     ],
     tools: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
     summary: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",

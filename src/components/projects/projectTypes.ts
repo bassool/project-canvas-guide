@@ -32,7 +32,7 @@ export const projects: Project[] = [
     featured: true,
     galleryImages: [
       "/DEPTH FIRST.png",
-      "/depth 2.png",
+      "/lovable-uploads/d030c244-127d-4fd1-8374-3613dab559c3.png",
       "/depth 3.png",
       "/depth 4.mp4",
       "/depth 5.png"

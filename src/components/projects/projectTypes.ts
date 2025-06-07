@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -32,8 +31,8 @@ export const projects: Project[] = [
     tags: ["Multimedia Production", "Design Direction", "Creative Strategy", "Project Management"],
     featured: true,
     galleryImages: [
-      "/depth 2.png",
       "/depth 1.png",
+      "/depth 2.png",
       "/depth 3.png",
       "/depth 4.mp4",
       "/depth 5.png"

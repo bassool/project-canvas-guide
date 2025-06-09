@@ -75,7 +75,7 @@ export const projects: Project[] = [
     galleryImages: [
       "/lovable-uploads/zapshot 1.png",
       "/lovable-uploads/zapshot 2.png",
-      "/lovable-uploads/zapshot 3.png",
+      "/lovable-uploads/zapshot_3.png",
       "/lovable-uploads/ZAPSHOT 4.mp4"
     ],
     tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],

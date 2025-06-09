@@ -31,7 +31,7 @@ export const projects: Project[] = [
     tags: ["Multimedia Production", "Design Direction", "Creative Strategy", "Project Management"],
     featured: true,
     galleryImages: [
-      "/DEPTH_1.png",
+      "/lovable-uploads/DEPTH_1.png",
       "/lovable-uploads/d030c244-127d-4fd1-8374-3613dab559c3.png",
       "/depth 3.png",
       "/depth 4.mp4",

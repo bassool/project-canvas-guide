@@ -77,7 +77,7 @@ const Contact = () => {
                     <p className="mb-3 text-slate-800">
                       My next role could very well be within your firm; let my resume show you why!
                     </p>
-                    <a href="/Bassel Atout Resume 2025.pdf" download="Bassel_Atout_Resume_2025.pdf">
+                    <a href="public/lovable-uploads/Bassel_Atout_Resume_2025.pdf" download="Bassel_Atout_Resume_2025.pdf">
                       <Button variant="link" className="p-0 h-auto group bg-transparent text-slate-900">
                         Download Resume 
                         <Download className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

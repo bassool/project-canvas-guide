@@ -33,9 +33,9 @@ export const projects: Project[] = [
     galleryImages: [
       "/lovable-uploads/DEPTH_1.png",
       "/lovable-uploads/d030c244-127d-4fd1-8374-3613dab559c3.png",
-      "/depth 3.png",
-      "/depth 4.mp4",
-      "/depth 5.png"
+      "/public/depth 3.png",
+      "depth 4.mp4",
+      "public/depth 5.png"
     ],
     tools: ["Logic Pro X", "Adobe Creative Suite", "Final Cut Pro X", "Social Media Platforms"],
     summary: "Produced and directed full album and all visuals, accompanied by digital social media marketing strategy and experiential live event planning and performing. Generated 3k+ streams and 200+ attendees for final live show on limited budget.",

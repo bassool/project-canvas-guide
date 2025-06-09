@@ -120,11 +120,11 @@ export const projects: Project[] = [
     challenge: "To interpret the game owner's vision and create a compelling original game soundtrack with a remote team that initially lacked a structured cross-functional collaboration approach for audio-visual integration.",
     solution: "Coordinated more cohesive schedule to flesh out founder's vision with all creative teams, leading to and more focused vision that audio team could much more effectively produce music to. Created over 15+ fully original tracks for game using Logic Pro X, meeting weekly with creative teams.",
     audioTracks: [
-      { title: "Vista Theme", url: "/lovable-uploads/VISTA 5 PORT copy.mp3" },
-      { title: "Marketplace Theme", url: "/lovable-uploads/MARKETPLACE THEME.mp3" },
-      { title: "Dread Theme", url: "/lovable-uploads/MUS_trashdrumz copy.mp3" },
-      { title: "Dark Barn Theme", url: "/lovable-uploads/WAXHEART BARN_1 copy.mp3" },
-      { title: "Chase Theme", url: "/lovable-uploads/VISTA WIP WAXHEART.mp3" }
+      { title: "Vista Theme", url: "/lovable-uploads/VISTA_5_PORT_copy.mp3" },
+      { title: "Marketplace Theme", url: "/lovable-uploads/MARKETPLACE_THEME.mp3" },
+      { title: "Dread Theme", url: "/lovable-uploads/MUS_trashdrumz_copy.mp3" },
+      { title: "Dark Barn Theme", url: "/lovable-uploads/WAXHEART_BARN_1_copy.mp3" },
+      { title: "Chase Theme", url: "/lovable-uploads/VISTA_WIP_WAXHEART.mp3" }
     ]
   },
   {

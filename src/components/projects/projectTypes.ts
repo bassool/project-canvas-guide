@@ -73,10 +73,10 @@ export const projects: Project[] = [
     tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
     featured: false,
     galleryImages: [
-      "/lovable-uploads/zapshot 1.png",
-      "/lovable-uploads/zapshot 2.png",
+      "/lovable-uploads/zapshot_1.png",
+      "/lovable-uploads/zapshot_2.png",
       "/lovable-uploads/zapshot_3.png",
-      "/lovable-uploads/ZAPSHOT 4.mp4"
+      "/lovable-uploads/ZAPSHOT_4.mp4"
     ],
     tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],
     summary: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",

@@ -1,17 +1,25 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Award, Download, Trophy, Laptop } from "lucide-react";
 
 const About = () => {
-  const handleResumeDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/lovable-uploads/Bassel_Atout_Resume_2025.pdf';
-    link.download = 'Bassel_Atout_Resume_2025.pdf';
-    link.target = '_blank';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const handleResumeDownload = async () => {
+    try {
+      const response = await fetch('/lovable-uploads/Bassel_Atout_Resume_2025.pdf');
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Bassel_Atout_Resume_2025.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Download failed:', error);
+    }
   };
 
   return (

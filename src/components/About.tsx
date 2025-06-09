@@ -1,10 +1,19 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Award, Download, Trophy, Laptop } from "lucide-react";
 
 const About = () => {
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/Bassel_Atout_Resume_2025.pdf';
+    link.download = 'Bassel_Atout_Resume_2025.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="about" className="relative overflow-hidden">
       {/* Background decoration */}
@@ -84,12 +93,10 @@ const About = () => {
             </div>
             
             <div className="pt-4">
-              <a href="/lovable-uploads/Bassel_Atout_Resume_2025.pdf" download="Bassel_Atout_Resume_2025.pdf">
-                <Button size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group text-slate-50 bg-transparent">
-                  Download Resume 
-                  <Download className="h-4 w-4 transition-transform group-hover:translate-y-1" />
-                </Button>
-              </a>
+              <Button onClick={handleResumeDownload} size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group text-slate-50 bg-transparent">
+                Download Resume 
+                <Download className="h-4 w-4 transition-transform group-hover:translate-y-1" />
+              </Button>
             </div>
           </div>
         </div>

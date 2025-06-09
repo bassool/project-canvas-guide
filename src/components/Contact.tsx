@@ -18,6 +18,16 @@ const Contact = () => {
     form.reset();
   };
 
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/Bassel_Atout_Resume_2025.pdf';
+    link.download = 'Bassel_Atout_Resume_2025.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="contact" className="relative overflow-hidden bg-slate-100">
       {/* Floating blob shapes */}
@@ -77,12 +87,10 @@ const Contact = () => {
                     <p className="mb-3 text-slate-800">
                       My next role could very well be within your firm; let my resume show you why!
                     </p>
-                    <a href="/lovable-uploads/Bassel_Atout_Resume_2025.pdf" download="Bassel_Atout_Resume_2025.pdf">
-                      <Button variant="link" className="p-0 h-auto group bg-transparent text-slate-900">
-                        Download Resume 
-                        <Download className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </Button>
-                    </a>
+                    <Button onClick={handleResumeDownload} variant="link" className="p-0 h-auto group bg-transparent text-slate-900">
+                      Download Resume 
+                      <Download className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -101,7 +109,7 @@ const Contact = () => {
                   </li>
                   <li className="flex items-center gap-3 justify-center">
                     <span className="inline-block w-4 h-4 rounded-full bg-slate-700"></span>
-                    <span className="text-lg text-slate-800"> Demonstrable track record of successful project delivery</span>
+                    <span className="text-lg text-slate-800">Demonstrable track record of successful project delivery</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
                     <span className="inline-block w-4 h-4 rounded-full bg-slate-700"></span>

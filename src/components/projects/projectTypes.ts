@@ -33,9 +33,9 @@ export const projects: Project[] = [
     galleryImages: [
       "/lovable-uploads/DEPTH_1.png",
       "/lovable-uploads/d030c244-127d-4fd1-8374-3613dab559c3.png",
-      "/public/depth 3.png",
-      "depth 4.mp4",
-      "public/depth 5.png"
+      "/lovable-uploads/depth 3.png",
+      "/lovable-uploads/depth 4.mp4",
+      "/lovable-uploads/depth 5.png"
     ],
     tools: ["Logic Pro X", "Adobe Creative Suite", "Final Cut Pro X", "Social Media Platforms"],
     summary: "Produced and directed full album and all visuals, accompanied by digital social media marketing strategy and experiential live event planning and performing. Generated 3k+ streams and 200+ attendees for final live show on limited budget.",
@@ -73,10 +73,10 @@ export const projects: Project[] = [
     tags: ["Marketing Consultation", "Visual Asset Production", "Project Management", "Brand Ambassadorship"],
     featured: false,
     galleryImages: [
-      "/zapshot 1.png",
-      "/zapshot 2.png",
-      "/zapshot 3.png",
-      "/ZAPSHOT 4.mp4"
+      "/lovable-uploads/zapshot 1.png",
+      "/lovable-uploads/zapshot 2.png",
+      "/lovable-uploads/zapshot 3.png",
+      "/lovable-uploads/ZAPSHOT 4.mp4"
     ],
     tools: ["Slack", "Final Cut Pro X", "Adobe Creative Suite", "Logic Pro X", "Discord"],
     summary: "Coordinated social media campaigns and events; created visual assets to support user growth and engagement, provided marketing consultation and brand ambassadorship program strategy.",

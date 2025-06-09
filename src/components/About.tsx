@@ -84,7 +84,7 @@ const About = () => {
             </div>
             
             <div className="pt-4">
-              <a href="/loveable-uploads/Bassel_Atout_Resume_2025.pdf" download="/loveable-uploads/Bassel_Atout_Resume_2025.pdf">
+              <a href="/loveable-uploads/Bassel_Atout_Resume_2025.pdf" download="Bassel_Atout_Resume_2025.pdf">
                 <Button size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group text-slate-50 bg-transparent">
                   Download Resume 
                   <Download className="h-4 w-4 transition-transform group-hover:translate-y-1" />

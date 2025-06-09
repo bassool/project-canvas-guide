@@ -120,11 +120,11 @@ export const projects: Project[] = [
     challenge: "To interpret the game owner's vision and create a compelling original game soundtrack with a remote team that initially lacked a structured cross-functional collaboration approach for audio-visual integration.",
     solution: "Coordinated more cohesive schedule to flesh out founder's vision with all creative teams, leading to and more focused vision that audio team could much more effectively produce music to. Created over 15+ fully original tracks for game using Logic Pro X, meeting weekly with creative teams.",
     audioTracks: [
-      { title: "Vista Theme", url: "/lovable-uploads/VISTA_5_PORT_copy.mp3" },
-      { title: "Marketplace Theme", url: "/lovable-uploads/MARKETPLACE_THEME.mp3" },
-      { title: "Dread Theme", url: "/lovable-uploads/MUS_trashdrumz_copy.mp3" },
-      { title: "Dark Barn Theme", url: "/lovable-uploads/WAXHEART_BARN_1_copy.mp3" },
-      { title: "Chase Theme", url: "/lovable-uploads/VISTA_WIP_WAXHEART.mp3" }
+      { title: "Vista Theme", url: "/lovable-uploads/VISTA 5 PORT copy.mp3" },
+      { title: "Marketplace Theme", url: "/lovable-uploads/MARKETPLACE THEME.mp3" },
+      { title: "Dread Theme", url: "/lovable-uploads/MUS_trashdrumz copy.mp3" },
+      { title: "Dark Barn Theme", url: "/lovable-uploads/WAXHEART BARN_1 copy.mp3" },
+      { title: "Chase Theme", url: "/lovable-uploads/VISTA WIP WAXHEART.mp3" }
     ]
   },
   {
@@ -144,9 +144,9 @@ export const projects: Project[] = [
     challenge: "To fully produce an original game soundtrack and direct audio implementation with a fully remote team and little to no budget within a short time frame, working only with game owner's minimal creative input and concept art.",
     solution: "Took charge and created a variety of demos to gauge creative team's taste and vision, allowing me to narrow down game owner's sonic goals for project. Then produced three original songs along with stems and one shot stings in a timely manner in Logic Pro X.",
     audioTracks: [
-      { title: "Main Menu and Dialogue Theme", url: "/lovable-uploads/Main Menu and Dialogue Theme .mp3" },
-      { title: "Battle Theme 1", url: "/lovable-uploads/Battle Theme 1.mp3" },
-      { title: "Battle Theme 2", url: "/lovable-uploads/Battle Theme 2.mp3" }
+      { title: "Main Menu and Dialogue Theme", url: "/lovable-uploads/Main_Menu_and_Dialogue_Theme.mp3" },
+      { title: "Battle Theme 1", url: "/lovable-uploads/Battle_Theme_1.mp3" },
+      { title: "Battle Theme 2", url: "/lovable-uploads/Battle_Theme_2.mp3" }
     ]
   }
 ];

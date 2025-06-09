@@ -122,9 +122,9 @@ export const projects: Project[] = [
     audioTracks: [
       { title: "Vista Theme", url: "/lovable-uploads/VISTA_5_PORT_copy.mp3" },
       { title: "Marketplace Theme", url: "/lovable-uploads/MARKETPLACE_THEME.mp3" },
-      { title: "Dread Theme", url: "/lovable-uploads/MUS_trashdrumz_copy.mp3" },
+      { title: "Chase Theme", url: "/lovable-uploads/MUS_trashdrumz_copy.mp3" },
       { title: "Dark Barn Theme", url: "/lovable-uploads/WAXHEART_BARN_1_copy.mp3" },
-      { title: "Chase Theme", url: "/lovable-uploads/VISTA_WIP_WAXHEART.mp3" }
+      { title: "A Bitter Realization Theme", url: "/lovable-uploads/VISTA_WIP_WAXHEART.mp3" }
     ]
   },
   {

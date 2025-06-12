@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 interface MediaItemProps {
   src: string;
@@ -10,6 +10,7 @@ interface MediaItemProps {
 const MediaItem = ({ src, alt, index }: MediaItemProps) => {
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
   
   // Log the src being used
   console.log(`MediaItem ${index}: Attempting to load ${src}`);
@@ -28,6 +29,12 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
     console.log(`Media loaded SUCCESSFULLY: ${src}`);
     setIsLoading(false);
     setHasError(false);
+    
+    // For videos, ensure they're unmuted
+    if (isVideo && videoRef.current) {
+      videoRef.current.muted = false;
+      console.log(`Video unmuted: ${src}, muted state: ${videoRef.current.muted}`);
+    }
   };
 
   const handleRetry = () => {
@@ -35,6 +42,15 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
     setHasError(false);
     setIsLoading(true);
   };
+
+  // Effect to ensure video is unmuted after it loads
+  useEffect(() => {
+    if (isVideo && videoRef.current && !isLoading) {
+      const video = videoRef.current;
+      video.muted = false;
+      console.log(`Video element muted state after effect: ${video.muted}`);
+    }
+  }, [isVideo, isLoading]);
 
   if (hasError) {
     return (
@@ -62,10 +78,12 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
           </div>
         )}
         <video 
+          ref={videoRef}
           src={src} 
           className="w-full h-full object-cover"
           controls
           preload="metadata"
+          muted={false}
           onError={handleError}
           onLoadedData={handleLoad}
           onCanPlay={handleLoad}

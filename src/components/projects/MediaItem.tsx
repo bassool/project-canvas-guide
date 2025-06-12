@@ -65,11 +65,18 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
           src={src} 
           className="w-full h-full object-cover"
           controls
+          muted={false}
+          playsInline
+          webkit-playsinline="true"
           preload="metadata"
+          crossOrigin="anonymous"
           onError={handleError}
           onLoadedData={handleLoad}
           onCanPlay={handleLoad}
+          onLoadStart={() => console.log(`Video load started: ${src}`)}
+          onLoadedMetadata={() => console.log(`Video metadata loaded: ${src}`)}
         >
+          <source src={src} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

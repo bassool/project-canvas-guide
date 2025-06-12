@@ -110,6 +110,7 @@ export const projects: Project[] = [
     image: "/lovable-uploads/3c4c6ca8-6600-4cb7-8c20-dbf785abe7b8.png",
     tags: ["Music Production", "Cross Functional Teamwork", "Project Management"],
     galleryImages: [
+      "/lovable-uploads/WaxHeart_Bridge_Chase_Crop.mov",
       "/lovable-uploads/143ea6cc-d7c1-41a0-afc4-0061761ee4e4.png",
       "/lovable-uploads/2d3a44f3-711d-4b1a-9530-0ed3ae1de31d.png", 
       "/lovable-uploads/2179b774-fd02-437a-9a15-2c8a63e22638.png",  

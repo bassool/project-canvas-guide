@@ -66,6 +66,7 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
           className="w-full h-full object-cover"
           controls
           preload="metadata"
+          muted={false}
           onError={handleError}
           onLoadedData={handleLoad}
           onCanPlay={handleLoad}

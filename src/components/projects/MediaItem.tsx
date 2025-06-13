@@ -1,5 +1,5 @@
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useCallback } from "react";
 
 interface MediaItemProps {
   src: string;
@@ -10,8 +10,9 @@ interface MediaItemProps {
 const MediaItem = ({ src, alt, index }: MediaItemProps) => {
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [showPlayButton, setShowPlayButton] = useState(false);
+  const [isReady, setIsReady] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [userHasInteracted, setUserHasInteracted] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   
   // Log the src being used
@@ -20,57 +21,86 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
   // More comprehensive video detection
   const isVideo = /\.(mp4|webm|mov|avi|mkv)$/i.test(src) || src.includes('.MP4') || src.includes('.MOV');
   
-  const handleError = () => {
+  const handleError = useCallback(() => {
     console.error(`Media FAILED to load: ${src}`);
     console.error(`Full URL attempted: ${window.location.origin}${src}`);
     setHasError(true);
     setIsLoading(false);
-  };
+    setIsReady(false);
+  }, [src]);
 
-  const handleLoad = () => {
+  const handleLoad = useCallback(() => {
     console.log(`Media loaded SUCCESSFULLY: ${src}`);
     setIsLoading(false);
     setHasError(false);
-  };
+  }, [src]);
 
-  const handleRetry = () => {
+  const handleRetry = useCallback(() => {
     console.log(`Retrying media load: ${src}`);
     setHasError(false);
     setIsLoading(true);
-    setShowPlayButton(false);
+    setIsReady(false);
     setIsPlaying(false);
-  };
+    setUserHasInteracted(false);
+  }, [src]);
 
-  const handleVideoCanPlay = () => {
+  const handleVideoLoadedMetadata = useCallback(() => {
+    console.log(`Video metadata loaded: ${src}`);
+    setIsLoading(false);
+    setHasError(false);
+    setIsReady(true);
+  }, [src]);
+
+  const handleVideoCanPlay = useCallback(() => {
     console.log(`Video can play: ${src}`);
     setIsLoading(false);
     setHasError(false);
-    setShowPlayButton(true);
-  };
+    setIsReady(true);
+  }, [src]);
 
-  const handleVideoPlay = async () => {
-    if (videoRef.current) {
-      try {
-        setShowPlayButton(false);
-        setIsPlaying(true);
-        await videoRef.current.play();
-      } catch (error) {
-        console.error('Error playing video:', error);
-        setShowPlayButton(true);
-        setIsPlaying(false);
-      }
+  const handlePlayClick = useCallback(async (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    if (!videoRef.current || !isReady) {
+      console.log('Video not ready or ref not available');
+      return;
     }
-  };
 
-  const handleVideoPause = () => {
-    setIsPlaying(false);
-    setShowPlayButton(true);
-  };
+    try {
+      setUserHasInteracted(true);
+      console.log('Attempting to play video...');
+      
+      // Reset video to beginning if it ended
+      if (videoRef.current.ended) {
+        videoRef.current.currentTime = 0;
+      }
+      
+      await videoRef.current.play();
+      setIsPlaying(true);
+      console.log('Video started playing');
+    } catch (error) {
+      console.error('Error playing video:', error);
+      setIsPlaying(false);
+      setUserHasInteracted(false);
+    }
+  }, [isReady]);
 
-  const handleVideoEnded = () => {
+  const handleVideoPause = useCallback(() => {
+    console.log('Video paused');
     setIsPlaying(false);
-    setShowPlayButton(true);
-  };
+  }, []);
+
+  const handleVideoEnded = useCallback(() => {
+    console.log('Video ended');
+    setIsPlaying(false);
+    setUserHasInteracted(false);
+  }, []);
+
+  const handleVideoPlay = useCallback(() => {
+    console.log('Video play event');
+    setIsPlaying(true);
+  }, []);
 
   if (hasError) {
     return (
@@ -91,40 +121,51 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
   
   if (isVideo) {
     return (
-      <div className="aspect-video overflow-hidden rounded-md relative">
+      <div className="aspect-video overflow-hidden rounded-md relative bg-black">
+        {/* Loading overlay */}
         {isLoading && (
           <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center z-10">
             <span className="text-gray-500">Loading video...</span>
           </div>
         )}
-        {showPlayButton && !isPlaying && (
-          <div className="absolute inset-0 bg-black/20 flex items-center justify-center z-20 cursor-pointer" onClick={handleVideoPlay}>
+        
+        {/* Play button overlay - only show when ready and not playing */}
+        {isReady && !isPlaying && (
+          <div 
+            className="absolute inset-0 bg-black/30 flex items-center justify-center z-20 cursor-pointer" 
+            onClick={handlePlayClick}
+          >
             <button
-              className="bg-white/90 hover:bg-white rounded-full p-4 transition-colors shadow-lg"
-              onClick={handleVideoPlay}
+              className="bg-white/90 hover:bg-white rounded-full p-6 transition-all transform hover:scale-110 shadow-lg"
+              onClick={handlePlayClick}
+              type="button"
             >
-              <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-12 h-12 text-black ml-1" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M8 5v14l11-7z"/>
               </svg>
             </button>
           </div>
         )}
+        
         <video 
           ref={videoRef}
           src={src} 
           className="w-full h-full object-cover"
-          controls={isPlaying}
+          controls={isPlaying && userHasInteracted}
           muted
           playsInline
+          webkit-playsinline="true"
           preload="metadata"
+          poster=""
           onError={handleError}
           onLoadedData={handleLoad}
+          onLoadedMetadata={handleVideoLoadedMetadata}
           onCanPlay={handleVideoCanPlay}
-          onPlay={() => setIsPlaying(true)}
+          onCanPlayThrough={handleVideoCanPlay}
+          onPlay={handleVideoPlay}
           onPause={handleVideoPause}
           onEnded={handleVideoEnded}
           onLoadStart={() => console.log(`Video load started: ${src}`)}
-          onLoadedMetadata={() => console.log(`Video metadata loaded: ${src}`)}
           style={{ objectFit: 'cover' }}
         >
           <source src={src} type="video/mp4" />

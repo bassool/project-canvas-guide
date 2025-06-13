@@ -10,6 +10,7 @@ interface MediaItemProps {
 const MediaItem = ({ src, alt, index }: MediaItemProps) => {
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [showPlayButton, setShowPlayButton] = useState(false);
   
   // Log the src being used
   console.log(`MediaItem ${index}: Attempting to load ${src}`);
@@ -34,6 +35,18 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
     console.log(`Retrying media load: ${src}`);
     setHasError(false);
     setIsLoading(true);
+    setShowPlayButton(false);
+  };
+
+  const handleVideoCanPlay = () => {
+    console.log(`Video can play: ${src}`);
+    setIsLoading(false);
+    setHasError(false);
+    setShowPlayButton(true);
+  };
+
+  const handleVideoPlay = () => {
+    setShowPlayButton(false);
   };
 
   if (hasError) {
@@ -61,20 +74,32 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
             <span className="text-gray-500">Loading video...</span>
           </div>
         )}
+        {showPlayButton && (
+          <div className="absolute inset-0 bg-black/20 flex items-center justify-center z-20">
+            <button
+              onClick={handleVideoPlay}
+              className="bg-white/80 hover:bg-white rounded-full p-4 transition-colors"
+            >
+              <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        )}
         <video 
           src={src} 
           className="w-full h-full object-cover"
           controls
-          muted={false}
+          muted
           playsInline
-          webkit-playsinline="true"
           preload="metadata"
-          crossOrigin="anonymous"
           onError={handleError}
           onLoadedData={handleLoad}
-          onCanPlay={handleLoad}
+          onCanPlay={handleVideoCanPlay}
+          onPlay={handleVideoPlay}
           onLoadStart={() => console.log(`Video load started: ${src}`)}
           onLoadedMetadata={() => console.log(`Video metadata loaded: ${src}`)}
+          style={{ objectFit: 'cover' }}
         >
           <source src={src} type="video/mp4" />
           Your browser does not support the video tag.
@@ -97,7 +122,6 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
         onError={handleError}
         onLoad={handleLoad}
         loading="lazy"
-        crossOrigin="anonymous"
       />
     </div>
   );

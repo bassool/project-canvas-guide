@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 interface MediaItemProps {
   src: string;
@@ -11,6 +11,8 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [showPlayButton, setShowPlayButton] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
   
   // Log the src being used
   console.log(`MediaItem ${index}: Attempting to load ${src}`);
@@ -36,6 +38,7 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
     setHasError(false);
     setIsLoading(true);
     setShowPlayButton(false);
+    setIsPlaying(false);
   };
 
   const handleVideoCanPlay = () => {
@@ -45,8 +48,28 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
     setShowPlayButton(true);
   };
 
-  const handleVideoPlay = () => {
-    setShowPlayButton(false);
+  const handleVideoPlay = async () => {
+    if (videoRef.current) {
+      try {
+        setShowPlayButton(false);
+        setIsPlaying(true);
+        await videoRef.current.play();
+      } catch (error) {
+        console.error('Error playing video:', error);
+        setShowPlayButton(true);
+        setIsPlaying(false);
+      }
+    }
+  };
+
+  const handleVideoPause = () => {
+    setIsPlaying(false);
+    setShowPlayButton(true);
+  };
+
+  const handleVideoEnded = () => {
+    setIsPlaying(false);
+    setShowPlayButton(true);
   };
 
   if (hasError) {
@@ -74,11 +97,11 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
             <span className="text-gray-500">Loading video...</span>
           </div>
         )}
-        {showPlayButton && (
-          <div className="absolute inset-0 bg-black/20 flex items-center justify-center z-20">
+        {showPlayButton && !isPlaying && (
+          <div className="absolute inset-0 bg-black/20 flex items-center justify-center z-20 cursor-pointer" onClick={handleVideoPlay}>
             <button
+              className="bg-white/90 hover:bg-white rounded-full p-4 transition-colors shadow-lg"
               onClick={handleVideoPlay}
-              className="bg-white/80 hover:bg-white rounded-full p-4 transition-colors"
             >
               <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M8 5v14l11-7z"/>
@@ -87,16 +110,19 @@ const MediaItem = ({ src, alt, index }: MediaItemProps) => {
           </div>
         )}
         <video 
+          ref={videoRef}
           src={src} 
           className="w-full h-full object-cover"
-          controls
+          controls={isPlaying}
           muted
           playsInline
           preload="metadata"
           onError={handleError}
           onLoadedData={handleLoad}
           onCanPlay={handleVideoCanPlay}
-          onPlay={handleVideoPlay}
+          onPlay={() => setIsPlaying(true)}
+          onPause={handleVideoPause}
+          onEnded={handleVideoEnded}
           onLoadStart={() => console.log(`Video load started: ${src}`)}
           onLoadedMetadata={() => console.log(`Video metadata loaded: ${src}`)}
           style={{ objectFit: 'cover' }}

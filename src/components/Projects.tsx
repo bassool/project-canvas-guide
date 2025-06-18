@@ -1,34 +1,53 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Rocket } from "lucide-react";
 import { ProjectCategory, projects } from "./projects/projectTypes";
 import ProjectList from "./projects/ProjectList";
-
 const Projects = () => {
   const [activeTab, setActiveTab] = useState<ProjectCategory>("all");
-
-  return (
-    <section id="work" className="relative overflow-hidden bg-white">
+  return <section id="work" className="relative overflow-hidden bg-white">
       {/* Small floating elements */}
       <div className="absolute top-[10%] left-[8%] w-2 h-2 rounded-full bg-black animate-float opacity-20"></div>
-      <div className="absolute top-[20%] right-[12%] w-3 h-3 rounded-full bg-black animate-pulse opacity-25" style={{ animationDelay: "0.5s" }}></div>
-      <div className="absolute top-[40%] left-[15%] w-2 h-2 rounded-full bg-black animate-float opacity-30" style={{ animationDelay: "1s" }}></div>
-      <div className="absolute top-[60%] right-[18%] w-4 h-4 rounded-full bg-black animate-pulse opacity-15" style={{ animationDelay: "1.5s" }}></div>
-      <div className="absolute bottom-[15%] left-[10%] w-3 h-3 rounded-full bg-black animate-float opacity-25" style={{ animationDelay: "2s" }}></div>
-      <div className="absolute bottom-[25%] right-[8%] w-2 h-2 rounded-full bg-black animate-pulse opacity-20" style={{ animationDelay: "2.5s" }}></div>
+      <div className="absolute top-[20%] right-[12%] w-3 h-3 rounded-full bg-black animate-pulse opacity-25" style={{
+      animationDelay: "0.5s"
+    }}></div>
+      <div className="absolute top-[40%] left-[15%] w-2 h-2 rounded-full bg-black animate-float opacity-30" style={{
+      animationDelay: "1s"
+    }}></div>
+      <div className="absolute top-[60%] right-[18%] w-4 h-4 rounded-full bg-black animate-pulse opacity-15" style={{
+      animationDelay: "1.5s"
+    }}></div>
+      <div className="absolute bottom-[15%] left-[10%] w-3 h-3 rounded-full bg-black animate-float opacity-25" style={{
+      animationDelay: "2s"
+    }}></div>
+      <div className="absolute bottom-[25%] right-[8%] w-2 h-2 rounded-full bg-black animate-pulse opacity-20" style={{
+      animationDelay: "2.5s"
+    }}></div>
       
       {/* Small rotating circles */}
       <div className="absolute top-[15%] left-[20%] w-5 h-5 rounded-full border border-black animate-spin-slow opacity-25"></div>
-      <div className="absolute top-[35%] right-[25%] w-4 h-4 rounded-full border border-black animate-spin-slow opacity-20" style={{ animationDirection: "reverse" }}></div>
-      <div className="absolute bottom-[20%] left-[25%] w-6 h-6 rounded-full border border-black animate-spin-slow opacity-30" style={{ animationDelay: "1s" }}></div>
-      <div className="absolute bottom-[40%] right-[30%] w-3 h-3 rounded-full border border-black animate-spin-slow opacity-25" style={{ animationDirection: "reverse", animationDelay: "1.5s" }}></div>
+      <div className="absolute top-[35%] right-[25%] w-4 h-4 rounded-full border border-black animate-spin-slow opacity-20" style={{
+      animationDirection: "reverse"
+    }}></div>
+      <div className="absolute bottom-[20%] left-[25%] w-6 h-6 rounded-full border border-black animate-spin-slow opacity-30" style={{
+      animationDelay: "1s"
+    }}></div>
+      <div className="absolute bottom-[40%] right-[30%] w-3 h-3 rounded-full border border-black animate-spin-slow opacity-25" style={{
+      animationDirection: "reverse",
+      animationDelay: "1.5s"
+    }}></div>
       
       {/* Additional floating bubbles */}
-      <div className="absolute top-[25%] left-[5%] w-2 h-2 rounded-full bg-black animate-pulse opacity-20" style={{ animationDelay: "3s" }}></div>
-      <div className="absolute top-[70%] right-[5%] w-3 h-3 rounded-full bg-black animate-float opacity-15" style={{ animationDelay: "3.5s" }}></div>
-      <div className="absolute top-[80%] left-[35%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{ animationDelay: "4s" }}></div>
+      <div className="absolute top-[25%] left-[5%] w-2 h-2 rounded-full bg-black animate-pulse opacity-20" style={{
+      animationDelay: "3s"
+    }}></div>
+      <div className="absolute top-[70%] right-[5%] w-3 h-3 rounded-full bg-black animate-float opacity-15" style={{
+      animationDelay: "3.5s"
+    }}></div>
+      <div className="absolute top-[80%] left-[35%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{
+      animationDelay: "4s"
+    }}></div>
       
       {/* Minimal decorative elements */}
       <div className="hidden md:block absolute left-0 top-1/4 w-32 h-32 border-l border-t border-gray-200 -z-10"></div>
@@ -68,13 +87,11 @@ const Projects = () => {
         </Tabs>
         
         <div className="flex justify-center mt-12 bg-transparent text-black">
-          <Button variant="outline" size="lg" disabled className="rounded-full px-8 border border-gray-300 cursor-default bg-transparent text-gray-500 text-base">
+          <Button variant="outline" size="lg" disabled className="rounded-full px-8 border border-gray-300 cursor-default bg-transparent text-base text-black">
             Click each project to view
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Projects;

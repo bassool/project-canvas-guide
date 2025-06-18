@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -12,9 +11,9 @@ const Projects = () => {
   return (
     <section id="work" className="relative overflow-hidden bg-white">
       {/* Subtle background shapes */}
-      <div className="blob-shape w-[300px] h-[300px] top-10 -right-10 animate-pulse-custom bg-gray-900"></div>
-      <div className="blob-shape w-[500px] h-[500px] -bottom-40 -left-32 animate-pulse-custom bg-gray-700"></div>
-      <div className="blob-shape w-[200px] h-[200px] top-1/2 right-[20%] animate-pulse-custom bg-gray-600"></div>
+      <div className="blob-shape w-[300px] h-[300px] top-10 -right-10 animate-pulse-custom bg-black"></div>
+      <div className="blob-shape w-[500px] h-[500px] -bottom-40 -left-32 animate-pulse-custom bg-black"></div>
+      <div className="blob-shape w-[200px] h-[200px] top-1/2 right-[20%] animate-pulse-custom bg-black"></div>
       
       {/* Minimal decorative elements */}
       <div className="hidden md:block absolute left-0 top-1/4 w-32 h-32 border-l border-t border-gray-200 -z-10"></div>
@@ -23,12 +22,12 @@ const Projects = () => {
       
       <div className="container py-20 md:py-28">
         <div className="text-center mb-12 relative">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gray-100 text-gray-900 font-medium mb-4">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-black text-white font-medium mb-4">
             <Rocket className="h-4 w-4 mr-2" />
             <span>Browse my portfolio</span>
           </div>
           
-          <h2 className="section-title text-gray-900">Featured Projects</h2>
+          <h2 className="section-title text-black">Featured Projects</h2>
           <p className="section-subtitle max-w-2xl mx-auto text-gray-600">
             A selection of my work spanning creative direction and project management
           </p>

@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Award, Download, Trophy, Laptop } from "lucide-react";
+
 const About = () => {
   const handleResumeDownload = async () => {
     try {
@@ -30,8 +31,8 @@ const About = () => {
       <div className="container relative z-10 py-20 md:py-28">
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full text-primary font-medium mb-8 bg-black">
-            <Award className="h-4 w-4 mr-2 text-slate-100" />
-            <span className="text-slate-100">Get to know me</span>
+            <Award className="h-4 w-4 mr-2 text-white" />
+            <span className="text-white">Get to know me</span>
           </div>
           
           <h2 className="section-title">About Me</h2>
@@ -52,8 +53,8 @@ const About = () => {
             animationDelay: "1.5s"
           }}>
               <div className="flex items-center gap-2">
-                <Laptop className="h-5 w-5 text-slate-700" />
-                <span className="font-medium text-sm text-slate-900">Certified Associate in Project Management</span>
+                <Laptop className="h-5 w-5 text-black" />
+                <span className="font-medium text-sm text-black">Certified Associate in Project Management</span>
               </div>
             </div>
             
@@ -62,8 +63,8 @@ const About = () => {
             animationDelay: "1s"
           }}>
               <div className="flex items-center gap-2">
-                <Trophy className="h-5 w-5 text-slate-700" />
-                <span className="font-medium text-sm text-slate-900">Loyola Marymount Fred Kiesner Entrepreneurial Star Award Winner</span>
+                <Trophy className="h-5 w-5 text-black" />
+                <span className="font-medium text-sm text-black">Loyola Marymount Fred Kiesner Entrepreneurial Star Award Winner</span>
               </div>
             </div>
           </div>
@@ -82,22 +83,22 @@ const About = () => {
             </div>
             
             <div className="grid gap-6 sm:grid-cols-3">
-              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-slate-100">
-                <p className="text-4xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-slate-800">8+</p>
-                <p className="text-slate-800">Years Creative Experience</p>
+              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-gray-100">
+                <p className="text-4xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-black">8+</p>
+                <p className="text-black">Years Creative Experience</p>
               </div>
-              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-slate-100">
-                <p className="text-4xl font-bold bg-gradient-to-br from-secondary to-accent bg-clip-text text-slate-900">5+</p>
-                <p className="text-slate-800">Years in project based work</p>
+              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-gray-100">
+                <p className="text-4xl font-bold bg-gradient-to-br from-secondary to-accent bg-clip-text text-black">5+</p>
+                <p className="text-black">Years in project based work</p>
               </div>
-              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-slate-100">
-                <p className="text-4xl font-bold bg-gradient-to-br from-accent to-primary bg-clip-text text-slate-900">6+</p>
-                <p className="text-slate-800">Creative and Managerial Tools Mastered</p>
+              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-gray-100">
+                <p className="text-4xl font-bold bg-gradient-to-br from-accent to-primary bg-clip-text text-black">6+</p>
+                <p className="text-black">Creative and Managerial Tools Mastered</p>
               </div>
             </div>
             
             <div className="pt-4">
-              <Button onClick={handleResumeDownload} size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group text-slate-50 bg-transparent">
+              <Button onClick={handleResumeDownload} size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group text-white bg-black hover:bg-gray-800">
                 Download Resume 
                 <Download className="h-4 w-4 transition-transform group-hover:translate-y-1" />
               </Button>
@@ -108,13 +109,13 @@ const About = () => {
         <div className="mt-20 pt-10 border-t border-secondary/20">
           <div className="grid gap-10 md:grid-cols-2">
             <div className="bg-white dark:bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
-              <h3 className="text-2xl font-semibold mb-4 text-slate-700">My Approach</h3>
-              <p className="leading-relaxed text-slate-600">I believe in starting with clear strategic objectives, developing creative concepts that truly resonate with audiences, and executing with precision and adaptability. This balanced approach ensures both creative ingenuity and measurable project success.
+              <h3 className="text-2xl font-semibold mb-4 text-black">My Approach</h3>
+              <p className="leading-relaxed text-gray-600">I believe in starting with clear strategic objectives, developing creative concepts that truly resonate with audiences, and executing with precision and adaptability. This balanced approach ensures both creative ingenuity and measurable project success.
             </p>
             </div>
             <div className="bg-white dark:bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
-              <h3 className="text-2xl font-semibold mb-4 text-slate-700">Background</h3>
-              <p className="leading-relaxed text-slate-600">With a dynamic and creative background also based in business administration, I've worked at StartUps and as an independent freelancer across diverse industries including gaming, fashion, and software development.
+              <h3 className="text-2xl font-semibold mb-4 text-black">Background</h3>
+              <p className="leading-relaxed text-gray-600">With a dynamic and creative background also based in business administration, I've worked at StartUps and as an independent freelancer across diverse industries including gaming, fashion, and software development.
             </p>
             </div>
           </div>

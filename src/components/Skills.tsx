@@ -57,10 +57,10 @@ const SkillCard = ({
     <Card className="overflow-hidden border border-gray-200 card-hover bg-white hover:shadow-lg">
       <CardHeader className="bg-white">
         <div className="flex items-center gap-3">
-          <div className="p-3 rounded-xl bg-gray-100 text-gray-700">
+          <div className="p-3 rounded-xl bg-black text-white">
             <Icon className="h-6 w-6" />
           </div>
-          <CardTitle className="text-gray-900">{skill.title}</CardTitle>
+          <CardTitle className="text-black">{skill.title}</CardTitle>
         </div>
       </CardHeader>
       <CardContent className="bg-white">
@@ -75,9 +75,9 @@ const Skills = () => {
   return (
     <section id="skills" className="relative bg-white">
       {/* Subtle background shapes */}
-      <div className="blob-shape w-[400px] h-[400px] -top-32 -left-20 animate-pulse-custom bg-gray-900"></div>
-      <div className="blob-shape w-[350px] h-[350px] -bottom-20 -right-24 animate-pulse-custom bg-gray-700"></div>
-      <div className="blob-shape w-[250px] h-[250px] top-1/3 right-[15%] animate-pulse-custom bg-gray-600"></div>
+      <div className="blob-shape w-[400px] h-[400px] -top-32 -left-20 animate-pulse-custom bg-black"></div>
+      <div className="blob-shape w-[350px] h-[350px] -bottom-20 -right-24 animate-pulse-custom bg-black"></div>
+      <div className="blob-shape w-[250px] h-[250px] top-1/3 right-[15%] animate-pulse-custom bg-black"></div>
       
       {/* Decorative pattern */}
       <div className="absolute top-20 left-10 grid grid-cols-3 gap-2 opacity-20 -z-10">
@@ -94,12 +94,12 @@ const Skills = () => {
       
       <div className="container relative z-10 py-16 md:py-24">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gray-900 text-white font-medium mb-4">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-black text-white font-medium mb-4">
             <Sparkles className="h-4 w-4 mr-2" />
             <span>What I can do for you</span>
           </div>
           
-          <h2 className="section-title text-gray-900 text-5xl">Skills</h2>
+          <h2 className="section-title text-black text-5xl">Skills</h2>
           <p className="section-subtitle max-w-2xl mx-auto text-gray-600">
             Balancing creative excellence with strategic execution
           </p>
@@ -119,7 +119,7 @@ const Skills = () => {
         
         <div className="text-center mt-12">
           <a href="https://www.linkedin.com/in/basselatout" target="_blank" rel="noopener noreferrer">
-            <Button className="rounded-full px-6 py-3 bg-gray-900 text-white hover:bg-gray-800">
+            <Button className="rounded-full px-6 py-3 bg-black text-white hover:bg-gray-800">
               <Linkedin className="h-4 w-4 mr-2" />
               Connect on LinkedIn
             </Button>

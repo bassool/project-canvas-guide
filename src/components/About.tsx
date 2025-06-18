@@ -122,15 +122,15 @@ const About = () => {
             </div>
             
             <div className="grid gap-6 sm:grid-cols-3">
-              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-gray-100">
+              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-white">
                 <p className="text-4xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-black">8+</p>
                 <p className="text-black">Years Creative Experience</p>
               </div>
-              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-gray-100">
+              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-white">
                 <p className="text-4xl font-bold bg-gradient-to-br from-secondary to-accent bg-clip-text text-black">5+</p>
                 <p className="text-black">Years in project based work</p>
               </div>
-              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-gray-100">
+              <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-white">
                 <p className="text-4xl font-bold bg-gradient-to-br from-accent to-primary bg-clip-text text-black">6+</p>
                 <p className="text-black">Creative and Managerial Tools Mastered</p>
               </div>

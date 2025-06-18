@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, ArrowRight, Heart, Download, FileText, X } from "lucide-react";
-
 const Contact = () => {
   const {
     toast
@@ -44,7 +43,7 @@ const Contact = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10 bg-[#81c3df]/[0.22]"></div>
       <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -bottom-80 -left-80"></div>
       
-      <div className="container relative z-10 py-20 md:py-28">
+      <div className="container relative z-10 py-20 md:py-28 bg-white">
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-2 rounded-full text-accent font-medium mb-6 bg-black">
             <Heart className="h-4 w-4 mr-2 bg-transparent" />

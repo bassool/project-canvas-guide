@@ -15,18 +15,25 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-white">
-      {/* Subtle background shapes */}
-      <div className="blob-shape w-[400px] h-[400px] -top-40 -left-20 animate-pulse-custom bg-black"></div>
-      <div className="blob-shape w-[800px] h-[900px] -bottom-[10rem] -right-20 animate-pulse-custom bg-black"></div>
-      <div className="blob-shape w-[300px] h-[300px] top-[10%] right-[40%] animate-pulse-custom bg-black"></div>
+      {/* Small floating elements */}
+      <div className="absolute top-[15%] left-[10%] w-3 h-3 rounded-full bg-black animate-float opacity-20"></div>
+      <div className="absolute top-[25%] right-[15%] w-2 h-2 rounded-full bg-black animate-float opacity-30" style={{ animationDelay: "0.5s" }}></div>
+      <div className="absolute top-[35%] left-[20%] w-4 h-4 rounded-full bg-black animate-pulse opacity-15" style={{ animationDelay: "1s" }}></div>
+      <div className="absolute top-[60%] right-[25%] w-3 h-3 rounded-full bg-black animate-float opacity-25" style={{ animationDelay: "1.5s" }}></div>
+      <div className="absolute bottom-[20%] left-[15%] w-2 h-2 rounded-full bg-black animate-pulse opacity-20" style={{ animationDelay: "2s" }}></div>
+      <div className="absolute bottom-[30%] right-[10%] w-5 h-5 rounded-full bg-black animate-float opacity-15" style={{ animationDelay: "2.5s" }}></div>
       
-      {/* Minimal decorative elements */}
-      <div className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-black animate-float" style={{
-        animationDelay: "0.5s"
-      }}></div>
-      <div className="absolute bottom-1/4 right-1/3 w-3 h-3 rounded-full bg-black animate-float" style={{
-        animationDelay: "1.2s"
-      }}></div>
+      {/* Small rotating circles */}
+      <div className="absolute top-[20%] left-[25%] w-6 h-6 rounded-full border border-black animate-spin-slow opacity-25"></div>
+      <div className="absolute top-[45%] right-[20%] w-4 h-4 rounded-full border border-black animate-spin-slow opacity-20" style={{ animationDirection: "reverse" }}></div>
+      <div className="absolute bottom-[25%] left-[30%] w-5 h-5 rounded-full border border-black animate-spin-slow opacity-30" style={{ animationDelay: "1s" }}></div>
+      <div className="absolute bottom-[40%] right-[35%] w-3 h-3 rounded-full border border-black animate-spin-slow opacity-25" style={{ animationDirection: "reverse", animationDelay: "1.5s" }}></div>
+      
+      {/* Additional small bubbles */}
+      <div className="absolute top-[50%] left-[5%] w-2 h-2 rounded-full bg-black animate-pulse opacity-20" style={{ animationDelay: "3s" }}></div>
+      <div className="absolute top-[70%] right-[5%] w-3 h-3 rounded-full bg-black animate-float opacity-15" style={{ animationDelay: "3.5s" }}></div>
+      <div className="absolute top-[10%] left-[40%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{ animationDelay: "4s" }}></div>
+      <div className="absolute bottom-[10%] right-[40%] w-4 h-4 rounded-full bg-black animate-float opacity-20" style={{ animationDelay: "4.5s" }}></div>
       
       <div className="container grid gap-8 lg:grid-cols-2 lg:gap-12 items-center relative z-10">
         <div className="space-y-8 animate-fade-in">

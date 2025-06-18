@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, ArrowRight, Heart, Download, FileText, X } from "lucide-react";
+
 const Contact = () => {
   const {
     toast
@@ -33,15 +34,30 @@ const Contact = () => {
       console.error('Download failed:', error);
     }
   };
-  return <section id="contact" className="relative overflow-hidden bg-gray-100">
-      {/* Floating blob shapes */}
-      <div className="blob-shape w-[300px] h-[300px] -top-24 -right-16 animate-pulse-custom bg-[#81bfdf]"></div>
-      <div className="blob-shape w-[450px] h-[450px] -bottom-32 -left-28 animate-pulse-custom bg-[#87ddf0]"></div>
-      <div className="blob-shape w-[200px] h-[200px] top-[60%] right-[25%] animate-pulse-custom bg-[#b4def5]"></div>
+  return (
+    <section id="contact" className="relative overflow-hidden bg-gray-100">
+      {/* Small floating elements */}
+      <div className="absolute top-[10%] left-[6%] w-3 h-3 rounded-full bg-black animate-float opacity-20"></div>
+      <div className="absolute top-[16%] right-[9%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{ animationDelay: "0.5s" }}></div>
+      <div className="absolute top-[32%] left-[11%] w-4 h-4 rounded-full bg-black animate-float opacity-15" style={{ animationDelay: "1s" }}></div>
+      <div className="absolute top-[52%] right-[14%] w-3 h-3 rounded-full bg-black animate-pulse opacity-30" style={{ animationDelay: "1.5s" }}></div>
+      <div className="absolute bottom-[16%] left-[8%] w-2 h-2 rounded-full bg-black animate-float opacity-25" style={{ animationDelay: "2s" }}></div>
+      <div className="absolute bottom-[26%] right-[11%] w-5 h-5 rounded-full bg-black animate-pulse opacity-20" style={{ animationDelay: "2.5s" }}></div>
+      
+      {/* Small rotating circles */}
+      <div className="absolute top-[18%] left-[16%] w-6 h-6 rounded-full border border-black animate-spin-slow opacity-25"></div>
+      <div className="absolute top-[38%] right-[19%] w-4 h-4 rounded-full border border-black animate-spin-slow opacity-20" style={{ animationDirection: "reverse" }}></div>
+      <div className="absolute bottom-[20%] left-[19%] w-5 h-5 rounded-full border border-black animate-spin-slow opacity-30" style={{ animationDelay: "1s" }}></div>
+      <div className="absolute bottom-[40%] right-[24%] w-3 h-3 rounded-full border border-black animate-spin-slow opacity-25" style={{ animationDirection: "reverse", animationDelay: "1.5s" }}></div>
+      
+      {/* Additional floating bubbles */}
+      <div className="absolute top-[58%] left-[4%] w-2 h-2 rounded-full bg-black animate-pulse opacity-20" style={{ animationDelay: "3s" }}></div>
+      <div className="absolute top-[68%] right-[5%] w-3 h-3 rounded-full bg-black animate-float opacity-15" style={{ animationDelay: "3.5s" }}></div>
+      <div className="absolute top-[7%] left-[32%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{ animationDelay: "4s" }}></div>
+      <div className="absolute bottom-[7%] right-[32%] w-4 h-4 rounded-full bg-black animate-float opacity-20" style={{ animationDelay: "4.5s" }}></div>
       
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10 bg-[#81c3df]/[0.22]"></div>
-      <div className="blob-shape bg-primary/10 w-[500px] h-[500px] -bottom-80 -left-80"></div>
       
       <div className="container relative z-10 py-20 md:py-28 bg-white">
         <div className="text-center mb-12">
@@ -129,6 +145,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;

@@ -114,7 +114,7 @@ const ProjectDialog = ({
               <div className="space-y-4">
                 <div>
                   <h4 className="text-xl font-semibold text-primary mb-2">Challenge</h4>
-                  <p className="text-foreground/90 text-base capitalize">{project.challenge || "Challenge information not available for this project."}</p>
+                  <p className="text-foreground/90 text-base">{project.challenge || "Challenge information not available for this project."}</p>
                 </div>
                 
                 <div>

@@ -1,9 +1,7 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Award, Download, Trophy, Laptop } from "lucide-react";
-
 const About = () => {
   const handleResumeDownload = async () => {
     try {
@@ -21,32 +19,55 @@ const About = () => {
       console.error('Download failed:', error);
     }
   };
-
-  return (
-    <section id="about" className="relative overflow-hidden">
+  return <section id="about" className="relative overflow-hidden">
       {/* Small floating elements */}
       <div className="absolute top-[8%] left-[5%] w-3 h-3 rounded-full bg-black animate-float opacity-20"></div>
-      <div className="absolute top-[15%] right-[8%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{ animationDelay: "0.5s" }}></div>
-      <div className="absolute top-[30%] left-[10%] w-4 h-4 rounded-full bg-black animate-float opacity-15" style={{ animationDelay: "1s" }}></div>
-      <div className="absolute top-[50%] right-[12%] w-3 h-3 rounded-full bg-black animate-pulse opacity-30" style={{ animationDelay: "1.5s" }}></div>
-      <div className="absolute bottom-[18%] left-[7%] w-2 h-2 rounded-full bg-black animate-float opacity-25" style={{ animationDelay: "2s" }}></div>
-      <div className="absolute bottom-[28%] right-[10%] w-5 h-5 rounded-full bg-black animate-pulse opacity-20" style={{ animationDelay: "2.5s" }}></div>
+      <div className="absolute top-[15%] right-[8%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{
+      animationDelay: "0.5s"
+    }}></div>
+      <div className="absolute top-[30%] left-[10%] w-4 h-4 rounded-full bg-black animate-float opacity-15" style={{
+      animationDelay: "1s"
+    }}></div>
+      <div className="absolute top-[50%] right-[12%] w-3 h-3 rounded-full bg-black animate-pulse opacity-30" style={{
+      animationDelay: "1.5s"
+    }}></div>
+      <div className="absolute bottom-[18%] left-[7%] w-2 h-2 rounded-full bg-black animate-float opacity-25" style={{
+      animationDelay: "2s"
+    }}></div>
+      <div className="absolute bottom-[28%] right-[10%] w-5 h-5 rounded-full bg-black animate-pulse opacity-20" style={{
+      animationDelay: "2.5s"
+    }}></div>
       
       {/* Small rotating circles */}
       <div className="absolute top-[20%] left-[15%] w-6 h-6 rounded-full border border-black animate-spin-slow opacity-25"></div>
-      <div className="absolute top-[40%] right-[20%] w-4 h-4 rounded-full border border-black animate-spin-slow opacity-20" style={{ animationDirection: "reverse" }}></div>
-      <div className="absolute bottom-[22%] left-[20%] w-5 h-5 rounded-full border border-black animate-spin-slow opacity-30" style={{ animationDelay: "1s" }}></div>
-      <div className="absolute bottom-[42%] right-[25%] w-3 h-3 rounded-full border border-black animate-spin-slow opacity-25" style={{ animationDirection: "reverse", animationDelay: "1.5s" }}></div>
+      <div className="absolute top-[40%] right-[20%] w-4 h-4 rounded-full border border-black animate-spin-slow opacity-20" style={{
+      animationDirection: "reverse"
+    }}></div>
+      <div className="absolute bottom-[22%] left-[20%] w-5 h-5 rounded-full border border-black animate-spin-slow opacity-30" style={{
+      animationDelay: "1s"
+    }}></div>
+      <div className="absolute bottom-[42%] right-[25%] w-3 h-3 rounded-full border border-black animate-spin-slow opacity-25" style={{
+      animationDirection: "reverse",
+      animationDelay: "1.5s"
+    }}></div>
       
       {/* Additional floating bubbles */}
-      <div className="absolute top-[60%] left-[3%] w-2 h-2 rounded-full bg-black animate-pulse opacity-20" style={{ animationDelay: "3s" }}></div>
-      <div className="absolute top-[70%] right-[4%] w-3 h-3 rounded-full bg-black animate-float opacity-15" style={{ animationDelay: "3.5s" }}></div>
-      <div className="absolute top-[5%] left-[30%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{ animationDelay: "4s" }}></div>
-      <div className="absolute bottom-[8%] right-[30%] w-4 h-4 rounded-full bg-black animate-float opacity-20" style={{ animationDelay: "4.5s" }}></div>
+      <div className="absolute top-[60%] left-[3%] w-2 h-2 rounded-full bg-black animate-pulse opacity-20" style={{
+      animationDelay: "3s"
+    }}></div>
+      <div className="absolute top-[70%] right-[4%] w-3 h-3 rounded-full bg-black animate-float opacity-15" style={{
+      animationDelay: "3.5s"
+    }}></div>
+      <div className="absolute top-[5%] left-[30%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{
+      animationDelay: "4s"
+    }}></div>
+      <div className="absolute bottom-[8%] right-[30%] w-4 h-4 rounded-full bg-black animate-float opacity-20" style={{
+      animationDelay: "4.5s"
+    }}></div>
       
       <div className="absolute top-0 right-0 w-full h-64 bg-gradient-to-b from-secondary/5 to-transparent -z-10"></div>
       
-      <div className="container relative z-10 py-20 md:py-28">
+      <div className="container relative z-10 py-16 md:py-24">
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full text-primary font-medium mb-8 bg-black">
             <Award className="h-4 w-4 mr-2 text-white" />
@@ -139,8 +160,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

@@ -143,7 +143,7 @@ const Contact = () => {
               {/* Backlit blur effect container that appears on hover */}
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
               
-              <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-white/20 shadow-lg text-center bg-white">
+              <div className="backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover text-center bg-white">
                 <h3 className="font-semibold text-xl mb-6 text-black">Why work with me?</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3 justify-center">

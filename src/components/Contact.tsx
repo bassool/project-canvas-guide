@@ -1,14 +1,13 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, ArrowRight, Heart, Download, FileText, X } from "lucide-react";
-
 const Contact = () => {
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
@@ -18,7 +17,6 @@ const Contact = () => {
     const form = e.target as HTMLFormElement;
     form.reset();
   };
-
   const handleResumeDownload = async () => {
     try {
       const response = await fetch('/lovable-uploads/Bassel_Atout_Resume_2025.pdf');
@@ -35,9 +33,7 @@ const Contact = () => {
       console.error('Download failed:', error);
     }
   };
-
-  return (
-    <section id="contact" className="relative overflow-hidden bg-slate-100">
+  return <section id="contact" className="relative overflow-hidden bg-slate-100">
       {/* Floating blob shapes */}
       <div className="blob-shape w-[300px] h-[300px] -top-24 -right-16 animate-pulse-custom bg-[#81bfdf]"></div>
       <div className="blob-shape w-[450px] h-[450px] -bottom-32 -left-28 animate-pulse-custom bg-[#87ddf0]"></div>
@@ -64,7 +60,7 @@ const Contact = () => {
               {/* Backlit blur effect container that appears on hover */}
               <div className="absolute inset-0 bg-slate-700 opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
               
-              <div className="backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-lg card-hover text-center bg-slate-100">
+              <div className="backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-lg card-hover text-center bg-white">
                 <div className="flex flex-col items-center">
                   <div className="p-4 rounded-xl text-primary mb-4 bg-slate-600">
                     <Mail className="h-6 w-6" color="#f1f5f9" />
@@ -85,7 +81,7 @@ const Contact = () => {
               {/* Backlit blur effect container that appears on hover */}
               <div className="absolute inset-0 bg-slate-700 opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
               
-              <div className="backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover text-center bg-slate-100">
+              <div className="backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover text-center bg-white">
                 <div className="flex flex-col items-center">
                   <div className="p-4 rounded-xl text-accent mb-4 bg-slate-600">
                     <FileText className="h-6 w-6" />
@@ -108,7 +104,7 @@ const Contact = () => {
               {/* Backlit blur effect container that appears on hover */}
               <div className="absolute inset-0 bg-slate-700 opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
               
-              <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-white/20 shadow-lg text-center bg-slate-100">
+              <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-white/20 shadow-lg text-center bg-white">
                 <h3 className="font-semibold text-xl mb-6 text-slate-900">Why work with me?</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3 justify-center">
@@ -124,7 +120,7 @@ const Contact = () => {
                     <span className="text-lg text-slate-800">Fluent in creative &amp; managerial tools</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
-                    <span className="inline-block w-4 h-4 rounded-full bg-slate-700"></span>
+                    <span className="inline-block w-4 h-4 rounded-full bg-slate-700 text-black"></span>
                     <span className="text-lg text-slate-800">Portfolio-Proven Results</span>
                   </li>
                 </ul>
@@ -133,8 +129,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;

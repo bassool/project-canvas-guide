@@ -103,13 +103,13 @@ const Skills = () => {
       {/* Decorative pattern */}
       <div className="absolute top-20 left-10 grid grid-cols-3 gap-2 opacity-20 -z-10">
         {[...Array(9)].map((_, i) => (
-          <div key={i} className="w-4 h-4 rounded-full bg-gray-300"></div>
+          <div key={i} className="w-4 h-4 rounded-full bg-black"></div>
         ))}
       </div>
       
       <div className="absolute bottom-20 right-10 grid grid-cols-3 gap-2 opacity-20 -z-10">
         {[...Array(9)].map((_, i) => (
-          <div key={i} className="w-4 h-4 rounded-full bg-gray-300"></div>
+          <div key={i} className="w-4 h-4 rounded-full bg-black"></div>
         ))}
       </div>
       

@@ -62,7 +62,7 @@ export const projects: Project[] = [
     tools: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
     summary: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
     challenge: "To efficiently coordinate merchandise and maintain a consistent on-site brand image to drive sales with a limited budget and resources.",
-    solution: "Established partnership model with established organizations to share resources and expertise"
+    solution: "Coordinated the transportation of merchandise cross-functionally for multiple events, also designed clean and innovative live pop up displays tailored specifically to each event, creating a curated and seamless experience that embodied the nomadic spirit of the brand."
   },
   {
     id: 5,

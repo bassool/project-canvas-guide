@@ -1,9 +1,7 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Award, Download, Trophy, Laptop } from "lucide-react";
-
 const About = () => {
   const handleResumeDownload = async () => {
     try {
@@ -21,9 +19,7 @@ const About = () => {
       console.error('Download failed:', error);
     }
   };
-
-  return (
-    <section id="about" className="relative overflow-hidden">
+  return <section id="about" className="relative overflow-hidden">
       {/* Background decoration */}
       <div className="blob-shape bg-primary/10 w-[600px] h-[600px] -top-80 right-0"></div>
       <div className="blob-shape bg-secondary/10 w-[500px] h-[500px] top-1/2 -left-64"></div>
@@ -33,7 +29,7 @@ const About = () => {
       
       <div className="container relative z-10 py-20 md:py-28">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-8">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-primary font-medium mb-8 bg-black">
             <Award className="h-4 w-4 mr-2 text-slate-100" />
             <span className="text-slate-100">Get to know me</span>
           </div>
@@ -124,8 +120,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

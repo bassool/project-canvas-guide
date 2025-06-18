@@ -33,22 +33,22 @@ const ProjectCard = ({
         <Card onClick={() => {
         setCurrentProject(project);
         setIsOpen(true);
-      }} className="group overflow-hidden rounded-xl border border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg cursor-pointer h-full bg-slate-100">
+      }} className="group overflow-hidden rounded-xl border border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg cursor-pointer h-full bg-white">
           <div className="aspect-video overflow-hidden relative">
             <img src={project.image} alt={project.title} className="w-full h-full object-center transition-transform duration-500 group-hover:scale-110 object-cover" />
             {project.featured && <span className="absolute top-3 right-3 bg-primary text-white text-xs px-2 py-1 rounded-full font-medium">
                 Featured
               </span>}
           </div>
-          <CardContent className="p-5 bg-slate-100 rounded-b-xl">
-            <h3 className="text-xl font-bold mb-2 transition-colors text-slate-700">
+          <CardContent className="p-5 rounded-b-xl bg-white">
+            <h3 className="text-xl font-bold mb-2 transition-colors text-black">
               {project.title}
             </h3>
             <p className="text-sm mb-4 text-slate-700">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-2">
-              {project.tags.map((tag, index) => <Badge key={index} variant="outline" className="bg-slate-700">
+              {project.tags.map((tag, index) => <Badge key={index} variant="outline" className="bg-transparent">
                   {tag}
                 </Badge>)}
             </div>

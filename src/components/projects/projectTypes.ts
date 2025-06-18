@@ -1,4 +1,3 @@
-
 // Define project types
 export type ProjectCategory = "all" | "freelance" | "personal" | "workExperience";
 
@@ -62,7 +61,7 @@ export const projects: Project[] = [
     ],
     tools: ["Community Building", "Merchandise Coordination", "Event Planning", "Creative Direction"],
     summary: "Coordinated community-focused initiative with LA based fashion StartUp, designed experiential cultural event setups, managed merchandise, and drove field sales through consistent brand perception and reliable event presence.",
-    challenge: "Building sustainable infrastructure with limited funding and volunteer resources",
+    challenge: "to maintain a consistent on-site brand image and coordinate merchandise through clean and innovative live pop up displays with a limited budget and resources.",
     solution: "Established partnership model with established organizations to share resources and expertise"
   },
   {

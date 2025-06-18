@@ -203,7 +203,7 @@ const AudioPlayer = ({ track }: AudioPlayerProps) => {
       </div>
       
       {isPlaying && !hasError && (
-        <div className="absolute bottom-2 right-3 text-xs text-slate-100">
+        <div className="absolute bottom-2 right-3 text-xs text-current">
           {formatTime(currentTime)} / {formatTime(duration)}
         </div>
       )}

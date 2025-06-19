@@ -10,7 +10,7 @@ const Hero = () => {
       });
     }
   };
-  return <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-red-300">
+  return <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-amber-50">
       {/* Small floating elements */}
       <div className="absolute top-[15%] left-[10%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-20"></div>
       <div className="absolute top-[25%] right-[15%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-30" style={{

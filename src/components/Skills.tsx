@@ -69,7 +69,7 @@ const SkillCard = ({
     </Card>;
 };
 const Skills = () => {
-  return <section id="skills" className="relative bg-red-300">
+  return <section id="skills" className="relative bg-amber-50">
       {/* Small floating elements - updated to blue-950 */}
       <div className="absolute top-[12%] left-[6%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-20"></div>
       <div className="absolute top-[18%] right-[10%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-25" style={{

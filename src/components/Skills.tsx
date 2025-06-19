@@ -147,8 +147,8 @@ const Skills = () => {
         
         <div className="text-center mt-12">
           <a href="https://www.linkedin.com/in/basselatout" target="_blank" rel="noopener noreferrer">
-            <Button className="rounded-full px-6 py-3 bg-blue-950 text-white hover:bg-blue-900">
-              <Linkedin className="h-4 w-4 mr-2" />
+            <Button className="rounded-full px-6 py-3 border border-blue-950 bg-transparent text-blue-950 hover:bg-blue-950 hover:text-white">
+              <Linkedin className="h-4 w-4 mr-2 text-blue-950" />
               Connect on LinkedIn
             </Button>
           </a>

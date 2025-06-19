@@ -88,9 +88,9 @@ const About = () => {
             </div>
             
             {/* New floating certification badge - above the photo */}
-            <div className="absolute -left-6 -top-6 bg-white/90 dark:bg-card/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20" style={{
+            <div style={{
             animationDelay: "1.5s"
-          }}>
+          }} className="absolute -left-6 -top-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border-blue-950-border-border animate-float z-20 bg-white/[0.78]">
               <div className="flex items-center gap-2">
                 <Laptop className="h-5 w-5 text-blue-950" />
                 <span className="font-medium text-sm text-blue-950">Certified Associate in Project Management</span>
@@ -98,9 +98,9 @@ const About = () => {
             </div>
             
             {/* Floating award badge - improved contrast */}
-            <div className="absolute -right-6 -bottom-6 bg-white/90 dark:bg-card/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20" style={{
+            <div style={{
             animationDelay: "1s"
-          }}>
+          }} className="absolute -right-6 -bottom-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20 border-blue-950 bg-white/[0.64]">
               <div className="flex items-center gap-2">
                 <Trophy className="h-5 w-5 text-blue-950" />
                 <span className="font-medium text-sm text-blue-950">Loyola Marymount Fred Kiesner Entrepreneurial Star Award Winner</span>
@@ -136,7 +136,7 @@ My unique perspective comes from having worked on both the creative and manageme
             </div>
             
             <div className="pt-4">
-              <Button onClick={handleResumeDownload} size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group text-white bg-blue-950">
+              <Button onClick={handleResumeDownload} size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group border border-blue-950 text-blue-950 bg-transparent">
                 Download Resume 
                 <Download className="h-4 w-4 transition-transform group-hover:translate-y-1" />
               </Button>

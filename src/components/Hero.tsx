@@ -58,7 +58,7 @@ const Hero = () => {
       
       <div className="container grid gap-8 lg:grid-cols-2 lg:gap-12 items-center relative z-10">
         <div className="space-y-8 animate-fade-in">
-          <div className="inline-flex items-center px-4 py-2 rounded-full text-blue-950 font-medium mb-0 mt-28 bg-[#000a0e]/[0.16]">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-blue-950 font-medium mb-0 mt-28 border border-blue-950 bg-transparent">
             <Sparkles className="h-4 w-4 mr-2 text-blue-950" />
             <span className="text-blue-950">Creating magic through design & management</span>
           </div>
@@ -92,18 +92,18 @@ const Hero = () => {
           </div>
           
           {/* Floating elements */}
-          <div className="absolute -right-6 top-3/4 bg-white shadow-lg p-4 rounded-xl border border-gray-200 animate-float z-20" style={{
+          <div style={{
           animationDelay: "1s"
-        }}>
+        }} className="absolute -right-6 top-3/4 shadow-lg p-4 rounded-xl border border-blue-950 animate-float z-20 bg-white/[0.69]">
             <div className="flex items-center gap-2">
               <Wand className="h-5 w-5 text-gray-700" />
               <span className="font-medium text-sm text-blue-950">PMI-CAPM® Certified</span>
             </div>
           </div>
           
-          <div className="absolute -left-6 top-1/4 bg-white shadow-lg py-2 px-4 rounded-full border border-gray-200 animate-float z-20" style={{
+          <div style={{
           animationDelay: "1.5s"
-        }}>
+        }} className="absolute -left-6 top-1/4 shadow-lg py-2 px-4 rounded-full border border-blue-950 animate-float z-20 bg-white/[0.78]">
             <div className="flex items-center gap-2">
               <span className="font-bold text-blue-950">3+</span>
               <span className="text-xs text-gray-600">Years Experience</span>

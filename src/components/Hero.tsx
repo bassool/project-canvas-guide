@@ -91,7 +91,7 @@ const Hero = () => {
              animationDelay: "2.8s"
            }}></div>
       
-      {/* Plus sign near title */}
+      {/* Plus sign near title - FIXED OPACITY */}
       <div className="absolute top-[28%] left-[10%] animate-pulse opacity-100 z-0"
            style={{
              animationDelay: "1.2s"

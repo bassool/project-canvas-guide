@@ -90,7 +90,7 @@ const Projects = () => {
            }}></div>
            
       {/* Additional violet elements around project area */}
-      {/* Plus sign near project grid */}
+      {/* Plus sign near project grid - FIXED OPACITY */}
       <div className="absolute top-[55%] right-[15%] animate-pulse opacity-100 z-0"
            style={{
              animationDelay: "2.3s"

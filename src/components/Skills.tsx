@@ -147,7 +147,7 @@ const Skills = () => {
              animationDelay: "3.7s"
            }}></div>
       
-      {/* Pulsing plus sign */}
+      {/* Pulsing plus sign - FIXED OPACITY */}
       <div className="absolute bottom-[70%] left-[35%] animate-pulse opacity-100 z-0"
            style={{
              animationDelay: "4.1s"

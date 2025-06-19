@@ -136,7 +136,7 @@ My unique perspective comes from having worked on both the creative and manageme
             </div>
             
             <div className="pt-4">
-              <Button onClick={handleResumeDownload} size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group border border-blue-950 text-blue-950 bg-white/0">
+              <Button onClick={handleResumeDownload} size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group border border-blue-950 text-blue-950 bg-transparent hover:bg-blue-950 hover:text-white">
                 Download Resume 
                 <Download className="h-4 w-4 transition-transform group-hover:translate-y-1" />
               </Button>

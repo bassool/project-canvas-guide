@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Award, Download, Trophy, Laptop } from "lucide-react";
+
 const About = () => {
   const handleResumeDownload = async () => {
     try {
@@ -112,7 +113,7 @@ const About = () => {
             <div className="prose prose-lg">
               <p className="text-xl leading-relaxed text-blue-950">Hey! I'm Bassel Atout, an aspiring Creative Project Manager out of Los Angeles, CA. I love rock climbing, playing my various instruments, and diving into tons of other esoteric hobbies that help bolster my business background and make me a more well rounded individual. These various aspects of myself are ones I cannot wait to showcase, as I know I will be an important asset to any profesisonal envinronment I enter!</p>
               
-              <p className="text-foreground/80 leading-relaxed">
+              <p className="text-foreground/80 leading-relaxed mt-6">
 My unique perspective comes from having worked on both the creative and management sides of projects, allowing me to speak both languages fluently. I believe that the best work happens at the intersection of bold creativity and thoughtful organization.</p>
             </div>
             
@@ -161,4 +162,5 @@ My unique perspective comes from having worked on both the creative and manageme
       </div>
     </section>;
 };
+
 export default About;

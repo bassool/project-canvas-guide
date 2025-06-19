@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Film, Briefcase, Users, Rocket, Palette, Star, Sparkles, Linkedin } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -122,19 +123,44 @@ const Skills = () => {
         animationDelay: "4.5s"
       }}></div>
       
-      {/* New violet-600 animated elements */}
+      {/* New violet-600 animated elements - made bigger */}
       {/* Floating lightning bolt */}
-      <div className="absolute top-[28%] right-[5%] w-3 h-6 bg-violet-600 animate-pulse opacity-55"
+      <div className="absolute top-[28%] right-[5%] w-5 h-8 bg-violet-600 animate-pulse opacity-55"
            style={{
              clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
              animationDelay: "2.3s"
            }}></div>
       
       {/* Spinning gear */}
-      <div className="absolute bottom-[55%] left-[2%] w-4 h-4 bg-violet-600 animate-spin-slow opacity-50"
+      <div className="absolute bottom-[55%] left-[2%] w-6 h-6 bg-violet-600 animate-spin-slow opacity-50"
            style={{
              clipPath: "polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)",
              animationDelay: "1.9s"
+           }}></div>
+      
+      {/* Floating triangle */}
+      <div className="absolute top-[5%] right-[30%] w-0 h-0 animate-float opacity-55"
+           style={{
+             borderLeft: "8px solid transparent",
+             borderRight: "8px solid transparent", 
+             borderBottom: "12px solid rgb(124 58 237)",
+             animationDelay: "3.7s"
+           }}></div>
+      
+      {/* Pulsing plus sign */}
+      <div className="absolute bottom-[70%] left-[35%] animate-pulse opacity-50"
+           style={{
+             animationDelay: "4.1s"
+           }}>
+        <div className="w-1.5 h-6 bg-violet-600 absolute"></div>
+        <div className="w-6 h-1.5 bg-violet-600 absolute top-2.5 -left-2.5"></div>
+      </div>
+      
+      {/* Floating star */}
+      <div className="absolute bottom-[15%] right-[20%] w-6 h-6 bg-violet-600 animate-float opacity-60" 
+           style={{
+             clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+             animationDelay: "2.9s"
            }}></div>
       
       {/* Decorative pattern - increased opacity */}

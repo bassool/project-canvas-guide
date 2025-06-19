@@ -60,16 +60,16 @@ const Hero = () => {
         animationDelay: "4.5s"
       }}></div>
       
-      {/* New violet-600 animated elements */}
+      {/* New violet-600 animated elements - made bigger */}
       {/* Floating star */}
-      <div className="absolute top-[30%] right-[30%] w-4 h-4 bg-violet-600 animate-float opacity-60" 
+      <div className="absolute top-[30%] right-[30%] w-6 h-6 bg-violet-600 animate-float opacity-60" 
            style={{
              clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
              animationDelay: "2s"
            }}></div>
       
       {/* Floating diamond */}
-      <div className="absolute bottom-[35%] left-[5%] w-3 h-3 bg-violet-600 animate-pulse opacity-50 transform rotate-45" 
+      <div className="absolute bottom-[35%] left-[5%] w-5 h-5 bg-violet-600 animate-pulse opacity-50 transform rotate-45" 
            style={{
              animationDelay: "1.8s"
            }}></div>
@@ -77,9 +77,9 @@ const Hero = () => {
       {/* Small triangle */}
       <div className="absolute top-[40%] left-[35%] w-0 h-0 animate-float opacity-55"
            style={{
-             borderLeft: "6px solid transparent",
-             borderRight: "6px solid transparent", 
-             borderBottom: "10px solid rgb(124 58 237)",
+             borderLeft: "8px solid transparent",
+             borderRight: "8px solid transparent", 
+             borderBottom: "12px solid rgb(124 58 237)",
              animationDelay: "3.2s"
            }}></div>
       

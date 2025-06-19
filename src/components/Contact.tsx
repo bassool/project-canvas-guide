@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, ArrowRight, Heart, Download, FileText, X } from "lucide-react";
+
 const Contact = () => {
   const {
     toast
@@ -35,49 +36,95 @@ const Contact = () => {
   };
   return <section id="contact" className="relative overflow-hidden bg-amber-50">
       {/* Small floating elements - updated to blue-950 */}
-      <div className="absolute top-[10%] left-[6%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-20"></div>
-      <div className="absolute top-[16%] right-[9%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-25" style={{
+      <div className="absolute top-[10%] left-[6%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-40"></div>
+      <div className="absolute top-[16%] right-[9%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-45" style={{
       animationDelay: "0.5s"
     }}></div>
-      <div className="absolute top-[32%] left-[11%] w-4 h-4 rounded-full bg-blue-950 animate-float opacity-15" style={{
+      <div className="absolute top-[32%] left-[11%] w-4 h-4 rounded-full bg-blue-950 animate-float opacity-35" style={{
       animationDelay: "1s"
     }}></div>
-      <div className="absolute top-[52%] right-[14%] w-3 h-3 rounded-full bg-blue-950 animate-pulse opacity-30" style={{
+      <div className="absolute top-[52%] right-[14%] w-3 h-3 rounded-full bg-blue-950 animate-pulse opacity-50" style={{
       animationDelay: "1.5s"
     }}></div>
-      <div className="absolute bottom-[16%] left-[8%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-25" style={{
+      <div className="absolute bottom-[16%] left-[8%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-45" style={{
       animationDelay: "2s"
     }}></div>
-      <div className="absolute bottom-[26%] right-[11%] w-5 h-5 rounded-full bg-blue-950 animate-pulse opacity-20" style={{
+      <div className="absolute bottom-[26%] right-[11%] w-5 h-5 rounded-full bg-blue-950 animate-pulse opacity-40" style={{
       animationDelay: "2.5s"
     }}></div>
       
       {/* Small rotating circles - updated to blue-950 */}
-      <div className="absolute top-[18%] left-[16%] w-6 h-6 rounded-full border border-blue-950 animate-spin-slow opacity-25"></div>
-      <div className="absolute top-[38%] right-[19%] w-4 h-4 rounded-full border border-blue-950 animate-spin-slow opacity-20" style={{
+      <div className="absolute top-[18%] left-[16%] w-6 h-6 rounded-full border border-blue-950 animate-spin-slow opacity-45"></div>
+      <div className="absolute top-[38%] right-[19%] w-4 h-4 rounded-full border border-blue-950 animate-spin-slow opacity-40" style={{
       animationDirection: "reverse"
     }}></div>
-      <div className="absolute bottom-[20%] left-[19%] w-5 h-5 rounded-full border border-blue-950 animate-spin-slow opacity-30" style={{
+      <div className="absolute bottom-[20%] left-[19%] w-5 h-5 rounded-full border border-blue-950 animate-spin-slow opacity-50" style={{
       animationDelay: "1s"
     }}></div>
-      <div className="absolute bottom-[40%] right-[24%] w-3 h-3 rounded-full border border-blue-950 animate-spin-slow opacity-25" style={{
+      <div className="absolute bottom-[40%] right-[24%] w-3 h-3 rounded-full border border-blue-950 animate-spin-slow opacity-45" style={{
       animationDirection: "reverse",
       animationDelay: "1.5s"
     }}></div>
       
       {/* Additional floating bubbles - updated to blue-950 */}
-      <div className="absolute top-[58%] left-[4%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-20" style={{
+      <div className="absolute top-[58%] left-[4%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-40" style={{
       animationDelay: "3s"
     }}></div>
-      <div className="absolute top-[68%] right-[5%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-15" style={{
+      <div className="absolute top-[68%] right-[5%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-35" style={{
       animationDelay: "3.5s"
     }}></div>
-      <div className="absolute top-[7%] left-[32%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-25" style={{
+      <div className="absolute top-[7%] left-[32%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-45" style={{
       animationDelay: "4s"
     }}></div>
-      <div className="absolute bottom-[7%] right-[32%] w-4 h-4 rounded-full bg-blue-950 animate-float opacity-20" style={{
+      <div className="absolute bottom-[7%] right-[32%] w-4 h-4 rounded-full bg-blue-950 animate-float opacity-40" style={{
       animationDelay: "4.5s"
     }}></div>
+      
+      {/* New violet-600 animated elements - made bigger */}
+      {/* Floating hexagon */}
+      <div className="absolute top-[25%] left-[35%] w-6 h-6 bg-violet-600 animate-spin-slow opacity-55"
+           style={{
+             clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
+             animationDelay: "1.2s"
+           }}></div>
+      
+      {/* Floating diamond */}
+      <div className="absolute bottom-[35%] right-[5%] w-5 h-5 bg-violet-600 animate-pulse opacity-50 transform rotate-45" 
+           style={{
+             animationDelay: "2.8s"
+           }}></div>
+      
+      {/* Pulsing plus sign */}
+      <div className="absolute top-[45%] left-[3%] animate-pulse opacity-50"
+           style={{
+             animationDelay: "3.4s"
+           }}>
+        <div className="w-1.5 h-6 bg-violet-600 absolute"></div>
+        <div className="w-6 h-1.5 bg-violet-600 absolute top-2.5 -left-2.5"></div>
+      </div>
+      
+      {/* Floating triangle */}
+      <div className="absolute bottom-[50%] right-[30%] w-0 h-0 animate-float opacity-55"
+           style={{
+             borderLeft: "8px solid transparent",
+             borderRight: "8px solid transparent", 
+             borderBottom: "12px solid rgb(124 58 237)",
+             animationDelay: "1.8s"
+           }}></div>
+      
+      {/* Spinning gear */}
+      <div className="absolute top-[65%] left-[25%] w-6 h-6 bg-violet-600 animate-spin-slow opacity-50"
+           style={{
+             clipPath: "polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)",
+             animationDelay: "4.2s"
+           }}></div>
+      
+      {/* Floating star */}
+      <div className="absolute top-[22%] right-[25%] w-6 h-6 bg-violet-600 animate-float opacity-60" 
+           style={{
+             clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+             animationDelay: "0.9s"
+           }}></div>
       
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10 bg-orange-400"></div>

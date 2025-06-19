@@ -53,9 +53,9 @@ const Projects = () => {
         animationDelay: "4s"
       }}></div>
       
-      {/* New violet-600 animated elements */}
+      {/* New violet-600 animated elements - made bigger */}
       {/* Bouncing heart shape */}
-      <div className="absolute top-[32%] right-[8%] w-3 h-3 bg-violet-600 animate-pulse opacity-50"
+      <div className="absolute top-[32%] right-[8%] w-5 h-5 bg-violet-600 animate-pulse opacity-50"
            style={{
              clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
              animationDelay: "1.7s"
@@ -66,8 +66,28 @@ const Projects = () => {
            style={{
              animationDelay: "3.1s"
            }}>
-        <div className="w-0 h-0 border-l-2 border-b-2 border-violet-600 w-3 h-3 transform rotate-45"></div>
+        <div className="w-0 h-0 border-l-4 border-b-4 border-violet-600 w-5 h-5 transform rotate-45"></div>
       </div>
+      
+      {/* Floating star */}
+      <div className="absolute top-[12%] left-[30%] w-6 h-6 bg-violet-600 animate-float opacity-60" 
+           style={{
+             clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+             animationDelay: "2.4s"
+           }}></div>
+      
+      {/* Floating diamond */}
+      <div className="absolute bottom-[60%] right-[35%] w-5 h-5 bg-violet-600 animate-pulse opacity-50 transform rotate-45" 
+           style={{
+             animationDelay: "3.8s"
+           }}></div>
+      
+      {/* Spinning hexagon */}
+      <div className="absolute top-[50%] left-[3%] w-6 h-6 bg-violet-600 animate-spin-slow opacity-55"
+           style={{
+             clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
+             animationDelay: "1.9s"
+           }}></div>
       
       {/* Minimal decorative elements - kept as is */}
       <div className="hidden md:block absolute left-0 top-1/4 w-32 h-32 border-l border-t border-blue-950 opacity-10 -z-10"></div>

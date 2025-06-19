@@ -123,8 +123,8 @@ const Skills = () => {
         animationDelay: "4.5s"
       }}></div>
       
-      {/* New violet-600 animated elements - made bigger */}
-      {/* Floating lightning bolt */}
+      {/* New violet-600 animated elements - made bigger and positioned around content */}
+      {/* Floating lightning bolt near title */}
       <div className="absolute top-[28%] right-[5%] w-5 h-8 bg-violet-600 animate-pulse opacity-55"
            style={{
              clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
@@ -156,11 +156,32 @@ const Skills = () => {
         <div className="w-6 h-1.5 bg-violet-600 absolute top-2.5 -left-2.5"></div>
       </div>
       
-      {/* Floating star */}
+      {/* Floating star near button */}
       <div className="absolute bottom-[15%] right-[20%] w-6 h-6 bg-violet-600 animate-float opacity-60" 
            style={{
              clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
              animationDelay: "2.9s"
+           }}></div>
+           
+      {/* Additional elements around skills grid */}
+      {/* Hexagon near skills cards */}
+      <div className="absolute top-[60%] right-[40%] w-7 h-7 bg-violet-600 animate-spin-slow opacity-55"
+           style={{
+             clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
+             animationDelay: "1.4s"
+           }}></div>
+      
+      {/* Diamond near skills title */}
+      <div className="absolute top-[25%] left-[40%] w-6 h-6 bg-violet-600 animate-pulse opacity-50 transform rotate-45" 
+           style={{
+             animationDelay: "3.3s"
+           }}></div>
+      
+      {/* Heart shape */}
+      <div className="absolute bottom-[35%] right-[8%] w-6 h-6 bg-violet-600 animate-pulse opacity-50"
+           style={{
+             clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
+             animationDelay: "0.9s"
            }}></div>
       
       {/* Decorative pattern - increased opacity */}
@@ -193,7 +214,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div key={index} style={{
               animationDelay: `${index * 100}ms`
-            }} className="animate-fade-in">
+            }}className="animate-fade-in">
               <SkillCard skill={skill} />
             </div>
           ))}

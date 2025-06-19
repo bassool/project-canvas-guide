@@ -53,15 +53,15 @@ const Projects = () => {
         animationDelay: "4s"
       }}></div>
       
-      {/* New violet-600 animated elements - made bigger */}
-      {/* Bouncing heart shape */}
+      {/* New violet-600 animated elements - made bigger and positioned around content */}
+      {/* Heart shape near title */}
       <div className="absolute top-[32%] right-[8%] w-5 h-5 bg-violet-600 animate-pulse opacity-50"
            style={{
              clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
              animationDelay: "1.7s"
            }}></div>
       
-      {/* Rotating chevron */}
+      {/* Rotating chevron near tabs */}
       <div className="absolute bottom-[35%] left-[35%] animate-spin-slow opacity-55"
            style={{
              animationDelay: "3.1s"
@@ -69,14 +69,14 @@ const Projects = () => {
         <div className="w-0 h-0 border-l-4 border-b-4 border-violet-600 w-5 h-5 transform rotate-45"></div>
       </div>
       
-      {/* Floating star */}
+      {/* Floating star near header */}
       <div className="absolute top-[12%] left-[30%] w-6 h-6 bg-violet-600 animate-float opacity-60" 
            style={{
              clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
              animationDelay: "2.4s"
            }}></div>
       
-      {/* Floating diamond */}
+      {/* Floating diamond around projects */}
       <div className="absolute bottom-[60%] right-[35%] w-5 h-5 bg-violet-600 animate-pulse opacity-50 transform rotate-45" 
            style={{
              animationDelay: "3.8s"
@@ -87,6 +87,32 @@ const Projects = () => {
            style={{
              clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
              animationDelay: "1.9s"
+           }}></div>
+           
+      {/* Additional violet elements around project area */}
+      {/* Plus sign near project grid */}
+      <div className="absolute top-[55%] right-[15%] animate-pulse opacity-50"
+           style={{
+             animationDelay: "2.3s"
+           }}>
+        <div className="w-2 h-7 bg-violet-600 absolute"></div>
+        <div className="w-7 h-2 bg-violet-600 absolute top-2.5 -left-2.5"></div>
+      </div>
+      
+      {/* Triangle near button */}
+      <div className="absolute bottom-[8%] left-[45%] w-0 h-0 animate-float opacity-55"
+           style={{
+             borderLeft: "8px solid transparent",
+             borderRight: "8px solid transparent", 
+             borderBottom: "12px solid rgb(124 58 237)",
+             animationDelay: "4.1s"
+           }}></div>
+      
+      {/* Lightning bolt */}
+      <div className="absolute top-[45%] right-[5%] w-5 h-8 bg-violet-600 animate-pulse opacity-55"
+           style={{
+             clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
+             animationDelay: "0.7s"
            }}></div>
       
       {/* Minimal decorative elements - kept as is */}

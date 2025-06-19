@@ -60,7 +60,7 @@ const Hero = () => {
         animationDelay: "4.5s"
       }}></div>
       
-      {/* New violet-600 animated elements - made bigger */}
+      {/* New violet-600 animated elements - made bigger and more visible around content */}
       {/* Floating star */}
       <div className="absolute top-[30%] right-[30%] w-6 h-6 bg-violet-600 animate-float opacity-60" 
            style={{
@@ -68,19 +68,43 @@ const Hero = () => {
              animationDelay: "2s"
            }}></div>
       
-      {/* Floating diamond */}
+      {/* Floating diamond near content */}
       <div className="absolute bottom-[35%] left-[5%] w-5 h-5 bg-violet-600 animate-pulse opacity-50 transform rotate-45" 
            style={{
              animationDelay: "1.8s"
            }}></div>
       
-      {/* Small triangle */}
+      {/* Triangle near hero text */}
       <div className="absolute top-[40%] left-[35%] w-0 h-0 animate-float opacity-55"
            style={{
              borderLeft: "8px solid transparent",
              borderRight: "8px solid transparent", 
              borderBottom: "12px solid rgb(124 58 237)",
              animationDelay: "3.2s"
+           }}></div>
+           
+      {/* Additional violet elements around main content */}
+      {/* Hexagon near buttons */}
+      <div className="absolute bottom-[45%] left-[40%] w-7 h-7 bg-violet-600 animate-spin-slow opacity-55"
+           style={{
+             clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
+             animationDelay: "2.8s"
+           }}></div>
+      
+      {/* Plus sign near title */}
+      <div className="absolute top-[28%] left-[10%] animate-pulse opacity-50"
+           style={{
+             animationDelay: "1.2s"
+           }}>
+        <div className="w-2 h-8 bg-violet-600 absolute"></div>
+        <div className="w-8 h-2 bg-violet-600 absolute top-3 -left-3"></div>
+      </div>
+      
+      {/* Heart shape near image */}
+      <div className="absolute top-[25%] right-[8%] w-6 h-6 bg-violet-600 animate-pulse opacity-50"
+           style={{
+             clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
+             animationDelay: "3.7s"
            }}></div>
       
       <div className="container grid gap-8 lg:grid-cols-2 lg:gap-12 items-center relative z-10">

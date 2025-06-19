@@ -69,15 +69,15 @@ const About = () => {
         animationDelay: "4.5s"
       }}></div>
       
-      {/* New violet-600 animated elements */}
-      {/* Floating hexagon */}
+      {/* New violet-600 animated elements positioned around content */}
+      {/* Floating hexagon near title */}
       <div className="absolute top-[25%] left-[35%] w-4 h-4 bg-violet-600 animate-spin-slow opacity-55"
            style={{
              clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
              animationDelay: "1.2s"
            }}></div>
       
-      {/* Pulsing plus sign */}
+      {/* Pulsing plus sign near text */}
       <div className="absolute bottom-[50%] right-[35%] animate-pulse opacity-50"
            style={{
              animationDelay: "2.8s"
@@ -90,6 +90,36 @@ const About = () => {
       <div className="absolute top-[65%] left-[25%] w-3 h-3 bg-violet-600 animate-float opacity-45 transform rotate-12"
            style={{
              animationDelay: "4.2s"
+           }}></div>
+           
+      {/* Additional elements around about content */}
+      {/* Star near image */}
+      <div className="absolute top-[35%] right-[5%] w-7 h-7 bg-violet-600 animate-float opacity-60" 
+           style={{
+             clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+             animationDelay: "1.8s"
+           }}></div>
+      
+      {/* Triangle near stats */}
+      <div className="absolute bottom-[35%] left-[40%] w-0 h-0 animate-float opacity-55"
+           style={{
+             borderLeft: "8px solid transparent",
+             borderRight: "8px solid transparent", 
+             borderBottom: "12px solid rgb(124 58 237)",
+             animationDelay: "3.4s"
+           }}></div>
+      
+      {/* Lightning bolt */}
+      <div className="absolute top-[45%] left-[5%] w-5 h-8 bg-violet-600 animate-pulse opacity-55"
+           style={{
+             clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
+             animationDelay: "0.6s"
+           }}></div>
+      
+      {/* Diamond near button */}
+      <div className="absolute bottom-[25%] right-[45%] w-6 h-6 bg-violet-600 animate-pulse opacity-50 transform rotate-45" 
+           style={{
+             animationDelay: "2.1s"
            }}></div>
       
       <div className="absolute top-0 right-0 w-full h-64 bg-gradient-to-b from-secondary/5 to-transparent -z-10"></div>

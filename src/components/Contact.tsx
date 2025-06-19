@@ -34,7 +34,8 @@ const Contact = () => {
       console.error('Download failed:', error);
     }
   };
-  return <section id="contact" className="relative overflow-hidden bg-amber-50">
+  return (
+    <section id="contact" className="relative overflow-hidden bg-amber-50">
       {/* Small floating elements - updated to blue-950 */}
       <div className="absolute top-[10%] left-[6%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-40"></div>
       <div className="absolute top-[16%] right-[9%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-45" style={{
@@ -80,15 +81,15 @@ const Contact = () => {
       animationDelay: "4.5s"
     }}></div>
       
-      {/* New violet-600 animated elements - made bigger */}
-      {/* Floating hexagon */}
+      {/* New violet-600 animated elements - made bigger and positioned around content */}
+      {/* Floating hexagon near title */}
       <div className="absolute top-[25%] left-[35%] w-6 h-6 bg-violet-600 animate-spin-slow opacity-55"
            style={{
              clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
              animationDelay: "1.2s"
            }}></div>
       
-      {/* Floating diamond */}
+      {/* Floating diamond near contact cards */}
       <div className="absolute bottom-[35%] right-[5%] w-5 h-5 bg-violet-600 animate-pulse opacity-50 transform rotate-45" 
            style={{
              animationDelay: "2.8s"
@@ -103,7 +104,7 @@ const Contact = () => {
         <div className="w-6 h-1.5 bg-violet-600 absolute top-2.5 -left-2.5"></div>
       </div>
       
-      {/* Floating triangle */}
+      {/* Floating triangle near contact cards */}
       <div className="absolute bottom-[50%] right-[30%] w-0 h-0 animate-float opacity-55"
            style={{
              borderLeft: "8px solid transparent",
@@ -119,11 +120,26 @@ const Contact = () => {
              animationDelay: "4.2s"
            }}></div>
       
-      {/* Floating star */}
+      {/* Floating star near header */}
       <div className="absolute top-[22%] right-[25%] w-6 h-6 bg-violet-600 animate-float opacity-60" 
            style={{
              clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
              animationDelay: "0.9s"
+           }}></div>
+           
+      {/* Additional elements around contact form area */}
+      {/* Lightning bolt */}
+      <div className="absolute top-[55%] right-[8%] w-5 h-8 bg-violet-600 animate-pulse opacity-55"
+           style={{
+             clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
+             animationDelay: "3.9s"
+           }}></div>
+      
+      {/* Heart shape */}
+      <div className="absolute bottom-[60%] left-[40%] w-6 h-6 bg-violet-600 animate-pulse opacity-50"
+           style={{
+             clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
+             animationDelay: "2.4s"
            }}></div>
       
       {/* Background decoration */}
@@ -215,6 +231,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;

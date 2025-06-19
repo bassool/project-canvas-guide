@@ -69,7 +69,7 @@ const SkillCard = ({
     </Card>;
 };
 const Skills = () => {
-  return <section id="skills" className="relative bg-slate-50">
+  return <section id="skills" className="relative bg-red-300">
       {/* Small floating elements - updated to blue-950 */}
       <div className="absolute top-[12%] left-[6%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-20"></div>
       <div className="absolute top-[18%] right-[10%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-25" style={{
@@ -126,7 +126,7 @@ const Skills = () => {
       
       <div className="container relative z-10 py-16 md:py-24">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 font-medium mb-4 rounded-full border border-blue-950 bg-transparent">
+          <div className="inline-flex items-center px-4 py-2 font-medium mb-4 rounded-md border border-blue-950 bg-transparent">
             <Sparkles className="h-4 w-4 mr-2 text-blue-950" />
             <span className="text-blue-950">What I can do for you</span>
           </div>

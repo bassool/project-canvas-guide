@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -34,7 +33,7 @@ const Contact = () => {
       console.error('Download failed:', error);
     }
   };
-  return <section id="contact" className="relative overflow-hidden bg-slate-50">
+  return <section id="contact" className="relative overflow-hidden bg-red-300">
       {/* Small floating elements - updated to blue-950 */}
       <div className="absolute top-[10%] left-[6%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-20"></div>
       <div className="absolute top-[16%] right-[9%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-25" style={{
@@ -81,9 +80,9 @@ const Contact = () => {
     }}></div>
       
       {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10 bg-[#81c3df]/[0.22]"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10 bg-orange-400"></div>
       
-      <div className="container relative z-10 py-16 md:py-24 bg-white/0">
+      <div className="container relative z-10 py-16 md:py-24 bg-transparent">
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-2 rounded-full text-blue-950 font-medium mb-6 border border-blue-950 bg-transparent">
             <Heart className="h-4 w-4 mr-2 text-blue-950" />

@@ -10,7 +10,7 @@ const Hero = () => {
       });
     }
   };
-  return <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-slate-50">
+  return <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-red-300">
       {/* Small floating elements */}
       <div className="absolute top-[15%] left-[10%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-20"></div>
       <div className="absolute top-[25%] right-[15%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-30" style={{
@@ -65,7 +65,7 @@ const Hero = () => {
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight">
             <span className="block text-blue-950">Bringing</span>
-            <span className="block text-[d0cc8e] text-blue-400">creative vision</span>
+            <span className="block text-[d0cc8e] text-slate-50">creative vision</span>
             <span className="block text-blue-950">to life with</span>
             <span className="block text-blue-950">precise execution</span>
           </h1>
@@ -73,7 +73,7 @@ const Hero = () => {
           <p className="text-lg sm:text-xl max-w-md text-gray-600">Creative director and Project Manager turning imaginative ideas into extraordinary realities that captivate and inspire.</p>
           
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" onClick={scrollToWork} className="rounded-full px-6 group border border-blue-950 text-blue-950 bg-transparent hover:bg-blue-950 hover:text-white">
+            <Button size="lg" onClick={scrollToWork} className="rounded-full px-6 group border border-blue-950 text-blue-950 bg-transparent">
               View my work 
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>

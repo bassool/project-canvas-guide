@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -91,7 +90,7 @@ const About = () => {
             {/* New floating certification badge - above the photo */}
             <div style={{
             animationDelay: "1.5s"
-          }} className="absolute -left-6 -top-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border-blue-950-border-border animate-float z-20 bg-white/[0.78]">
+          }} className="absolute -left-6 -top-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-blue-950 animate-float z-20 bg-white/[0.78]">
               <div className="flex items-center gap-2">
                 <Laptop className="h-5 w-5 text-blue-950" />
                 <span className="font-medium text-sm text-blue-950">Certified Associate in Project Management</span>
@@ -101,7 +100,7 @@ const About = () => {
             {/* Floating award badge - improved contrast */}
             <div style={{
             animationDelay: "1s"
-          }} className="absolute -right-6 -bottom-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20 border-blue-950 bg-white/[0.64] border border-blue-950">
+          }} className="absolute -right-6 -bottom-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-blue-950 animate-float z-20 bg-white/[0.64]">
               <div className="flex items-center gap-2">
                 <Trophy className="h-5 w-5 text-blue-950" />
                 <span className="font-medium text-sm text-blue-950">Loyola Marymount Fred Kiesner Entrepreneurial Star Award Winner</span>

@@ -6,7 +6,7 @@ import { ProjectCategory, projects } from "./projects/projectTypes";
 import ProjectList from "./projects/ProjectList";
 const Projects = () => {
   const [activeTab, setActiveTab] = useState<ProjectCategory>("all");
-  return <section id="work" className="relative overflow-hidden bg-white">
+  return <section id="work" className="relative overflow-hidden bg-slate-300">
       {/* Small floating elements */}
       <div className="absolute top-[10%] left-[8%] w-2 h-2 rounded-full bg-black animate-float opacity-20"></div>
       <div className="absolute top-[20%] right-[12%] w-3 h-3 rounded-full bg-black animate-pulse opacity-25" style={{
@@ -54,7 +54,7 @@ const Projects = () => {
       <div className="hidden md:block absolute right-0 bottom-1/4 w-32 h-32 border-r border-b border-black opacity-10 -z-10"></div>
       <div className="hidden md:block absolute left-1/4 bottom-0 w-16 h-16 rounded-full border border-black opacity-10 -z-10"></div>
       
-      <div className="container py-20 md:py-28 bg-white">
+      <div className="container py-20 md:py-28 bg-slate-300">
         <div className="text-center mb-12 relative">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-gray-100 text-gray-900 font-medium mb-4">
             <Rocket className="h-4 w-4 mr-2" />

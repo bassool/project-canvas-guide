@@ -33,7 +33,7 @@ const Contact = () => {
       console.error('Download failed:', error);
     }
   };
-  return <section id="contact" className="relative overflow-hidden bg-white">
+  return <section id="contact" className="relative overflow-hidden bg-slate-300">
       {/* Small floating elements */}
       <div className="absolute top-[10%] left-[6%] w-3 h-3 rounded-full bg-black animate-float opacity-20"></div>
       <div className="absolute top-[16%] right-[9%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{

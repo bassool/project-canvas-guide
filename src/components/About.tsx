@@ -19,7 +19,7 @@ const About = () => {
       console.error('Download failed:', error);
     }
   };
-  return <section id="about" className="relative overflow-hidden">
+  return <section id="about" className="relative overflow-hidden bg-slate-300">
       {/* Small floating elements */}
       <div className="absolute top-[8%] left-[5%] w-3 h-3 rounded-full bg-black animate-float opacity-20"></div>
       <div className="absolute top-[15%] right-[8%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{

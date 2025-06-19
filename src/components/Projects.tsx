@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -53,16 +52,16 @@ const Projects = () => {
         animationDelay: "4s"
       }}></div>
       
-      {/* New violet-600 animated elements - made bigger and positioned around content */}
+      {/* New violet-600 animated elements - reduced opacity and proper z-index */}
       {/* Heart shape near title */}
-      <div className="absolute top-[32%] right-[8%] w-5 h-5 bg-violet-600 animate-pulse opacity-50"
+      <div className="absolute top-[32%] right-[8%] w-5 h-5 bg-violet-600 animate-pulse opacity-20 z-0"
            style={{
              clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
              animationDelay: "1.7s"
            }}></div>
       
       {/* Rotating chevron near tabs */}
-      <div className="absolute bottom-[35%] left-[35%] animate-spin-slow opacity-55"
+      <div className="absolute bottom-[35%] left-[35%] animate-spin-slow opacity-25 z-0"
            style={{
              animationDelay: "3.1s"
            }}>
@@ -70,20 +69,20 @@ const Projects = () => {
       </div>
       
       {/* Floating star near header */}
-      <div className="absolute top-[12%] left-[30%] w-6 h-6 bg-violet-600 animate-float opacity-60" 
+      <div className="absolute top-[12%] left-[30%] w-6 h-6 bg-violet-600 animate-float opacity-30 z-0" 
            style={{
              clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
              animationDelay: "2.4s"
            }}></div>
       
       {/* Floating diamond around projects */}
-      <div className="absolute bottom-[60%] right-[35%] w-5 h-5 bg-violet-600 animate-pulse opacity-50 transform rotate-45" 
+      <div className="absolute bottom-[60%] right-[35%] w-5 h-5 bg-violet-600 animate-pulse opacity-20 transform rotate-45 z-0" 
            style={{
              animationDelay: "3.8s"
            }}></div>
       
       {/* Spinning hexagon */}
-      <div className="absolute top-[50%] left-[3%] w-6 h-6 bg-violet-600 animate-spin-slow opacity-55"
+      <div className="absolute top-[50%] left-[3%] w-6 h-6 bg-violet-600 animate-spin-slow opacity-25 z-0"
            style={{
              clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
              animationDelay: "1.9s"
@@ -91,7 +90,7 @@ const Projects = () => {
            
       {/* Additional violet elements around project area */}
       {/* Plus sign near project grid */}
-      <div className="absolute top-[55%] right-[15%] animate-pulse opacity-50"
+      <div className="absolute top-[55%] right-[15%] animate-pulse opacity-20 z-0"
            style={{
              animationDelay: "2.3s"
            }}>
@@ -100,7 +99,7 @@ const Projects = () => {
       </div>
       
       {/* Triangle near button */}
-      <div className="absolute bottom-[8%] left-[45%] w-0 h-0 animate-float opacity-55"
+      <div className="absolute bottom-[8%] left-[45%] w-0 h-0 animate-float opacity-25 z-0"
            style={{
              borderLeft: "8px solid transparent",
              borderRight: "8px solid transparent", 
@@ -109,18 +108,18 @@ const Projects = () => {
            }}></div>
       
       {/* Lightning bolt */}
-      <div className="absolute top-[45%] right-[5%] w-5 h-8 bg-violet-600 animate-pulse opacity-55"
+      <div className="absolute top-[45%] right-[5%] w-5 h-8 bg-violet-600 animate-pulse opacity-25 z-0"
            style={{
              clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
              animationDelay: "0.7s"
            }}></div>
       
-      {/* Minimal decorative elements - kept as is */}
+      {/* Minimal decorative elements */}
       <div className="hidden md:block absolute left-0 top-1/4 w-32 h-32 border-l border-t border-blue-950 opacity-10 -z-10"></div>
       <div className="hidden md:block absolute right-0 bottom-1/4 w-32 h-32 border-r border-b border-blue-950 opacity-10 -z-10"></div>
       <div className="hidden md:block absolute left-1/4 bottom-0 w-16 h-16 rounded-full border border-blue-950 opacity-10 -z-10"></div>
       
-      <div className="container py-20 md:py-28 bg-[#000a00]/0">
+      <div className="container py-20 md:py-28 bg-[#000a00]/0 relative z-10">
         <div className="text-center mb-12 relative">
           <div className="inline-flex items-center px-4 py-2 rounded-full text-gray-900 font-medium mb-4 bg-[#000a0e]/0 border border-blue-950 ">
             <Rocket className="h-4 w-4 mr-2" />

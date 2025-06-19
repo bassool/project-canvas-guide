@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
@@ -60,22 +59,22 @@ const Hero = () => {
         animationDelay: "4.5s"
       }}></div>
       
-      {/* New violet-600 animated elements - made bigger and more visible around content */}
+      {/* New violet-600 animated elements - reduced opacity and proper z-index */}
       {/* Floating star */}
-      <div className="absolute top-[30%] right-[30%] w-6 h-6 bg-violet-600 animate-float opacity-60" 
+      <div className="absolute top-[30%] right-[30%] w-6 h-6 bg-violet-600 animate-float opacity-25 z-0" 
            style={{
              clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
              animationDelay: "2s"
            }}></div>
       
       {/* Floating diamond near content */}
-      <div className="absolute bottom-[35%] left-[5%] w-5 h-5 bg-violet-600 animate-pulse opacity-50 transform rotate-45" 
+      <div className="absolute bottom-[35%] left-[5%] w-5 h-5 bg-violet-600 animate-pulse opacity-20 transform rotate-45 z-0" 
            style={{
              animationDelay: "1.8s"
            }}></div>
       
       {/* Triangle near hero text */}
-      <div className="absolute top-[40%] left-[35%] w-0 h-0 animate-float opacity-55"
+      <div className="absolute top-[40%] left-[35%] w-0 h-0 animate-float opacity-25 z-0"
            style={{
              borderLeft: "8px solid transparent",
              borderRight: "8px solid transparent", 
@@ -85,14 +84,14 @@ const Hero = () => {
            
       {/* Additional violet elements around main content */}
       {/* Hexagon near buttons */}
-      <div className="absolute bottom-[45%] left-[40%] w-7 h-7 bg-violet-600 animate-spin-slow opacity-55"
+      <div className="absolute bottom-[45%] left-[40%] w-7 h-7 bg-violet-600 animate-spin-slow opacity-25 z-0"
            style={{
              clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
              animationDelay: "2.8s"
            }}></div>
       
       {/* Plus sign near title */}
-      <div className="absolute top-[28%] left-[10%] animate-pulse opacity-50"
+      <div className="absolute top-[28%] left-[10%] animate-pulse opacity-20 z-0"
            style={{
              animationDelay: "1.2s"
            }}>
@@ -101,7 +100,7 @@ const Hero = () => {
       </div>
       
       {/* Heart shape near image */}
-      <div className="absolute top-[25%] right-[8%] w-6 h-6 bg-violet-600 animate-pulse opacity-50"
+      <div className="absolute top-[25%] right-[8%] w-6 h-6 bg-violet-600 animate-pulse opacity-20 z-0"
            style={{
              clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
              animationDelay: "3.7s"

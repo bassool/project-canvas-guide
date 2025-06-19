@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Film, Briefcase, Users, Rocket, Palette, Star, Sparkles, Linkedin } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -123,23 +122,23 @@ const Skills = () => {
         animationDelay: "4.5s"
       }}></div>
       
-      {/* New violet-600 animated elements - made bigger and positioned around content */}
+      {/* New violet-600 animated elements - reduced opacity and proper z-index */}
       {/* Floating lightning bolt near title */}
-      <div className="absolute top-[28%] right-[5%] w-5 h-8 bg-violet-600 animate-pulse opacity-55"
+      <div className="absolute top-[28%] right-[5%] w-5 h-8 bg-violet-600 animate-pulse opacity-25 z-0"
            style={{
              clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
              animationDelay: "2.3s"
            }}></div>
       
       {/* Spinning gear */}
-      <div className="absolute bottom-[55%] left-[2%] w-6 h-6 bg-violet-600 animate-spin-slow opacity-50"
+      <div className="absolute bottom-[55%] left-[2%] w-6 h-6 bg-violet-600 animate-spin-slow opacity-20 z-0"
            style={{
              clipPath: "polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)",
              animationDelay: "1.9s"
            }}></div>
       
       {/* Floating triangle */}
-      <div className="absolute top-[5%] right-[30%] w-0 h-0 animate-float opacity-55"
+      <div className="absolute top-[5%] right-[30%] w-0 h-0 animate-float opacity-25 z-0"
            style={{
              borderLeft: "8px solid transparent",
              borderRight: "8px solid transparent", 
@@ -148,7 +147,7 @@ const Skills = () => {
            }}></div>
       
       {/* Pulsing plus sign */}
-      <div className="absolute bottom-[70%] left-[35%] animate-pulse opacity-50"
+      <div className="absolute bottom-[70%] left-[35%] animate-pulse opacity-20 z-0"
            style={{
              animationDelay: "4.1s"
            }}>
@@ -157,7 +156,7 @@ const Skills = () => {
       </div>
       
       {/* Floating star near button */}
-      <div className="absolute bottom-[15%] right-[20%] w-6 h-6 bg-violet-600 animate-float opacity-60" 
+      <div className="absolute bottom-[15%] right-[20%] w-6 h-6 bg-violet-600 animate-float opacity-30 z-0" 
            style={{
              clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
              animationDelay: "2.9s"
@@ -165,20 +164,20 @@ const Skills = () => {
            
       {/* Additional elements around skills grid */}
       {/* Hexagon near skills cards */}
-      <div className="absolute top-[60%] right-[40%] w-7 h-7 bg-violet-600 animate-spin-slow opacity-55"
+      <div className="absolute top-[60%] right-[40%] w-7 h-7 bg-violet-600 animate-spin-slow opacity-25 z-0"
            style={{
              clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
              animationDelay: "1.4s"
            }}></div>
       
       {/* Diamond near skills title */}
-      <div className="absolute top-[25%] left-[40%] w-6 h-6 bg-violet-600 animate-pulse opacity-50 transform rotate-45" 
+      <div className="absolute top-[25%] left-[40%] w-6 h-6 bg-violet-600 animate-pulse opacity-20 transform rotate-45 z-0" 
            style={{
              animationDelay: "3.3s"
            }}></div>
       
       {/* Heart shape */}
-      <div className="absolute bottom-[35%] right-[8%] w-6 h-6 bg-violet-600 animate-pulse opacity-50"
+      <div className="absolute bottom-[35%] right-[8%] w-6 h-6 bg-violet-600 animate-pulse opacity-20 z-0"
            style={{
              clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
              animationDelay: "0.9s"

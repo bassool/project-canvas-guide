@@ -52,16 +52,16 @@ const Projects = () => {
         animationDelay: "4s"
       }}></div>
       
-      {/* New violet-600 animated elements - reduced opacity and proper z-index */}
+      {/* New violet-600 animated elements - much reduced opacity and proper z-index */}
       {/* Heart shape near title */}
-      <div className="absolute top-[32%] right-[8%] w-5 h-5 bg-violet-600 animate-pulse opacity-20 z-0"
+      <div className="absolute top-[32%] right-[8%] w-5 h-5 bg-violet-600 animate-pulse opacity-5 z-0"
            style={{
              clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
              animationDelay: "1.7s"
            }}></div>
       
       {/* Rotating chevron near tabs */}
-      <div className="absolute bottom-[35%] left-[35%] animate-spin-slow opacity-25 z-0"
+      <div className="absolute bottom-[35%] left-[35%] animate-spin-slow opacity-5 z-0"
            style={{
              animationDelay: "3.1s"
            }}>
@@ -69,20 +69,20 @@ const Projects = () => {
       </div>
       
       {/* Floating star near header */}
-      <div className="absolute top-[12%] left-[30%] w-6 h-6 bg-violet-600 animate-float opacity-30 z-0" 
+      <div className="absolute top-[12%] left-[30%] w-6 h-6 bg-violet-600 animate-float opacity-5 z-0" 
            style={{
              clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
              animationDelay: "2.4s"
            }}></div>
       
       {/* Floating diamond around projects */}
-      <div className="absolute bottom-[60%] right-[35%] w-5 h-5 bg-violet-600 animate-pulse opacity-20 transform rotate-45 z-0" 
+      <div className="absolute bottom-[60%] right-[35%] w-5 h-5 bg-violet-600 animate-pulse opacity-5 transform rotate-45 z-0" 
            style={{
              animationDelay: "3.8s"
            }}></div>
       
       {/* Spinning hexagon */}
-      <div className="absolute top-[50%] left-[3%] w-6 h-6 bg-violet-600 animate-spin-slow opacity-25 z-0"
+      <div className="absolute top-[50%] left-[3%] w-6 h-6 bg-violet-600 animate-spin-slow opacity-5 z-0"
            style={{
              clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
              animationDelay: "1.9s"
@@ -90,7 +90,7 @@ const Projects = () => {
            
       {/* Additional violet elements around project area */}
       {/* Plus sign near project grid */}
-      <div className="absolute top-[55%] right-[15%] animate-pulse opacity-20 z-0"
+      <div className="absolute top-[55%] right-[15%] animate-pulse opacity-5 z-0"
            style={{
              animationDelay: "2.3s"
            }}>
@@ -99,7 +99,7 @@ const Projects = () => {
       </div>
       
       {/* Triangle near button */}
-      <div className="absolute bottom-[8%] left-[45%] w-0 h-0 animate-float opacity-25 z-0"
+      <div className="absolute bottom-[8%] left-[45%] w-0 h-0 animate-float opacity-5 z-0"
            style={{
              borderLeft: "8px solid transparent",
              borderRight: "8px solid transparent", 
@@ -108,7 +108,7 @@ const Projects = () => {
            }}></div>
       
       {/* Lightning bolt */}
-      <div className="absolute top-[45%] right-[5%] w-5 h-8 bg-violet-600 animate-pulse opacity-25 z-0"
+      <div className="absolute top-[45%] right-[5%] w-5 h-8 bg-violet-600 animate-pulse opacity-5 z-0"
            style={{
              clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
              animationDelay: "0.7s"

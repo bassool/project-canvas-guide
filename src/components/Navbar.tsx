@@ -69,7 +69,7 @@ const Navbar = () => {
           </button>
         </nav>
         
-        <Button onClick={handleEmailClick} className="hidden sm:flex items-center gap-2 rounded-full px-6 bg-blue-950 text-white hover:bg-blue-900">
+        <Button onClick={handleEmailClick} className="hidden sm:flex items-center gap-2 rounded-full px-6 border border-blue-950 bg-transparent text-blue-950 hover:bg-blue-950 hover:text-white">
           <Sparkles className="h-4 w-4" />
           Get in touch
         </Button>

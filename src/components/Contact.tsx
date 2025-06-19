@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -84,9 +85,9 @@ const Contact = () => {
       
       <div className="container relative z-10 py-16 md:py-24 bg-white/0">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center px-4 py-2 rounded-full text-accent font-medium mb-6 bg-blue-950">
-            <Heart className="h-4 w-4 mr-2 bg-transparent" />
-            <span className="text-white">Let's chat!</span>
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-blue-950 font-medium mb-6 border border-blue-950 bg-transparent">
+            <Heart className="h-4 w-4 mr-2 text-blue-950" />
+            <span className="text-blue-950">Let's chat!</span>
           </div>
           
           <h2 className="section-title text-blue-950">Get In Touch</h2>

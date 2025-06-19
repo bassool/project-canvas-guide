@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -34,48 +35,48 @@ const Contact = () => {
     }
   };
   return <section id="contact" className="relative overflow-hidden bg-slate-300">
-      {/* Small floating elements */}
-      <div className="absolute top-[10%] left-[6%] w-3 h-3 rounded-full bg-black animate-float opacity-20"></div>
-      <div className="absolute top-[16%] right-[9%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{
+      {/* Small floating elements - updated to blue-950 */}
+      <div className="absolute top-[10%] left-[6%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-20"></div>
+      <div className="absolute top-[16%] right-[9%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-25" style={{
       animationDelay: "0.5s"
     }}></div>
-      <div className="absolute top-[32%] left-[11%] w-4 h-4 rounded-full bg-black animate-float opacity-15" style={{
+      <div className="absolute top-[32%] left-[11%] w-4 h-4 rounded-full bg-blue-950 animate-float opacity-15" style={{
       animationDelay: "1s"
     }}></div>
-      <div className="absolute top-[52%] right-[14%] w-3 h-3 rounded-full bg-black animate-pulse opacity-30" style={{
+      <div className="absolute top-[52%] right-[14%] w-3 h-3 rounded-full bg-blue-950 animate-pulse opacity-30" style={{
       animationDelay: "1.5s"
     }}></div>
-      <div className="absolute bottom-[16%] left-[8%] w-2 h-2 rounded-full bg-black animate-float opacity-25" style={{
+      <div className="absolute bottom-[16%] left-[8%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-25" style={{
       animationDelay: "2s"
     }}></div>
-      <div className="absolute bottom-[26%] right-[11%] w-5 h-5 rounded-full bg-black animate-pulse opacity-20" style={{
+      <div className="absolute bottom-[26%] right-[11%] w-5 h-5 rounded-full bg-blue-950 animate-pulse opacity-20" style={{
       animationDelay: "2.5s"
     }}></div>
       
-      {/* Small rotating circles */}
-      <div className="absolute top-[18%] left-[16%] w-6 h-6 rounded-full border border-black animate-spin-slow opacity-25"></div>
-      <div className="absolute top-[38%] right-[19%] w-4 h-4 rounded-full border border-black animate-spin-slow opacity-20" style={{
+      {/* Small rotating circles - updated to blue-950 */}
+      <div className="absolute top-[18%] left-[16%] w-6 h-6 rounded-full border border-blue-950 animate-spin-slow opacity-25"></div>
+      <div className="absolute top-[38%] right-[19%] w-4 h-4 rounded-full border border-blue-950 animate-spin-slow opacity-20" style={{
       animationDirection: "reverse"
     }}></div>
-      <div className="absolute bottom-[20%] left-[19%] w-5 h-5 rounded-full border border-black animate-spin-slow opacity-30" style={{
+      <div className="absolute bottom-[20%] left-[19%] w-5 h-5 rounded-full border border-blue-950 animate-spin-slow opacity-30" style={{
       animationDelay: "1s"
     }}></div>
-      <div className="absolute bottom-[40%] right-[24%] w-3 h-3 rounded-full border border-black animate-spin-slow opacity-25" style={{
+      <div className="absolute bottom-[40%] right-[24%] w-3 h-3 rounded-full border border-blue-950 animate-spin-slow opacity-25" style={{
       animationDirection: "reverse",
       animationDelay: "1.5s"
     }}></div>
       
-      {/* Additional floating bubbles */}
-      <div className="absolute top-[58%] left-[4%] w-2 h-2 rounded-full bg-black animate-pulse opacity-20" style={{
+      {/* Additional floating bubbles - updated to blue-950 */}
+      <div className="absolute top-[58%] left-[4%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-20" style={{
       animationDelay: "3s"
     }}></div>
-      <div className="absolute top-[68%] right-[5%] w-3 h-3 rounded-full bg-black animate-float opacity-15" style={{
+      <div className="absolute top-[68%] right-[5%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-15" style={{
       animationDelay: "3.5s"
     }}></div>
-      <div className="absolute top-[7%] left-[32%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{
+      <div className="absolute top-[7%] left-[32%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-25" style={{
       animationDelay: "4s"
     }}></div>
-      <div className="absolute bottom-[7%] right-[32%] w-4 h-4 rounded-full bg-black animate-float opacity-20" style={{
+      <div className="absolute bottom-[7%] right-[32%] w-4 h-4 rounded-full bg-blue-950 animate-float opacity-20" style={{
       animationDelay: "4.5s"
     }}></div>
       
@@ -84,30 +85,30 @@ const Contact = () => {
       
       <div className="container relative z-10 py-16 md:py-24 bg-white/0">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center px-4 py-2 rounded-full text-accent font-medium mb-6 bg-black">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-accent font-medium mb-6 bg-blue-950">
             <Heart className="h-4 w-4 mr-2 bg-transparent" />
             <span className="text-white">Let's chat!</span>
           </div>
           
-          <h2 className="section-title text-black">Get In Touch</h2>
-          <p className="section-subtitle max-w-2xl mx-auto text-black">Let's discuss how we can collaborate on your firm's project!</p>
+          <h2 className="section-title text-blue-950">Get In Touch</h2>
+          <p className="section-subtitle max-w-2xl mx-auto text-blue-950">Let's discuss how we can collaborate on your firm's project!</p>
         </div>
         
         <div className="flex justify-center">
           <div className="space-y-8 max-w-3xl w-full">
             <div className="group relative">
               {/* Backlit blur effect container that appears on hover */}
-              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
+              <div className="absolute inset-0 bg-blue-950 opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
               
               <div className="backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-lg card-hover text-center bg-white">
                 <div className="flex flex-col items-center">
-                  <div className="p-4 rounded-xl text-primary mb-4 bg-black">
+                  <div className="p-4 rounded-xl text-primary mb-4 bg-blue-950">
                     <Mail className="h-6 w-6" color="#ffffff" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2 text-black">Email Me</h3>
-                    <p className="mb-3 text-black">I am always open to connect with anyone, learn more about creative and technical projects, and discuss navigating this rewarding career path!</p>
-                    <a href="mailto:basselatout@icloud.com" className="text-black hover:underline inline-flex items-center group justify-center">
+                    <h3 className="font-semibold text-xl mb-2 text-blue-950">Email Me</h3>
+                    <p className="mb-3 text-blue-950">I am always open to connect with anyone, learn more about creative and technical projects, and discuss navigating this rewarding career path!</p>
+                    <a href="mailto:basselatout@icloud.com" className="text-blue-950 hover:underline inline-flex items-center group justify-center">
                       basselatout@icloud.com
                       <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity bg-transparent" />
                     </a>
@@ -118,19 +119,19 @@ const Contact = () => {
             
             <div className="group relative">
               {/* Backlit blur effect container that appears on hover */}
-              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
+              <div className="absolute inset-0 bg-blue-950 opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
               
               <div className="backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover text-center bg-white">
                 <div className="flex flex-col items-center">
-                  <div className="p-4 rounded-xl text-accent mb-4 bg-black">
+                  <div className="p-4 rounded-xl text-accent mb-4 bg-blue-950">
                     <FileText className="h-6 w-6" color="#ffffff" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2 text-black">Download my Resume!</h3>
-                    <p className="mb-3 text-black">
+                    <h3 className="font-semibold text-xl mb-2 text-blue-950">Download my Resume!</h3>
+                    <p className="mb-3 text-blue-950">
                       My next role could very well be within your firm; let my resume show you why!
                     </p>
-                    <Button onClick={handleResumeDownload} variant="link" className="p-0 h-auto group bg-transparent text-black">
+                    <Button onClick={handleResumeDownload} variant="link" className="p-0 h-auto group bg-transparent text-blue-950">
                       Download Resume 
                       <Download className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Button>
@@ -141,26 +142,26 @@ const Contact = () => {
             
             <div className="group relative">
               {/* Backlit blur effect container that appears on hover */}
-              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
+              <div className="absolute inset-0 bg-blue-950 opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
               
               <div className="backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover text-center bg-white">
-                <h3 className="font-semibold text-xl mb-6 text-black">Why work with me?</h3>
+                <h3 className="font-semibold text-xl mb-6 text-blue-950">Why work with me?</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3 justify-center">
-                    <span className="inline-block w-4 h-4 rounded-full bg-black"></span>
-                    <span className="text-lg text-black">Balanced creative and technical expertise</span>
+                    <span className="inline-block w-4 h-4 rounded-full bg-blue-950"></span>
+                    <span className="text-lg text-blue-950">Balanced creative and technical expertise</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
-                    <span className="inline-block w-4 h-4 rounded-full bg-black"></span>
-                    <span className="text-lg text-black">Demonstrable track record of successful project delivery</span>
+                    <span className="inline-block w-4 h-4 rounded-full bg-blue-950"></span>
+                    <span className="text-lg text-blue-950">Demonstrable track record of successful project delivery</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
-                    <span className="inline-block w-4 h-4 rounded-full bg-black"></span>
-                    <span className="text-lg text-black">Fluent in creative & managerial tools</span>
+                    <span className="inline-block w-4 h-4 rounded-full bg-blue-950"></span>
+                    <span className="text-lg text-blue-950">Fluent in creative & managerial tools</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
-                    <span className="inline-block w-4 h-4 rounded-full bg-black text-black"></span>
-                    <span className="text-lg text-black">Portfolio-Proven Results</span>
+                    <span className="inline-block w-4 h-4 rounded-full bg-blue-950 text-blue-950"></span>
+                    <span className="text-lg text-blue-950">Portfolio-Proven Results</span>
                   </li>
                 </ul>
               </div>

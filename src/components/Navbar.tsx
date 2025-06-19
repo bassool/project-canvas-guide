@@ -46,30 +46,30 @@ const Navbar = () => {
       <div className="container flex items-center justify-between">
         <div className="text-2xl font-bold">
           <a href="#" className="flex items-center gap-2">
-            <span className="text-black">Bassel Atout</span>
+            <span className="text-blue-950">Bassel Atout</span>
             <span className="hidden sm:inline text-sm font-medium text-gray-600">| PM & Creative Director</span>
           </a>
         </div>
         
         <nav className="hidden md:flex items-center gap-1">
-          <button onClick={() => scrollToSection("home")} className="nav-link font-medium text-black">
+          <button onClick={() => scrollToSection("home")} className="nav-link font-medium text-blue-950">
             Home
           </button>
-          <button onClick={() => scrollToSection("work")} className="nav-link font-medium text-black">
+          <button onClick={() => scrollToSection("work")} className="nav-link font-medium text-blue-950">
             Work
           </button>
-          <button onClick={() => scrollToSection("skills")} className="nav-link font-medium text-black">
+          <button onClick={() => scrollToSection("skills")} className="nav-link font-medium text-blue-950">
             Skills
           </button>
-          <button onClick={() => scrollToSection("about")} className="nav-link font-medium text-black">
+          <button onClick={() => scrollToSection("about")} className="nav-link font-medium text-blue-950">
             About
           </button>
-          <button onClick={() => scrollToSection("contact")} className="nav-link font-medium text-black">
+          <button onClick={() => scrollToSection("contact")} className="nav-link font-medium text-blue-950">
             Contact
           </button>
         </nav>
         
-        <Button onClick={handleEmailClick} className="hidden sm:flex items-center gap-2 rounded-full px-6 bg-black text-white hover:bg-gray-800">
+        <Button onClick={handleEmailClick} className="hidden sm:flex items-center gap-2 rounded-full px-6 bg-blue-950 text-white hover:bg-blue-900">
           <Sparkles className="h-4 w-4" />
           Get in touch
         </Button>

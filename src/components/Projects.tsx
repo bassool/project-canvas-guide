@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -8,51 +9,51 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState<ProjectCategory>("all");
   return <section id="work" className="relative overflow-hidden bg-slate-300">
       {/* Small floating elements */}
-      <div className="absolute top-[10%] left-[8%] w-2 h-2 rounded-full bg-black animate-float opacity-20"></div>
-      <div className="absolute top-[20%] right-[12%] w-3 h-3 rounded-full bg-black animate-pulse opacity-25" style={{
+      <div className="absolute top-[10%] left-[8%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-20"></div>
+      <div className="absolute top-[20%] right-[12%] w-3 h-3 rounded-full bg-blue-950 animate-pulse opacity-25" style={{
       animationDelay: "0.5s"
     }}></div>
-      <div className="absolute top-[40%] left-[15%] w-2 h-2 rounded-full bg-black animate-float opacity-30" style={{
+      <div className="absolute top-[40%] left-[15%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-30" style={{
       animationDelay: "1s"
     }}></div>
-      <div className="absolute top-[60%] right-[18%] w-4 h-4 rounded-full bg-black animate-pulse opacity-15" style={{
+      <div className="absolute top-[60%] right-[18%] w-4 h-4 rounded-full bg-blue-950 animate-pulse opacity-15" style={{
       animationDelay: "1.5s"
     }}></div>
-      <div className="absolute bottom-[15%] left-[10%] w-3 h-3 rounded-full bg-black animate-float opacity-25" style={{
+      <div className="absolute bottom-[15%] left-[10%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-25" style={{
       animationDelay: "2s"
     }}></div>
-      <div className="absolute bottom-[25%] right-[8%] w-2 h-2 rounded-full bg-black animate-pulse opacity-20" style={{
+      <div className="absolute bottom-[25%] right-[8%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-20" style={{
       animationDelay: "2.5s"
     }}></div>
       
       {/* Small rotating circles */}
-      <div className="absolute top-[15%] left-[20%] w-5 h-5 rounded-full border border-black animate-spin-slow opacity-25"></div>
-      <div className="absolute top-[35%] right-[25%] w-4 h-4 rounded-full border border-black animate-spin-slow opacity-20" style={{
+      <div className="absolute top-[15%] left-[20%] w-5 h-5 rounded-full border border-blue-950 animate-spin-slow opacity-25"></div>
+      <div className="absolute top-[35%] right-[25%] w-4 h-4 rounded-full border border-blue-950 animate-spin-slow opacity-20" style={{
       animationDirection: "reverse"
     }}></div>
-      <div className="absolute bottom-[20%] left-[25%] w-6 h-6 rounded-full border border-black animate-spin-slow opacity-30" style={{
+      <div className="absolute bottom-[20%] left-[25%] w-6 h-6 rounded-full border border-blue-950 animate-spin-slow opacity-30" style={{
       animationDelay: "1s"
     }}></div>
-      <div className="absolute bottom-[40%] right-[30%] w-3 h-3 rounded-full border border-black animate-spin-slow opacity-25" style={{
+      <div className="absolute bottom-[40%] right-[30%] w-3 h-3 rounded-full border border-blue-950 animate-spin-slow opacity-25" style={{
       animationDirection: "reverse",
       animationDelay: "1.5s"
     }}></div>
       
       {/* Additional floating bubbles */}
-      <div className="absolute top-[25%] left-[5%] w-2 h-2 rounded-full bg-black animate-pulse opacity-20" style={{
+      <div className="absolute top-[25%] left-[5%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-20" style={{
       animationDelay: "3s"
     }}></div>
-      <div className="absolute top-[70%] right-[5%] w-3 h-3 rounded-full bg-black animate-float opacity-15" style={{
+      <div className="absolute top-[70%] right-[5%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-15" style={{
       animationDelay: "3.5s"
     }}></div>
-      <div className="absolute top-[80%] left-[35%] w-2 h-2 rounded-full bg-black animate-pulse opacity-25" style={{
+      <div className="absolute top-[80%] left-[35%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-25" style={{
       animationDelay: "4s"
     }}></div>
       
       {/* Minimal decorative elements */}
-      <div className="hidden md:block absolute left-0 top-1/4 w-32 h-32 border-l border-t border-black opacity-10 -z-10"></div>
-      <div className="hidden md:block absolute right-0 bottom-1/4 w-32 h-32 border-r border-b border-black opacity-10 -z-10"></div>
-      <div className="hidden md:block absolute left-1/4 bottom-0 w-16 h-16 rounded-full border border-black opacity-10 -z-10"></div>
+      <div className="hidden md:block absolute left-0 top-1/4 w-32 h-32 border-l border-t border-blue-950 opacity-10 -z-10"></div>
+      <div className="hidden md:block absolute right-0 bottom-1/4 w-32 h-32 border-r border-b border-blue-950 opacity-10 -z-10"></div>
+      <div className="hidden md:block absolute left-1/4 bottom-0 w-16 h-16 rounded-full border border-blue-950 opacity-10 -z-10"></div>
       
       <div className="container py-20 md:py-28 bg-slate-300">
         <div className="text-center mb-12 relative">
@@ -61,7 +62,7 @@ const Projects = () => {
             <span>Browse my portfolio</span>
           </div>
           
-          <h2 className="section-title text-gray-900">Featured Projects</h2>
+          <h2 className="section-title text-blue-950">Featured Projects</h2>
           <p className="section-subtitle max-w-2xl mx-auto text-gray-600">
             A selection of my work spanning creative direction and project management
           </p>
@@ -86,8 +87,8 @@ const Projects = () => {
           <ProjectList category="personal" projects={projects} />
         </Tabs>
         
-        <div className="flex justify-center mt-12 bg-transparent text-black">
-          <Button variant="outline" size="lg" disabled className="rounded-full px-8 border border-gray-300 cursor-default bg-transparent text-base text-black">
+        <div className="flex justify-center mt-12 bg-transparent text-blue-950">
+          <Button variant="outline" size="lg" disabled className="rounded-full px-8 border border-gray-300 cursor-default bg-transparent text-base text-blue-950">
             Click each project to view
           </Button>
         </div>

@@ -65,7 +65,7 @@ const Hero = () => {
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight">
             <span className="block text-black">Bringing</span>
-            <span className="block text-orange-500">creative vision</span>
+            <span className="block text-white">creative vision</span>
             <span className="block text-black">to life with</span>
             <span className="block text-black">precise execution</span>
           </h1>

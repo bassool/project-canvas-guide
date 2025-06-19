@@ -46,7 +46,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between">
         <div className="text-2xl font-bold">
           <a href="#" className="flex items-center gap-2">
-            <span className="text-black">Portfolio</span>
+            <span className="text-black">Bassel Atout</span>
             <span className="hidden sm:inline text-sm font-medium text-gray-600">| PM & Creative Director</span>
           </a>
         </div>

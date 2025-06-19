@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
@@ -11,7 +10,7 @@ const Hero = () => {
       });
     }
   };
-  return <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-slate-300">
+  return <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-slate-50">
       {/* Small floating elements */}
       <div className="absolute top-[15%] left-[10%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-20"></div>
       <div className="absolute top-[25%] right-[15%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-30" style={{
@@ -66,7 +65,7 @@ const Hero = () => {
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight">
             <span className="block text-blue-950">Bringing</span>
-            <span className="block text-[d0cc8e] text-[#fff301]">creative vision</span>
+            <span className="block text-[d0cc8e] text-blue-400">creative vision</span>
             <span className="block text-blue-950">to life with</span>
             <span className="block text-blue-950">precise execution</span>
           </h1>

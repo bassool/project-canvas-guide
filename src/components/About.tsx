@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -20,7 +19,7 @@ const About = () => {
       console.error('Download failed:', error);
     }
   };
-  return <section id="about" className="relative overflow-hidden bg-slate-300">
+  return <section id="about" className="relative overflow-hidden bg-slate-50">
       {/* Small floating elements - updated to blue-950 */}
       <div className="absolute top-[8%] left-[5%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-20"></div>
       <div className="absolute top-[15%] right-[8%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-25" style={{
@@ -117,7 +116,7 @@ const About = () => {
 My unique perspective comes from having worked on both the creative and management sides of projects, allowing me to speak both languages fluently. I believe that the best work happens at the intersection of bold creativity and thoughtful organization.</p>
             </div>
             
-            <div className="py-6">
+            <div className="py-[20px]">
               <Separator className="bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 h-0.5 rounded-full" />
             </div>
             

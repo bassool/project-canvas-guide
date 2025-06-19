@@ -9,45 +9,43 @@ interface Skill {
   category: "creative" | "management";
   color: "primary" | "secondary" | "accent";
 }
-const skills: Skill[] = [
-  {
-    icon: Palette,
-    title: "Creative Direction",
-    description: "Developing comprehensive creative strategies and visual identities that align with brand objectives and resonate with target audiences.",
-    category: "creative",
-    color: "primary"
-  }, {
-    icon: Briefcase,
-    title: "Project Management",
-    description: "End-to-end project oversight ensuring on-time, on-budget delivery while maintaining quality standards and stakeholder satisfaction.",
-    category: "management",
-    color: "secondary"
-  }, {
-    icon: Users,
-    title: "Cross Functional Coordination",
-    description: "Building and leading high-performing creative and technical teams, fostering collaboration and delivering exceptional results.",
-    category: "management",
-    color: "accent"
-  }, {
-    icon: Star,
-    title: "Visual Design and Branding",
-    description: "Creating compelling brand stories, visual systems, and communication strategies that establish strong market presence.",
-    category: "creative",
-    color: "primary"
-  }, {
-    icon: Film,
-    title: "Multimedia Production",
-    description: "Creating engaging multimedia content including video, audio, and interactive experiences that captivate audiences and tell compelling stories.",
-    category: "creative",
-    color: "secondary"
-  }, {
-    icon: Rocket,
-    title: "KPI & Performance Analysis",
-    description: "Comprehensive planning for product, campaign, and brand launches to maximize impact and achieve business objectives.",
-    category: "creative",
-    color: "accent"
-  }
-];
+const skills: Skill[] = [{
+  icon: Palette,
+  title: "Creative Direction",
+  description: "Developing comprehensive creative strategies and visual identities that align with brand objectives and resonate with target audiences.",
+  category: "creative",
+  color: "primary"
+}, {
+  icon: Briefcase,
+  title: "Project Management",
+  description: "End-to-end project oversight ensuring on-time, on-budget delivery while maintaining quality standards and stakeholder satisfaction.",
+  category: "management",
+  color: "secondary"
+}, {
+  icon: Users,
+  title: "Cross Functional Coordination",
+  description: "Building and leading high-performing creative and technical teams, fostering collaboration and delivering exceptional results.",
+  category: "management",
+  color: "accent"
+}, {
+  icon: Star,
+  title: "Visual Design and Branding",
+  description: "Creating compelling brand stories, visual systems, and communication strategies that establish strong market presence.",
+  category: "creative",
+  color: "primary"
+}, {
+  icon: Film,
+  title: "Multimedia Production",
+  description: "Creating engaging multimedia content including video, audio, and interactive experiences that captivate audiences and tell compelling stories.",
+  category: "creative",
+  color: "secondary"
+}, {
+  icon: Rocket,
+  title: "KPI & Performance Analysis",
+  description: "Comprehensive planning for product, campaign, and brand launches to maximize impact and achieve business objectives.",
+  category: "creative",
+  color: "accent"
+}];
 const SkillCard = ({
   skill
 }: {
@@ -71,7 +69,7 @@ const SkillCard = ({
     </Card>;
 };
 const Skills = () => {
-  return <section id="skills" className="relative bg-slate-300">
+  return <section id="skills" className="relative bg-slate-50">
       {/* Small floating elements - updated to blue-950 */}
       <div className="absolute top-[12%] left-[6%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-20"></div>
       <div className="absolute top-[18%] right-[10%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-25" style={{

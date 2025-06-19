@@ -6,7 +6,7 @@ import { ProjectCategory, projects } from "./projects/projectTypes";
 import ProjectList from "./projects/ProjectList";
 const Projects = () => {
   const [activeTab, setActiveTab] = useState<ProjectCategory>("all");
-  return <section id="work" className="relative overflow-hidden bg-slate-100">
+  return <section id="work" className="relative overflow-hidden bg-slate-50">
       {/* Small floating elements */}
       <div className="absolute top-[10%] left-[8%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-20"></div>
       <div className="absolute top-[20%] right-[12%] w-3 h-3 rounded-full bg-blue-950 animate-pulse opacity-25" style={{
@@ -56,7 +56,7 @@ const Projects = () => {
       
       <div className="container py-20 md:py-28 bg-[#000a00]/0">
         <div className="text-center mb-12 relative">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gray-100 text-gray-900 font-medium mb-4">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-gray-900 font-medium mb-4 bg-[#000a0e]/0">
             <Rocket className="h-4 w-4 mr-2" />
             <span>Browse my portfolio</span>
           </div>
@@ -87,7 +87,7 @@ const Projects = () => {
         </Tabs>
         
         <div className="flex justify-center mt-12 bg-transparent text-blue-950">
-          <Button variant="outline" size="lg" disabled className="rounded-full px-8 border border-gray-300 cursor-default bg-transparent text-base text-blue-950">
+          <Button variant="outline" size="lg" disabled className="rounded-full px-8 border border-blue-950 cursor-default bg-transparent text-base text-blue-950">
             Click each project to view
           </Button>
         </div>

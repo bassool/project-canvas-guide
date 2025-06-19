@@ -126,8 +126,8 @@ const Skills = () => {
       
       <div className="container relative z-10 py-16 md:py-24">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full text-white font-medium mb-4 bg-blue-950">
-            <Sparkles className="h-4 w-4 mr-2" />
+          <div className="inline-flex items-center px-4 py-2 rounded-full border border-blue-950 bg-transparent text-blue-950 font-medium mb-4">
+            <Sparkles className="h-4 w-4 mr-2 text-blue-950" />
             <span>What I can do for you</span>
           </div>
           

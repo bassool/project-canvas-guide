@@ -97,7 +97,7 @@ const Hero = () => {
           {/* Floating elements */}
           <div style={{
             animationDelay: "1s"
-          }} className="absolute -right-6 top-3/4 shadow-lg p-4 rounded-xl border border-blue-950 animate-float z-20 bg-white/[0.69]">
+          }} className="absolute -right-6 top-3/4 shadow-lg p-4 rounded-2xl border border-blue-950 animate-float z-20 bg-white/[0.69]">
             <div className="flex items-center gap-2">
               <Wand className="h-5 w-5 text-gray-700" />
               <span className="font-medium text-sm text-blue-950">PMI-CAPM® Certified</span>

@@ -73,7 +73,7 @@ const Hero = () => {
           <p className="text-lg sm:text-xl max-w-md text-gray-600">Creative director and Project Manager turning imaginative ideas into extraordinary realities that captivate and inspire.</p>
           
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" onClick={scrollToWork} className="rounded-full px-6 group bg-blue-950 text-white hover:bg-blue-900">
+            <Button size="lg" onClick={scrollToWork} className="rounded-full px-6 group border border-blue-950 text-blue-950 bg-transparent">
               View my work 
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>

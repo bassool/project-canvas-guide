@@ -126,9 +126,9 @@ const Skills = () => {
       
       <div className="container relative z-10 py-16 md:py-24">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-6 py-3 rounded-full border border-blue-950 bg-transparent text-blue-950 font-medium mb-4">
-            <Sparkles className="h-4 w-4 mr-2 text-blue-950" />
-            <span>What I can do for you</span>
+          <div className="inline-flex items-center px-4 py-2 text-white font-medium mb-4 rounded-md bg-transparent">
+            <Sparkles className="h-4 w-4 mr-2" />
+            <span className="text-blue-950">What I can do for you</span>
           </div>
           
           <h2 className="section-title text-blue-950 text-5xl">Skills</h2>
@@ -147,7 +147,7 @@ const Skills = () => {
         
         <div className="text-center mt-12">
           <a href="https://www.linkedin.com/in/basselatout" target="_blank" rel="noopener noreferrer">
-            <Button className="rounded-full px-4 py-2 border border-blue-950 bg-transparent text-blue-950 hover:bg-blue-950 hover:text-white">
+            <Button className="rounded-full px-6 py-3 bg-blue-950 text-white hover:bg-blue-900">
               <Linkedin className="h-4 w-4 mr-2" />
               Connect on LinkedIn
             </Button>

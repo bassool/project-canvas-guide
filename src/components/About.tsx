@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -69,9 +70,9 @@ const About = () => {
       
       <div className="container relative z-10 py-16 md:py-24">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full text-primary font-medium mb-8 bg-blue-950">
-            <Award className="h-4 w-4 mr-2 text-white" />
-            <span className="text-white">Get to know me</span>
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-blue-950 font-medium mb-8 border border-blue-950 bg-transparent">
+            <Award className="h-4 w-4 mr-2 text-blue-950" />
+            <span className="text-blue-950">Get to know me</span>
           </div>
           
           <h2 className="section-title text-blue-950">About Me</h2>

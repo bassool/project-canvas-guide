@@ -100,7 +100,7 @@ const About = () => {
             {/* Floating award badge - improved contrast */}
             <div style={{
             animationDelay: "1s"
-          }} className="absolute -right-6 -bottom-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20 border-blue-950 bg-white/[0.64]">
+          }} className="absolute -right-6 -bottom-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-border animate-float z-20 border-blue-950 bg-white/[0.64] border border-blue-950">
               <div className="flex items-center gap-2">
                 <Trophy className="h-5 w-5 text-blue-950" />
                 <span className="font-medium text-sm text-blue-950">Loyola Marymount Fred Kiesner Entrepreneurial Star Award Winner</span>

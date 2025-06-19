@@ -2,7 +2,6 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Award, Download, Trophy, Laptop } from "lucide-react";
-
 const About = () => {
   const handleResumeDownload = async () => {
     try {
@@ -20,110 +19,101 @@ const About = () => {
       console.error('Download failed:', error);
     }
   };
-
-  return (
-    <section id="about" className="relative overflow-hidden bg-amber-50">
+  return <section id="about" className="relative overflow-hidden bg-amber-50">
       {/* Small floating elements - increased opacity */}
       <div className="absolute top-[8%] left-[5%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-40"></div>
       <div className="absolute top-[15%] right-[8%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-45" style={{
-        animationDelay: "0.5s"
-      }}></div>
+      animationDelay: "0.5s"
+    }}></div>
       <div className="absolute top-[30%] left-[10%] w-4 h-4 rounded-full bg-blue-950 animate-float opacity-35" style={{
-        animationDelay: "1s"
-      }}></div>
+      animationDelay: "1s"
+    }}></div>
       <div className="absolute top-[50%] right-[12%] w-3 h-3 rounded-full bg-blue-950 animate-pulse opacity-50" style={{
-        animationDelay: "1.5s"
-      }}></div>
+      animationDelay: "1.5s"
+    }}></div>
       <div className="absolute bottom-[18%] left-[7%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-45" style={{
-        animationDelay: "2s"
-      }}></div>
+      animationDelay: "2s"
+    }}></div>
       <div className="absolute bottom-[28%] right-[10%] w-5 h-5 rounded-full bg-blue-950 animate-pulse opacity-40" style={{
-        animationDelay: "2.5s"
-      }}></div>
+      animationDelay: "2.5s"
+    }}></div>
       
       {/* Small rotating circles - increased opacity */}
       <div className="absolute top-[20%] left-[15%] w-6 h-6 rounded-full border border-blue-950 animate-spin-slow opacity-45"></div>
       <div className="absolute top-[40%] right-[20%] w-4 h-4 rounded-full border border-blue-950 animate-spin-slow opacity-40" style={{
-        animationDirection: "reverse"
-      }}></div>
+      animationDirection: "reverse"
+    }}></div>
       <div className="absolute bottom-[22%] left-[20%] w-5 h-5 rounded-full border border-blue-950 animate-spin-slow opacity-50" style={{
-        animationDelay: "1s"
-      }}></div>
+      animationDelay: "1s"
+    }}></div>
       <div className="absolute bottom-[42%] right-[25%] w-3 h-3 rounded-full border border-blue-950 animate-spin-slow opacity-45" style={{
-        animationDirection: "reverse",
-        animationDelay: "1.5s"
-      }}></div>
+      animationDirection: "reverse",
+      animationDelay: "1.5s"
+    }}></div>
       
       {/* Additional floating bubbles - increased opacity */}
       <div className="absolute top-[60%] left-[3%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-40" style={{
-        animationDelay: "3s"
-      }}></div>
+      animationDelay: "3s"
+    }}></div>
       <div className="absolute top-[70%] right-[4%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-35" style={{
-        animationDelay: "3.5s"
-      }}></div>
+      animationDelay: "3.5s"
+    }}></div>
       <div className="absolute top-[5%] left-[30%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-45" style={{
-        animationDelay: "4s"
-      }}></div>
+      animationDelay: "4s"
+    }}></div>
       <div className="absolute bottom-[8%] right-[30%] w-4 h-4 rounded-full bg-blue-950 animate-float opacity-40" style={{
-        animationDelay: "4.5s"
-      }}></div>
+      animationDelay: "4.5s"
+    }}></div>
       
       {/* New violet-600 animated elements - reduced opacity and proper z-index */}
       {/* Floating hexagon near title */}
-      <div className="absolute top-[25%] left-[35%] w-4 h-4 bg-violet-600 animate-spin-slow opacity-25 z-0"
-           style={{
-             clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
-             animationDelay: "1.2s"
-           }}></div>
+      <div className="absolute top-[25%] left-[35%] w-4 h-4 bg-violet-600 animate-spin-slow opacity-25 z-0" style={{
+      clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
+      animationDelay: "1.2s"
+    }}></div>
       
       {/* Pulsing plus sign near text */}
-      <div className="absolute bottom-[50%] right-[35%] animate-pulse opacity-20 z-0"
-           style={{
-             animationDelay: "2.8s"
-           }}>
+      <div className="absolute bottom-[50%] right-[35%] animate-pulse opacity-20 z-0" style={{
+      animationDelay: "2.8s"
+    }}>
         <div className="w-1 h-4 bg-violet-600 absolute"></div>
         <div className="w-4 h-1 bg-violet-600 absolute top-1.5 -left-1.5"></div>
       </div>
       
       {/* Small floating square */}
-      <div className="absolute top-[65%] left-[25%] w-3 h-3 bg-violet-600 animate-float opacity-25 transform rotate-12 z-0"
-           style={{
-             animationDelay: "4.2s"
-           }}></div>
+      <div className="absolute top-[65%] left-[25%] w-3 h-3 bg-violet-600 animate-float opacity-25 transform rotate-12 z-0" style={{
+      animationDelay: "4.2s"
+    }}></div>
            
       {/* Additional elements around about content */}
       {/* Star near image */}
-      <div className="absolute top-[35%] right-[5%] w-7 h-7 bg-violet-600 animate-float opacity-30 z-0" 
-           style={{
-             clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
-             animationDelay: "1.8s"
-           }}></div>
+      <div className="absolute top-[35%] right-[5%] w-7 h-7 bg-violet-600 animate-float opacity-30 z-0" style={{
+      clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+      animationDelay: "1.8s"
+    }}></div>
       
       {/* Triangle near stats */}
-      <div className="absolute bottom-[35%] left-[40%] w-0 h-0 animate-float opacity-25 z-0"
-           style={{
-             borderLeft: "8px solid transparent",
-             borderRight: "8px solid transparent", 
-             borderBottom: "12px solid rgb(124 58 237)",
-             animationDelay: "3.4s"
-           }}></div>
+      <div className="absolute bottom-[35%] left-[40%] w-0 h-0 animate-float opacity-25 z-0" style={{
+      borderLeft: "8px solid transparent",
+      borderRight: "8px solid transparent",
+      borderBottom: "12px solid rgb(124 58 237)",
+      animationDelay: "3.4s"
+    }}></div>
       
       {/* Lightning bolt */}
-      <div className="absolute top-[45%] left-[5%] w-5 h-8 bg-violet-600 animate-pulse opacity-25 z-0"
-           style={{
-             clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
-             animationDelay: "0.6s"
-           }}></div>
+      <div className="absolute top-[45%] left-[5%] w-5 h-8 bg-violet-600 animate-pulse opacity-25 z-0" style={{
+      clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
+      animationDelay: "0.6s"
+    }}></div>
       
       {/* Diamond near button */}
-      <div className="absolute bottom-[25%] right-[45%] w-6 h-6 bg-violet-600 animate-pulse opacity-20 transform rotate-45 z-0" 
-           style={{
-             animationDelay: "2.1s"
-           }}></div>
+      <div className="absolute bottom-[25%] right-[45%] w-6 h-6 bg-violet-600 animate-pulse opacity-20 transform rotate-45 z-0" style={{
+      animationDelay: "2.1s"
+    }}></div>
       
       <div className="absolute top-0 right-0 w-full h-64 bg-gradient-to-b from-secondary/5 to-transparent -z-10"></div>
       
-      <div className="container relative z-10 py-16 md:py-24">
+      <div className="container relative z-10 py-16 md:py-24 bg-[#000a00]/0">
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full text-blue-950 font-medium mb-8 border border-blue-950 bg-transparent">
             <Award className="h-4 w-4 mr-2 text-blue-950" />
@@ -145,8 +135,8 @@ const About = () => {
             
             {/* New floating certification badge - above the photo */}
             <div style={{
-              animationDelay: "1.5s"
-            }} className="absolute -left-6 -top-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-blue-950 animate-float z-20 bg-white/[0.78]">
+            animationDelay: "1.5s"
+          }} className="absolute -left-6 -top-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-blue-950 animate-float z-20 bg-white/[0.78]">
               <div className="flex items-center gap-2">
                 <Laptop className="h-5 w-5 text-blue-950" />
                 <span className="font-medium text-sm text-blue-950">Certified Associate in Project Management</span>
@@ -155,8 +145,8 @@ const About = () => {
             
             {/* Floating award badge - improved contrast */}
             <div style={{
-              animationDelay: "1s"
-            }} className="absolute -right-6 -bottom-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-blue-950 animate-float z-20 bg-white/[0.64]">
+            animationDelay: "1s"
+          }} className="absolute -right-6 -bottom-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-blue-950 animate-float z-20 bg-white/[0.64]">
               <div className="flex items-center gap-2">
                 <Trophy className="h-5 w-5 text-blue-950" />
                 <span className="font-medium text-sm text-blue-950">Loyola Marymount Fred Kiesner Entrepreneurial Star Award Winner</span>
@@ -214,8 +204,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

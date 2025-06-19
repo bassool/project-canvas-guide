@@ -56,7 +56,7 @@ const Projects = () => {
       
       <div className="container py-20 md:py-28 bg-[#000a00]/0">
         <div className="text-center mb-12 relative">
-          <div className="rounded-full px-8 border border-blue-950 cursor-default bg-transparent text-base text-blue-950">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-gray-900 font-medium mb-4 bg-[#000a0e]/0">
             <Rocket className="h-4 w-4 mr-2" />
             <span>Browse my portfolio</span>
           </div>

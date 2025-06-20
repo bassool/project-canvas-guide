@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wand, Sparkles } from "lucide-react";
@@ -130,7 +129,7 @@ const Hero = () => {
         }}></div>
           
           <div className="relative z-10 overflow-hidden rounded-2xl shadow-lg aspect-square border border-gray-200">
-            <img alt="Creative director at work" className="w-full h-full object-cover" src="/lovable-uploads/e90bc0d9-1cc9-4930-bf89-5df3d5a340ef.jpg" />
+            <img alt="Creative director at work" src="/lovable-uploads/91f10ee9-a4fc-4eb8-aba8-27e2de1afa82.png" className="w-full h-full  object-cover" />
           </div>
           
           {/* Floating elements */}

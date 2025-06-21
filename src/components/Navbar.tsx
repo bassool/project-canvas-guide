@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -55,7 +56,7 @@ const Navbar = () => {
           </button>
         </nav>
         
-        <Button onClick={handleEmailClick} className="hidden sm:flex items-center gap-2 rounded-full px-6 border border-blue-950 bg-transparent text-blue-950 hover:bg-blue-950 hover:text-white">
+        <Button onClick={handleEmailClick} className="hidden sm:flex items-center gap-2 rounded-full px-6 border border-teal-900 bg-transparent text-teal-900 hover:bg-teal-900 hover:text-white">
           <Sparkles className="h-4 w-4" />
           Get in touch
         </Button>

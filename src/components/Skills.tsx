@@ -71,47 +71,47 @@ const SkillCard = ({
 const Skills = () => {
   return <section id="skills" className="relative bg-zinc-100">
       {/* Small floating elements - increased opacity */}
-      <div className="absolute top-[12%] left-[6%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-40"></div>
-      <div className="absolute top-[18%] right-[10%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-45" style={{
+      <div className="absolute top-[12%] left-[6%] w-3 h-3 rounded-full bg-teal-900 animate-float opacity-40"></div>
+      <div className="absolute top-[18%] right-[10%] w-2 h-2 rounded-full bg-teal-900 animate-pulse opacity-45" style={{
       animationDelay: "0.5s"
     }}></div>
-      <div className="absolute top-[35%] left-[12%] w-4 h-4 rounded-full bg-blue-950 animate-float opacity-35" style={{
+      <div className="absolute top-[35%] left-[12%] w-4 h-4 rounded-full bg-teal-900 animate-float opacity-35" style={{
       animationDelay: "1s"
     }}></div>
-      <div className="absolute top-[55%] right-[15%] w-3 h-3 rounded-full bg-blue-950 animate-pulse opacity-50" style={{
+      <div className="absolute top-[55%] right-[15%] w-3 h-3 rounded-full bg-teal-900 animate-pulse opacity-50" style={{
       animationDelay: "1.5s"
     }}></div>
-      <div className="absolute bottom-[20%] left-[8%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-45" style={{
+      <div className="absolute bottom-[20%] left-[8%] w-2 h-2 rounded-full bg-teal-900 animate-float opacity-45" style={{
       animationDelay: "2s"
     }}></div>
-      <div className="absolute bottom-[30%] right-[12%] w-5 h-5 rounded-full bg-blue-950 animate-pulse opacity-40" style={{
+      <div className="absolute bottom-[30%] right-[12%] w-5 h-5 rounded-full bg-teal-900 animate-pulse opacity-40" style={{
       animationDelay: "2.5s"
     }}></div>
       
       {/* Small rotating circles - increased opacity */}
-      <div className="absolute top-[22%] left-[18%] w-6 h-6 rounded-full border border-blue-950 animate-spin-slow opacity-45"></div>
-      <div className="absolute top-[42%] right-[22%] w-4 h-4 rounded-full border border-blue-950 animate-spin-slow opacity-40" style={{
+      <div className="absolute top-[22%] left-[18%] w-6 h-6 rounded-full border border-teal-900 animate-spin-slow opacity-45"></div>
+      <div className="absolute top-[42%] right-[22%] w-4 h-4 rounded-full border border-teal-900 animate-spin-slow opacity-40" style={{
       animationDirection: "reverse"
     }}></div>
-      <div className="absolute bottom-[25%] left-[22%] w-5 h-5 rounded-full border border-blue-950 animate-spin-slow opacity-50" style={{
+      <div className="absolute bottom-[25%] left-[22%] w-5 h-5 rounded-full border border-teal-900 animate-spin-slow opacity-50" style={{
       animationDelay: "1s"
     }}></div>
-      <div className="absolute bottom-[45%] right-[28%] w-3 h-3 rounded-full border border-blue-950 animate-spin-slow opacity-45" style={{
+      <div className="absolute bottom-[45%] right-[28%] w-3 h-3 rounded-full border border-teal-900 animate-spin-slow opacity-45" style={{
       animationDirection: "reverse",
       animationDelay: "1.5s"
     }}></div>
       
       {/* Additional floating bubbles - increased opacity */}
-      <div className="absolute top-[65%] left-[4%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-40" style={{
+      <div className="absolute top-[65%] left-[4%] w-2 h-2 rounded-full bg-teal-900 animate-pulse opacity-40" style={{
       animationDelay: "3s"
     }}></div>
-      <div className="absolute top-[75%] right-[6%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-35" style={{
+      <div className="absolute top-[75%] right-[6%] w-3 h-3 rounded-full bg-teal-900 animate-float opacity-35" style={{
       animationDelay: "3.5s"
     }}></div>
-      <div className="absolute top-[8%] left-[35%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-45" style={{
+      <div className="absolute top-[8%] left-[35%] w-2 h-2 rounded-full bg-teal-900 animate-pulse opacity-45" style={{
       animationDelay: "4s"
     }}></div>
-      <div className="absolute bottom-[10%] right-[35%] w-4 h-4 rounded-full bg-blue-950 animate-float opacity-40" style={{
+      <div className="absolute bottom-[10%] right-[35%] w-4 h-4 rounded-full bg-teal-900 animate-float opacity-40" style={{
       animationDelay: "4.5s"
     }}></div>
       
@@ -170,18 +170,18 @@ const Skills = () => {
       
       {/* Decorative pattern - increased opacity */}
       <div className="absolute top-20 left-10 grid grid-cols-3 gap-2 opacity-40 -z-10">
-        {[...Array(9)].map((_, i) => <div key={i} className="w-4 h-4 rounded-full bg-blue-950"></div>)}
+        {[...Array(9)].map((_, i) => <div key={i} className="w-4 h-4 rounded-full bg-teal-900"></div>)}
       </div>
       
       <div className="absolute bottom-20 right-10 grid grid-cols-3 gap-2 opacity-40 -z-10">
-        {[...Array(9)].map((_, i) => <div key={i} className="w-4 h-4 rounded-full bg-blue-950"></div>)}
+        {[...Array(9)].map((_, i) => <div key={i} className="w-4 h-4 rounded-full bg-teal-900"></div>)}
       </div>
       
       <div className="container relative z-10 py-16 md:py-24">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 font-medium mb-4 rounded-full border border-blue-950 bg-transparent">
-            <Sparkles className="h-4 w-4 mr-2 text-blue-950" />
-            <span className="text-blue-950">What I can do for you</span>
+          <div className="inline-flex items-center px-4 py-2 font-medium mb-4 rounded-full border border-teal-900 bg-transparent">
+            <Sparkles className="h-4 w-4 mr-2 text-teal-900" />
+            <span className="text-teal-900">What I can do for you</span>
           </div>
           
           <h2 className="section-title text-5xl text-teal-900">Skills</h2>
@@ -200,7 +200,7 @@ const Skills = () => {
         
         <div className="text-center mt-12">
           <a href="https://www.linkedin.com/in/basselatout" target="_blank" rel="noopener noreferrer">
-            <Button className="rounded-full px-6 py-3 border border-blue-950 bg-transparent text-blue-950 hover:bg-blue-950 hover:text-white">
+            <Button className="rounded-full px-6 py-3 border border-teal-900 bg-transparent text-teal-900 hover:bg-teal-900 hover:text-white">
               <Linkedin className="h-4 w-4 mr-2" />
               Connect on LinkedIn
             </Button>

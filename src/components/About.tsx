@@ -21,47 +21,47 @@ const About = () => {
   };
   return <section id="about" className="relative overflow-hidden bg-zinc-100">
       {/* Small floating elements - increased opacity */}
-      <div className="absolute top-[8%] left-[5%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-40"></div>
-      <div className="absolute top-[15%] right-[8%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-45" style={{
+      <div className="absolute top-[8%] left-[5%] w-3 h-3 rounded-full bg-teal-900 animate-float opacity-40"></div>
+      <div className="absolute top-[15%] right-[8%] w-2 h-2 rounded-full bg-teal-900 animate-pulse opacity-45" style={{
       animationDelay: "0.5s"
     }}></div>
-      <div className="absolute top-[30%] left-[10%] w-4 h-4 rounded-full bg-blue-950 animate-float opacity-35" style={{
+      <div className="absolute top-[30%] left-[10%] w-4 h-4 rounded-full bg-teal-900 animate-float opacity-35" style={{
       animationDelay: "1s"
     }}></div>
-      <div className="absolute top-[50%] right-[12%] w-3 h-3 rounded-full bg-blue-950 animate-pulse opacity-50" style={{
+      <div className="absolute top-[50%] right-[12%] w-3 h-3 rounded-full bg-teal-900 animate-pulse opacity-50" style={{
       animationDelay: "1.5s"
     }}></div>
-      <div className="absolute bottom-[18%] left-[7%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-45" style={{
+      <div className="absolute bottom-[18%] left-[7%] w-2 h-2 rounded-full bg-teal-900 animate-float opacity-45" style={{
       animationDelay: "2s"
     }}></div>
-      <div className="absolute bottom-[28%] right-[10%] w-5 h-5 rounded-full bg-blue-950 animate-pulse opacity-40" style={{
+      <div className="absolute bottom-[28%] right-[10%] w-5 h-5 rounded-full bg-teal-900 animate-pulse opacity-40" style={{
       animationDelay: "2.5s"
     }}></div>
       
       {/* Small rotating circles - increased opacity */}
-      <div className="absolute top-[20%] left-[15%] w-6 h-6 rounded-full border border-blue-950 animate-spin-slow opacity-45"></div>
-      <div className="absolute top-[40%] right-[20%] w-4 h-4 rounded-full border border-blue-950 animate-spin-slow opacity-40" style={{
+      <div className="absolute top-[20%] left-[15%] w-6 h-6 rounded-full border border-teal-900 animate-spin-slow opacity-45"></div>
+      <div className="absolute top-[40%] right-[20%] w-4 h-4 rounded-full border border-teal-900 animate-spin-slow opacity-40" style={{
       animationDirection: "reverse"
     }}></div>
-      <div className="absolute bottom-[22%] left-[20%] w-5 h-5 rounded-full border border-blue-950 animate-spin-slow opacity-50" style={{
+      <div className="absolute bottom-[22%] left-[20%] w-5 h-5 rounded-full border border-teal-900 animate-spin-slow opacity-50" style={{
       animationDelay: "1s"
     }}></div>
-      <div className="absolute bottom-[42%] right-[25%] w-3 h-3 rounded-full border border-blue-950 animate-spin-slow opacity-45" style={{
+      <div className="absolute bottom-[42%] right-[25%] w-3 h-3 rounded-full border border-teal-900 animate-spin-slow opacity-45" style={{
       animationDirection: "reverse",
       animationDelay: "1.5s"
     }}></div>
       
       {/* Additional floating bubbles - increased opacity */}
-      <div className="absolute top-[60%] left-[3%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-40" style={{
+      <div className="absolute top-[60%] left-[3%] w-2 h-2 rounded-full bg-teal-900 animate-pulse opacity-40" style={{
       animationDelay: "3s"
     }}></div>
-      <div className="absolute top-[70%] right-[4%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-35" style={{
+      <div className="absolute top-[70%] right-[4%] w-3 h-3 rounded-full bg-teal-900 animate-float opacity-35" style={{
       animationDelay: "3.5s"
     }}></div>
-      <div className="absolute top-[5%] left-[30%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-45" style={{
+      <div className="absolute top-[5%] left-[30%] w-2 h-2 rounded-full bg-teal-900 animate-pulse opacity-45" style={{
       animationDelay: "4s"
     }}></div>
-      <div className="absolute bottom-[8%] right-[30%] w-4 h-4 rounded-full bg-blue-950 animate-float opacity-40" style={{
+      <div className="absolute bottom-[8%] right-[30%] w-4 h-4 rounded-full bg-teal-900 animate-float opacity-40" style={{
       animationDelay: "4.5s"
     }}></div>
       
@@ -115,9 +115,9 @@ const About = () => {
       
       <div className="container relative z-10 py-16 md:py-24 bg-[#000a00]/0">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full text-blue-950 font-medium mb-8 border border-blue-950 bg-transparent">
-            <Award className="h-4 w-4 mr-2 text-blue-950" />
-            <span className="text-blue-950">Get to know me</span>
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-teal-900 font-medium mb-8 border border-teal-900 bg-transparent">
+            <Award className="h-4 w-4 mr-2 text-teal-900" />
+            <span className="text-teal-900">Get to know me</span>
           </div>
           
           <h2 className="section-title text-teal-900">About Me</h2>
@@ -126,8 +126,8 @@ const About = () => {
         <div className="grid gap-12 lg:grid-cols-2 items-center">
           <div className="relative order-2 lg:order-1">
             {/* Decorative elements */}
-            <div className="absolute -top-8 -left-8 w-16 h-16 border-t-4 border-l-4 border-blue-950/20"></div>
-            <div className="absolute -bottom-8 -right-8 w-16 h-16 border-b-4 border-r-4 border-blue-950/20"></div>
+            <div className="absolute -top-8 -left-8 w-16 h-16 border-t-4 border-l-4 border-teal-900/20"></div>
+            <div className="absolute -bottom-8 -right-8 w-16 h-16 border-b-4 border-r-4 border-teal-900/20"></div>
             
             <div className="relative z-10 overflow-hidden rounded-2xl gradient-border shadow-xl animate-float">
               <img alt="Portrait of me working" className="w-full aspect-[4/3] object-cover" src="/lovable-uploads/89041878-9665-475a-b4fa-f356edc9bb14.jpg" />
@@ -136,20 +136,20 @@ const About = () => {
             {/* New floating certification badge - above the photo */}
             <div style={{
             animationDelay: "1.5s"
-          }} className="absolute -left-6 -top-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-blue-950 animate-float z-20 bg-white/[0.78]">
+          }} className="absolute -left-6 -top-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-teal-900 animate-float z-20 bg-white/[0.78]">
               <div className="flex items-center gap-2">
-                <Laptop className="h-5 w-5 text-blue-950" />
-                <span className="font-medium text-sm text-blue-950">Certified Associate in Project Management</span>
+                <Laptop className="h-5 w-5 text-teal-900" />
+                <span className="font-medium text-sm text-teal-900">Certified Associate in Project Management</span>
               </div>
             </div>
             
             {/* Floating award badge - improved contrast */}
             <div style={{
             animationDelay: "1s"
-          }} className="absolute -right-6 -bottom-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-blue-950 animate-float z-20 bg-white/[0.64]">
+          }} className="absolute -right-6 -bottom-6 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-teal-900 animate-float z-20 bg-white/[0.64]">
               <div className="flex items-center gap-2">
-                <Trophy className="h-5 w-5 text-blue-950" />
-                <span className="font-medium text-sm text-blue-950">Loyola Marymount Fred Kiesner Entrepreneurial Star Award Winner</span>
+                <Trophy className="h-5 w-5 text-teal-900" />
+                <span className="font-medium text-sm text-teal-900">Loyola Marymount Fred Kiesner Entrepreneurial Star Award Winner</span>
               </div>
             </div>
           </div>
@@ -183,7 +183,7 @@ const About = () => {
             </div>
             
             <div className="pt-4">
-              <Button onClick={handleResumeDownload} size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group border border-blue-950 text-blue-950 bg-transparent hover:bg-blue-950 hover:text-white">
+              <Button onClick={handleResumeDownload} size="lg" className="rounded-full pl-6 pr-5 py-6 gap-2 group border border-teal-900 text-teal-900 bg-transparent hover:bg-teal-900 hover:text-white">
                 Download Resume 
                 <Download className="h-4 w-4 transition-transform group-hover:translate-y-1" />
               </Button>

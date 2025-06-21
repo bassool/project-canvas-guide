@@ -115,7 +115,7 @@ const Projects = () => {
             <span>Browse my portfolio</span>
           </div>
           
-          <h2 className="section-title text-blue-950">Featured Projects</h2>
+          <h2 className="section-title text-teal-900">Featured Projects</h2>
           <p className="section-subtitle max-w-2xl mx-auto text-gray-600">
             A selection of my work spanning creative direction and project management
           </p>

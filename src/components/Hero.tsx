@@ -105,10 +105,10 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight">
-            <span className="block text-blue-950">Bringing</span>
-            <span className="block text-[d0cc8e] text-violet-600">creative vision</span>
-            <span className="block text-blue-950">to life with</span>
-            <span className="block text-blue-950">precise execution</span>
+            <span className="block text-teal-900">Bringing</span>
+            <span className="block text-violet-600 font-semibold text-[[d0cc8e]]">creative vision</span>
+            <span className="block text-teal-900">to life with</span>
+            <span className="block text-teal-900">precise execution</span>
           </h1>
           
           <p className="text-lg sm:text-xl max-w-md text-gray-600">Creative director and Project Manager turning imaginative ideas into extraordinary realities that captivate and inspire.</p>

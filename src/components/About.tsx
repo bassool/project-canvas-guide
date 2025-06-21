@@ -120,7 +120,7 @@ const About = () => {
             <span className="text-blue-950">Get to know me</span>
           </div>
           
-          <h2 className="section-title text-blue-950">About Me</h2>
+          <h2 className="section-title text-teal-900">About Me</h2>
         </div>
         
         <div className="grid gap-12 lg:grid-cols-2 items-center">
@@ -156,7 +156,7 @@ const About = () => {
           
           <div className="space-y-8 order-1 lg:order-2">
             <div className="prose prose-lg">
-              <p className="text-xl leading-relaxed text-blue-950">Hey! I'm Bassel Atout, an aspiring Creative Project Manager out of Los Angeles, CA. I love rock climbing, playing my various instruments, and diving into tons of other esoteric hobbies that help bolster my business background and make me a more well rounded individual. These various aspects of myself are ones I cannot wait to showcase, as I know I will be an important asset to any profesisonal envinronment I enter!</p>
+              <p className="text-xl leading-relaxed text-teal-900">Hey! I'm Bassel Atout, an aspiring Creative Project Manager out of Los Angeles, CA. I love rock climbing, playing my various instruments, and diving into tons of other esoteric hobbies that help bolster my business background and make me a more well rounded individual. These various aspects of myself are ones I cannot wait to showcase, as I know I will be an important asset to any profesisonal envinronment I enter!</p>
               
               <p className="text-foreground/80 leading-relaxed mt-6">
                 My unique perspective comes from having worked on both the creative and management sides of projects, allowing me to speak both languages fluently. I believe that the best work happens at the intersection of bold creativity and thoughtful organization.
@@ -169,16 +169,16 @@ const About = () => {
             
             <div className="grid gap-6 sm:grid-cols-3">
               <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-white">
-                <p className="text-4xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-blue-950">8+</p>
-                <p className="text-blue-950">Years Creative Experience</p>
+                <p className="text-4xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-teal-900">8+</p>
+                <p className="text-teal-900">Years Creative Experience</p>
               </div>
               <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-white">
-                <p className="text-4xl font-bold bg-gradient-to-br from-secondary to-accent bg-clip-text text-blue-950">5+</p>
-                <p className="text-blue-950">Years in project based work</p>
+                <p className="text-4xl font-bold bg-gradient-to-br from-secondary to-accent bg-clip-text text-teal-900">5+</p>
+                <p className="text-emerald-900">Years in project based work</p>
               </div>
               <div className="p-6 rounded-2xl shadow-sm border border-border card-hover bg-white">
-                <p className="text-4xl font-bold bg-gradient-to-br from-accent to-primary bg-clip-text text-blue-950">6+</p>
-                <p className="text-blue-950">Creative and Managerial Tools Mastered</p>
+                <p className="text-4xl font-bold bg-gradient-to-br from-accent to-primary bg-clip-text text-teal-900">6+</p>
+                <p className="text-teal-900">Creative and Managerial Tools Mastered</p>
               </div>
             </div>
             
@@ -194,11 +194,11 @@ const About = () => {
         <div className="mt-20 pt-10 border-t border-secondary/20">
           <div className="grid gap-10 md:grid-cols-2">
             <div className="bg-white dark:bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
-              <h3 className="text-2xl font-semibold mb-4 text-blue-950">My Approach</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-teal-900">My Approach</h3>
               <p className="leading-relaxed text-gray-600">I believe in starting with clear strategic objectives, developing creative concepts that truly resonate with audiences, and executing with precision and adaptability. This balanced approach ensures both creative ingenuity and measurable project success.</p>
             </div>
             <div className="bg-white dark:bg-card p-8 rounded-2xl shadow-sm border border-border card-hover">
-              <h3 className="text-2xl font-semibold mb-4 text-blue-950">Background</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-teal-900">Background</h3>
               <p className="leading-relaxed text-gray-600">With a dynamic and creative background also based in business administration, I've worked at StartUps and as an independent freelancer across diverse industries including gaming, fashion, and software development.</p>
             </div>
           </div>

@@ -55,10 +55,10 @@ const SkillCard = ({
   return <Card className="overflow-hidden border border-gray-200 card-hover bg-white hover:shadow-lg">
       <CardHeader className="bg-white">
         <div className="flex items-center gap-3">
-          <div className="p-3 rounded-xl bg-blue-950 text-white">
+          <div className="p-3 rounded-xl text-white bg-teal-900">
             <Icon className="h-6 w-6" />
           </div>
-          <CardTitle className="text-blue-950">{skill.title}</CardTitle>
+          <CardTitle className="text-teal-900">{skill.title}</CardTitle>
         </div>
       </CardHeader>
       <CardContent className="bg-white">
@@ -184,7 +184,7 @@ const Skills = () => {
             <span className="text-blue-950">What I can do for you</span>
           </div>
           
-          <h2 className="section-title text-blue-950 text-5xl">Skills</h2>
+          <h2 className="section-title text-5xl text-teal-900">Skills</h2>
           <p className="section-subtitle max-w-2xl mx-auto text-gray-600">
             Balancing creative excellence with strategic execution
           </p>

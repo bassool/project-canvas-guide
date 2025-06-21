@@ -142,8 +142,8 @@ const Contact = () => {
             <span className="text-blue-950">Let's chat!</span>
           </div>
           
-          <h2 className="section-title text-blue-950">Get In Touch</h2>
-          <p className="section-subtitle max-w-2xl mx-auto text-blue-950">Let's discuss how we can collaborate on your firm's project!</p>
+          <h2 className="section-title text-teal-900">Get In Touch</h2>
+          <p className="section-subtitle max-w-2xl mx-auto text-teal-900">Let's discuss how we can collaborate on your firm's project!</p>
         </div>
         
         <div className="flex justify-center">
@@ -154,12 +154,12 @@ const Contact = () => {
               
               <div className="backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-lg card-hover text-center bg-white">
                 <div className="flex flex-col items-center">
-                  <div className="p-4 rounded-xl text-primary mb-4 bg-blue-950">
+                  <div className="p-4 rounded-xl text-primary mb-4 bg-teal-900">
                     <Mail className="h-6 w-6" color="#ffffff" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2 text-blue-950">Email Me</h3>
-                    <p className="mb-3 text-blue-950">I am always open to connect with anyone, learn more about creative and technical projects, and discuss navigating this rewarding career path!</p>
+                    <h3 className="font-semibold text-xl mb-2 text-teal-900">Email Me</h3>
+                    <p className="mb-3 text-emerald-900">I am always open to connect with anyone, learn more about creative and technical projects, and discuss navigating this rewarding career path!</p>
                     <a href="mailto:basselatout@icloud.com" className="text-blue-950 hover:underline inline-flex items-center group justify-center">
                       basselatout@icloud.com
                       <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity bg-transparent" />
@@ -175,15 +175,15 @@ const Contact = () => {
               
               <div className="backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover text-center bg-white">
                 <div className="flex flex-col items-center">
-                  <div className="p-4 rounded-xl text-accent mb-4 bg-blue-950">
+                  <div className="p-4 rounded-xl text-accent mb-4 bg-teal-900">
                     <FileText className="h-6 w-6" color="#ffffff" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2 text-blue-950">Download my Resume!</h3>
-                    <p className="mb-3 text-blue-950">
+                    <h3 className="font-semibold text-xl mb-2 text-teal-900">Download my Resume!</h3>
+                    <p className="mb-3 text-teal-900">
                       My next role could very well be within your firm; let my resume show you why!
                     </p>
-                    <Button onClick={handleResumeDownload} variant="link" className="p-0 h-auto group bg-transparent text-blue-950">
+                    <Button onClick={handleResumeDownload} variant="link" className="p-0 h-auto group bg-transparent text-teal-900">
                       Download Resume 
                       <Download className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Button>
@@ -197,23 +197,23 @@ const Contact = () => {
               <div className="absolute inset-0 bg-blue-950 opacity-0 group-hover:opacity-70 blur-xl transition-all duration-300 rounded-xl -z-10"></div>
               
               <div className="backdrop-blur-sm p-8 rounded-2xl border border-accent/10 shadow-lg card-hover text-center bg-white">
-                <h3 className="font-semibold text-xl mb-6 text-blue-950">Why work with me?</h3>
+                <h3 className="font-semibold text-xl mb-6 text-teal-900">Why work with me?</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3 justify-center">
                     <span className="inline-block w-4 h-4 rounded-full bg-blue-950"></span>
-                    <span className="text-lg text-blue-950">Balanced creative and technical expertise</span>
+                    <span className="text-lg text-teal-900">Balanced creative and technical expertise</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
                     <span className="inline-block w-4 h-4 rounded-full bg-blue-950"></span>
-                    <span className="text-lg text-blue-950">Demonstrable track record of successful project delivery</span>
+                    <span className="text-lg text-teal-900">Demonstrable track record of successful project delivery</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
                     <span className="inline-block w-4 h-4 rounded-full bg-blue-950"></span>
-                    <span className="text-lg text-blue-950">Fluent in creative & managerial tools</span>
+                    <span className="text-lg text-teal-900">Fluent in creative & managerial tools</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
                     <span className="inline-block w-4 h-4 rounded-full bg-blue-950 text-blue-950"></span>
-                    <span className="text-lg text-blue-950">Portfolio-Proven Results</span>
+                    <span className="text-lg text-teal-900">Portfolio-Proven Results</span>
                   </li>
                 </ul>
               </div>

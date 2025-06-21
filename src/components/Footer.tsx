@@ -3,7 +3,7 @@ import { Separator } from "@/components/ui/separator";
 import { Linkedin } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  return <footer className="pt-20 pb-10 border-t border-gray-200 bg-neutral-50">
+  return <footer className="pt-20 pb-10 border-t border-gray-200 bg-stone-50">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0 text-center md:text-left">

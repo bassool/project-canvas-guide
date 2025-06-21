@@ -19,7 +19,7 @@ const About = () => {
       console.error('Download failed:', error);
     }
   };
-  return <section id="about" className="relative overflow-hidden bg-neutral-50">
+  return <section id="about" className="relative overflow-hidden bg-stone-50">
       {/* Small floating elements - increased opacity */}
       <div className="absolute top-[8%] left-[5%] w-3 h-3 rounded-full bg-teal-900 animate-float opacity-40"></div>
       <div className="absolute top-[15%] right-[8%] w-2 h-2 rounded-full bg-teal-900 animate-pulse opacity-45" style={{
@@ -111,7 +111,7 @@ const About = () => {
       animationDelay: "2.1s"
     }}></div>
       
-      <div className="absolute top-0 right-0 w-full h-64 bg-gradient-to-b from-secondary/5 to-transparent -z-10"></div>
+      <div className="absolute top-0 right-0 w-full h-64 bg-gradient-to-b from-secondary/5 to-transparent -z-10 bg-yellow-50"></div>
       
       <div className="container relative z-10 py-16 md:py-24 bg-[#000a00]/0">
         <div className="text-center mb-16">

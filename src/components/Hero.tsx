@@ -10,7 +10,7 @@ const Hero = () => {
       });
     }
   };
-  return <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-neutral-50">
+  return <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-stone-50">
       {/* Small floating elements - increased opacity */}
       <div className="absolute top-[15%] left-[10%] w-3 h-3 rounded-full bg-teal-900 animate-float opacity-40"></div>
       <div className="absolute top-[25%] right-[15%] w-2 h-2 rounded-full bg-teal-900 animate-float opacity-50" style={{
@@ -106,7 +106,7 @@ const Hero = () => {
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight">
             <span className="block text-teal-900">Bringing</span>
-            <span className="block text-[[d0cc8e]] font-bold italic text-red-500">creative vision</span>
+            <span className="block text-[[d0cc8e]] font-bold italic text-orange-500">creative vision</span>
             <span className="block text-teal-900">to life with</span>
             <span className="block text-teal-900">precise execution</span>
           </h1>

@@ -33,7 +33,7 @@ const Contact = () => {
       console.error('Download failed:', error);
     }
   };
-  return <section id="contact" className="relative overflow-hidden bg-cyan-50">
+  return <section id="contact" className="relative overflow-hidden bg-zinc-100">
       {/* Small floating elements - updated to blue-950 */}
       <div className="absolute top-[10%] left-[6%] w-3 h-3 rounded-full bg-blue-950 animate-float opacity-40"></div>
       <div className="absolute top-[16%] right-[9%] w-2 h-2 rounded-full bg-blue-950 animate-pulse opacity-45" style={{
@@ -200,19 +200,19 @@ const Contact = () => {
                 <h3 className="font-semibold text-xl mb-6 text-teal-900">Why work with me?</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3 justify-center">
-                    <span className="inline-block w-4 h-4 rounded-full bg-blue-950"></span>
+                    <span className="inline-block w-4 h-4 rounded-full bg-teal-900"></span>
                     <span className="text-lg text-teal-900">Balanced creative and technical expertise</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
-                    <span className="inline-block w-4 h-4 rounded-full bg-blue-950"></span>
+                    <span className="inline-block w-4 h-4 rounded-full bg-teal-900"></span>
                     <span className="text-lg text-teal-900">Demonstrable track record of successful project delivery</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
-                    <span className="inline-block w-4 h-4 rounded-full bg-blue-950"></span>
+                    <span className="inline-block w-4 h-4 rounded-full bg-teal-900"></span>
                     <span className="text-lg text-teal-900">Fluent in creative & managerial tools</span>
                   </li>
                   <li className="flex items-center gap-3 justify-center">
-                    <span className="inline-block w-4 h-4 rounded-full bg-blue-950 text-blue-950"></span>
+                    <span className="inline-block w-4 h-4 rounded-full bg-teal-900 text-teal-900"></span>
                     <span className="text-lg text-teal-900">Portfolio-Proven Results</span>
                   </li>
                 </ul>

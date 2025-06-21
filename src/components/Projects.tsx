@@ -6,7 +6,7 @@ import { ProjectCategory, projects } from "./projects/projectTypes";
 import ProjectList from "./projects/ProjectList";
 const Projects = () => {
   const [activeTab, setActiveTab] = useState<ProjectCategory>("all");
-  return <section id="work" className="relative overflow-hidden bg-cyan-50">
+  return <section id="work" className="relative overflow-hidden bg-zinc-100">
       {/* Small floating elements - increased opacity */}
       <div className="absolute top-[10%] left-[8%] w-2 h-2 rounded-full bg-blue-950 animate-float opacity-40"></div>
       <div className="absolute top-[20%] right-[12%] w-3 h-3 rounded-full bg-blue-950 animate-pulse opacity-45" style={{

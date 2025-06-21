@@ -4,9 +4,12 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Rocket } from "lucide-react";
 import { ProjectCategory, projects } from "./projects/projectTypes";
 import ProjectList from "./projects/ProjectList";
+
 const Projects = () => {
   const [activeTab, setActiveTab] = useState<ProjectCategory>("all");
-  return <section id="work" className="relative overflow-hidden bg-stone-50">
+
+  return (
+    <section id="work" className="relative overflow-hidden bg-stone-50">
       {/* Small floating elements - increased opacity */}
       <div className="absolute top-[10%] left-[8%] w-2 h-2 rounded-full bg-teal-900 animate-float opacity-40"></div>
       <div className="absolute top-[20%] right-[12%] w-3 h-3 rounded-full bg-teal-900 animate-pulse opacity-45" style={{
@@ -49,59 +52,59 @@ const Projects = () => {
       animationDelay: "4s"
     }}></div>
       
-      {/* New violet-600 animated elements - FORCED FULL OPACITY */}
+      {/* New yellow-500 animated elements - FORCED FULL OPACITY */}
       {/* Heart shape near title */}
-      <div className="absolute top-[32%] right-[8%] w-5 h-5 bg-violet-600 animate-pulse !opacity-100 z-0" style={{
-      clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
-      animationDelay: "1.7s"
-    }}></div>
+      <div className="absolute top-[32%] right-[8%] w-5 h-5 bg-yellow-500 animate-pulse !opacity-100 z-0" style={{
+        clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
+        animationDelay: "1.7s"
+      }}></div>
       
       {/* Rotating chevron near tabs */}
       <div className="absolute bottom-[35%] left-[35%] animate-spin-slow !opacity-100 z-0" style={{
-      animationDelay: "3.1s"
-    }}>
-        <div className="w-0 h-0 border-l-4 border-b-4 border-violet-600 w-5 h-5 transform rotate-45"></div>
+        animationDelay: "3.1s"
+      }}>
+        <div className="w-0 h-0 border-l-4 border-b-4 border-yellow-500 w-5 h-5 transform rotate-45"></div>
       </div>
       
       {/* Floating star near header */}
-      <div className="absolute top-[12%] left-[30%] w-6 h-6 bg-violet-600 animate-float !opacity-100 z-0" style={{
-      clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
-      animationDelay: "2.4s"
-    }}></div>
+      <div className="absolute top-[12%] left-[30%] w-6 h-6 bg-yellow-500 animate-float !opacity-100 z-0" style={{
+        clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+        animationDelay: "2.4s"
+      }}></div>
       
       {/* Floating diamond around projects */}
-      <div className="absolute bottom-[60%] right-[35%] w-5 h-5 bg-violet-600 animate-pulse !opacity-100 transform rotate-45 z-0" style={{
-      animationDelay: "3.8s"
-    }}></div>
+      <div className="absolute bottom-[60%] right-[35%] w-5 h-5 bg-yellow-500 animate-pulse !opacity-100 transform rotate-45 z-0" style={{
+        animationDelay: "3.8s"
+      }}></div>
       
       {/* Spinning hexagon */}
-      <div className="absolute top-[50%] left-[3%] w-6 h-6 bg-violet-600 animate-spin-slow !opacity-100 z-0" style={{
-      clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
-      animationDelay: "1.9s"
-    }}></div>
+      <div className="absolute top-[50%] left-[3%] w-6 h-6 bg-yellow-500 animate-spin-slow !opacity-100 z-0" style={{
+        clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
+        animationDelay: "1.9s"
+      }}></div>
            
-      {/* Additional violet elements around project area */}
+      {/* Additional yellow elements around project area */}
       {/* Plus sign near project grid - FORCED FULL OPACITY */}
       <div className="absolute top-[55%] right-[15%] animate-pulse !opacity-100 z-0" style={{
-      animationDelay: "2.3s"
-    }}>
-        <div className="w-2 h-7 bg-violet-600 absolute"></div>
-        <div className="w-7 h-2 bg-violet-600 absolute top-2.5 -left-2.5"></div>
+        animationDelay: "2.3s"
+      }}>
+        <div className="w-2 h-7 bg-yellow-500 absolute"></div>
+        <div className="w-7 h-2 bg-yellow-500 absolute top-2.5 -left-2.5"></div>
       </div>
       
       {/* Triangle near button */}
       <div className="absolute bottom-[8%] left-[45%] w-0 h-0 animate-float !opacity-100 z-0" style={{
-      borderLeft: "8px solid transparent",
-      borderRight: "8px solid transparent",
-      borderBottom: "12px solid rgb(124 58 237)",
-      animationDelay: "4.1s"
-    }}></div>
+        borderLeft: "8px solid transparent",
+        borderRight: "8px solid transparent",
+        borderBottom: "12px solid rgb(234 179 8)",
+        animationDelay: "4.1s"
+      }}></div>
       
       {/* Lightning bolt */}
-      <div className="absolute top-[45%] right-[5%] w-5 h-8 bg-violet-600 animate-pulse !opacity-100 z-0" style={{
-      clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
-      animationDelay: "0.7s"
-    }}></div>
+      <div className="absolute top-[45%] right-[5%] w-5 h-8 bg-yellow-500 animate-pulse !opacity-100 z-0" style={{
+        clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
+        animationDelay: "0.7s"
+      }}></div>
       
       {/* Minimal decorative elements */}
       <div className="hidden md:block absolute left-0 top-1/4 w-32 h-32 border-l border-t border-teal-900 opacity-10 -z-10"></div>
@@ -146,6 +149,8 @@ const Projects = () => {
           </Button>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Projects;

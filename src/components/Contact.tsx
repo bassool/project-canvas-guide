@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, ArrowRight, Heart, Download, FileText, X } from "lucide-react";
+
 const Contact = () => {
   const {
     toast
@@ -33,7 +34,8 @@ const Contact = () => {
       console.error('Download failed:', error);
     }
   };
-  return <section id="contact" className="relative overflow-hidden bg-stone-50">
+  return (
+    <section id="contact" className="relative overflow-hidden bg-stone-50">
       {/* Small floating elements - updated to teal-900 */}
       <div className="absolute top-[10%] left-[6%] w-3 h-3 rounded-full bg-teal-900 animate-float opacity-40"></div>
       <div className="absolute top-[16%] right-[9%] w-2 h-2 rounded-full bg-teal-900 animate-pulse opacity-45" style={{
@@ -79,58 +81,58 @@ const Contact = () => {
       animationDelay: "4.5s"
     }}></div>
       
-      {/* New violet-600 animated elements - FORCED FULL OPACITY */}
+      {/* New yellow-500 animated elements - FORCED FULL OPACITY */}
       {/* Floating hexagon near title */}
-      <div className="absolute top-[25%] left-[35%] w-6 h-6 bg-violet-600 animate-spin-slow !opacity-100 z-0" style={{
-      clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
-      animationDelay: "1.2s"
-    }}></div>
+      <div className="absolute top-[25%] left-[35%] w-6 h-6 bg-yellow-500 animate-spin-slow !opacity-100 z-0" style={{
+        clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
+        animationDelay: "1.2s"
+      }}></div>
       
       {/* Floating diamond near contact cards */}
-      <div className="absolute bottom-[35%] right-[5%] w-5 h-5 bg-violet-600 animate-pulse !opacity-100 transform rotate-45 z-0" style={{
-      animationDelay: "2.8s"
-    }}></div>
+      <div className="absolute bottom-[35%] right-[5%] w-5 h-5 bg-yellow-500 animate-pulse !opacity-100 transform rotate-45 z-0" style={{
+        animationDelay: "2.8s"
+      }}></div>
       
       {/* Pulsing plus sign - FORCED FULL OPACITY */}
       <div className="absolute top-[45%] left-[3%] animate-pulse !opacity-100 z-0" style={{
-      animationDelay: "3.4s"
-    }}>
-        <div className="w-1.5 h-6 bg-violet-600 absolute"></div>
-        <div className="w-6 h-1.5 bg-violet-600 absolute top-2.5 -left-2.5"></div>
+        animationDelay: "3.4s"
+      }}>
+        <div className="w-1.5 h-6 bg-yellow-500 absolute"></div>
+        <div className="w-6 h-1.5 bg-yellow-500 absolute top-2.5 -left-2.5"></div>
       </div>
       
       {/* Floating triangle near contact cards */}
       <div className="absolute bottom-[50%] right-[30%] w-0 h-0 animate-float !opacity-100 z-0" style={{
-      borderLeft: "8px solid transparent",
-      borderRight: "8px solid transparent",
-      borderBottom: "12px solid rgb(124 58 237)",
-      animationDelay: "1.8s"
-    }}></div>
+        borderLeft: "8px solid transparent",
+        borderRight: "8px solid transparent",
+        borderBottom: "12px solid rgb(234 179 8)",
+        animationDelay: "1.8s"
+      }}></div>
       
       {/* Spinning gear */}
-      <div className="absolute top-[65%] left-[25%] w-6 h-6 bg-violet-600 animate-spin-slow !opacity-100 z-0" style={{
-      clipPath: "polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)",
-      animationDelay: "4.2s"
-    }}></div>
+      <div className="absolute top-[65%] left-[25%] w-6 h-6 bg-yellow-500 animate-spin-slow !opacity-100 z-0" style={{
+        clipPath: "polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)",
+        animationDelay: "4.2s"
+      }}></div>
       
       {/* Floating star near header */}
-      <div className="absolute top-[22%] right-[25%] w-6 h-6 bg-violet-600 animate-float !opacity-100 z-0" style={{
-      clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
-      animationDelay: "0.9s"
-    }}></div>
+      <div className="absolute top-[22%] right-[25%] w-6 h-6 bg-yellow-500 animate-float !opacity-100 z-0" style={{
+        clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+        animationDelay: "0.9s"
+      }}></div>
            
       {/* Additional elements around contact form area */}
       {/* Lightning bolt */}
-      <div className="absolute top-[55%] right-[8%] w-5 h-8 bg-violet-600 animate-pulse !opacity-100 z-0" style={{
-      clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
-      animationDelay: "3.9s"
-    }}></div>
+      <div className="absolute top-[55%] right-[8%] w-5 h-8 bg-yellow-500 animate-pulse !opacity-100 z-0" style={{
+        clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
+        animationDelay: "3.9s"
+      }}></div>
       
       {/* Heart shape */}
-      <div className="absolute bottom-[60%] left-[40%] w-6 h-6 bg-violet-600 animate-pulse !opacity-100 z-0" style={{
-      clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
-      animationDelay: "2.4s"
-    }}></div>
+      <div className="absolute bottom-[60%] left-[40%] w-6 h-6 bg-yellow-500 animate-pulse !opacity-100 z-0" style={{
+        clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
+        animationDelay: "2.4s"
+      }}></div>
       
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-secondary/5 to-white -z-10 bg-stone-50"></div>
@@ -221,6 +223,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;

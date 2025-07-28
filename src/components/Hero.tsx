@@ -129,7 +129,7 @@ const Hero = () => {
         }}></div>
           
           <div className="relative z-10 overflow-hidden rounded-2xl shadow-lg aspect-square border border-gray-200">
-            <img alt="Creative director at work" src="/lovable-uploads/9d852f9d-fd8d-482b-a2b1-98a37d936ce8.png" className="w-full h-full  object-cover" />
+            <img alt="Creative director at work" src="/lovable-uploads/7bd59ef7-5dc0-4d32-a198-2ee8f8ce46e4.png" className="w-full h-full  object-cover" />
           </div>
           
           {/* Floating elements */}

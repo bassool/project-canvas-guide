@@ -111,7 +111,7 @@ const Hero = () => {
             <span className="block text-teal-900">precise execution</span>
           </h1>
           
-          <p className="text-lg sm:text-xl max-w-md text-gray-600">Creative director and Project Manager turning imaginative ideas into extraordinary realities that captivate and inspire.</p>
+          <p className="text-lg sm:text-xl max-w-md text-gray-600">Creative Project Manager turning imaginative ideas into extraordinary realities that captivate and inspire.</p>
           
           <div className="flex flex-wrap gap-4">
             <Button size="lg" onClick={scrollToWork} className="rounded-full px-6 group border border-teal-900 text-teal-900 bg-transparent hover:bg-teal-900 hover:text-white">

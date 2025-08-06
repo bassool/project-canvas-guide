@@ -1,8 +1,8 @@
-
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -18,6 +18,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrolled]);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -26,15 +27,17 @@ const Navbar = () => {
       });
     }
   };
+
   const handleEmailClick = () => {
     window.location.href = "mailto:basselatout@icloud.com";
   };
+
   return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-700 py-4", scrolled ? "bg-white/95 backdrop-blur-xl shadow-sm border-b border-gray-200" : "bg-transparent")}>
       <div className="container flex items-center justify-between">
         <div className="text-2xl font-bold">
           <a href="#" className="flex items-center gap-2">
             <span className="text-teal-900">Bassel Atout</span>
-            <span className="hidden sm:inline text-sm font-medium text-gray-600">| PM & Creative Director</span>
+            <span className="hidden sm:inline text-sm font-medium text-gray-600">| Creative Project/Product Manager</span>
           </a>
         </div>
         
@@ -63,4 +66,5 @@ const Navbar = () => {
       </div>
     </header>;
 };
+
 export default Navbar;

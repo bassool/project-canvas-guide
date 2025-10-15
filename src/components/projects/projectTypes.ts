@@ -24,7 +24,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 0,
-    title: "New Project",
+    title: "Wildcard",
     description: "Project description coming soon.",
     category: "workExperience",
     image: "/placeholder.svg",

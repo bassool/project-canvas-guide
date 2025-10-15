@@ -31,7 +31,7 @@ export const projects: Project[] = [
     tags: ["Project Management"],
     featured: true,
     galleryImages: [],
-    tools: [],
+    tools: ["Figma", "Notion", "Photoshop", "Slack", "Canva", "ChatGPT", "OpenAI", "Lovable", "Bolt", "Proprietary Company Software"],
     summary: "Project details to be added."
   },
   {

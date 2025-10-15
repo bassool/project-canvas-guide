@@ -23,6 +23,18 @@ export interface Project {
 // Sample project data
 export const projects: Project[] = [
   {
+    id: 0,
+    title: "New Project",
+    description: "Project description coming soon.",
+    category: "workExperience",
+    image: "/placeholder.svg",
+    tags: ["Project Management"],
+    featured: true,
+    galleryImages: [],
+    tools: [],
+    summary: "Project details to be added."
+  },
+  {
     id: 1,
     title: "Depth Perception",
     description: "Directed and produced full album and all visuals, accompanied by digital social media marketing strategy and experiential live event planning and performing.",

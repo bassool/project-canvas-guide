@@ -135,7 +135,9 @@ const ProjectDialog = ({
                 variant="outline" 
                 className="flex items-center gap-2 px-6 py-2 rounded-md border-2 hover:bg-secondary/10"
                 onClick={() => {
-                  if (project.title === "Zapshot") {
+                  if (project.title === "New Project") {
+                    window.open("https://wildcardintros.com/", "_blank");
+                  } else if (project.title === "Zapshot") {
                     window.open("https://www.zapshot.me/", "_blank");
                   } else if (project.title === "Fanhaven") {
                     window.open("https://fanhaventicketing.com/", "_blank");

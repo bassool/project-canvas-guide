@@ -32,7 +32,8 @@ export const projects: Project[] = [
     featured: true,
     galleryImages: [],
     tools: ["Figma", "Notion", "Photoshop", "Slack", "Canva", "ChatGPT", "OpenAI", "Lovable", "Bolt", "Proprietary Company Software"],
-    summary: "Project details to be added."
+    summary: "Project details to be added.",
+    challenge: "To design, procure, and execute compelling, personalized campaigns that consistently drive high conversion rates for new meetings and client introductions, while managing multiple campaigns simultaneously across teams."
   },
   {
     id: 1,

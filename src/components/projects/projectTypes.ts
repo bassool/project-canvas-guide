@@ -25,7 +25,7 @@ export const projects: Project[] = [
   {
     id: 0,
     title: "Wildcard",
-    description: "Project description coming soon.",
+    description: "Managed 20+ concurrent campaigns in Notion, coordinating timelines, designing assets (Figma, Photoshop), and feedback cycles across cross-functional teams via Slack under the Operations Manager end-to-end.",
     category: "workExperience",
     image: "/lovable-uploads/wild_1.png",
     tags: ["Project Management"],

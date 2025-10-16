@@ -28,7 +28,7 @@ export const projects: Project[] = [
     description: "Managed 20+ concurrent campaigns in Notion, coordinating timelines, designing assets (Figma, Photoshop), and feedback cycles across cross-functional teams via Slack under the Operations Manager end-to-end.",
     category: "workExperience",
     image: "/lovable-uploads/wild_1.png",
-    tags: ["Project Management"],
+    tags: ["Project Management", "Cross-Functional Procurement", "Asset Design", "Product Strategy"],
     featured: true,
     galleryImages: [
       "/lovable-uploads/wild_1.png",

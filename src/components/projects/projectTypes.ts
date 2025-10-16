@@ -33,7 +33,8 @@ export const projects: Project[] = [
     galleryImages: [],
     tools: ["Figma", "Notion", "Photoshop", "Slack", "Canva", "ChatGPT", "OpenAI", "Lovable", "Bolt", "Proprietary Company Software"],
     summary: "Project details to be added.",
-    challenge: "To design, procure, and execute compelling, personalized campaigns that consistently drive high conversion rates for new meetings and client introductions, while managing multiple campaigns simultaneously across teams."
+    challenge: "To design, procure, and execute compelling, personalized campaigns that consistently drive high conversion rates for new meetings and client introductions, while managing multiple campaigns simultaneously across teams.",
+    solution: "Leveraged cutting-edge AI tools alongside SCRUM methodology to streamline campaign planning and execution, applying design principles in Figma and Photoshop to create high-quality, on-brand assets, coordinating cross-functionally via Notion and Slack to ensure timely delivery and measurable results."
   },
   {
     id: 1,

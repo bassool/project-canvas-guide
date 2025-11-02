@@ -68,9 +68,9 @@ const About = () => {
       animationDelay: "4.5s"
     }}></div>
       
-      {/* New yellow-500 animated elements - FORCED FULL OPACITY */}
+      {/* New warm brown animated elements - FORCED FULL OPACITY */}
       {/* Floating hexagon near title */}
-      <div className="absolute top-[25%] left-[35%] w-4 h-4 bg-yellow-500 animate-spin-slow !opacity-100 z-0" style={{
+      <div className="absolute top-[25%] left-[35%] w-4 h-4 bg-amber-800 animate-spin-slow !opacity-100 z-0" style={{
         clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
         animationDelay: "1.2s"
       }}></div>
@@ -79,18 +79,18 @@ const About = () => {
       <div className="absolute bottom-[50%] right-[35%] animate-pulse !opacity-100 z-0" style={{
         animationDelay: "2.8s"
       }}>
-        <div className="w-1 h-4 bg-yellow-500 absolute"></div>
-        <div className="w-4 h-1 bg-yellow-500 absolute top-1.5 -left-1.5"></div>
+        <div className="w-1 h-4 bg-amber-800 absolute"></div>
+        <div className="w-4 h-1 bg-amber-800 absolute top-1.5 -left-1.5"></div>
       </div>
       
       {/* Small floating square */}
-      <div className="absolute top-[65%] left-[25%] w-3 h-3 bg-yellow-500 animate-float !opacity-100 transform rotate-12 z-0" style={{
+      <div className="absolute top-[65%] left-[25%] w-3 h-3 bg-amber-800 animate-float !opacity-100 transform rotate-12 z-0" style={{
         animationDelay: "4.2s"
       }}></div>
            
       {/* Additional elements around about content */}
       {/* Star near image */}
-      <div className="absolute top-[35%] right-[5%] w-7 h-7 bg-yellow-500 animate-float !opacity-100 z-0" style={{
+      <div className="absolute top-[35%] right-[5%] w-7 h-7 bg-amber-800 animate-float !opacity-100 z-0" style={{
         clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
         animationDelay: "1.8s"
       }}></div>
@@ -99,22 +99,22 @@ const About = () => {
       <div className="absolute bottom-[35%] left-[40%] w-0 h-0 animate-float !opacity-100 z-0" style={{
         borderLeft: "8px solid transparent",
         borderRight: "8px solid transparent",
-        borderBottom: "12px solid rgb(234 179 8)",
+        borderBottom: "12px solid rgb(146 64 14)",
         animationDelay: "3.4s"
       }}></div>
       
       {/* Lightning bolt */}
-      <div className="absolute top-[45%] left-[5%] w-5 h-8 bg-yellow-500 animate-pulse !opacity-100 z-0" style={{
+      <div className="absolute top-[45%] left-[5%] w-5 h-8 bg-amber-800 animate-pulse !opacity-100 z-0" style={{
         clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
         animationDelay: "0.6s"
       }}></div>
       
       {/* Diamond near button */}
-      <div className="absolute bottom-[25%] right-[45%] w-6 h-6 bg-yellow-500 animate-pulse !opacity-100 transform rotate-45 z-0" style={{
+      <div className="absolute bottom-[25%] right-[45%] w-6 h-6 bg-amber-800 animate-pulse !opacity-100 transform rotate-45 z-0" style={{
         animationDelay: "2.1s"
       }}></div>
       
-      <div className="absolute top-0 right-0 w-full h-64 bg-gradient-to-b from-secondary/5 to-transparent -z-10 bg-yellow-50"></div>
+      <div className="absolute top-0 right-0 w-full h-64 bg-gradient-to-b from-secondary/5 to-transparent -z-10"></div>
       
       <div className="container relative z-10 py-16 md:py-24 bg-[#000a00]/0">
         <div className="text-center mb-16">

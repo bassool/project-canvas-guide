@@ -116,15 +116,15 @@ const Skills = () => {
       animationDelay: "4.5s"
     }}></div>
       
-      {/* New yellow-500 animated elements - FORCED FULL OPACITY */}
+      {/* New warm brown animated elements - FORCED FULL OPACITY */}
       {/* Floating lightning bolt near title */}
-      <div className="absolute top-[28%] right-[5%] w-5 h-8 bg-yellow-500 animate-pulse !opacity-100 z-0" style={{
+      <div className="absolute top-[28%] right-[5%] w-5 h-8 bg-amber-800 animate-pulse !opacity-100 z-0" style={{
         clipPath: "polygon(20% 0%, 80% 0%, 60% 40%, 100% 40%, 40% 100%, 0% 60%, 40% 60%)",
         animationDelay: "2.3s"
       }}></div>
       
       {/* Spinning gear */}
-      <div className="absolute bottom-[55%] left-[2%] w-6 h-6 bg-yellow-500 animate-spin-slow !opacity-100 z-0" style={{
+      <div className="absolute bottom-[55%] left-[2%] w-6 h-6 bg-amber-800 animate-spin-slow !opacity-100 z-0" style={{
         clipPath: "polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)",
         animationDelay: "1.9s"
       }}></div>
@@ -133,7 +133,7 @@ const Skills = () => {
       <div className="absolute top-[5%] right-[30%] w-0 h-0 animate-float !opacity-100 z-0" style={{
         borderLeft: "8px solid transparent",
         borderRight: "8px solid transparent",
-        borderBottom: "12px solid rgb(234 179 8)",
+        borderBottom: "12px solid rgb(146 64 14)",
         animationDelay: "3.7s"
       }}></div>
       
@@ -141,30 +141,30 @@ const Skills = () => {
       <div className="absolute bottom-[70%] left-[35%] animate-pulse !opacity-100 z-0" style={{
         animationDelay: "4.1s"
       }}>
-        <div className="w-1.5 h-6 bg-yellow-500 absolute"></div>
-        <div className="w-6 h-1.5 bg-yellow-500 absolute top-2.5 -left-2.5"></div>
+        <div className="w-1.5 h-6 bg-amber-800 absolute"></div>
+        <div className="w-6 h-1.5 bg-amber-800 absolute top-2.5 -left-2.5"></div>
       </div>
       
       {/* Floating star near button */}
-      <div className="absolute bottom-[15%] right-[20%] w-6 h-6 bg-yellow-500 animate-float !opacity-100 z-0" style={{
+      <div className="absolute bottom-[15%] right-[20%] w-6 h-6 bg-amber-800 animate-float !opacity-100 z-0" style={{
         clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
         animationDelay: "2.9s"
       }}></div>
            
       {/* Additional elements around skills grid */}
       {/* Hexagon near skills cards */}
-      <div className="absolute top-[60%] right-[40%] w-7 h-7 bg-yellow-500 animate-spin-slow !opacity-100 z-0" style={{
+      <div className="absolute top-[60%] right-[40%] w-7 h-7 bg-amber-800 animate-spin-slow !opacity-100 z-0" style={{
         clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
         animationDelay: "1.4s"
       }}></div>
       
       {/* Diamond near skills title */}
-      <div className="absolute top-[25%] left-[40%] w-6 h-6 bg-yellow-500 animate-pulse !opacity-100 transform rotate-45 z-0" style={{
+      <div className="absolute top-[25%] left-[40%] w-6 h-6 bg-amber-800 animate-pulse !opacity-100 transform rotate-45 z-0" style={{
         animationDelay: "3.3s"
       }}></div>
       
       {/* Heart shape */}
-      <div className="absolute bottom-[35%] right-[8%] w-6 h-6 bg-yellow-500 animate-pulse !opacity-100 z-0" style={{
+      <div className="absolute bottom-[35%] right-[8%] w-6 h-6 bg-amber-800 animate-pulse !opacity-100 z-0" style={{
         clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
         animationDelay: "0.9s"
       }}></div>

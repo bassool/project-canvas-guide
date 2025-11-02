@@ -56,15 +56,15 @@ const Hero = () => {
       animationDelay: "4.5s"
     }}></div>
       
-      {/* New yellow-500 animated elements - FULL OPACITY ALWAYS */}
+      {/* New warm brown animated elements - FULL OPACITY ALWAYS */}
       {/* Floating star */}
-      <div className="absolute top-[30%] right-[30%] w-6 h-6 bg-yellow-500 animate-float !opacity-100 z-0" style={{
+      <div className="absolute top-[30%] right-[30%] w-6 h-6 bg-amber-800 animate-float !opacity-100 z-0" style={{
         clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
         animationDelay: "2s"
       }}></div>
       
       {/* Floating diamond near content */}
-      <div className="absolute bottom-[35%] left-[5%] w-5 h-5 bg-yellow-500 animate-pulse !opacity-100 transform rotate-45 z-0" style={{
+      <div className="absolute bottom-[35%] left-[5%] w-5 h-5 bg-amber-800 animate-pulse !opacity-100 transform rotate-45 z-0" style={{
         animationDelay: "1.8s"
       }}></div>
       
@@ -72,13 +72,13 @@ const Hero = () => {
       <div className="absolute top-[40%] left-[35%] w-0 h-0 animate-float !opacity-100 z-0" style={{
         borderLeft: "8px solid transparent",
         borderRight: "8px solid transparent",
-        borderBottom: "12px solid rgb(234 179 8)",
+        borderBottom: "12px solid rgb(146 64 14)",
         animationDelay: "3.2s"
       }}></div>
            
-      {/* Additional yellow elements around main content */}
+      {/* Additional warm brown elements around main content */}
       {/* Hexagon near buttons */}
-      <div className="absolute bottom-[45%] left-[40%] w-7 h-7 bg-yellow-500 animate-spin-slow !opacity-100 z-0" style={{
+      <div className="absolute bottom-[45%] left-[40%] w-7 h-7 bg-amber-800 animate-spin-slow !opacity-100 z-0" style={{
         clipPath: "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
         animationDelay: "2.8s"
       }}></div>
@@ -87,12 +87,12 @@ const Hero = () => {
       <div className="absolute top-[28%] left-[10%] animate-pulse !opacity-100 z-0" style={{
         animationDelay: "1.2s"
       }}>
-        <div className="w-2 h-8 bg-yellow-500 absolute"></div>
-        <div className="w-8 h-2 bg-yellow-500 absolute top-3 -left-3"></div>
+        <div className="w-2 h-8 bg-amber-800 absolute"></div>
+        <div className="w-8 h-2 bg-amber-800 absolute top-3 -left-3"></div>
       </div>
       
       {/* Heart shape near image */}
-      <div className="absolute top-[25%] right-[8%] w-6 h-6 bg-yellow-500 animate-pulse !opacity-100 z-0" style={{
+      <div className="absolute top-[25%] right-[8%] w-6 h-6 bg-amber-800 animate-pulse !opacity-100 z-0" style={{
         clipPath: "polygon(50% 20%, 70% 0%, 100% 30%, 80% 60%, 50% 100%, 20% 60%, 0% 30%, 30% 0%)",
         animationDelay: "3.7s"
       }}></div>
@@ -106,7 +106,7 @@ const Hero = () => {
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight">
             <span className="block text-teal-900">Bringing</span>
-            <span className="block text-[[d0cc8e]] font-bold italic text-yellow-500">creative vision</span>
+            <span className="block text-[[d0cc8e]] font-bold italic text-amber-800">creative vision</span>
             <span className="block text-teal-900">to life with</span>
             <span className="block text-teal-900">precise execution</span>
           </h1>

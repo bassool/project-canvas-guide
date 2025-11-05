@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="text-2xl font-bold">
           <a href="#" className="flex items-center gap-2">
             <span className="text-teal-900">Bassel Atout</span>
-            <span className="hidden sm:inline text-sm font-medium text-gray-600">| Creative Project/Product Manager</span>
+            <span className="hidden sm:inline text-sm font-medium text-gray-600">Creative Project Manager</span>
           </a>
         </div>
         

@@ -159,7 +159,7 @@ const About = () => {
           
           <div className="space-y-8 order-1 lg:order-2">
             <div className="prose prose-lg">
-              <p className="text-xl leading-relaxed text-teal-900">Hey! I'm Bassel Atout, an aspiring Creative Project/Product Manager out of Los Angeles, CA. I love rock climbing, playing my various instruments, and diving into tons of other esoteric hobbies that help bolster my business background and make me a more well rounded individual. These various aspects of myself are ones I cannot wait to showcase, as I know I will be an important asset to any profesisonal envinronment I enter!</p>
+              <p className="text-xl leading-relaxed text-teal-900">Hey! I'm Bassel Atout, an aspiring Creative Project Manager out of Los Angeles, CA. I love rock climbing, playing my various instruments, and diving into tons of other esoteric hobbies that help bolster my business background and make me a more well rounded individual. These various aspects of myself are ones I cannot wait to showcase, as I know I will be an important asset to any profesisonal envinronment I enter!</p>
               
               <p className="text-foreground/80 leading-relaxed mt-6">
                 My unique perspective comes from having worked on both the creative and management sides of projects, allowing me to speak both languages fluently. I believe that the best work happens at the intersection of bold creativity and thoughtful organization.
